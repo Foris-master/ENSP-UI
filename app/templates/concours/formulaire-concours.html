@@ -13,33 +13,79 @@
                     <div class="col-sm-12">
 
                         <div class="form-group">
-                            <label for="name">Titre</label>
-                            <input ng-model="new_publication.titre" type="text" class="form-control" name="name" id="name" placeholder="Entrer le titre " title="Please enter your name (at least 2 characters)">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Auteur</label>
-                            <input ng-model="new_publication.auteur" type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Entrer le nom de l'auteur de cette publication">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Lien</label>
-                            <input ng-model="new_publication.lienPublication" type="url" class="form-control" name="name" id="name" placeholder="Enter name" title="Entrer la lien pour suivre cette publication">
-                        </div>
-                        <div class="form-group">
+                            <label for="name">Ecole</label>
 
-                            <label for="email">Date de publication</label>
+                            <select ng-model="new_concours.ecole"  name="" id="" class="form-control">
+                                <option value="1">ENSP</option>
+                                <option value="2">FGI</option>
+                                <option value="3">UIT</option>
+                            </select>
+                        </div> <div class="form-group">
+                            <label for="name">Annee</label>
+
                             <datepicker>
-                                <input type="text" ng-model="new_publication.datePublication" class="form-control" name="email" id="email" placeholder="Entrer la date de publication" title="Please enter a valid email address">
+                                <input ng-model="new_concours.annee" type="text" class="form-control" name="name" id="name"
+                                       placeholder="Entrer l'annee de ce concours " title="Annee">
+                            </datepicker>
+                        </div>
+<div class="form-group">
+                            <label for="ddebut">Date Debut</label>
+
+                            <datepicker>
+                                <input ng-model="new_concours.dateDebut" type="text" class="form-control" name="name" id="ddebut"
+                                       placeholder="Date de debut du concours " title="Date de debut du concours">
+                            </datepicker>
+                        </div>
+<div class="form-group">
+                            <label for="dfin">Date Fin</label>
+
+                            <datepicker>
+                                <input ng-model="new_concours.dateFin" type="text" class="form-control" name="name" id="dfin"
+                                       placeholder="Date de fin du concours " title="Date de fin du concours">
                             </datepicker>
                         </div>
 
                         <div class="form-group">
-                            <label for="comments">Description</label>
-                            <textarea name="comment" ng-model="new_publication.description" class="form-control" id="comments" cols="3" rows="5" placeholder="Entrer la description de cette publication…" title="Please enter your message (at least 10 characters)"></textarea>
+                            <label for="arrete">Arrete</label>
+                            <input ng-model="new_concours.arrete" type="url" class="form-control" name="name" id="arrete"
+                                   placeholder="Entrer le lien vers l'arrete du concours" title="Entrer le lien vers l'arrete du concours">
                         </div>
                         <div class="form-group">
-                            <label for="comments">Résumé</label>
-                            <textarea ng-model="new_publication.resume" name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Entrer la description de cette publication…" title="Please enter your message (at least 10 characters)"></textarea>
-                            <button name="submit" ng-click="save_publication()" class="btn btn-lg btn-primary" id="submit" >Submit</button>
+                            <label for="niveau">Niveau</label>
+                            <input ng-model="new_concours.niveau" type="number" class="form-control" name="name" id="niveau"
+                                   placeholder="Entrer le niveau de ce concours" title="Entrer le niveau  de ce concours">
+                        </div>
+                        <div class="form-group">
+                                <label for="niveau">Nombre Candidats</label>
+                                <input ng-model="new_concours.nombreCandidats" type="number" class="form-control" name="name" id="niveau"
+                                       placeholder="Entrer le nombre de candidats pour  ce concours" title="Entrer le nombre de candidats pour  ce concours">
+                            </div>
+                        <div class="form-group">
+                                <label for="niveau">Nombre Candidats Admis</label>
+                                <input ng-model="new_concours.nombreCandidatsAdmin" type="number" class="form-control" name="name" id="niveau"
+                                       placeholder="Entrer le nombre de candidats voulues  pour  ce concours" title="Entrer le nombre de candidats voulues  pour  ce concours">
+                            </div>
+
+
+                        <div class="form-group">
+                            <label for="composition">Composition du Dossier</label>
+                            <textarea name="comment" ng-model="new_concours.compositionDossier" class="form-control" id="composition"
+                                      cols="3" rows="3" placeholder="Entrer la description de cette publication…"
+                                      title="Decrire le concours)"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea ng-model="new_concours.description" name="comment" class="form-control" id="description"
+                                      cols="3" rows="5" placeholder="Entrer la description de cette publication…"
+                                      title="Please enter your message (at least 10 characters)"></textarea>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="noteExplicative">Note Explicative</label>
+                            <textarea ng-model="new_concours.noteExplicative" name="comment" class="form-control" id="noteExplicative"
+                                      cols="3" rows="5" placeholder="Entrer la description de cette publication…"
+                                      title="Please enter your message (at least 10 characters)"></textarea>
+                            <button name="submit" ng-click="save_publication()" class="btn btn-lg btn-primary" id="submit" >Creer</button>
                         </div>
 
                         <div class="result"></div>

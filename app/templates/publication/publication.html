@@ -1,0 +1,40 @@
+<section id="aboutUs" class="section publication">
+    <div class="container">
+        <div class="heading text-center">
+            <!-- Heading -->
+            <h2 class="titre">{{publication.titre}}</h2>
+            <p></p>
+        </div>
+
+        <!-- Article 1 -->
+        <div class="row feature design">
+            <div class="area1 columns left">
+                <h3>Résumé</h3>
+                <p>{{publication.resume}}</p>
+
+            </div>
+            <div class="area2 columns feature-media right">
+                <div class="col-lg-12">
+                    <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
+                        style="position: relative; height: auto;">
+                        <h4>Information de la publication</h4>
+                        <li class="item web">
+                            <span>Auteur :</span> {{publication.auteur}}
+                        </li>
+                        <li class="item web">
+                            <span>Publié le :</span> {{publication.datePublication}}
+                        </li>
+                        <li class="item web">
+                            <span>Lien :</span> <a href="{{publication.lienPublication}}">{{publication.titre}}</a>
+                        </li>
+                        <hr/>
+                        <li class="item web">
+                            <a href="#/liste-publication/{{publication.auteur}}">Voir les publications du même auteur</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>

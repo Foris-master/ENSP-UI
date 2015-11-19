@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>angular-translate</title>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <a href="#" ng-click="changeLanguage('en')">{{'BUTTON_LANG_EN' | translate}}</a>
+    |
+    <a href="#" ng-click="changeLanguage('fr')">{{'BUTTON_LANG_FR' | translate}}</a>
+
+    <hr />
+
+    <p>{{'TITLE' | translate}}</p>
+    <p>{{'WELCOME_MESSAGE1' | translate:'{"name":"Gilles"}'}}</p>
+    <p>{{'WELCOME_MESSAGE2' | translate:userData}}</p>
+
+    <script src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="angular-translate.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+
+</html>

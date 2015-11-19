@@ -1,0 +1,174 @@
+body{
+    background: white;
+}
+
+header{
+    border-bottom: 3px solid #F97D2F;
+}
+
+footer{
+    background: #c7c7c7;
+    padding: 20px 0px;
+}
+
+.section{
+    margin-top:70px;
+    background: #e9e9e9;
+}
+
+.section .area1{
+    padding-left: 10px;
+}
+
+.section .container{
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #fff;
+    padding-bottom: 25px;
+}
+
+.logo-ensp{
+    max-width: 25%;
+}
+
+/** Menu deroulant **/
+
+.niveau2, .niveau3, .image-categorie{
+    background: #fff;
+    box-shadow: 1px 0px 1px #eee;
+}
+.niveau3{
+    min-height: 333px;
+}
+
+.image-categorie{
+    float: right;
+    width: 200px;
+}
+/* une petite bordure en top*/
+
+.sousmenu .niveau1 a, .sousmenu .niveau2 a, .sousmenu .niveau3 a{
+    padding: 10px 25px !important;
+    font-size: 0.8em;
+    float: left;
+}
+
+div.menu ul ul ,.image-categorie{position: absolute;display:none; width:500px;z-index: 500;}
+
+div.menu ul ul li{width: auto;}
+
+.niveau2 li:hover{border: 1px solid; border-color:  #4DD0E1  transparent #4DD0E1 transparent}
+
+div.menu ul.niveau1 li.sousmenu:hover ul.niveau2,
+
+div.menu ul.niveau2 li.sousmenu:hover ul.niveau3,div.menu ul.niveau2 li.sousmenu:hover .image-categorie {display:block;}
+
+div.menu ul.niveau3 {top:0px; left: 200px;}
+
+div.menu ul.niveau4 {top:0px; left: 200px;}
+
+.image-categorie{top: 0;left: 400px; max-width: 200px; min-height: 333px; background: #fff}
+
+
+.publication .area1{
+    width: 70%;
+}
+
+.publication .area2{
+    width: 30%;
+    margin-top: 20px;
+    padding: 20px 10px !important;
+}
+
+.publication .area2, .publication .liste-auteur{
+    background: #F5F5F5;
+    box-shadow: 0px 1px 5px #E9E9E9;
+    color:black;
+}
+
+.publication .area2 span{
+    font-weight: bold;
+}
+
+.titre{
+    text-transform: uppercase;
+    border-top: 1px solid rgba(8, 7, 7, 0.15);
+    padding-top: 20px ;
+}
+
+.pub{
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.pub span{
+    font-weight: bold;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.ul-li li{
+    display: inline-block;
+}
+
+.are1{
+    width: 70% !important;
+    padding-right: 0px !important;
+    padding-left: 22px;
+}
+
+.are2{
+    width: 30% !important;
+    padding-right: 22px !important;
+    padding-left: 0px;
+}
+
+/**** Actualité ****/
+.actu{
+
+}
+
+.actu-plus{
+    background: #F97D2F;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.actu-plus:hover{
+    color: #F97D2F;
+}
+
+.actu-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 0px;
+}
+
+.actu h3{
+    text-transform: none;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.actu-detail, .actu-image{
+    padding-left: 2px;
+}
+
+.actu-detail p{
+    margin-bottom: 0px !important;
+    font-size: 13px;
+}
+
+.actu-detail a{
+    text-decoration: underline;
+}
+
+.actu-detail a:hover{
+    text-transform: none;
+    color:#F97D2F !important;
+}

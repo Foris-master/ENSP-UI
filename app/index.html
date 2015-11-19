@@ -35,10 +35,24 @@
       <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
           <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a href="#/accueil" class="navbar-brand scroll-top logo  animated bounceInLeft"><b><i><img src="images/logo-ensp.png" class="logo-ensp" /></i></b>ENSP</a> </div>
+          <a href="#/accueil" class="navbar-brand scroll-top logo  animated bounceInLeft">
+            <b><i><img src="images/logo-ensp.png" class="logo-ensp" /></i></b>
+            <span style="font-size: 16px; color: #fff;">Ecole Nationale Supérieure Polytecnique</span>
+          </a>
+        </div>
+        
         <!--/.navbar-header-->
         <div id="main-nav" class="collapse navbar-collapse menu">
+
           <ul class="nav navbar-nav niveau1" id="mainNavs">
+            <li>
+              <form action="" class="search-form" style="margin-top: 20px;">
+              <div class="form-group has-feedback">
+                <label for="search" class="sr-only">Search</label>
+                <input type="text" class="form-control" name="search" id="search" placeholder="Recherche">
+                <span class="fa fa-search form-control-feedback"></span>
+              </div>
+            </form></li>
             <li class="active sousmenu" id="firstLink"><a href="#/presentation" class="scroll-link">Ecole</a>
               <ul class="niveau2 nav">
                 <li><a href="#/liste-publication">liste publication</a></li>

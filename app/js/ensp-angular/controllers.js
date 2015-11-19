@@ -60,6 +60,7 @@ angular.module('myApp.actualite')
             function(data){
 
                 $scope.actualite=data;
+                console.log(data);
 
             },function(msg){
                 console.log(msg);

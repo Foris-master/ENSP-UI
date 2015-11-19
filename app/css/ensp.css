@@ -28,7 +28,7 @@ footer{
 }
 
 .logo-ensp{
-    max-width: 25%;
+    max-width: 12%;
 }
 
 /** Menu deroulant **/
@@ -175,4 +175,59 @@ textarea{
 .actu-detail a:hover{
     text-transform: none;
     color:#F97D2F !important;
+}
+
+/*** Search ***/
+.search-form .form-group {
+    float: right !important;
+    transition: all 0.35s, border-radius 0s;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-color: transparent;
+
+}
+.search-form .form-group input.form-control {
+    padding-left: 30px !important;
+    border: 0 none;
+    background: transparent;
+    box-shadow: none;
+    display:block;
+    color: white;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+    display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+    display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+    width: 100%;
+    border-bottom: 2px solid #F97D2F;
+    background: rgba(0,0,0,0.2);
+}
+.search-form .form-group span.form-control-feedback {
+    position: relative;
+    top: -56px;
+    left: 1px;
+    z-index: 2;
+    display: block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    left: initial;
+    font-size: 18px;
 }

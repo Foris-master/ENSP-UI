@@ -9,56 +9,29 @@
         <!-- Team Member's Details -->
         <div class="team-content">
             <div class="row actu-container">
-                <div class="col-lg-4 col-sm-4 col-xs-4">
+                <div class="col-lg-4 col-sm-4 col-xs-4" ng-repeat="a in actualites |filter:searchKey | orderBy : '-datePublication' : true | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
                     <div class="actu row">
                         <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
                             <img src="images/work/7.jpg" alt=""/>
                         </div>
                         <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
-                            <h3>Une nouvelle actualité</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="">Lire la suite</a>
+                            <h3>{{a.titre}}</h3>
+                            <p>{{a.description | limitTo : 75}}.</p>
+                            <a href="#/actualite/{{a.idActualite}}">Lire la suite</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-4">
-                    <div class="actu row">
-                        <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
-                            <img src="images/work/7.jpg" alt=""/>
-                        </div>
-                        <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
-                            <h3>Une nouvelle actualité</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="">Lire la suite</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="row actu-container">
+                <div class="text-center" ng-show="actualites.length > 1">
+                    <ul class="pagination">
+                        <li><a href="" ng-click="pagination.prevPage()">&laquo;</a></li>
+                        <li ng-repeat="n in [] | range: pagination.numPages" ng-class="{active: n == pagination.page}">
+                            <a href="" ng-click="pagination.toPageId(n)">{{n + 1}}</a>
+                        </li>
+                        <li><a href="" ng-click="pagination.nextPage()">&raquo;</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-sm-4 col-xs-4">
-                    <div class="actu row">
-                        <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
-                            <img src="images/work/7.jpg" alt=""/>
-                        </div>
-                        <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
-                            <h3>Une nouvelle actualité</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="">Lire la suite</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-4 col-xs-4">
-                    <div class="actu row">
-                        <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
-                            <img src="images/work/7.jpg" alt=""/>
-                        </div>
-                        <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
-                            <h3>Une nouvelle actualité</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <a href="">Lire la suite</a>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
     </div>

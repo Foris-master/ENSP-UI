@@ -27,6 +27,8 @@
   <!-- ENSP css -->
   <link rel="stylesheet" href="css/ensp.css" />
   <link rel="icon" href="images/favicon.png" type="image/png" translate="none" />
+    <!-- editeur  riche-->
+    <link rel="stylesheet" href="../bower_components/ngWYSIWYG/css/editor.css" />
 </head>
 <body ng-app="myApp" ng-controller="headerCtrl">
 
@@ -130,11 +132,27 @@
   <script src="../bower_components/angular-route/angular-route.js"></script>
   <script src="../bower_components/angular-datepicker/src/js/angular-datepicker.js"></script>
 
-
+ <!-- ENSP Angular-->
   <script src="app.js"></script>
-  <script src="js/ensp-angular/config.js"></script>
-  <script src="js/ensp-angular/services.js"></script>
-  <script src="js/ensp-angular/controllers.js"></script>
+  <!--Module Accueil-->
+  <script src="ensp-angular/accueil/config.js"></script>
+  <script src="ensp-angular/accueil/services.js"></script>
+  <script src="ensp-angular/accueil/controllers.js"></script>
+
+<!--Module Publication-->
+  <script src="ensp-angular/publication/config.js"></script>
+  <script src="ensp-angular/publication/services.js"></script>
+  <script src="ensp-angular/publication/controllers.js"></script>
+
+<!--Module Actualite-->
+  <script src="ensp-angular/actualite/config.js"></script>
+  <script src="ensp-angular/actualite/services.js"></script>
+  <script src="ensp-angular/actualite/controllers.js"></script>
+
+<!--Module Concours-->
+  <script src="ensp-angular/concours/config.js"></script>
+  <script src="ensp-angular/concours/services.js"></script>
+  <script src="ensp-angular/concours/controllers.js"></script>
 
 
   <script src="js/modernizr-latest.js"></script>
@@ -147,5 +165,11 @@
   <script src="js/waypoints.js"></script>
   <script src="js/custom.js" type="text/javascript"></script>
   <script src="js/owl-carousel/owl.carousel.js"></script>
+ <!-- editeur riche-->
+
+  <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="../bower_components/ngWYSIWYG/js/wysiwyg.js"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "name": "ENSP-UI",
+  "homepage": "https://github.com/Foris-master/ENSP-UI",
+  "authors": [
+    "foris <evarisfomekong@gmail.com>"
+  ],
+  "description": "l interface utilisateur pour la plateforme ENSP",
+  "main": "",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.4.7",
+    "angular-datepicker":"*",
+    "ng-simplePagination": "~1.0.3",
+    "ngWYSIWYG": "*"
+  }
+}

@@ -49,15 +49,16 @@ footer{
 
 .sousmenu .niveau1 a, .sousmenu .niveau2 a, .sousmenu .niveau3 a{
     padding: 10px 25px !important;
-    font-size: 0.8em;
+    font-size: 13px;
     float: left;
+    font-weight: bold;
 }
 
 div.menu ul ul ,.image-categorie{position: absolute;display:none; width:500px;z-index: 500;}
 
-div.menu ul ul li{width: auto;}
+div.menu ul ul li{width: 200px;}
 
-.niveau2 li:hover{border: 1px solid; border-color:  #4DD0E1  transparent #4DD0E1 transparent}
+.niveau2 li a:hover{background: #F97D2F;color: white !important;}
 
 div.menu ul.niveau1 li.sousmenu:hover ul.niveau2,
 
@@ -69,7 +70,7 @@ div.menu ul.niveau4 {top:0px; left: 200px;}
 
 .image-categorie{top: 0;left: 400px; max-width: 200px; min-height: 333px; background: #fff}
 
-
+/******Fin Menu****/
 .publication .area1{
     width: 70%;
 }

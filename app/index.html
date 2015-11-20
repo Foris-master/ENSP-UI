@@ -12,7 +12,7 @@
   <script src="../js/html5.js"></script>
   <![endif]-->
   <!--[if lte IE 8]>
-  <script type="text/javascript" src="../js/excanvas.js"></script>
+  <script type="text/javascript" src="js/excanvas.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href=css/isotope.css" media="screen" />
@@ -26,9 +26,11 @@
   <link href="font/css/font-awesome.min.css" rel="stylesheet">
   <!-- ENSP css -->
   <link rel="stylesheet" href="css/ensp.css" />
+  <link rel="stylesheet" href="css/ensp-resp.css" />
   <link rel="icon" href="images/favicon.png" type="image/png" translate="none" />
     <!-- editeur  riche-->
     <link rel="stylesheet" href="../bower_components/ngWYSIWYG/css/editor.css" />
+  <link rel="stylesheet" href="css/editor.css"/>
 </head>
 <body ng-app="myApp" ng-controller="headerCtrl">
 
@@ -37,9 +39,9 @@
       <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
           <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a href="#/accueil" class="navbar-brand scroll-top logo  animated bounceInLeft">
+          <a href="#/accueil" class="navbar-brand scroll-top logo ensp  animated bounceInLeft">
             <b><i><img src="images/logo-ensp.png" class="logo-ensp" /></i></b>
-            <span style="font-size: 16px; color: #fff;">Ecole Nationale Supérieure Polytecnique</span>
+            <span style="font-size: 16px; color: #fff;" >Ecole Nationale Supérieure Polytecnique</span>
           </a>
         </div>
         
@@ -47,7 +49,7 @@
         <div id="main-nav" class="collapse navbar-collapse menu">
 
           <ul class="nav navbar-nav niveau1" id="mainNavs">
-            <li>
+            <li class="row" style="margin: 0px 5px;">
               <form action="" class="search-form" style="margin-top: 20px;">
               <div class="form-group has-feedback">
                 <label for="search" class="sr-only">Search</label>
@@ -130,7 +132,7 @@
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/ng-simplePagination/simplePagination.js"></script>
   <script src="../bower_components/angular-route/angular-route.js"></script>
-  <script src="../bower_components/angular-datepicker/src/js/angular-datepicker.js"></script>
+  <script src="../bower_components/angularjs-datepicker/src/js/angular-datepicker.js"></script>
 
  <!-- ENSP Angular-->
   <script src="app.js"></script>
@@ -169,7 +171,7 @@
 
   <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <script src="../bower_components/ngWYSIWYG/js/wysiwyg.js"></script>
-
+  <script src="js/editor.js"></script>
 
 </body>
 </html>

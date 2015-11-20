@@ -57,6 +57,8 @@ angular.module('myApp.actualite')
     })
 .controller('FormulaireArticleCtrl', function($scope,$routeParams,$location,ActualiteFactory,$filter) {
     $scope.new_article = false;
+
+    $("#txtEditor").Editor();
     var id=$routeParams.id || null;
     if(id!=null)// Edition d'une publication
     {
@@ -67,8 +69,9 @@ angular.module('myApp.actualite')
         $scope.type="Nouvel Article";
     }
     $scope.save_article = function(){
-        if($scope.new_article!=false){
 
+        if($scope.new_article!=false){
+            $scope.new_article.contenue=$(".Editor-editor").html();
             ActualiteFactory.addActualite($scope.new_article);
             // $location.path('/liste-publication')
             console.log($scope.new_article);

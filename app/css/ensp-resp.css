@@ -1,0 +1,44 @@
+@media (min-width: 1200px){
+
+}
+
+@media (min-width: 992px){
+
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    .ensp{
+        max-width: 224px;
+    }
+
+    #search{
+        width: 150px;
+    }
+
+    a.scroll-link{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    #main-nav{
+        padding-right: 0px !important;
+    }
+}
+
+@media (max-width: 768px){
+    .ensp{
+        max-width: 310px;
+    }
+
+    a.scroll-link{
+        margin: 5px !important;
+    }
+
+    .niveau2{
+        margin-top: -5px;
+    }
+
+    div.menu ul ul{
+        width: 100%;
+    }
+}

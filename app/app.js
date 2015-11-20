@@ -5,7 +5,7 @@ var template_url='templates/'; // chemin vers le dossier des templates
 angular.module('myApp', [
   'ngRoute',
   'ngSanitize',
-    'ngWYSIWYG',
+  'ngWYSIWYG',
   'myApp.accueil',
   'myApp.actualite',
   'myApp.header',

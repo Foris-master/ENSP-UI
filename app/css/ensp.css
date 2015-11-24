@@ -7,7 +7,7 @@ header{
 }
 
 footer{
-    background: #c7c7c7;
+    background: #eee;
     padding: 20px 0px;
 }
 
@@ -33,38 +33,18 @@ footer{
 
 /** Menu deroulant **/
 
-.niveau2, .niveau3, .image-categorie{
-    background: #fff;
-    box-shadow: 1px 0px 1px #eee;
-}
-.niveau3{
-    min-height: 333px;
+.menu{
+
 }
 
-/* une petite bordure en top*/
-
-.sousmenu .niveau1 a, .sousmenu .niveau2 a, .sousmenu .niveau3 a{
-    padding: 10px 25px !important;
-    font-size: 13px;
-    float: left;
-    font-weight: bold;
+.menu li{
+    margin: 5px 0px;
 }
 
-div.menu ul ul ,.image-categorie{position: absolute;display:none; width:500px;z-index: 500;}
+.menu li a{
+    color:white;
+}
 
-div.menu ul ul li{width: 200px;}
-
-.niveau2 li a:hover{background: #F97D2F;color: white !important;}
-
-div.menu ul.niveau1 li.sousmenu:hover ul.niveau2,
-
-div.menu ul.niveau2 li.sousmenu:hover ul.niveau3,div.menu ul.niveau2 li.sousmenu:hover .image-categorie {display:block;}
-
-div.menu ul.niveau3 {top:0px; left: 200px;}
-
-div.menu ul.niveau4 {top:0px; left: 200px;}
-
-.image-categorie{top: 0;left: 400px; max-width: 200px; min-height: 333px; background: #fff}
 
 /******Fin Menu****/
 .publication .area1{
@@ -91,10 +71,10 @@ div.menu ul.niveau4 {top:0px; left: 200px;}
     text-transform: uppercase;
 }
 
-#agenda .titre{
-    border-top: 1px solid rgba(8, 7, 7, 0.15);
-    padding-top: 20px ;
-}
+/*#agenda .titre{*/
+    /*border-top: 1px solid rgba(8, 7, 7, 0.15);*/
+    /*padding-top: 20px ;*/
+/*}*/
 
 .pub{
     padding: 10px;
@@ -138,9 +118,9 @@ textarea{
     border-radius: 0px 0px 5px 5px;
 }
 
-.actu-plus:hover{
-    color: #F97D2F;
-}
+/*.actu-plus:hover{*/
+    /*color: #F97D2F;*/
+/*}*/
 
 .actu-container{
     padding-top: 10px;
@@ -165,11 +145,11 @@ textarea{
     font-size: 13px;
 }
 
-.actu-detail a{
+.actu-detail a, .timeline-footer a{
     text-decoration: underline;
 }
 
-.actu-detail a:hover{
+.actu-detail a:hover, .timeline-footer a:hover{
     text-transform: none;
     color:#F97D2F !important;
 }
@@ -211,12 +191,12 @@ textarea{
 .search-form .form-group:hover,
 .search-form .form-group.hover {
     width: 100%;
-    border-bottom: 2px solid #F97D2F;
+    border-bottom: 1px solid #F97D2F;
     background: rgba(0,0,0,0.2);
 }
 .search-form .form-group span.form-control-feedback {
     position: relative;
-    top: -42px;
+    top: -46px;
     left: 1px;
     z-index: 2;
     display: block;
@@ -261,4 +241,30 @@ p.caption{
     color: #FFF;
     font-size: 17px;
     line-height: 20px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.test-sh{
+    box-shadow: 0px 11px 12px #818181;
+    background: #EEE none repeat scroll 0% 0%;
+}
+
+.test-sh1{
+    background: #EEE none repeat scroll 0% 0%;
+    color: #F97D2F !important;
+    border-bottom: 3px solid #F97D2F;
+    padding: 10px !important;
+    border-top-color: transparent !important;
+;
+}
+
+header a:hover{
+    color:#F97D2F;
 }

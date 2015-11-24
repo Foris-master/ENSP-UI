@@ -212,7 +212,8 @@ pre {
 }
 .tabs-left > .nav-tabs {
   float: left;
-  margin-right: 19px;
+  /*margin-right: 19px;*/
+    padding-right: 0px;
   border-right: 1px solid #F97D2F;
 }
 .tabs-left > .nav-tabs > li > a {

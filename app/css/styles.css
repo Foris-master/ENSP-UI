@@ -123,7 +123,7 @@ h6{
 }
 a:hover {
 
-	color:#E0C400 !important;
+	color:#000;
 }
 .btn{
 	display: inline-block;
@@ -403,8 +403,8 @@ a:hover {
 	color: #fff;
 	font-size: 1.2em;
 	line-height: normal;
-	margin: 17px;
-	padding: 6px 0px !important;
+	margin: 10px;
+	padding: 18px 0px !important;
 	border-radius: 5px;
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
@@ -1235,7 +1235,7 @@ figure.effect-bubba:hover a {
 	.navbar-inverse .navbar-nav > li > a {
 		color: #fff;
 		font-size: 1.1em;
-		padding: 6px 0px !important;
+		padding: 18px 0px !important;
 		border-radius: 5px;
 		/*margin: 34px 10px;*/
 	}

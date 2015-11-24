@@ -14,9 +14,9 @@ angular.module('myApp.departement')
             departement: false,
             getDepartements: function () {
                 var deferred = $q.defer();
-                if (factory.departements !== false) {
-                    deferred.resolve(factory.departements);
-                } else {
+                //if (factory.departements !== false) {
+                //    deferred.resolve(factory.departements);
+                //} else {
 
                     $http.get("ressources/departement.json").success(function(data,status){
                         factory.departements = data;
@@ -28,7 +28,7 @@ angular.module('myApp.departement')
                         deferred.reject('Impossible de recuperer les departements');
                     });
 
-                }
+                //}
 
                 return deferred.promise;
 

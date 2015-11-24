@@ -3,7 +3,130 @@
     "idDepartement": 1,
     "nom": "Mason",
     "presentation": "Est sit ut esse in ullamco Lorem reprehenderit. Nostrud consequat laboris aliquip excepteur fugiat do ex non sunt commodo ad occaecat eiusmod. Occaecat ipsum incidDepartementidDepartementunt dolor amet ullamco aute sunt ullamco eiusmod consectetur anim aliqua nulla.",
-    "idDepartementEcole": 10
+    "idDepartementEcole": 10,
+    "image":"banner-bg.jpg",
+    "chefDepartement":
+      {
+        "nom":"Bouetou",
+        "prenom":"Thomas Thomas",
+        "grade":"Pr",
+        "mot":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image":"work/4.jpg"
+      }
+    ,
+    "cours":[
+      {
+        "niveau":3,
+        "semestres":[
+          {
+            "numero":1,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Base de données",
+                "credit":2
+              },
+              {
+                "id":1,
+                "intitule":"Programmation Orientée Objet 1",
+                "credit":4
+              }
+            ]
+          },
+          {
+            "numero":2,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Réseau",
+                "credit":2
+              },
+              {
+                "id":1,
+                "intitule":"Programmation Orientée Objet 2",
+                "credit":4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau":4,
+        "semestres":[
+          {
+            "numero":1,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Intelligence Artificiel",
+                "credit":3
+              },
+              {
+                "id":2,
+                "intitule":"Communication",
+                "credit":2
+              }
+            ]
+          },
+          {
+            "numero":2,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Système Multi-Agent",
+                "credit":4
+              },
+              {
+                "id":1,
+                "intitule":"informatique Decisionnelle",
+                "credit":4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau":5,
+        "semestres":[
+          {
+            "numero":1,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Genie Logiciel 2",
+                "credit":3
+              },
+              {
+                "id":2,
+                "intitule":"Traitement d'image",
+                "credit":2
+              }
+            ]
+          },
+          {
+            "numero":2,
+            "UEs":[{}]
+          }
+        ]
+      }
+    ],
+    "professeur":[
+      {
+        "id":1,
+        "nom":"TAPAMO",
+        "prenom":"",
+        "grade":"Dr",
+        "image":"work/3.jpg"
+
+      },
+      {
+        "id":1,
+        "nom":"Kouamo",
+        "prenom":"Georges",
+        "grade":"Dr",
+        "image":"work/2.jpg"
+      }
+    ]
   }
 
 ]

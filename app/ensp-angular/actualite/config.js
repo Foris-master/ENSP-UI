@@ -29,6 +29,9 @@ angular.module('myApp.actualite', ['ngRoute'])
             .when('/formulaire-actualite/:id?', {
                 templateUrl: template_url+'actualite/formulaire-article.html',
                 controller: 'FormulaireArticleCtrl'
+            })
+            .when('/article', {
+                templateUrl: template_url+'actualite/articles.html'
             });
 
 

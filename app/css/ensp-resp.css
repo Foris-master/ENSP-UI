@@ -23,6 +23,9 @@
     #main-nav{
         padding-right: 0px !important;
     }
+    .header{
+        position: relative;
+    }
 }
 
 @media (max-width: 768px){
@@ -40,5 +43,9 @@
 
     div.menu ul ul{
         width: 100%;
+    }
+
+    .header{
+        position: relative;
     }
 }

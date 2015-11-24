@@ -41,10 +41,6 @@ footer{
     min-height: 333px;
 }
 
-.image-categorie{
-    float: right;
-    width: 200px;
-}
 /* une petite bordure en top*/
 
 .sousmenu .niveau1 a, .sousmenu .niveau2 a, .sousmenu .niveau3 a{
@@ -220,7 +216,7 @@ textarea{
 }
 .search-form .form-group span.form-control-feedback {
     position: relative;
-    top: -56px;
+    top: -42px;
     left: 1px;
     z-index: 2;
     display: block;
@@ -231,4 +227,38 @@ textarea{
     color: #fff;
     left: initial;
     font-size: 18px;
+}
+
+/***** Onglet ************/
+.onglet{
+
+}
+
+.onglet .nav > li > a{
+    padding: 7px 15px;
+}
+
+.onglet a{
+
+}
+
+.onglet a:hover{
+    color: #F97D2F !important;
+}
+
+.carousel-caption {
+    top:auto;
+    width:auto;
+    bottom:60px;
+    padding: 0 10px;
+    background:rgba(0,0,0,0.70);
+    text-align:left;
+    height:auto;
+
+}
+
+p.caption{
+    color: #FFF;
+    font-size: 17px;
+    line-height: 20px;
 }

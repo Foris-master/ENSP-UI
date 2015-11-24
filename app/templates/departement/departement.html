@@ -1,0 +1,80 @@
+
+<section id="aboutUs" class="section">
+  <div class="container">
+    <div class="heading text-center">
+      <!-- Heading -->
+      <h2 class="titre">Departement</h2>
+      <p></p>
+    </div>
+
+    <!-- Article 1 -->
+    <div class="row feature design">
+      <div class="col-lg-12">
+        <div class="tabbable tabs-left onglet">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="/#presentation" data-toggle="tab">Présentation du département</a></li>
+            <li><a href="/#mcd" data-toggle="tab">Mot du Chef de département</a></li>
+            <li><a href="/#cp" data-toggle="tab">Cours & Professeurs</a></li>
+            <li><a href="/#lab" data-toggle="tab">Laboratoire</a></li>
+            <li><a href="/#stat" data-toggle="tab">Statistiques</a></li>
+
+          </ul>
+          <div class="tab-content">
+            <!--Présentation-->
+            <div class="tab-pane active" id="presentation">
+
+
+
+            </div>
+
+            <!--mot du chef de departement-->
+            <div class="tab-pane" id="mcd">Tous les livres</div>
+
+            <!--cours et professeur-->
+            <div class="tab-pane" id="cp">Tous les témoignages</div>
+            <!--laboratoire-->
+            <div class="tab-pane" id="labs">Tous les livres policiers</div>
+
+            <!--statistique-->
+            <div class="tab-pane" id=stat">Tous les romans</div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="row dataTxt hide">
+      <div class="col-md-4 col-sm-6">
+
+        <h3>Elément à télécharger</h3>
+        <p>Description</p>
+        <ul class="listArrow">
+          <li><a href="/#/accueil">Lien 1</a></li>
+          <li><a href="">Lien 1</a></li>
+        </ul>
+        <!-- Accordion starts -->
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+
+        <h3>Dernieres actualité</h3>
+        <p>Lorem ipsum dolor consectetursit amet, consectetur adipiscing elit consectetur euismod </p>
+        <ul  class="list3">
+          <li ng-repeat="n in [1,2,3]"><a href="">Actu {{n}}</a></li>
+          <li><a href="">Plus d'actualité</a></li>
+        </ul>
+
+        <!-- Accordion starts -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>$(".fancybox .qsd").click(function(r){
+  r.preventDefault()
+  $(this).fancybox();
+})</script>

@@ -1,3 +1,4 @@
+
 <section id="aboutUs" class="section contact-parlex">
     <div class="parlex-backs">
         <div class="container">
@@ -10,7 +11,7 @@
             <div class="row mrgn30">
                 <form method="post"  id="contactfrm" role="form">
 
-                    <div class="col-sm-12">
+                    <div class="col-sm-9">
 
                         <div class="form-group">
                             <label for="name">Titre</label>
@@ -27,10 +28,14 @@
                             </select>
                         </div>
 
-                        <!-- editor -->
                         <div class="form-group">
+                            <textarea ng-model="new_article.contenue" id="txtEditor">http://www.jqueryscript.net/text/Responsive-WYSIWYG-Text-Editor-with-jQuery-Bootstrap-LineControl-Editor.html</textarea>
+                        </div>
+
+                        <!-- editor -->
+                        <div class="form-group hide">
                             <label for="name">Contenu</label>
-                            <wysiwyg-edit content="new_article.contenue" class=""></wysiwyg-edit>
+                            <wysiwyg-edit content="new_article.contenuesss" class=""></wysiwyg-edit>
                         </div>
                         <!-- /editor -->
                         <div class="form-group">
@@ -47,8 +52,8 @@
         <!--/.container-->
     </div>
 
+
+
 </section>
-
-
 
 

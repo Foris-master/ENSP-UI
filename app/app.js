@@ -10,6 +10,7 @@ angular.module('myApp', [
   'myApp.actualite',
   'myApp.header',
   'myApp.publication',
+  'myApp.departement',
   'myApp.concours',
   'simplePagination'
 ]).

@@ -3,29 +3,29 @@
  */
 
 /******************************************************************************************************************
- services pour le module Departement
+ services pour le module Personnel
  *****************************************************************************************************************/
-angular.module('myApp.departement')
-    .factory('DepartementFactory', function ($http,$filter,$q) {
+angular.module('myApp.personnel')
+    .factory('PersonnelFactory', function ($http,$filter,$q) {
 
 
         var factory = {
-            departements: false,
-            departement: false,
-            getDepartements: function () {
+            personnels: false,
+            personnel: false,
+            getPersonnels: function () {
                 var deferred = $q.defer();
-                //if (factory.departements !== false) {
-                //    deferred.resolve(factory.departements);
+                //if (factory.personnels !== false) {
+                //    deferred.resolve(factory.personnels);
                 //} else {
 
-                    $http.get("ressources/departement.json").success(function(data,status){
-                        factory.departements = data;
+                    $http.get("ressources/personnel.json").success(function(data,status){
+                        factory.personnels = data;
 
-                        deferred.resolve(factory.departements);
+                        deferred.resolve(factory.personnels);
 
                     }).error(function(data,status){
                         console.log(status);
-                        deferred.reject('Impossible de recuperer les departements');
+                        deferred.reject('Impossible de recuperer les personnels');
                     });
 
                 //}
@@ -33,10 +33,10 @@ angular.module('myApp.departement')
                 return deferred.promise;
 
             },
-            getDepartement: function (id) {
+            getPersonnel: function (id) {
                 var deffered = $q.defer();
-                var departements = factory.getDepartements().then(function(services){
-                    deffered.resolve($filter('filter')(factory.departements,{idDepartement:parseInt(id)},true)[0]);
+                var personnels = factory.getPersonnels().then(function(services){
+                    deffered.resolve($filter('filter')(factory.personnels,{idPersonnel:parseInt(id)},true)[0]);
                 },function(msg){
                     deffered.reject(msg);
                 });
@@ -45,11 +45,11 @@ angular.module('myApp.departement')
 
 
             },
-            addDepartement: function (departement) {
+            addPersonnel: function (personnel) {
                 var defferd = $q.defer();
-                factory.getDepartements().then(function(res){
-                    console.log(factory.departements);
-                    factory.departements.push(departement);
+                factory.getPersonnels().then(function(res){
+                    console.log(factory.personnels);
+                    factory.personnels.push(personnel);
                 })
 
 

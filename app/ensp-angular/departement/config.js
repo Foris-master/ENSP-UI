@@ -23,4 +23,5 @@ angular.module('myApp.departement', ['ngRoute'])
                 templateUrl: template_url+'departement/formulaire-departement.html',
                 controller: 'FormulaireDepartementCtrl'
             });
+        $routeProvider.otherwise({redirectTo: '/liste-departement'});
     }]);

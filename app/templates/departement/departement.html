@@ -1,17 +1,16 @@
 
-<section id="aboutUs" class="section">
+<section id="departement" class="section informatique" style="background: url('images/gi.JPG') no-repeat;background-size: cover">
   <div class="container">
-    <div class="heading text-center">
+    <div class="heading text-center" style="margin-left: -25px;margin-right: -25px; background: #eee">
       <!-- Heading -->
       <h2 class="titre">{{departement.nom}}</h2>
-      <p></p>
     </div>
 
     <!-- Article 1 -->
     <div class="row feature design">
       <div class="col-lg-12">
         <div class="tabbable tabs-left onglet row">
-          <ul class="nav nav-tabs col-lg-2">
+          <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
             <li class="active"><a href="/#presentation" data-toggle="tab">Présentation du département</a></li>
             <li><a href="/#mcd" data-toggle="tab">Mot du Chef de département</a></li>
             <li><a href="/#cp" data-toggle="tab">Cours & Professeurs</a></li>
@@ -20,7 +19,7 @@
 
           </ul>
 
-          <div class="tab-content col-lg-10">
+          <div class="tab-content col-lg-10 col-sm-10 col-xs-10">
             <!--Présentation-->
             <div class="tab-pane active" id="presentation">
               <h4 class="">Présentation du {{departement.nom}}</h4>
@@ -29,10 +28,122 @@
                   <p>{{departement.presentation}}</p>
                 </div>
                 <div class="col-lg-3">
-                  <img src="images/{{departement.image}}" alt=""/>
+                  <img src="images/{{departement.image[0]}}" alt=""/>
                 </div>
               </div>
 
+              <div class="col-lg-12">
+                <div id="myCarousel" class="carousel slide" style="border-bottom-color: transparent">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[1]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[2]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[3]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[4]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[5]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[6]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[7]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{departement.image[8]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="left carousel-control" href="/#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
+                  <a class="right carousel-control" href="/#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
+
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                  </ol>
+                </div><!-- End Carousel -->
+              </div>
+              <style>
+
+
+
+                .carousel-control {
+                  color:#fff;
+                  top:40%;
+                  color:#F97D2F;;
+                  bottom:auto;
+                  padding-top:4px;
+                  width:30px;
+                  height:30px;
+                  text-shadow:none;
+                  opacity:1;
+                  display: block;
+                }
+                .carousel-control:hover {
+                  color: #eee;
+                }
+                .carousel-control.left, .carousel-control.right {
+                  background-image:none !important;
+                }
+                .carousel-control.right {
+                  left:auto;
+                  right:-32px;
+                }
+                .carousel-control.left {
+                  right:auto;
+                  left:-32px;
+                }
+
+                .carousel-indicators {
+                  bottom:-40px;
+                }
+                .carousel-indicators li {
+                  border-radius:0;
+                  width:10px;
+                  height:10px;
+                  background:#ccc;
+                  border:1px solid #ccc;
+                }
+                .carousel-indicators .active {
+                  width:12px;
+                  height:12px;
+                  background:#F97D2F;
+                  border-color:#F97D2F;
+                }
+
+              </style>
             </div>
 
             <!--mot du chef de departement-->
@@ -40,8 +151,8 @@
               <h4 class="">Mot du Chef de Département</h4>
               <div class="row">
                 <div class="col-lg-9">
-                  <p><span class="italic">{{departement.chefDepartement.grade}}.</span> <span class="bold"> {{departement.chefDepartement.prenom}} {{departement.chefDepartement.nom}}</span></p>
-                  <blockquote style="font-style: italic">
+                  <p><span class="italic">{{departement.chefDepartement.grade}}.</span> <a href="#/enseignant/{{departement.chefDepartement.id}}"><span class="bold"> {{departement.chefDepartement.prenom}} {{departement.chefDepartement.nom}}</span></a></p>
+                  <blockquote class="italic">
                     <span class="fa fa-quote-left"></span>
                     {{departement.chefDepartement.mot}}
                     <span class="fa fa-quote-right"></span>.
@@ -56,17 +167,26 @@
             <!--cours et professeur-->
             <div class="tab-pane" id="cp">
               <h4>Cours et Professeurs</h4>
-              <h5>Cours</h5>
+              <h5><i class="fa fa-angle-double-right"></i> Cours</h5>
               <div class="row">
-                <div class="col-lg-4" ng-repeat="c in departement.cours">
+                <div class="col-lg-3 cours" ng-repeat="c in departement.cours">
                   <h6>Niveau {{c.niveau}}</h6>
-                  Semestre 1
-                  <ul class="nav nav-bar">
-                    <li ng-repeat="ue in c.semestres[0].UEs"><a href="">{{ue.intitule}}</a></li>
+                  <a href="" class="accordion"  data-toggle="collapse" data-target="#sem{{c.niveau}}1">
+                    Semestre 1
+                    <span class="pull-right badge noir-bg"><i class="fa fa-angle-right"></i></span>
+                  </a>
+                  <ul id="sem{{c.niveau}}1" class="nav nav-bar collapse">
+                    <li ng-repeat="ue in c.semestres[0].UEs">
+                      <a href="" class="no-link">{{ue.intitule}}</a>
+                    </li>
                   </ul>
-                  semestre 2
-                  <ul class="nav nav-bar">
-                    <li ng-repeat="ue in c.semestres[1].UEs"><a href="">{{ue.intitule}}</a></li>
+                  <div class="clearfix"></div>
+                  <a href="" class="accordion"  data-toggle="collapse" data-target="#sem{{c.niveau}}2">
+                    Semestre 2
+                    <span class="pull-right badge noir-bg"><i class="fa fa-angle-right"></i></span>
+                  </a>
+                  <ul id="sem{{c.niveau}}2" class="nav nav-bar collapse">
+                    <li ng-repeat="ue in c.semestres[1].UEs"><a href="" class="no-link">{{ue.intitule}}</a></li>
                   </ul>
                 </div>
               </div>
@@ -74,7 +194,7 @@
                 <li ng-repeat="c in departement.cours"><a href="#/cours/{{c.id}}">{{c.intitule}}</a></li>
               </ul>
 
-              <h5>Professeurs</h5>
+              <h5><i class="fa fa-angle-double-right"></i> Professeurs</h5>
               <div class="row actu-container">
                 <div class="col-lg-4 col-sm-4 col-xs-4" ng-repeat="p in departement.professeurs |filter:searchKey | orderBy : '-nom' : true | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
                   <div class="actu row">
@@ -82,8 +202,7 @@
                       <img src="images/{{p.image}}" alt=""/>
                     </div>
                     <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
-                      <h3>{{p.prenom}} {{p.nom}}</h3>
-                      <p>{{p.grade}}.</p>
+                      <h3><span class="italic">{{p.grade}}. </span> {{p.prenom}} {{p.nom}}</h3>
                       <a href="#/professeur/{{a.idActualite}}">Voir le profil</a>
                     </div>
                   </div>
@@ -91,10 +210,36 @@
               </div>
             </div>
             <!--laboratoire-->
-            <div class="tab-pane" id="labs">Tous les livres policiers</div>
+            <div class="tab-pane" id="lab">
+              <h4 class="">Laboratoires d'étude du {{departement.nom}}</h4>
+              <div class="rows" ng-repeat="l in departement.laboratoires">
+                <h5>{{l.nom}}</h5>
+                <div class="col-lg-9">
+                  <p>Responsable :<span class="bold"> {{l.responsable}}</span></p>
+                  <blockquote>
+                    {{l.description}}
+                  </blockquote>
+                </div>
+                <div class="col-lg-3">
+                  <img src="images/{{l.image}}" alt=""/>
+                </div>
+                <hr/>
+              </div>
+
+            </div>
 
             <!--statistique-->
-            <div class="tab-pane" id=stat">Tous les romans</div>
+            <div class="tab-pane" id="stat">
+              <h4 class="">Statistique du {{departement.nom}}</h4>
+              <div id="nv3"  style="min-width: 60%; height: 400px; margin: 0 auto"></div>
+
+              <hr/>
+              <div id="nv4" style=" height: 400px; margin: 0 auto"></div>
+
+              <hr/>
+              <div id="nv5" style="height: 400px; margin: 0 auto"></div>
+
+            </div>
           </div>
         </div>
       </div>
@@ -104,35 +249,6 @@
 
 
 
-    <div class="row dataTxt hide">
-      <div class="col-md-4 col-sm-6">
 
-        <h3>Elément à télécharger</h3>
-        <p>Description</p>
-        <ul class="listArrow">
-          <li><a href="/#/accueil">Lien 1</a></li>
-          <li><a href="">Lien 1</a></li>
-        </ul>
-        <!-- Accordion starts -->
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-
-        <h3>Dernieres actualité</h3>
-        <p>Lorem ipsum dolor consectetursit amet, consectetur adipiscing elit consectetur euismod </p>
-        <ul  class="list3">
-          <li ng-repeat="n in [1,2,3]"><a href="">Actu {{n}}</a></li>
-          <li><a href="">Plus d'actualité</a></li>
-        </ul>
-
-        <!-- Accordion starts -->
-      </div>
-
-    </div>
   </div>
 </section>
-
-<script>$(".fancybox .qsd").click(function(r){
-  r.preventDefault()
-  $(this).fancybox();
-})</script>

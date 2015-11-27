@@ -9,7 +9,7 @@
 /******************************************************************************************************************
                                 routes pour le module publications
  *****************************************************************************************************************/
-angular.module('myApp.publication', ['ngRoute','720kb.datepicker'])
+app_publication
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/publication/:id', {

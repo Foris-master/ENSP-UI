@@ -6,7 +6,7 @@
 /******************************************************************************************************************
                         services pour le module publications
  *****************************************************************************************************************/
-angular.module('myApp.publication')
+app_publication
 .factory('PublicationFactory', function ($http,$filter,$q) {
 
 

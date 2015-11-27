@@ -1,0 +1,19 @@
+/**
+ * Created by evaris on 25/11/2015.
+ */
+
+ Ce fichier existe pour faciliter la prise en main de ce projet par les developpeur , il decrit les technologies javascript
+qui sont utilisees dans le projet et propose un lien pour leur apprentissage.
+
+NB: Son contenu n'est pas statisque loin de la, il est cense etre enrichir par les etudiants travaillants sur le projet
+ceux pour les technilogies avenir les ajouter en suivant le templates present (ou mieux)
+Grunt :
+Interert
+Grunt est un module node js qui permet d’automatiser les taches de deploiment telsque :
+    La réunification des fichier css et js
+    La minification des fichiers css et js
+    Le lancement des tests
+    La validation de la structure du code
+    Le lancement du projet
+NB : Cette liste est exaushive, vous avez dont la possibilité de créer des taches customizées adaptées à vos besions.
+Lien tuto

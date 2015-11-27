@@ -7,7 +7,7 @@
             services pour le module concours
  *****************************************************************************************************************/
 
-angular.module('myApp.concours')
+app_concours
     .factory('ConcoursFactory', function ($http,$q) {
 
 

@@ -8,7 +8,7 @@
 /******************************************************************************************************************
                                     routes pour le module  concours
  *****************************************************************************************************************/
-angular.module('myApp.concours', ['ngRoute','720kb.datepicker'])
+app_concours
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider.when('/formulaire-concours/', {
         templateUrl: template_url+'concours/formulaire-concours.html',

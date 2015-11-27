@@ -7,7 +7,7 @@ var template_url='templates/'; // chemin vers le dossier des templates
 /******************************************************************************************************************
  routes pour le module accueil
  *****************************************************************************************************************/
-angular.module('myApp.accueil', ['ngRoute'])
+app_accueil
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/accueil', {

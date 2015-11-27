@@ -7,7 +7,7 @@
 /******************************************************************************************************************
  routes pour le module Departements
  *****************************************************************************************************************/
-angular.module('myApp.departement', ['ngRoute'])
+app_departement
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/liste-departement', {

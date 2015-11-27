@@ -9,20 +9,18 @@
 /******************************************************************************************************************
  controlleur pour le module actualité
  *****************************************************************************************************************/
-angular.module('myApp.actualite')
-    .controller('ListeActualiteCtrl', function($scope,ActualiteFactory,$filter,Pagination) {
+app_actualite
+    .controller('ListeActualiteCtrl', function($scope,ActualiteFactory,$filter) {
 
-        $scope.pagination = Pagination.getNew(15);
+        $scope.par_page = 15;
 
 
         $scope.loadActualite=function(){
             ActualiteFactory.getActualites().then(
                 function(data){
 
-                    $scope.totalPages=data.length;
+
                     $scope.actualites=data;
-                    $scope.pagination.numPages = Math.ceil(data.length/$scope.pagination.perPage);
-                    console.log($scope.actualites);
 
                 },function(msg){
                     console.log(msg);

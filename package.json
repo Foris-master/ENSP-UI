@@ -1,0 +1,39 @@
+{
+  "name": "ensp-ui",
+  "version": "1.0.0",
+  "description": "Ceci est l'interface avec les utilisateurs de la plateforme de l'ecole national superieur polytechnique. C'est une couche qui consomme les services fournit par la plateforme de l'ENSP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foris-master/ENSP-UI.git"
+  },
+  "keywords": [
+    "ENSP"
+  ],
+  "author": "Foris-master",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Foris-master/ENSP-UI/issues"
+  },
+  "homepage": "https://github.com/Foris-master/ENSP-UI#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-karma": "^0.12.1",
+    "grunt-text-replace": "^0.4.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-jasmine": "^0.3.6",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}

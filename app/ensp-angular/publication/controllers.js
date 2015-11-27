@@ -6,7 +6,7 @@
 /******************************************************************************************************************
  controlleur pour le module publication
  *****************************************************************************************************************/
-angular.module('myApp.publication')
+app_departement
 
     .controller('FormulairePublicationCtrl', function($scope,$routeParams,$location,PublicationFactory,$filter) {
         $scope.new_publication = false;
@@ -31,28 +31,25 @@ angular.module('myApp.publication')
         }
     })
 
-    .controller('ListePublicationCtrl', function($scope,$routeParams,PublicationFactory,$filter,Pagination) {
+    .controller('ListePublicationCtrl', function($scope,$routeParams,PublicationFactory,$filter) {
         $scope.auteur =$routeParams.auteur || null;
-
-        $scope.pagination = Pagination.getNew(15);
+        $scope.par_page = 15;
 
 
         $scope.loadPublication=function(){
             PublicationFactory.getPublications().then(
                 function(data){
 
-                    $scope.totalPages=data.length;
+
                     if($scope.auteur!=null)// On affiche les publications d'un auteur
                     {
-                        $scope.pagination.numPages = Math.ceil(data.length/$scope.pagination.perPage);
                         $scope.publications=$filter('filter')(data,{auteur:$scope.auteur},true);
                         $scope.all=true;
                     }
                     else // on affiche toutes les publications
                     {
                         $scope.publications=data;
-                        $scope.pagination.numPages = Math.ceil(data.length/$scope.pagination.perPage);
-                        console.log($scope.publications);
+
                     }
 
                 },function(msg){

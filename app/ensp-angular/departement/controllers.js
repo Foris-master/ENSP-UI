@@ -6,7 +6,7 @@
 /******************************************************************************************************************
  controlleur pour le module Departement
  *****************************************************************************************************************/
-angular.module('myApp.departement')
+app_departement
     .controller('ListeDepartementCtrl', function($scope,DepartementFactory,$filter,Pagination) {
 
         $scope.pagination = Pagination.getNew(15);

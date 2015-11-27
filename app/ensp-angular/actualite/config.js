@@ -7,7 +7,7 @@
 /******************************************************************************************************************
  routes pour le module actualites
  *****************************************************************************************************************/
-angular.module('myApp.actualite', ['ngRoute'])
+app_actualite
 
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/liste-actualite', {

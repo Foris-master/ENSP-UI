@@ -5,7 +5,7 @@
 /******************************************************************************************************************
  controlleur pour le module concours
  *****************************************************************************************************************/
-angular.module('myApp.concours')
+app_concours
     .controller('FormulaireConcoursCtrl', function($scope,$routeParams,$location,PublicationFactory,$filter) {
         $scope.new_concours = false;
         var id=$routeParams.id || null;

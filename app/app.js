@@ -20,6 +20,7 @@ angular.module('myApp', [
   'myApp.header',
   'myApp.publication',
   'myApp.departement',
+  'myApp.personnel',
   'myApp.concours',
   'angularUtils.directives.dirPagination'
 ]).

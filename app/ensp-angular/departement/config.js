@@ -23,4 +23,5 @@ app_departement
                 templateUrl: template_url+'departement/formulaire-departement.html',
                 controller: 'FormulaireDepartementCtrl'
             });
+        $routeProvider.otherwise({redirectTo: '/liste-departement'});
     }]);

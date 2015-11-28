@@ -11,9 +11,28 @@ footer{
     padding: 20px 0px;
 }
 
+/**** Couleur ****/
+.orange-bg{
+    background: #F97D2F;
+}
+
+.orange{
+    color:#F97D2F;
+}
+
+.noir-bg{
+    background: #000;
+}
+
+.noir{
+    color:#000;
+}
+
+/**** fin couleur ****/
+
 .section{
     margin-top:70px;
-    background: #e9e9e9;
+    /*background: #e9e9e9;*/
 }
 
 .section .area1{
@@ -45,6 +64,10 @@ footer{
     color:white;
 }
 
+.menu .dropdown-menu li a:hover{
+    text-decoration:underline;
+}
+
 
 /******Fin Menu****/
 .publication .area1{
@@ -69,6 +92,8 @@ footer{
 
 .titre{
     text-transform: uppercase;
+    padding: 20px !important;
+    margin-top: 0px;
 }
 
 /*#agenda .titre{*/
@@ -267,4 +292,63 @@ p.caption{
 
 header a:hover{
     color:#F97D2F;
+}
+
+.cours{
+    background: #eee;
+    margin: 0 14px;
+}
+
+.cours h6{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 0px;
+    background: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#departement{
+    padding-top: 25px;
+}
+
+#departement .container{
+    box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.3);
+}
+
+#departement .heading{
+    padding: 0px;
+}
+
+#departement h5{
+    font-style: italic;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: 4px;
+}
+
+.informatique h2.titre{
+    background: url("../images/banniere_accueil.jpg") no-repeat;
+    background-size: cover;
+    color:white;
+}
+
+.no-link{
+    color:#000;
+    cursor: default;
+}
+
+.no-link:hover{
+    text-decoration: none;
+    color:#000 !important;
+}
+
+a.accordion{
+    margin: 10px auto;
+}
+
+.highcharts-button{
+    display: none;
 }

@@ -33,7 +33,7 @@
   <link rel="icon" href="images/favicon.png" type="image/png" translate="none" />
     <!-- editeur  riche-->
     <link rel="stylesheet" href="../bower_components/ngWYSIWYG/css/editor.css" />
-  <link rel="stylesheet" href="../bower_components/angular-loading-bar/build/loading-bar.min.css" />
+  <link rel='stylesheet' href='../bower_components/textAngular/dist/textAngular.css'>
   <link rel="stylesheet" href="css/editor.css"/>
 </head>
 <body ng-app="myApp" ng-controller="headerCtrl">
@@ -226,29 +226,30 @@
   <script src="../bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
   <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
 
- <!--&lt;!&ndash; ENSP Angular&ndash;&gt;-->
+ <!--&lt;!&ndash; ENSP Angular&ndash;&gt;
   <script src="app.js"></script>
-  <!--&lt;!&ndash;Module Accueil&ndash;&gt;-->
+  &lt;!&ndash;Module Accueil&ndash;&gt;
   <script src="ensp-angular/accueil/config.js"></script>
   <script src="ensp-angular/accueil/services.js"></script>
   <script src="ensp-angular/accueil/controllers.js"></script>
 
-<!--&lt;!&ndash;Module Publication&ndash;&gt;-->
+&lt;!&ndash;Module Publication&ndash;&gt;
   <script src="ensp-angular/publication/config.js"></script>
   <script src="ensp-angular/publication/services.js"></script>
   <script src="ensp-angular/publication/controllers.js"></script>
 
-<!--&lt;!&ndash;Module Actualite&ndash;&gt;-->
+&lt;!&ndash;Module Actualite&ndash;&gt;
   <script src="ensp-angular/actualite/config.js"></script>
   <script src="ensp-angular/actualite/services.js"></script>
   <script src="ensp-angular/actualite/controllers.js"></script>
+  <script src="ensp-angular/actualite/directives.js"></script>
 
-  <!--&lt;!&ndash;Module Departement&ndash;&gt;-->
+  &lt;!&ndash;Module Departement&ndash;&gt;
   <script src="ensp-angular/departement/config.js"></script>
   <script src="ensp-angular/departement/services.js"></script>
   <script src="ensp-angular/departement/controllers.js"></script>
 
-<!--&lt;!&ndash;Module Concours&ndash;&gt;-->
+&lt;!&ndash;Module Concours&ndash;&gt;
   <script src="ensp-angular/concours/config.js"></script>
   <script src="ensp-angular/concours/services.js"></script>
   <script src="ensp-angular/concours/controllers.js"></script>
@@ -257,6 +258,8 @@
   <script src="ensp-angular/personnel/config.js"></script>
   <script src="ensp-angular/personnel/services.js"></script>
   <script src="ensp-angular/personnel/controllers.js"></script>
+  <!--<script src="ensp-angular/ensp.built.min.js"></script>-->
+  <script src="ensp-angular/concours/controllers.js"></script>
   <!--<script src="ensp-angular/ensp.built.min.js"></script>-->
 
   <script src="js/modernizr-latest.js"></script>
@@ -273,6 +276,10 @@
 
   <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <script src="../bower_components/ngWYSIWYG/js/wysiwyg.js"></script>
+  <script src='../bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+  <script src='../bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
+  <script src='../bower_components/textAngular/dist/textAngular.min.js'></script>
+
   <script src="js/editor.js"></script>
   <script src="js/highcharts.src.js"></script>
 

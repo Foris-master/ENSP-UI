@@ -52,33 +52,6 @@ app_departement
     })
 
 
-.controller('FormulaireArticleCtrl', function($scope,$routeParams,$location,DepartementFactory,$filter) {
-    $scope.new_article = false;
-
-    $("#txtEditor").Editor();
-    var id=$routeParams.id || null;
-    if(id!=null)// Edition d'une publication
-    {
-        $scope.type="Edition de Concours";
-    }
-    else // creation d'une publication
-    {
-        $scope.type="Nouvel Article";
-    }
-    $scope.save_article = function(){
-
-        if($scope.new_article!=false){
-            $scope.new_article.contenue=$(".Editor-editor").html();
-            DepartementFactory.addDepartement($scope.new_article);
-            // $location.path('/liste-publication')
-            console.log($scope.new_article);
-        }else{
-            console.log('veullez remplir les champs');
-        }
-
-        console.log($scope.new_article);
-    }
-});
 
 function paintGraph(statistique){
     angular.forEach(statistique, function(s, key) {

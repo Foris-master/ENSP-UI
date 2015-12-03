@@ -25,13 +25,14 @@ angular.module('myApp', [
   'myApp.personnel',
   'myApp.concours',
   'angularUtils.directives.dirPagination',
-    'angular-loading-bar'
+    'angular-loading-bar',
+  'textAngular'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/accueil'});
       $routeProvider.when('/us', {
         templateUrl: template_url+'us.html',
-        title:"Equipe de RÃ©alisation"
+        title:"Equipe de Réalisation"
       })
 }])
     .config(['cfpLoadingBarProvider',function(cfpLoadingBarProvider){

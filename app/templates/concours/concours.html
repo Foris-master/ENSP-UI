@@ -1,0 +1,54 @@
+<section class="main-section section" id="concours" autoscroll="true">
+    <div class="container">
+        <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
+            <!-- Heading -->
+            <h2 class="titre">Concours</h2>
+        </div>
+
+        <!-- Article 1 -->
+        <div class="row feature design" ng-repeat="n in [1,3]">
+            <div class="col-lg-12">
+                <h3 class="titre">niveau {{n}}</h3>
+            </div>
+
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <a href="#/communique/niveau-{{n}}" class="col-lg-20 col-sm-20 col-xs-20 col-md-20 text-center">
+                    <div class="box-item">
+                        <i class="circle fa fa-comment fa-5x"></i>
+                        <h4>Communiqué</h4>
+                    </div>
+                </a>
+                <a href="#/pieces/niveau-{{n}}" class="col-lg-20 col-sm-20 col-xs-20 col-md-20 text-center">
+                    <div class="box-item">
+                        <i class="circle fa fa-comment fa-5x"></i>
+                        <h4>Pièces Requises</h4>
+                    </div>
+                </a>
+                <a href="#/notice/niveau-{{n}}" class="col-lg-20 col-sm-20 col-xs-20 col-md-20 text-center">
+                    <div class="box-item">
+                        <i class="circle fa fa-comment fa-5x"></i>
+                        <h4>Notice</h4>
+                    </div>
+                </a>
+                <a href="#/formulaire-concours/niveau-{{n}}/inscription" class="col-lg-20 col-sm-20 col-xs-20 col-md-20 text-center">
+                    <div class="box-item">
+                        <i class="circle fa fa-comment fa-5x"></i>
+                        <h4>Inscription</h4>
+                    </div>
+                </a>
+                <a href="#/liste-candidat/niveau-{{n}}" class="col-lg-20 col-sm-20 col-xs-20 col-md-20 text-center">
+                    <div class="box-item">
+                        <i class="circle fa fa-list fa-5x"></i>
+                        <h4>Liste Candidats</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</section>
+

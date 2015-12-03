@@ -1,10 +1,9 @@
 
-    <section id="aboutUs" class="section">
+    <section id="aboutUs"  class="main-section section">
         <div class="container">
             <div class="heading text-center">
                 <!-- Heading -->
-                <h2 class="titre">A propos de l'ENSP</h2>
-                <p></p>
+                <h2 class="titre">Présentation de l'ENSP</h2>
             </div>
             <!-- ENSP en Bref -->
             <div class="row feature design">
@@ -42,7 +41,7 @@
                         Nec et jority have suffered alteration. </p>
                     <p>Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
                         Nec et amet vidisse mentitumsstie percipitoleat fabulas. </p>
-                    <a href="#" class="btn a">Request Quote</a>
+
                 </div>
                 <div class="area2 columns feature-media left">
                     <div class="col-lg-12">
@@ -70,7 +69,7 @@
                         Nec et jority have suffered alteration. </p>
                     <p>Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
                         Nec et amet vidisse mentitumsstie percipitoleat fabulas. </p>
-                    <a href="#" class="btn a">Request Quote</a>
+
                 </div>
                 <div class="area2 columns feature-media right">
                     <div class="col-lg-12">
@@ -89,38 +88,19 @@
                     </div>
                 </div>
             </div>
-
-            <div class="row dataTxt">
-                <div class="col-md-4 col-sm-6">
-
-                    <h3>Nos départements</h3>
-                    <p>Lorem ipsum dolor consectetursit amet, consectetur adipiscing elit consectetur euismod </p>
-                    <ul class="listArrow">
-                        <li>Mathématique et Siences Physiques</li>
-                        <li>Génie Civil</li>
-                        <li>Génie Electrique</li>
-                        <li>Génie Industriel</li>
-                        <li>Génie Informatique</li>
-                        <li>Génie Mécanique</li>
-                        <li>Génie Télécommunication</li>
-                    </ul>
-                    <!-- Accordion starts -->
+            <hr/>
+            <div class="row dataTxt" ng-controller="ListeDepartementCtrl">
+                <h3 style="margin-top: 0px;">Nos Départements</h3>
+                <div class="col-lg-12" ng-repeat="d in departements">
+                    <div class="col-lg-2">
+                        <img src="images/{{d.image[0]}}" alt="departement"/>
+                    </div>
+                    <div class="col-lg-10">
+                        <h3><a href="#/departement/{{d.idDepartement}}">{{d.nom}}</a></h3>
+                        <span class="bold">Chef de departement</span> : <a href="#/enseignant/{{d.chefDepartement.cygle}}"><span class="italic">{{d.chefDepartement.grade}}.</span> <span class="bold">{{d.chefDepartement.prenom}} {{d.chefDepartement.nom}}</span></a>
+                        <p>{{d.presentation | limitTo : 200}} ...</p>
+                    </div>
                 </div>
-
-                <div class="col-md-4 col-sm-6">
-
-                    <h3>Latest News</h3>
-                    <p>Lorem ipsum dolor consectetursit amet, consectetur adipiscing elit consectetur euismod </p>
-                    <ul  class="list3">
-                        <li>Lorem ipsum dolor consectetursit</li>
-                        <li>Has molestie percipit an Falli</li>
-                        <li>Falli volumus efficiantur sed id</li>
-                        <li>Lorem ipsum dolor consectetu</li>
-                    </ul>
-
-                    <!-- Accordion starts -->
-                </div>
-
             </div>
         </div>
     </section>

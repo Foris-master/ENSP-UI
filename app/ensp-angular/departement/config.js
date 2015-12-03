@@ -14,7 +14,7 @@ app_departement
             templateUrl: template_url+'departement/liste-departement.html',
             controller: 'ListeDepartementCtrl'
         })
-            .when('/departement/:id', {
+            .when('/departement/:cygle', {
                 templateUrl: template_url+'departement/departement.html',
                 controller: 'DepartementCtrl'
             })

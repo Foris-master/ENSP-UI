@@ -310,29 +310,39 @@ header a:hover{
     font-weight: bold;
 }
 
-#departement{
-    padding-top: 25px;
+.main-section {
+    background: url('../images/ensp/ensp-bg.png') no-repeat;
+    background-size: cover;
+    padding-top: 20px;
 }
 
-#departement .container{
+.main-section .container{
     box-shadow: 1px 0px 13px rgba(0, 0, 0, 0.3);
 }
 
-#departement .heading{
-    padding: 0px;
+.main-section h2.titre{
+    background: rgba(0,0,0,0.3);
+    color: white;
 }
 
-#departement h5{
+.main-section .heading{
+    padding: 0px;
+    margin-left: -25px;
+    margin-right: -25px;
+    background-size: cover;
+}
+
+.main-section h5{
     font-style: italic;
     font-weight: bold;
     border-bottom: 1px solid rgb(238, 238, 238);
-    padding-bottom: 4px;
+    padding-bottom: 7px;
+    margin-top: 15px;
 }
 
-.informatique h2.titre{
+.informatique .heading{
     background: url("../images/banniere_accueil.jpg") no-repeat;
     background-size: cover;
-    color:white;
 }
 
 .no-link{
@@ -351,4 +361,61 @@ a.accordion{
 
 .highcharts-button{
     display: none;
+}
+
+.dropdown-menu{
+    width: 700px !important;
+    margin-top: 7px !important;
+    border-bottom: 1px solid #F97D2F;
+}
+
+#aboutUs .heading{
+    background: url('../images/ensp/banniere-ensp.png') no-repeat;
+    background-size: cover;
+}
+
+#personnel .heading, .personnel .heading{
+    background: url('../images/ensp/banniere-ensp.png') no-repeat;
+    background-size: cover;
+}
+
+#concours .heading{
+    background: url('../images/ensp/banniere-ensp.png') no-repeat;
+    background-size: cover;
+}
+
+#personnel .actu{
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.table td p{
+    color: rgba(0, 0, 0, 0.58);
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: rgba(249, 125, 47, 0.15) !important;
+}
+
+span.detail{
+    font-weight: bold;
+    font-style: italic;
+    color:#F97D2F;
+}
+
+#concours .circle{
+    color: #453838;
+}
+
+#concours .box-item h4{
+    padding-bottom: 10px;
+}
+
+caption .form-control{
+    display: inline-block;
+}
+
+.ancre{
+    border-left: 5px solid rgb(249, 125, 47);
+    padding-left: 5px;
 }

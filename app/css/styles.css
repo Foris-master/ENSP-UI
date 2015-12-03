@@ -3,8 +3,39 @@ Author URI: http://webthemez.com/
 Email: webthemez@gmail.com
 */
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(font/open-sans/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(font/open-sans/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(font/open-sans/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Oswald Regular'), local('Oswald-Regular'), url(font/oswald/bH7276GfdCjMjApa_dkG6VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Oswald Bold'), local('Oswald-Bold'), url(font/oswald/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -114,12 +145,19 @@ h6{
 	color: #BEBEBE;
 }
 .btn {
-	color:#000;
+	color:#fff;
 	background: #F97D2F;
+	border: 1px solid #F97D2F !important;
+	font-weight: bold !important;
+	transition: all 0.2s linear 0s;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
 }
 .btn:hover {
-	color:#444 !important;
-	background:#E0C400;
+	color:#000 !important;
+	background:transparent;
+	border: 1px solid #000 !important;
 }
 a:hover {
 
@@ -139,7 +177,7 @@ a:hover {
 }
 .form-control {
 	border: none;
-	padding: 22px 4px;
+	/*padding: 22px 4px;*/
 	outline: none;
 	color: #5A5A5A;
 	margin: 0;
@@ -596,8 +634,8 @@ img, video, iframe, embed, object {
     -------------------------------------------------*/
 #aboutUs {
 	/*background: #fff;*/
-	padding-top: 35px;
-	padding-bottom: 25px;
+	/*padding-top: 35px;*/
+	/*padding-bottom: 25px;*/
 	overflow: hidden;
 }
 #aboutUs .feature {

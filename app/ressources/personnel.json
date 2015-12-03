@@ -1,29 +1,129 @@
 [
   {
-    "idPersonnel": 4,
-    "nom": "AWONO ONANA",
-    "prenom": "",
+    "idPersonnel": 1,
+    "nom": "TONYE",
+    "prenom": "Emmanuel",
     "poste": "Poste",
     "fonction": "Fonction",
     "lieuAffectation": "Lieu d'affectation",
     "matricule": "Matricule",
-  },
-  {
-    "idPersonnel": 4,
-    "nom": "AWONO ONANA",
-    "prenom": "",
-    "poste": "Poste",
-    "fonction": "Fonction",
-    "lieuAffectation": "Lieu d'affectation",
-    "matricule": "Matricule",
-  }
-  {
-    "idPersonnel": 4,
-    "nom": "AWONO ONANA",
-    "prenom": "",
-    "poste": "Poste",
-    "fonction": "Fonction",
-    "lieuAffectation": "Lieu d'affectation",
-    "matricule": "Matricule",
+    "image":"work/1.jpg",
+    "presentation":"Officier des Palmes Académiques de la République Française, Membre de l'Académie des Sciences du Cameroun, le&nbsp;<strong>Professeur Emmanuel TONYE </strong>est&nbsp;Vice-recteur en charge de la Recherche, de la Coopération et des Relations avec le Monde des Entreprises à l’Université de Yaoundé I.&nbsp;Coordonnateur de l’équipe focale de l’Université Virtuelle hébergée par l’Université de Yaoundé I. Il est&nbsp;Professeur des Universités à <a href='http://www.polytechnique.cm' target='_blank'>l'Ecole Nationale supérieure Polytechnique</a>, BP 8390, Yaoundé, Cameroun. Principal coordonnateur des Masters en télécommunications et en sécurité des systèmes d’information et de communications en formation à distance <a href='http://mastel.auf-foad.org/' target='_blank'>MASTEL </a>&nbsp;et <a href='http://m2massico.auf-foad.org/' target='_blank'>MASSICO</a>.&nbsp; </br></br>   Directeur du laboratoire de recherche Electronique et Traitement du Signal dont les travaux portent sur : (i) la caractérisation des types d'occupation des sols par traitement d'images satellitaires radars à synthèse d'ouverture; (ii) l'optimisation de déploiement de réseau de capteurs pour le suivi temps réel et sur base cartographique de la pollution atmosphérique; (iii) Modélisation et caractérisation des antennes intelligentes à réseaux d'éléments.<h5>Thèses encadrées (13)</h5><p>1) <strong>Aur&eacute;lien YEREMOU TAMTSIA (11 octobre 2013)</strong>, Nouvelles contributions &agrave; l&#39;application des moments en asservissement visuel, Doctorat de l&rsquo;Universit&eacute; de Blaise Pascal de Clermont-Ferrand (Sp&eacute;cialit&eacute; Robotique) et Doctorat/PhD de l&#39;Universit&eacute; de Yaound&eacute; I (Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications)mars 2013.</p>    <p> 2) <strong>Elie Fute Tagne (05 mars 2013)</strong>, Une approche de patrouille multi-agents pour la d&eacute;tection d&#39;&eacute;v&eacute;nements, Doctorat de l&rsquo;Universit&eacute; de Montb&eacute;liard (Sp&eacute;cialit&eacute; Informatique) et Doctorat/PhD de l&#39;Universit&eacute; de Yaound&eacute; I (Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications), mars 2013.</p><p>    3)<strong> Janvier FOTSING</strong> <strong>(29 juillet 2011)</strong>, Apports du Variogramme dans la Mod&eacute;lisation et la Classification Texturale des Images Radar&nbsp;SAR: Application &agrave; la Cartographie du Littoral Camerounais<strong>, </strong>Doctorat/PhD de l&rsquo;Universit&eacute; de Yaound&eacute; I, Sp&eacute;cialit&eacute; Physique, option Electronique, Facult&eacute; des Sciences, Universit&eacute; de Yaound&eacute; I, octobre 2011.</p>    <p>    4)<strong> Catherine NSIAMI (19 mars f&eacute;vrier 2010)</strong>, Analyse texturale de l&rsquo;image panchromatique Quickbird &agrave; tr&egrave;s haute r&eacute;solution spatiale, dans ses applications sur la diff&eacute;renciation des types d&rsquo;occupation du sol urbain de Lubumbashi, PhD de l&rsquo;Universit&eacute; de Lumumbashi, Sp&eacute;cialit&eacute; G&eacute;ographie et T&eacute;l&eacute;d&eacute;tection, Facult&eacute; des Sciences, Universit&eacute; de Lumumbashi.</p>    <p>    5)<strong> TALLA TANKAM Narcisse (1<sup>er</sup> octobre 2008)</strong>, Une nouvelle approche d&rsquo;analyse automatique de texture d&rsquo;images : Application &agrave; l&rsquo;&eacute;tude de la dynamique d&rsquo;occupation spatiale sur le Mont Cameroun, Doctorat/PhD de l&rsquo;Universit&eacute; de Yaound&eacute; I, Sp&eacute;cialit&eacute; Informatique, application &agrave; la t&eacute;l&eacute;d&eacute;tection, Facult&eacute; des sciences, Universit&eacute; de Yaound&eacute; I, octobre 2008.</p>    <p>    6)<strong> VIDEME BOSSOU Olivier (30 mai 2007)</strong>, Antennes pour syst&egrave;me de communication&nbsp;: mod&eacute;lisation, r&eacute;alisation et kit didactique, PhD de l&rsquo;EPFL, Sp&eacute;cialit&eacute; g&eacute;nies des t&eacute;l&eacute;communications, option Antennes.</p>    <p>    7)<strong> NTSAMA ELOUNDOU Pascal (26 janvier 2007)</strong>, Compression des signaux &eacute;lectromyographiques par la transform&eacute;e en ondelettes, Th&egrave;se de Doctorat/PhD, Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Janvier 2007.</p>    <p>    8)<strong> KANAA Thomas Florent No&euml;l (06 d&eacute;cembre 2006)</strong>, D&eacute;tection des nappes d&rsquo;hydrocarbures dans les images radar &agrave; synth&egrave;se d&rsquo;ouverture de la surface de la mer, Th&egrave;se de Doctorat/PhD, Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, D&eacute;cembre 2006.</p>    <p>    9)<strong> Mboliguipa Jean</strong> (<strong>05 septembre 2003</strong>), Contribution &agrave; l&rsquo;am&eacute;lioration d&rsquo;images photographiques couleur, Th&egrave;se de Doctorat/PhD, Sp&eacute;cialit&eacute; g&eacute;nie &eacute;lectrique, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Septembre 2003.</p>    <p>    10)<strong> MVOGO NGONO Joseph (26 novembre 2001)</strong>, Contribution &agrave; la compression des images radar &agrave; synth&egrave;se d&rsquo;ouverture dans le cadre de leur utilisation dans les syst&egrave;mes d&rsquo;information g&eacute;ographique, Th&egrave;se de Doctorat ou PhD, Sp&eacute;cialit&eacute; g&eacute;nie &eacute;lectrique, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Novembre 2001.</p>    <p>    11)<strong> ONANA Vincent de Paul (26 novembre 2001)</strong>, Outils d&rsquo;aide &agrave; l&rsquo;extraction d&rsquo;informations g&eacute;ographiques dans les images radar &agrave; synth&egrave;se d&rsquo;ouverture, Th&egrave;se de Doctorat ou PhD , Sp&eacute;cialit&eacute; g&eacute;nie &eacute;lectrique, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Novembre 2001.</p>    <p>    12)<strong> NDI NYOUNGUI Andr&eacute; (20 avril 1999)</strong>, Analyse de texture et classification neuronale des images RSO&nbsp;: Application &agrave; la cartographie foresti&egrave;re en milieu tropical humide. Th&egrave;se de doctorat 3e cycle en Informatique, Facult&eacute; des Sciences, Universit&eacute; de Yaound&eacute; I, 325p, Avril 1999.</p>    <p>    13) <strong>AKONO Alain (1994),</strong> Traitement du signal et de l&rsquo;image appliqu&eacute;s &agrave; la t&eacute;l&eacute;d&eacute;tection. Th&egrave;se de doctorat en sciences de l&rsquo;ing&eacute;nieur, &Eacute;cole Nationale Sup&eacute;rieure Polytechnique de l&rsquo;Universit&eacute; de Yaound&eacute;, Yaound&eacute;, 180 p</p>    </p>",
+    "actualites":[
+      {
+        "contenu":"<strong>Nommination Universitaire</strong> <p>    Monsieur Emmanuel TONYE, de nationalité  Camerounaise, est nomme  en qualité  d'enseignant invite à  L’Université  de Bourgogne pour  une durée de 1 mois au cours de l'année universitaire 2013-2014 sur l'emploi  n° 00 PR 1531.</p>",
+        "ressource":[
+          {
+            "nom":"Arrêté ",
+            "source":"/ressource"
+          }
+        ]
+      }
+    ],
+    "enseignement":"<strong>Activit&eacute;s d&#39;enseignement</strong><table class='table table-bordered table-striped table-condensed'><tbody><tr><td ><p><strong>Intitul&eacute; </strong></p></td><td ><p><strong>Niveau de formation</strong></p></td></tr><tr><td ><p>M&eacute;thodes d&rsquo;analyse des performances de r&eacute;seaux</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Optimisation multicrit&egrave;res des</p><p>r&eacute;seaux</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Antennes Intelligentes</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Traitement du signal et de l&rsquo;image</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>S&eacute;minaires sur la Planification et l&#39;optimisation des r&eacute;seaux de t&eacute;l&eacute;communications</p></td><td ><p>5&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>R&eacute;seaux intelligents: mise en &oelig;uvre d&#39;un serveur de rebond</p></td><td ><p>5&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Transmission de donn&eacute;es et r&eacute;seaux de communications num&eacute;riques</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>M&eacute;thodes num&eacute;riques appliqu&eacute;es &agrave; l&#39;&eacute;lectromagn&eacute;tiques (Diff&eacute;rences finies, &eacute;l&eacute;ments finis et m&eacute;thodes des moments)</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Concepts des t&eacute;l&eacute;communications</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>T&eacute;l&eacute;communications optiques</p></td><td ><p>4&egrave;me Ann&eacute;e d&rsquo;Ing&eacute;nieur de l&rsquo;ENSPT de Yaound&eacute;</p><p>4&egrave;me ann&eacute;e d&rsquo;Ing&eacute;nieur de l&rsquo;UNIQUA de Port-au Prince (Ha&iuml;ti)</p></td></tr><tr><td ><p>Techniques de transmission</p></td><td ><p>Master M1 d&rsquo;informatique ESIREM de l&#39;Universit&eacute; de Bourgogne (France)</p></td></tr><tr><td ><p>Electromagn&eacute;tisme</p></td><td ><p>3&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Fondamentaux des t&eacute;l&eacute;communications</p></td><td ><p>3&egrave;me Ann&eacute;e G&eacute;nie &eacute;lectrique de l&rsquo;ENSP de Yaound&eacute;</p></td></tr></tbody></table>",
+    "publications":[
+      {
+        "titre":"Article dans les",
+        "publication":[
+          {
+            "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores at, dignissimos ducimus explicabo fugiat fugit, omnis optio possimus qui reprehenderit saepe? Cumque labore molestias mollitia, quo reprehenderit sapiente voluptates?",
+            "ressource":[
+              {
+                "nom":"Arrêté ",
+                "source":"/ressource"
+              },
+              {
+                "nom":"Nomination ",
+                "source":"/ressource"
+              }
+            ]
+          },
+          {
+            "contenu":"Contenu pub 2",
+            "ressource":[
+              {
+                "nom":"Arrêté ",
+                "source":"/ressource"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "titre":"Communication dans les conferences",
+        "publication":[
+          {
+            "contenu":"comm pub 1",
+            "ressource":[
+              {
+                "nom":"Arrêté",
+                "source":"/ressource"
+              }
+            ]
+          },
+          {
+            "contenu":"comm pub 2",
+            "ressource":[
+              {
+                "nom":"Arrêté",
+                "source":"/ressource"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "projets":[
+      {
+        "categorie":"Projets de recherche",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      },
+      {
+        "categorie":"Projets de developpement",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      }
+    ],
+    "cv":"lien",
+    "social":{
+      "facebook":"facebook",
+      "twitter":"twitter",
+      "skype":"skype",
+      "linkedin":"linkedin"
+    },
+    "contact":{
+      "email":"email",
+      "telephone":"telephone"
+    }
+
   }
 ]

@@ -1,5 +1,5 @@
 
-<section id="departement" class="section">
+<section id="main-section" class="section">
   <div class="container">
     <div class="heading text-center" style="margin-left: -25px;margin-right: -25px; background: #eee">
       <!-- Heading -->
@@ -10,7 +10,7 @@
     <div class="row feature design" ng-repeat="d in departements">
       <div class="col-lg-12">
         <div class="col-lg-3">
-          <img src="images/{{d.image}}" alt="departement"/>
+          <img src="images/{{d.image[0]}}" alt="departement"/>
         </div>
         <div class="col-lg-9">
           <h3><a href="#/departement/{{d.idDepartement}}">{{d.nom}}</a></h3>

@@ -1,0 +1,166 @@
+
+<section class="main-section section personnel" autoscroll="true">
+  <div class="container">
+    <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
+      <!-- Heading -->
+      <h2 class="titre">Espace de {{personnel.prenom}} {{personnel.nom}}</h2>
+    </div>
+
+    <!-- Article 1 -->
+    <div class="row feature design">
+      <div class="col-lg-12">
+        <div class="tabbable tabs-left onglet row">
+          <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
+            <img src="images/work/1.jpg" style="padding: 10px;" width="100%" alt=""/>
+            <li class="active"><a href="/#presentation" data-toggle="tab">Présentation</a></li>
+            <li><a href="/#act" data-toggle="tab">Actualités</a></li>
+            <li><a href="/#ens" data-toggle="tab">Enseignements</a></li>
+            <li><a href="/#pub" data-toggle="tab">Publications</a></li>
+            <li><a href="/#pro" data-toggle="tab">Projets</a></li>
+            <li><a href="/#cv" data-toggle="tab">CV</a></li>
+            <li><a href="/#rs" data-toggle="tab">Réseaux Sociaux</a></li>
+            <li><a href="/#con" data-toggle="tab">Contact</a></li>
+
+          </ul>
+
+          <div class="tab-content col-lg-10 col-sm-10 col-xs-10">
+            <!--Présentation-->
+            <div class="tab-pane active" id="presentation">
+              <h4 class="">Présentation</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <p ng-bind-html="personnel.presentation"></p>
+                </div>
+              </div>
+
+            </div>
+
+            <!--mot du chef de personnel-->
+            <div class="tab-pane" id="act">
+              <h4 class="">Actualité</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div ng-repeat="a in personnel.actualites">
+
+                    <p ng-bind-html="a.contenu"></p>
+                    <div>Ressources :
+                      <a ng-repeat="r in a.ressource" href="#/{{r.source}}">{{r.nom}}</a>
+                    </div>
+                    </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!--cours et professeur-->
+            <div class="tab-pane" id="ens">
+              <h4>Enseignements</h4>
+              <p ng-bind-html="personnel.enseignements"></p>
+
+            </div>
+            <!--laboratoire-->
+            <div class="tab-pane" id="pub">
+              <h4>Publications</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div ng-repeat="p in personnel.publications">
+                    <h5>{{p.titre}} ({{p.publication.length}})</h5>
+                    <div ng-repeat="pu in p.publication">
+                      <p>
+                        <i class="fa fa-angle-double-right"></i> <span ng-bind-html="pu.contenu"></span><br/>
+                        <a ng-repeat="r in pu.ressource" href="#/{{r.source}}">{{r.nom}},</a>&nbsp;
+                      </p>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!--Projet-->
+            <div class="tab-pane" id="pro">
+              <h4>Projets</h4>
+              <div class="col-lg-12" ng-repeat="p in personnel.projets">
+                <h5>{{p.categorie}}</h5>
+
+                <div ng-repeat="pr in p.projet" style="padding-left: 10px;margin-bottom: 10px;">
+                  <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.titre}}</div>
+                  <p style="padding-bottom: 0">{{pr.description}}</p>
+                  <div><span class="detail">Entreprise : </span>{{pr.entreprise}}</div>
+                  <div><span class="detail">Année : </span>{{pr.annee}}</div>
+                  <div><span class="detail">Lien : </span><span ng-bind-html="pr.lien"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="cv">
+              <h4 class="">Curriculum Vitae</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div>
+
+                    <p>Suivez le lien ci-dessous pour consulter le cv</p>
+                    <div>Ressources :
+                      <a href="#/{{personnel.cv}}">Mon CV ({{personnel.nom}})</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane" id="rs">
+              <h4 class="">Réseaux Sociaux</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="col-lg-3">
+                    <h5>Facebook</h5>
+                    <a href=""><i class="fa fa-facebook"></i> {{personnel.social.facebook}}</a>
+                  </div>
+                  <div class="col-lg-3">
+                    <h5>Twitter</h5>
+                    <a href=""><i class="fa fa-twitter"></i> {{personnel.social.twitter}}</a>
+                  </div>
+                  <div class="col-lg-3">
+                    <h5>Skype</h5>
+                    <a href=""><i class="fa fa-skype"></i> {{personnel.social.skype}}</a>
+                  </div>
+                  <div class="col-lg-3">
+                    <h5>LinkedIn</h5>
+                    <a href=""><i class="fa fa-linkedin"></i> {{personnel.social.linkedin}}</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-pane" id="con">
+              <h4 class="">Réseaux Sociaux</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="col-lg-6">
+                    <h5>Téléphone</h5>
+                    <a href=""><i class="fa fa-phone"></i> {{personnel.contact.telephone}}</a>
+                  </div>
+                  <div class="col-lg-6">
+                    <h5>Email</h5>
+                    <a href=""><i class="fa fa-envelope"></i> {{personnel.contact.email}}</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+</section>

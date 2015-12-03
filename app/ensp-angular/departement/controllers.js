@@ -7,9 +7,7 @@
  controlleur pour le module Departement
  *****************************************************************************************************************/
 app_departement
-    .controller('ListeDepartementCtrl', function($scope,DepartementFactory,$filter,Pagination) {
-
-        $scope.pagination = Pagination.getNew(15);
+    .controller('ListeDepartementCtrl', function($scope,DepartementFactory) {
 
 
         $scope.loadDepartement=function(){
@@ -18,7 +16,7 @@ app_departement
 
                     $scope.totalPages=data.length;
                     $scope.departements=data;
-                    $scope.pagination.numPages = Math.ceil(data.length/$scope.pagination.perPage);
+
                     console.log($scope.departements);
 
                 },function(msg){
@@ -36,13 +34,14 @@ app_departement
     })
     .controller('DepartementCtrl', function($scope,$routeParams,DepartementFactory) {
         //recuperation de la departement
-        DepartementFactory.getDepartement($routeParams.id).then(
+        DepartementFactory.getDepartementObjet({cygle:$routeParams.cygle}).then(
             function(data){
                 $scope.departement=data;
                 //console.log(data);
                 $('#myCarousel').carousel({
                     interval:   7000
                 });
+                $scope.par_page=6;
                 paintGraph(data.statistiques);
 
             },function(msg){

@@ -1,0 +1,62 @@
+[
+  {
+    "idPersonne": 1,
+    "nom": "Obstacle",
+    "prenom": "Musique",
+    "dateNaissance": "20-01-1889",
+    "lieuNaissance": "Yaounde",
+    "dateCNI": "20-11-1996",
+    "lieuCNI": "Douala",
+    "sexe": "F",
+    "telephone":"666666666",
+    "pays":"Cameroun",
+    "langueExamen":"français",
+    "niveau":3
+
+  },
+  {
+    "idPersonne": 1,
+    "nom": "Obstacle",
+    "prenom": "Musique",
+    "dateNaissance": "20-01-1889",
+    "lieuNaissance": "Yaounde",
+    "dateCNI": "20-11-1996",
+    "lieuCNI": "Douala",
+    "sexe": "F",
+    "telephone":"666666666",
+    "pays":"Cameroun",
+    "langueExamen":"français",
+    "niveau":3
+
+  },
+  {
+    "idPersonne": 1,
+    "nom": "Obstacle",
+    "prenom": "Musique",
+    "dateNaissance": "20-01-1889",
+    "lieuNaissance": "Yaounde",
+    "dateCNI": "20-11-1996",
+    "lieuCNI": "Douala",
+    "sexe": "F",
+    "telephone":"666666666",
+    "pays":"Cameroun",
+    "langueExamen":"français",
+    "niveau":3
+
+  },
+  {
+    "idPersonne": 1,
+    "nom": "Obstacle",
+    "prenom": "Musique",
+    "dateNaissance": "20-01-1889",
+    "lieuNaissance": "Yaounde",
+    "dateCNI": "20-11-1996",
+    "lieuCNI": "Douala",
+    "sexe": "M",
+    "telephone":"666666666",
+    "pays":"Cameroun",
+    "langueExamen":"français",
+    "niveau":3
+
+  }
+]

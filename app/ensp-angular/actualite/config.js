@@ -24,7 +24,8 @@ app_actualite
         })
             .when('/presentation', {
                 templateUrl: template_url+'actualite/presentation.html',
-                controller: 'View2Ctrl'
+                controller: 'View2Ctrl',
+                title:"Présentation"
             })
             .when('/formulaire-actualite/:id?', {
                 templateUrl: template_url+'actualite/formulaire-article.html',

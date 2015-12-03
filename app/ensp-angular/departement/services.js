@@ -45,6 +45,19 @@ app_departement
 
 
             },
+            getDepartementObjet: function (obj) {
+                console.log(obj)
+                var deffered = $q.defer();
+                var departements = factory.getDepartements().then(function(services){
+                    deffered.resolve($filter('filter')(factory.departements,obj,true)[0]);
+                },function(msg){
+                    deffered.reject(msg);
+                });
+                return deffered.promise;
+
+
+
+            },
             addDepartement: function (departement) {
                 var defferd = $q.defer();
                 factory.getDepartements().then(function(res){

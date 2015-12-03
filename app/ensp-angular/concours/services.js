@@ -8,26 +8,28 @@
  *****************************************************************************************************************/
 
 app_concours
-    .factory('ConcoursFactory', function ($http,$q) {
+    .factory('ConcoursFactory', function ($http,$q,$filter,$timeout) {
 
 
         var factory = {
-            publications: false,
-            publication: false,
-            getPublications: function () {
+            concours: false,
+            concour: false,
+            candidats:false,
+            candidat:false,
+            getConcours: function () {
                 var deferred = $q.defer();
-                if (factory.publications !== false) {
-                    deferred.resolve(factory.publications);
+                if (factory.concours !== false) {
+                    deferred.resolve(factory.concours);
                 } else {
 
-                    $http.get("ressources/publication.json").success(function(data,status){
-                        factory.publications = data;
+                    $http.get("ressources/concours.json").success(function(data,status){
+                        factory.concours = data;
 
-                        deferred.resolve(factory.publications);
+                        deferred.resolve(factory.concours);
 
                     }).error(function(data,status){
                         console.log(status);
-                        deferred.reject('Impossible de recuperer les publications');
+                        deferred.reject('Impossible de recuperer les concours');
                     });
 
                 }
@@ -35,27 +37,69 @@ app_concours
                 return deferred.promise;
 
             },
-            getPublication: function (id) {
+            getConcour: function (id) {
                 var deffered = $q.defer();
-                var publications = factory.getPublications().then(function(services){
-                    deffered.resolve($filter('filter')(factory.publications,{idPublication:parseInt(id)},true)[0]);
+                var concours = factory.getConcours().then(function(services){
+                    deffered.resolve($filter('filter')(factory.concours,{idConcour:parseInt(id)},true)[0]);
                 },function(msg){
                     deffered.reject(msg);
                 });
                 return deffered.promise;
-
-
-
             },
-            addPublication: function (publication) {
+            addConcour: function (concour) {
                 var defferd = $q.defer();
-                factory.getPublications().then(function(res){
-                    console.log(factory.publications);
-                    factory.publications.push(publication);
+                factory.getConcours().then(function(res){
+                    console.log(factory.concours);
+                    factory.concours.push(concour);
                 })
 
 
                 return defferd.promise;
+            },
+            getCandidats: function (obj) {
+                var deferred = $q.defer();
+                if (factory.candidats !== false) {
+                    deferred.resolve(factory.candidats);
+                } else {
+
+                    $http.get("ressources/liste-candidat.json").success(function(data,status){
+                        factory.candidats = data;
+
+                        deferred.resolve($filter('filter')(factory.candidats,obj,true));
+
+                    }).error(function(data,status){
+                        console.log(status);
+                        deferred.reject('Impossible de recuperer les concours');
+                    });
+
+                }
+
+                return deferred.promise;
+
+            },
+            getCandidat: function (obj) {
+                var deffered = $q.defer();
+                var candidats = factory.getCandidats(obj).then(function(services){
+                    deffered.resolve(factory.candidats);
+                },function(msg){
+                    deffered.reject(msg);
+                });
+                return deffered.promise;
+            },
+            IdentificationCandidat: function (candidat) {
+                var deferred = $q.defer();
+
+                $http.post("ressources/concours.json",candidat).success(function(data,status){
+                    factory.candidat = data;
+
+                    deferred.resolve(factory.candidat);
+
+                }).error(function(data,status){
+                    console.log(status);
+                    deferred.reject('Impossible d\'identifier le candidat');
+                });
+
+                return deferred.promise;
             }
         }
 

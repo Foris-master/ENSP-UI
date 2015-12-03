@@ -7,21 +7,23 @@
 /******************************************************************************************************************
  routes pour le module personnel
  *****************************************************************************************************************/
-angular.module('myApp.personnel', ['ngRoute'])
+app_personnel
 
     .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/liste-pesonnel', {
-            templateUrl: template_url+'pesonnel/liste-pesonnel.html',
-            controller: 'ListePesonnelCtrl'
+        $routeProvider.when('/liste-personnel/:categorie', {
+            templateUrl: template_url+'personnel/liste-personnel.html',
+            controller: 'ListePersonnelCtrl',
+            title:"Liste du personnel"
         })
-            .when('/pesonnel/:id', {
-                templateUrl: template_url+'pesonnel/pesonnel.html',
-                controller: 'PesonnelCtrl'
+            .when('/personnel/:id', {
+                templateUrl: template_url+'personnel/personnel.html',
+                controller: 'PersonnelCtrl',
+                title:"Espace personnel"
             })
 
-            .when('/formulaire-pesonnel/:id?', {
-                templateUrl: template_url+'pesonnel/formulaire-pesonnel.html',
-                controller: 'FormulairePesonnelCtrl'
+            .when('/formulaire-personnel/:id?', {
+                templateUrl: template_url+'personnel/formulaire-personnel.html',
+                controller: 'FormulairePersonnelCtrl'
             });
-        $routeProvider.otherwise({redirectTo: '/liste-pesonnel'});
+        $routeProvider.otherwise({redirectTo: '/liste-personnel'});
     }]);

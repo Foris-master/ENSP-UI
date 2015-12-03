@@ -11,7 +11,7 @@
         <div class="row feature design">
             <div class="col-lg-9 columns left">
                 <div class="row">
-                    <input  class="col-lg-8" type="text" ng-model="searchKey" class="form-control" placeholder="Recheche : Entrer un mot-clé"/>
+                    <input  class="col-lg-8" type="text" ng-model="searchKey" class="form-control" placeholder=" Entrer un mot-clé"/>
                     <input class="col-lg-offset-1 col-lg-2" type="number"   ng-model="par_page"/>
                 </div>
                 <div class="row pub"  dir-paginate="p in publications |filter:searchKey | orderBy : '-auteur' : true| itemsPerPage: par_page "  >

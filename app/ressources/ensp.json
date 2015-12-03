@@ -1,0 +1,32 @@
+[
+  {
+    "nom":"Ecole Nationale Supérieure Polytechnique",
+    "cygle":"ENSPY",
+    "BP": 8390,
+    "telephone":00000,
+    "fax":00000,
+    "localisation":{
+      "longitude":112,
+      "latitude":122,
+      "rue":"Rue Melen"
+    },
+    "presentation":"{{lorem*5}}",
+    "histoire":"{{lorem*5}}",
+    "mission":[
+      {
+        "titre":"titre mission",
+        "description":"description mission"
+      },
+      {
+        "titre":"titre mission",
+        "description":"description mission"
+      }
+    ],
+    "image":{
+      "1":"image1",
+      "2":"image2",
+      "3":"image3",
+      "4":"image4"
+    }
+  }
+]

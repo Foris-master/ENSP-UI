@@ -12,6 +12,7 @@ app_header
 
     .controller('headerCtrl', function($scope) {
         $scope.dateCourante=new Date();
+        $scope.menu="ecole";
     });
 
 /******************************************************************************************************************

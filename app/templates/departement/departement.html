@@ -1,7 +1,7 @@
 
-<section id="departement" class="section informatique" style="background: url('images/gi.JPG') no-repeat;background-size: cover">
+<section class="main-section section informatique" autoscroll="true">
   <div class="container">
-    <div class="heading text-center" style="margin-left: -25px;margin-right: -25px; background: #eee">
+    <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
       <!-- Heading -->
       <h2 class="titre">{{departement.nom}}</h2>
     </div>
@@ -196,7 +196,7 @@
 
               <h5><i class="fa fa-angle-double-right"></i> Professeurs</h5>
               <div class="row actu-container">
-                <div class="col-lg-4 col-sm-4 col-xs-4" ng-repeat="p in departement.professeurs |filter:searchKey | orderBy : '-nom' : true | startFrom: pagination.page * pagination.perPage | limitTo: pagination.perPage">
+                <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="p in departement.professeurs |filter:searchKey | orderBy : '-nom' : true | itemsPerPage: par_page">
                   <div class="actu row">
                     <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
                       <img src="images/{{p.image}}" alt=""/>
@@ -206,6 +206,11 @@
                       <a href="#/professeur/{{a.idActualite}}">Voir le profil</a>
                     </div>
                   </div>
+                </div>
+              </div>
+              <div class="row actu-container">
+                <div class="text-center" >
+                  <dir-pagination-controls></dir-pagination-controls>
                 </div>
               </div>
             </div>

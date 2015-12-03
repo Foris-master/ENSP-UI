@@ -1,99 +1,143 @@
-<section id="aboutUs" class="section contact-parlex">
-    <div class="parlex-backs">
-        <div class="container">
-            <div class="row">
-                <div class="heading text-center">
-                    <!-- Heading -->
-                    <h2 class="h1 titre">{{type}}</h2>
-                </div>
-            </div>
-            <div class="row mrgn30">
-                <form method="post"  id="contactfrm" role="form">
+<section class="main-section section" id="concours" autoscroll="true">
+    <div class="container">
+        <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
+            <!-- Heading -->
+            <h2 class="titre">{{titre}}</h2>
+        </div>
 
-                    <div class="col-sm-12">
+        <!-- Article 1 -->
+        <div class="s feature design">
 
-                        <div class="form-group">
-                            <label for="name">Ecole</label>
-
-                            <select ng-model="new_concours.ecole"  name="" id="" class="form-control">
-                                <option value="1">ENSP</option>
-                                <option value="2">FGI</option>
-                                <option value="3">UIT</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Annee</label>
-
-                            <datepicker>
-                                <input ng-model="new_concours.annee" type="text" class="form-control" name="name" id="name"
-                                       placeholder="Entrer l'annee de ce concours " title="Annee">
-                            </datepicker>
-                        </div>
-<div class="form-group">
-                            <label for="ddebut">Date Debut</label>
-
-                            <datepicker>
-                                <input ng-model="new_concours.dateDebut" type="text" class="form-control" name="name" id="ddebut"
-                                       placeholder="Date de debut du concours " title="Date de debut du concours">
-                            </datepicker>
-                        </div>
-<div class="form-group">
-                            <label for="dfin">Date Fin</label>
-
-                            <datepicker>
-                                <input ng-model="new_concours.dateFin" type="text" class="form-control" name="name" id="dfin"
-                                       placeholder="Date de fin du concours " title="Date de fin du concours">
-                            </datepicker>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="arrete">Arrete</label>
-                            <input ng-model="new_concours.arrete" type="url" class="form-control" name="name" id="arrete"
-                                   placeholder="Entrer le lien vers l'arrete du concours" title="Entrer le lien vers l'arrete du concours">
-                        </div>
-                        <div class="form-group">
-                            <label for="niveau">Niveau</label>
-                            <input ng-model="new_concours.niveau" type="number" class="form-control" name="name" id="niveau"
-                                   placeholder="Entrer le niveau de ce concours" title="Entrer le niveau  de ce concours">
-                        </div>
-                        <div class="form-group">
-                                <label for="niveau">Nombre Candidats</label>
-                                <input ng-model="new_concours.nombreCandidats" type="number" class="form-control" name="name" id="niveau"
-                                       placeholder="Entrer le nombre de candidats pour  ce concours" title="Entrer le nombre de candidats pour  ce concours">
-                            </div>
-                        <div class="form-group">
-                                <label for="niveau">Nombre Candidats Admis</label>
-                                <input ng-model="new_concours.nombreCandidatsAdmin" type="number" class="form-control" name="name" id="niveau"
-                                       placeholder="Entrer le nombre de candidats voulues  pour  ce concours" title="Entrer le nombre de candidats voulues  pour  ce concours">
-                            </div>
+            <p class="ancre">
+                <a href="#/concours">Concours niveau {{niveau}} </a>> Inscription
+            </p>
+            <div class="col-lg-9 col-sm-9 col-xs-9">
 
 
-                        <div class="form-group">
-                            <label for="composition">Composition du Dossier</label>
-                            <textarea name="comment" ng-model="new_concours.compositionDossier" class="form-control" id="composition"
-                                      cols="3" rows="3" placeholder="Entrer la description de cette publication…"
-                                      title="Decrire le concours)"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label for="description">Description</label>
-                            <textarea ng-model="new_concours.description" name="comment" class="form-control" id="description"
-                                      cols="3" rows="5" placeholder="Entrer la description de cette publication…"
-                                      title="Please enter your message (at least 10 characters)"></textarea>
-
-                        </div>
-                        <div class="form-group">
-                            <label for="noteExplicative">Note Explicative</label>
-                            <textarea ng-model="new_concours.noteExplicative" name="comment" class="form-control" id="noteExplicative"
-                                      cols="3" rows="5" placeholder="Entrer la description de cette publication…"
-                                      title="Please enter your message (at least 10 characters)"></textarea>
-                            <button name="submit" ng-click="save_publication()" class="btn btn-lg btn-primary" id="submit" >Creer</button>
-                        </div>
-
-                        <div class="result"></div>
+                <form action="" ng-submit="EnregistrerCandidat(candidat)">
+                    <h5>Informations personnelles</h5>
+                    <div class="form-group">
+                        <label for="nom">Nom(s)</label>
+                        <input class="form-control" ng-model="candidat.nom" id="nom"
+                               placeholder="Entrer votre nom tel que sur l'acte de naissance"
+                               title="Entrer votre nom tel que sur l'acte de naissance"
+                               type="text">
                     </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom(s)</label>
+                        <input class="form-control" ng-model="candidat.prenom" id="prenom"
+                               placeholder="Entrer votre prénom tel que sur l'acte de naissance"
+                               title="Entrer votre prénom tel que sur l'acte de naissance"
+                               type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateNaissance">Date et lieu de naissance</label>
+                        <input class="form-control" ng-model="candidat.dateNaissance" id="dateNaissance"
+                               placeholder="Entrer votre date de naissance telle que sur l'acte de naissance"
+                               title="Entrer votre date de naissance telle que sur l'acte de naissance"
+                               type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="lieuNaissance">Date et lieu de naissance</label>
+                        <input class="form-control"ng-model="candidat.lieuNaissance" id="lieuNaissance"
+                               placeholder="Entrer votre lieu de naissance telle que sur l'acte de naissance"
+                               title="Entrer votre lieu de naissance telle que sur l'acte de naissance"
+                               type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="sexe">Sexe</label>
+                        <select class="form-control"ng-model="candidat.sexe" id="sexe">
+                            <option value="F">Féminin</option>
+                            <option value="M">Masculin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control"ng-model="candidat.email" id="email"
+                               placeholder="Entrer votre boîte mail"
+                               title="Entrer votre boîte mail"
+                               type="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input class="form-control"ng-model="candidat.telephone" id="telephone"
+                               placeholder="Entrer votre numéro de téléphone"
+                               title="Entrer votre numéro de téléphone"
+                               type="number">
+                    </div>
+                    <h5>Carte nationale d'identité (CNI)</h5>
+                    <div class="form-group">
+                        <label for="numCNI">Numéro de le CNI</label>
+                        <input class="form-control"ng-model="candidat.numeroCNI" id="numCNI"
+                               placeholder="Entrer votre numéro de CNI"
+                               title="Entrer votre numéro de CNI"
+                               type="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateCNI">Date de délivrance de la CNI</label>
+                        <input class="form-control"ng-model="candidat.dateCNI" id="dateCNI"
+                               placeholder="Entrer la date délivrance de votre CNI"
+                               title="Entrer la date délivrance de votre CNI"
+                               type="date">
+                    </div>
+                    <h5>Concours</h5>
+                    <div class="form-group">
+                        <label for="langue">Langue de composition</label>
+                        <select class="form-control"ng-model="candidat.langue" id="langue">
+                            <option value="A">English</option>
+                            <option value="F">Français</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="reset" class="btn">Recommencer</button>
+                        <button type="submit" class="btn">Enregistrer</button>
+                    </div>
+
                 </form>
             </div>
+
+            <div class="col-lg-3 col-sm-3 col-xs-3">
+                <h5>Notice</h5>
+                <p>En cas de problème dans le remplissage du formulaire, bien vouloir se référer à <a href="#/notice/niveau-{{niveau}}">la notice</a></p>
+            </div>
         </div>
-        <!--/.container-->
+
+
+
+
+
     </div>
 </section>
+<div class="modal hide fade" id="identificationModal">
+    <form ng-submit="Identification(candidat)">
+        <div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+            <h3>Identification du candidat</h3>
+        </div>
+        <div class="modal-body">
+
+            <div class="row">
+                <div class="col-lg-3"><span class="bold">Numéro CNI :</span></div>
+                <div class="col-lg-9">
+                    <input type="number" ng-model="candidat.cni" class="form-control" placeholder="Entrer votre numero de carte d'identité"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"><span class="bold">Email :</span></div>
+                <div class="col-lg-9">
+                    <input type="email" ng-model="candidat.email" class="form-control" placeholder="Entrer votre email"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3"><span class="bold">Numéro de dossier :</span></div>
+                <div class="col-lg-9">
+                    <input type="password" ng-model="candidat.numeroDossier" class="form-control" placeholder="Entrer votre numéro de dossier"/>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a class="btn btn-link" data-dismiss="modal">Fermer</a>
+            <button type="submit" class="btn btn-info">Connexion</button>
+        </div>
+    </form>
+</div>

@@ -6,20 +6,30 @@
 /******************************************************************************************************************
  controlleur pour le module Personnel
  *****************************************************************************************************************/
-angular.module('myApp.personnel')
-    .controller('ListePersonnelCtrl', function($scope,PersonnelFactory,$filter,Pagination) {
+app_personnel
+    .controller('ListePersonnelCtrl', function($scope,$location,PersonnelFactory,$routeParams,$filter,$compile) {
 
-        $scope.pagination = Pagination.getNew(15);
+        var categorie=$routeParams.categorie;
+        console.log(categorie)
+        $scope.titre="Personnel Enseignant";
+        if(categorie=="administratif"){
+            $scope.titre="Personnel Administratif";
+        }
 
+        if(categorie!="enseignant" && categorie!="administratif"){
+            $location.path("/liste-personnel/enseignant");
+        }
+
+        $scope.t="<h2>qsdqs</h2>";
+
+        $scope.par_page =15;
 
         $scope.loadPersonnel=function(){
             PersonnelFactory.getPersonnels().then(
                 function(data){
 
-                    $scope.totalPages=data.length;
                     $scope.personnels=data;
-                    $scope.pagination.numPages = Math.ceil(data.length/$scope.pagination.perPage);
-                    console.log($scope.personnels);
+                    //console.log($scope.personnels);
 
                 },function(msg){
                     console.log(msg);
@@ -40,7 +50,7 @@ angular.module('myApp.personnel')
         PersonnelFactory.getPersonnel($routeParams.id).then(
             function(data){
                 $scope.personnel=data;
-                //console.log(data);
+                console.log(data.projets);
 
             },function(msg){
                 console.log(msg);

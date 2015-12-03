@@ -4,17 +4,17 @@
     "nom": "Génie Informatique",
     "presentation": "Est sit ut esse in ullamco Lorem reprehenderit. Nostrud consequat laboris aliquip excepteur fugiat do ex non sunt commodo ad occaecat eiusmod. Occaecat ipsum incidDepartementidDepartementunt dolor amet ullamco aute sunt ullamco eiusmod consectetur anim aliqua nulla.Est sit ut esse in ullamco Lorem reprehenderit. Nostrud consequat laboris aliquip excepteur fugiat do ex non sunt commodo ad occaecat eiusmod. Occaecat ipsum incidDepartementidDepartementunt dolor amet ullamco aute sunt ullamco eiusmod consectetur anim aliqua nulla.",
     "idDepartementEcole": 10,
+    "cygle":"GI",
     "image":["work/1.jpg","work/2.jpg","work/3.jpg","work/2.jpg","work/3.jpg","work/1.jpg","work/1.jpg","work/2.jpg","work/3.jpg"],
     "chefDepartement":
-      {
-        "id": 1,
-        "nom":"Bouetou",
-        "prenom":"Thomas Thomas",
-        "grade":"Pr",
-        "mot":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
-        "image":"work/4.jpg"
-      }
-    ,
+    {
+      "id": 1,
+      "nom":"Bouetou",
+      "prenom":"Thomas Thomas",
+      "grade":"Pr",
+      "mot":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+      "image":"work/4.jpg"
+    },
     "cours":[
       {
         "niveau":3,

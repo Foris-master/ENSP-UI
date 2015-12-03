@@ -18,8 +18,6 @@ app_actualite
         $scope.loadActualite=function(){
             ActualiteFactory.getActualites().then(
                 function(data){
-
-
                     $scope.actualites=data;
 
                 },function(msg){

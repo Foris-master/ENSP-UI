@@ -9,6 +9,7 @@ var app_actualite =angular.module('myApp.actualite', ['ngRoute']);
 var app_concours =angular.module('myApp.concours', ['ngRoute','720kb.datepicker']);
 var app_departement =angular.module('myApp.departement', ['ngRoute']);
 var app_publication=angular.module('myApp.publication', ['ngRoute','720kb.datepicker']);
+var app_personnel=angular.module('myApp.personnel', ['ngRoute']);
 
 
 angular.module('myApp', [
@@ -22,7 +23,8 @@ angular.module('myApp', [
   'myApp.departement',
   'myApp.personnel',
   'myApp.concours',
-  'angularUtils.directives.dirPagination'
+  'angularUtils.directives.dirPagination',
+    'textAngular'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/accueil'});

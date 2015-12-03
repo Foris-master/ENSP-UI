@@ -56,7 +56,11 @@ app_actualite
 .controller('FormulaireArticleCtrl', function($scope,$routeParams,$location,ActualiteFactory,$filter) {
     $scope.new_article = false;
 
-    $("#txtEditor").Editor();
+    //$("#txtEditor").Editor();
+    $scope.partie = 5;
+    $scope.getNumber = function(num) {
+        return new Array(num);
+    }
     var id=$routeParams.id || null;
     if(id!=null)// Edition d'une publication
     {

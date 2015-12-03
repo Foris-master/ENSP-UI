@@ -34,7 +34,7 @@
                     <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
                         style="position: relative; height: auto;">
                         <h4>Liste des auteurs</h4>
-                        <li class="item web" dir-paginate="p in publications |orderBy : '-auteur' : true |itemsPerPage: par_page ">
+                        <li class="item web"  dir-paginate="p in publications |orderBy : '-auteur' : true |itemsPerPage: par_page ">
                             <a href="#/liste-publication/{{p.auteur}}">{{p.auteur}}</a>
                         </li>
                         <hr/>

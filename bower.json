@@ -21,6 +21,8 @@
     "angular-route": "~1.4.7",
     "angularjs-datepicker": "*",
     "ngWYSIWYG": "*",
-    "angularUtils-pagination": "angular-utils-pagination#~0.9.2"
+    "angularUtils-pagination": "angular-utils-pagination#~0.9.2",
+    "textAngular": "~1.4.6",
+    "angular-spinners": "~3.0.4"
   }
 }

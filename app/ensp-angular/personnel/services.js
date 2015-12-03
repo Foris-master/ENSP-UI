@@ -5,8 +5,8 @@
 /******************************************************************************************************************
  services pour le module Departement
  *****************************************************************************************************************/
-angular.module('myApp.departement')
-    .factory('DepartementFactory', function ($http,$filter,$q) {
+app_personnel
+    .factory('PersonnelFactory', function ($http,$filter,$q) {
 
 
         var factory = {

@@ -6,22 +6,17 @@
  controlleur pour le module concours
  *****************************************************************************************************************/
 app_concours
-    .controller('FormulaireConcoursCtrl', function($scope,$routeParams,$location,ConcoursFactory,$filter) {
+    .controller('FormulaireConcoursNiveau1Ctrl', function($scope,$routeParams,$location,ConcoursFactory,$filter) {
         $scope.new_concours = false;
-        var niveau=$routeParams.niveau;
-        var nb=niveau.substring(7);
+
         var action=$routeParams.action;
         var id=$routeParams.id || null;
 
-        if(nb!=1 && nb!=3)
-        {
-            $location.path("/concours");
-        }
-        $scope.niveau=nb;
+        $scope.niveau="1";
 
         if(action=="inscription")
         {
-            $scope.titre="Inscription au concours niveau "+nb;
+            $scope.titre="Inscription au concours niveau 1";
         }
         else
         {
@@ -32,6 +27,35 @@ app_concours
             if($scope.new_concours!=false){
                // CandidatFactory.addCandidat($scope.new_publication);
                // $location.path('/liste-publication')
+                console.log($scope.new_concours);
+            }else{
+                console.log('veullez remplir les champs');
+            }
+
+            console.log($scope.new_publication);
+        }
+    })
+    .controller('FormulaireConcoursNiveau3Ctrl', function($scope,$routeParams,$location,ConcoursFactory,$filter) {
+        $scope.new_concours = false;
+
+        var action=$routeParams.action;
+        var id=$routeParams.id || null;
+
+        $scope.niveau="3";
+
+        if(action=="inscription")
+        {
+            $scope.titre="Inscription au concours niveau 3";
+        }
+        else
+        {
+            $scope.titre="Modification des paramètres du candidat ";
+        }
+
+        $scope.save_concours = function(){
+            if($scope.new_concours!=false){
+                // CandidatFactory.addCandidat($scope.new_publication);
+                // $location.path('/liste-publication')
                 console.log($scope.new_concours);
             }else{
                 console.log('veullez remplir les champs');

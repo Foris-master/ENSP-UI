@@ -1,4 +1,4 @@
-<section id="aboutUs" class="section actualite">
+<section class="main-section section actualite">
     <div class="container">
         <div class="heading text-center">
             <!-- Heading -->
@@ -8,6 +8,12 @@
 
         <!-- Article 1 -->
         <div class="row feature design">
+            <div class="col-lg-12 col-xs-12 col-md-12">
+                <p class="ancre">
+                    <a href="#/liste-actualite">Actualités </a>> {{actualite.titre}}
+                </p>
+            </div>
+            <hr/>
             <div class="col-lg-9 col-sm-9 col-xs-9 columns left">
                 <p style="margin-bottom: 20px;">{{actualite.description}}</p>
 
@@ -21,7 +27,7 @@
                     style="position: relative; height: auto;">
                     <h4>Info sur l'actualite</h4>
                     <li class="item web">
-                        <span>Nombre de vue :</span> {{actualite.nbrevue}}
+                        <span>Nombre de vue :</span> {{actualite.nbredevue}}
                     </li>
                     <li class="item web">
                         <span>Publié le :</span> {{actualite.datePublication}}

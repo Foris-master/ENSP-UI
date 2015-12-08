@@ -10,10 +10,14 @@
  *****************************************************************************************************************/
 app_concours
 .config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/formulaire-concours/:niveau/:action/:id?', {
+    $routeProvider.when('/formulaire-concours-niveau-1/:action/:id?', {
         templateUrl: template_url+'concours/formulaire-concours.html',
-        controller: 'FormulaireConcoursCtrl'
+        controller: 'FormulaireConcoursNiveau1Ctrl'
     })
+        .when('/formulaire-concours-niveau-3/:action/:id?', {
+            templateUrl: template_url+'concours/formulaire-concours-niveau-3.html',
+            controller: 'FormulaireConcoursNiveau3Ctrl'
+        })
         .when('/concours/', {
             templateUrl: template_url+'concours/concours.html',
             controller: 'ConcoursCtrl',

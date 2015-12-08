@@ -369,7 +369,7 @@ a.accordion{
     border-bottom: 1px solid #F97D2F;
 }
 
-#aboutUs .heading{
+#aboutUs .heading, .main-section .heading{
     background: url('../images/ensp/banniere-ensp.png') no-repeat;
     background-size: cover;
 }
@@ -418,4 +418,7 @@ caption .form-control{
 .ancre{
     border-left: 5px solid rgb(249, 125, 47);
     padding-left: 5px;
+}
+.table tr, .table td{
+    cursor: pointer;
 }

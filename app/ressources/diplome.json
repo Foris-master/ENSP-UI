@@ -1,0 +1,26 @@
+[
+  {
+    "idPersonne": 1,
+    "nom": "NANDA SIME",
+    "prenom": "Claude Edward",
+    "annee": "2016",
+    "departement": "Génie Informatique",
+    "email": "enanda52@gmail.com",
+    "matricule": "11P169",
+    "mention":"Excellent",
+    "telephone":696870700,
+    "image":"work/1.jpg"
+  },
+  {
+    "idPersonne": 2,
+    "nom": "Ndutu",
+    "prenom": "Arthur",
+    "annee": "2017",
+    "departement": "Génie Mécanique",
+    "email": "ndutugmail.com",
+    "matricule": "12P109",
+    "mention":"Bien",
+    "telephone":696870701,
+    "image":"work/1.jpg"
+  }
+]

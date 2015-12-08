@@ -9,6 +9,8 @@ var app_actualite =angular.module('myApp.actualite', ['ui.router']);
 var app_concours =angular.module('myApp.concours', ['ui.router','720kb.datepicker']);
 var app_departement =angular.module('myApp.departement', ['ui.router']);
 var app_personnel =angular.module('myApp.personnel', ['ui.router']);
+var app_diplome =angular.module('myApp.diplome', ['ui.router']);
+var app_organisation =angular.module('myApp.organisation', ['ui.router']);
 var app_publication=angular.module('myApp.publication', ['ui.router','720kb.datepicker']);
 
 
@@ -25,6 +27,8 @@ angular.module('myApp', [
   'myApp.departement',
   'myApp.personnel',
   'myApp.concours',
+  'myApp.diplome',
+  'myApp.organisation',
   'angularUtils.directives.dirPagination',
     'angular-loading-bar',
   'textAngular',
@@ -35,7 +39,7 @@ angular.module('myApp', [
       $stateProvider.state('us', {
         url: "/us",
         templateUrl:  template_url+'us.html',
-        title:"Equipe de Réalisation"
+        title:"Equipe de RÃ©alisation"
       })
 }])
     .config(['cfpLoadingBarProvider',function(cfpLoadingBarProvider){

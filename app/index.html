@@ -43,7 +43,7 @@
       <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
           <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a href="#/accueil" class="navbar-brand scroll-top logo ensp  animated bounceInLeft">
+          <a ui-sref="accueil" class="navbar-brand scroll-top logo ensp  animated bounceInLeft">
             <b><i><img src="images/logo-ensp.png" class="logo-ensp" /></i></b>
             <span style="font-size: 16px; color: #fff;" >Ecole Nationale Supérieure Polytechnique</span>
           </a>
@@ -66,18 +66,18 @@
               <a href="javascript:void(0);" ng-click="menu='ecole'"  class="dropdown-toggle" data-toggle="dropdown">Ecole </a>
               <ul class="dropdown-menu"style="margin-top: 7px !important;">
                 <div class="">
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="actualite.presentation">Présenation de l'école</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#">Organisation</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#">Diplomés</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="presentation">Présenation de l'école</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="organisation">Organisation</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="diplome">Diplomés</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="concours">Concours</a></li>
                   </div>
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="personnel({categorie:enseignant})">Nos enseignants</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a  href="#/liste-professeur">Nos étudiants</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-personnel/enseignant">Nos enseignants</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-professeur">Nos étudiants</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a href="#">Nos indicateurs</a></li>
                   </div>
-                  <div class="col-lg-4">
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
                   </div>
                 </div>
@@ -92,19 +92,19 @@
               <a href="javascript:void(0);" ng-click="menu='departement'" class="dropdown-toggle" data-toggle="dropdown">Départements</a>
               <ul class="dropdown-menu">
                 <div class="">
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GC})">Génie Civil</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GE})">Génie Electrique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GIND})">Génie Industriel</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:MSP})">Mathémaitques et Sciences Physiques</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GC">Génie Civil</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GE">Génie Electrique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GIND">Génie Industriel</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GIND">Mathémaitques et Sciences Physiques</a></li>
                   </div>
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GM})">Génie Mécanique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GTEL})">Génie Télécommunication</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GI})">Génie Informatique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GVR})">Cordination et Valorisation de la Recherche</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GM">Génie Mécanique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GTEL">Génie Télécommunication</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GI">Génie Informatique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/CVR">Cordination et Valorisation de la Recherche</a></li>
                   </div>
-                  <div class="col-lg-4">
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
                   </div>
                 </div>
@@ -119,39 +119,35 @@
               <a href="javascript:void(0);" ng-click="menu='partenaire'" class="dropdown-toggle" data-toggle="dropdown">Partenaires</a>
               <ul class="dropdown-menu">
                 <div class="">
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Nos partenaires</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Devenir partenaire</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Nos partenaires</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Devenir partenaire</a></li>
                   </div>
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Demande d'une formation</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Offre de stage et d'emploi</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Demande d'une formation</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Offre de stage et d'emploi</a></li>
                   </div>
-                  <div class="col-lg-4">
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
                   </div>
                 </div>
-
-
               </ul>
-
-
             </li>
 
             <li class="dropdown" ng-class="{active : menu=='recherche'}">
               <a href="javascript:void(0);" ng-click="menu='recherche'" class="dropdown-toggle" data-toggle="dropdown">Recherche</a>
               <ul class="dropdown-menu">
                 <div class="">
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Nos laboratoires</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Transfert et valoraisation</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Publications</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Nos laboratoires</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Transfert et valoraisation</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Publications</a></li>
                   </div>
-                  <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Palmarès</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/">Activités de recherche</a></li>
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Palmarès</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="">Activités de recherche</a></li>
                   </div>
-                  <div class="col-lg-4">
+                  <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
                   </div>
                 </div>
@@ -265,7 +261,7 @@
   <section class="copyright">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-center"> Copyright  {{dateCourante | date: 'yyyy'}} | Tous Droits Réservés -- Design -  <a href="#/us"> Us</a> </div>
+        <div class="col-sm-12 text-center"> Copyright  {{dateCourante | date: 'yyyy'}} | Tous Droits Réservés -- Design -  <a ui-sref="us"> Us</a> </div>
       </div>
       <!-- / .row -->
     </div>
@@ -309,6 +305,16 @@
   <script src="ensp-angular/concours/config.js"></script>
   <script src="ensp-angular/concours/services.js"></script>
   <script src="ensp-angular/concours/controllers.js"></script>
+
+  <!--&lt;!&ndash;Module Diplome&ndash;&gt;-->
+  <script src="ensp-angular/diplome/config.js"></script>
+  <script src="ensp-angular/diplome/services.js"></script>
+  <script src="ensp-angular/diplome/controllers.js"></script>
+
+  <!--&lt;!&ndash;Module Organisation&ndash;&gt;-->
+  <script src="ensp-angular/organisation/config.js"></script>
+  <script src="ensp-angular/organisation/services.js"></script>
+  <script src="ensp-angular/organisation/controllers.js"></script>
 
   <!--&lt;!&ndash;Module Personnel&ndash;&gt;-->
   <script src="ensp-angular/personnel/config.js"></script>

@@ -14,11 +14,13 @@
             <div class="col-lg-9 col-sm-9 col-xs-9">
 
 
-                <form action="" ng-submit="EnregistrerCandidat(candidat)">
+                <form action="" ng-submit="EnregistrerCandidat(candidat)" novalidate="">
                     <h5>Informations personnelles</h5>
                     <div class="form-group">
                         <label for="nom">Nom(s)</label>
-                        <input class="form-control" ng-model="candidat.nom" id="nom"
+                        <input class="form-control"
+                               ng-model="candidat.nom"
+                               id="nom"
                                placeholder="Entrer votre nom tel que sur l'acte de naissance"
                                title="Entrer votre nom tel que sur l'acte de naissance"
                                type="text">
@@ -46,7 +48,7 @@
                     </div>
                     <div class="form-group">
                         <label for="sexe">Sexe</label>
-                        <select class="form-control"ng-model="candidat.sexe" id="sexe">
+                        <select class="form-control" ng-model="candidat.sexe" id="sexe">
                             <option value="F">Féminin</option>
                             <option value="M">Masculin</option>
                         </select>

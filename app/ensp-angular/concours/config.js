@@ -9,20 +9,29 @@
                                     routes pour le module  concours
  *****************************************************************************************************************/
 app_concours
-.config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/formulaire-concours/:niveau/:action/:id?', {
-        templateUrl: template_url+'concours/formulaire-concours.html',
-        controller: 'FormulaireConcoursCtrl'
-    })
-        .when('/concours/', {
-            templateUrl: template_url+'concours/concours.html',
-            controller: 'ConcoursCtrl',
-            title:"Nos Concours"
-        })
-        .when('/liste-candidat/:niveau', {
-            templateUrl: template_url+'concours/liste-candidat.html',
-            controller: 'ListeCandidatCtrl',
-            title:"Liste des Candidats"
-        })
+.config(['$stateProvider', function($stateProvider) {
+        $stateProvider
+            .state('concours', {
+                url: "/concours",
+                templateUrl:   template_url+'concours/concours.html',
+                controller:'ConcoursCtrl',
+                title:"Nos Concours"
+            })
+            .state('concours.formulaire', {
+                url: "/formulaire-concours/:niveau/:action/:id?",
+                templateUrl:  template_url+'concours/formulaire-concours.html',
+                controller:'FormulaireConcoursCtrl',
+                title:"Inscription concours",
+                params: {
+                    id: { squash: true, value: null }
+                }
+            })
+            .state('concours.candidats', {
+                url: "/liste-candidat/:niveau",
+                templateUrl:  template_url+'concours/liste-candidat.html',
+                controller:'ListeCandidatCtrl',
+                title:"Liste des Candidats"
+            })
+
 
 }]);

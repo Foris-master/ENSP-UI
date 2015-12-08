@@ -9,19 +9,26 @@
  *****************************************************************************************************************/
 app_departement
 
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/liste-departement', {
-            templateUrl: template_url+'departement/liste-departement.html',
-            controller: 'ListeDepartementCtrl'
-        })
-            .when('/departement/:cygle', {
-                templateUrl: template_url+'departement/departement.html',
+    .config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider) {
+        $stateProvider
+            .state('departement', {
+                url: "/liste-departement",
+                templateUrl: template_url+'departement/liste-departement.html',
+                controller:'ListeDepartementCtrl'
+            })
+            .state('departement.detail', {
+                url: "/departement/:cygle",
+                templateUrl:  template_url+'departement/departement.html',
                 controller: 'DepartementCtrl'
             })
-
-            .when('/formulaire-departement/:id?', {
-                templateUrl: template_url+'departement/formulaire-departement.html',
-                controller: 'FormulaireDepartementCtrl'
+            .state('departement.formulaire', {
+                url: "/formulaire-departement/:id?",
+                templateUrl:  template_url+'departement/formulaire-departement.html',
+                controller: 'FormulaireDepartementCtrl',
+                params: {
+                    id: { squash: true, value: null }
+                }
             });
-        $routeProvider.otherwise({redirectTo: '/liste-departement'});
+
+        $urlRouterProvider.otherwise( '/liste-departement');
     }]);

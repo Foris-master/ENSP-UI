@@ -1,8 +1,9 @@
 Ce fichier contient l'ensemble des taches réalisées
 
-Samedi 28 Noveembre 2015
+Samedi 8 Decembre
 ------------------------
-
-- presentation de l'ecole
-- presentation des departements
-- presentation d'un personnel
+-utilisateur  login , login
+- integration des validation de formulaire
+- integration ui-router
+- integration du formulaire de creation d'article
+- gestion de la minification par redefinition des controlleurs

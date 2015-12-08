@@ -6,7 +6,8 @@
  services pour le module Departement
  *****************************************************************************************************************/
 app_departement
-    .factory('DepartementFactory', function ($http,$filter,$q) {
+    .factory('DepartementFactory', ['$http','$filter','$q',
+    function ($http,$filter,$q) {
 
 
         var factory = {
@@ -72,5 +73,5 @@ app_departement
 
         return factory
 
-    });
+    }]);
 

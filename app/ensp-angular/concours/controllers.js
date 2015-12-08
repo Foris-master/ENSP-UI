@@ -6,12 +6,13 @@
  controlleur pour le module concours
  *****************************************************************************************************************/
 app_concours
-    .controller('FormulaireConcoursCtrl', function($scope,$routeParams,$location,ConcoursFactory,$filter) {
+    .controller('FormulaireConcoursCtrl', ['$scope','$stateParams','$location','ConcoursFactory','$filter',
+    function($scope,$stateParams,$location,ConcoursFactory,$filter) {
         $scope.new_concours = false;
-        var niveau=$routeParams.niveau;
+        var niveau=$stateParams.niveau;
         var nb=niveau.substring(7);
-        var action=$routeParams.action;
-        var id=$routeParams.id || null;
+        var action=$stateParams.action;
+        var id=$stateParams.id || null;
 
         if(nb!=1 && nb!=3)
         {
@@ -39,14 +40,16 @@ app_concours
 
             console.log($scope.new_publication);
         }
-    })
-    .controller('ConcoursCtrl', function($scope,$routeParams,$location,ConcoursFactory,$filter) {
+    }])
+    .controller('ConcoursCtrl',['$scope','$stateParams','$location','ConcoursFactory','$filter',
+    function($scope,$stateParams,$location,ConcoursFactory,$filter) {
 
-    })
-    .controller('ListeCandidatCtrl', function($scope,$routeParams,ConcoursFactory,$filter) {
+    }])
+    .controller('ListeCandidatCtrl', ['$scope','$stateParams','ConcoursFactory','$filter',
+    function($scope,$stateParams,ConcoursFactory,$filter) {
 
         $scope.par_page = 15;
-        var nv=$routeParams.niveau;
+        var nv=$stateParams.niveau;
         var indice=1;
         if(nv!="niveau-3" && nv!="niveau-1"){
             nv="niveau 1";
@@ -86,6 +89,6 @@ app_concours
 
 
         }
-    });
+    }]);
 
 

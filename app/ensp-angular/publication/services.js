@@ -7,7 +7,8 @@
                         services pour le module publications
  *****************************************************************************************************************/
 app_publication
-.factory('PublicationFactory', function ($http,$filter,$q) {
+.factory('PublicationFactory', ['$http','$filter','$q',
+    function ($http,$filter,$q) {
 
 
     var factory = {
@@ -60,5 +61,5 @@ app_publication
 
     return factory
 
-});
+}]);
 

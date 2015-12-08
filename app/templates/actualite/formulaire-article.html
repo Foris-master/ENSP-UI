@@ -9,45 +9,82 @@
                 </div>
             </div>
             <div class="row mrgn30">
-                <form method="post"  id="contactfrm" role="form">
+                <form method="post" ng-submit="save_article()" id="contactfrm" role="form" name="articleForm" novalidate>
 
                     <div class="col-sm-9">
 
-                        <div class="form-group">
+                        <div class="form-group" ng-class="{ 'has-error': articleForm.name.$touched && articleForm.name.$invalid }">
                             <label for="name">Titre</label>
-                            <input ng-model="new_article.titre" type="text" class="form-control" name="name" id="name" placeholder="Entrer le titre " title="Please enter your name (at least 2 characters)">
+                            <input ng-model="new_article.titre"
+                                   type="text"
+                                   class="form-control"
+                                   name="name"
+                                   id="name"
+                                   placeholder="Entrer le titre "
+                                   title="Please enter your name (at least 2 characters)"
+                                   ng-minlength="2"
+                                   ng-maxlength="255"
+                                   required>
+                            <div class="help-block" ng-show="articleForm.name.$touched" ng-messages="articleForm.name.$error">
+                                <p ng-message="minlength">Le titre specifie trop court</p>
+                                <p ng-message="maxlength">Le titre specifie trop long</p>
+                                <p ng-message="required">Le titre de l'article est requit</p>
+                            </div>
+
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group"
+                             ng-class="{ 'has-error': articleForm.categorie.$touched && articleForm.categorie.$invalid }"
+                                >
                             <label for="name">Categorie</label>
-
-                            <select ng-model="new_article.categorie"  name="" id="" class="form-control">
-                                <option selected value="1">Autre</option>
-                                <option value="2">Ecole</option>
-                                <option value="3">Innovation</option>
+                            <select class="form-control"
+                                    name="categorie"
+                                    ng-model="new_article.categorie"
+                                    ng-options=" categorie.id as categorie.name  for categorie in categories"
+                                    required>
+                                <option value="">-- Choisir une categorie --</option>
                             </select>
+                            <div class="help-block" ng-show="articleForm.categorie.$touched" ng-messages="articleForm.categorie.$error">
+                                <p ng-message="required">La categorie de l'article est requit</p>
+                            </div>
+
+
                         </div>
 
                         <div class="form-group">
-                            <duplicate text="Ajouter" "></duplicate>
+                            <!--<duplicate text="Ajouter" "></duplicate>-->
+                            <h4 ng-click="addpart()">Ajouter</h4>
                         </div>
                         <!--<div class="form-group">
                             <textarea content-con="new_article.dupli" id="txtEditor"></textarea>
                         </div>-->
 
                         <!-- editor -->
-                        <div  class="form-group" ng-repeat="p in getNumber(partie) track by $index">
+                        <div class="form-group"
+                             ng-repeat="pa in new_article.parties track by $index"
+                             ng-class="{ 'has-error': partFieldForm.pa.$touched && partFieldForm.pa.$invalid }"
+                                >
+                            <ng-form name="partFieldForm">
+                                <h4 ng-show="$index!=0" ng-click="removepart(pa)">Retirer</h4>
+                                <label for="stitre">Partie {{ $index +1}}</label><br>
+                                <label for="stitre">Titre partie</label>
+                                <input type="text"
+                                       id="stitre" name="pa" required=""
+                                       ng-model="pa.soustitre"
+                                       class="form-control"/>
+                                <text-angular id="editeur" ng-model="pa.contenue" required="" ></text-angular>
+                                <div class="help-block" ng-show="partFieldForm.pa.$touched" ng-messages="partFieldForm.pa.$error">
+                                    <p ng-message="required">Le contenue de l'article est requit</p>
+                                </div>
 
-                            <label for="stitre">Partie {{ $index +1}}</label><br>
-                            <label for="stitre">Titre partie</label>
-                            <input type="text" id="stitre" ng-model="new_article.partie.soustitre" class="form-group"/>
-                            <text-angular id="editeur" ng-model="new_article.partie.contenue"></text-angular>
-                            <label for="catimage">Associer une imgage</label>
-                            <input type="file" id="catimage" fileread="new_article.partie.image"/>
+                                <label for="catimage">Associer une imgage</label>
+                                <input type="file" id="catimage" class="form-control" fileread="pa.image"/>
+                                <hr>
+                            </ng-form>
                         </div>
                         <!-- /editor -->
                         <div class="form-group" id="idsubmit">
-                            <button name="submit" ng-click="save_article()" class="btn btn-lg btn-primary" id="submit" >Creer</button>
+                            <button name="submit"  class="btn btn-lg btn-primary" type="submit" ng-disabled="articleForm.$invalid"> Creer</button>
                         </div>
 
 

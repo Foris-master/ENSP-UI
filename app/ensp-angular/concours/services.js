@@ -8,7 +8,8 @@
  *****************************************************************************************************************/
 
 app_concours
-    .factory('ConcoursFactory', function ($http,$q,$filter,$timeout) {
+    .factory('ConcoursFactory',['$http','$q','$filter','$timeout',
+    function ($http,$q,$filter,$timeout) {
 
 
         var factory = {
@@ -105,4 +106,4 @@ app_concours
 
         return factory
 
-    });
+    }]);

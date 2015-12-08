@@ -10,7 +10,8 @@
  controlleur pour le module actualité
  *****************************************************************************************************************/
 app_actualite
-    .controller('ListeActualiteCtrl', function($scope,ActualiteFactory,$filter) {
+    .controller('ListeActualiteCtrl',['$scope','ActualiteFactory','$filter',
+    function($scope,ActualiteFactory,$filter) {
 
         $scope.par_page = 15;
 
@@ -32,10 +33,11 @@ app_actualite
         }
 
         $scope.loadActualite();
-    })
-    .controller('ActualiteCtrl', function($scope,$routeParams,ActualiteFactory) {
+    }])
+    .controller('ActualiteCtrl', ['$scope','$stateParams','ActualiteFactory',
+    function($scope,$stateParams,ActualiteFactory) {
         //recuperation de la actualite
-        ActualiteFactory.getActualite($routeParams.id).then(
+        ActualiteFactory.getActualite($stateParams.id).then(
             function(data){
 
                 $scope.actualite=data;
@@ -46,20 +48,26 @@ app_actualite
             }
         );
 
-    })
+    }])
 
-.controller('View2Ctrl', function() {
+.controller('View2Ctrl', [function() {
 
-    })
-.controller('FormulaireArticleCtrl', function($scope,$routeParams,$location,ActualiteFactory,$filter) {
-    $scope.new_article = false;
+    }])
+.controller('FormulaireArticleCtrl', ['$scope','$stateParams','$location','ActualiteFactory','$filter',
+    function($scope,$stateParams,$location,ActualiteFactory,$filter) {
+    $scope.categories = [{name:'ecole',id:2},{name:'actuatilite',id:3},{name:'labo',id:4}];
+    $scope.new_article={};
+    $scope.new_article.parties=[{soustitre:"",contenue:"",image:""}];
+    $scope.addpart = function(){
+        $scope.new_article.parties.push({soustitre:"",contenue:"",image:""});
+    };
+    $scope.removepart = function(pa){
+        $scope.new_article.parties.splice($scope.new_article.parties.indexOf(pa), 1);
+    };
 
     //$("#txtEditor").Editor();
-    $scope.partie = 5;
-    $scope.getNumber = function(num) {
-        return new Array(num);
-    }
-    var id=$routeParams.id || null;
+
+    var id=$stateParams.id || null;
     if(id!=null)// Edition d'une publication
     {
         $scope.type="Edition de Concours";
@@ -69,17 +77,40 @@ app_actualite
         $scope.type="Nouvel Article";
     }
     $scope.save_article = function(){
-
+        var stitre_key="foumfoumspij";
+        var contenue_key="famfamspij";
+        var images =[]
         if($scope.new_article!=false){
-            $scope.new_article.contenue=$(".Editor-editor").html();
-            ActualiteFactory.addActualite($scope.new_article);
+            var contenue="";
+            var stitre="";
+            angular.forEach($scope.new_article.parties, function(p){
+                if($scope.new_article.parties.indexOf(p)==0){
+                    stitre+=p.soustitre;
+                    contenue+=p.contenue;
+                }else{
+                    stitre+=stitre_key+p.soustitre;
+                    contenue+=contenue_key+p.contenue;
+                }
+                images.push({image:p.image});
+
+            });
+            contenue=stitre+"__sepstitrecontenue__"+contenue;
+            var article = {
+                titre: $scope.new_article.titre,
+                categorie: $scope.new_article.categorie,
+                contenue:contenue,
+                images:images
+
+            }
+            ActualiteFactory.addActualite(article);
             // $location.path('/liste-publication')
             console.log($scope.new_article);
-        }else{
+            console.log(article);
+
+    }else{
             console.log('veullez remplir les champs');
         }
 
-        console.log($scope.new_article);
     }
-});
+}]);
 

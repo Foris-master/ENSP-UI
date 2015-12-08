@@ -48,7 +48,7 @@
             <span style="font-size: 16px; color: #fff;" >Ecole Nationale Supérieure Polytechnique</span>
           </a>
         </div>
-        
+
         <!--/.navbar-header-->
         <div id="main-nav" class="collapse navbar-collapse menu">
 
@@ -67,14 +67,14 @@
               <ul class="dropdown-menu"style="margin-top: 7px !important;">
                 <div class="">
                   <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/presentation">Présenation de l'école</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="actualite.presentation">Présenation de l'école</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a href="#">Organisation</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a href="#">Diplomés</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/concours">Concours</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="concours">Concours</a></li>
                   </div>
                   <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/liste-personnel/enseignant">Nos enseignants</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/liste-professeur">Nos étudiants</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="personnel({categorie:enseignant})">Nos enseignants</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a  href="#/liste-professeur">Nos étudiants</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a href="#">Nos indicateurs</a></li>
                   </div>
                   <div class="col-lg-4">
@@ -93,16 +93,16 @@
               <ul class="dropdown-menu">
                 <div class="">
                   <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GC">Génie Civil</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GE">Génie Electrique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GIND">Génie Industriel</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GIND">Mathémaitques et Sciences Physiques</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GC})">Génie Civil</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GE})">Génie Electrique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GIND})">Génie Industriel</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:MSP})">Mathémaitques et Sciences Physiques</a></li>
                   </div>
                   <div class="col-lg-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GM">Génie Mécanique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GTEL">Génie Télécommunication</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GI">Génie Informatique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/CVR">Cordination et Valorisation de la Recherche</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GM})">Génie Mécanique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GTEL})">Génie Télécommunication</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GI})">Génie Informatique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement.detail({cygle:GVR})">Cordination et Valorisation de la Recherche</a></li>
                   </div>
                   <div class="col-lg-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -163,6 +163,61 @@
             </li>
 
             <li ng-class="{active : menu=='contact'}"><a href="#" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
+
+              <li class="dropdown" ng-class="{active : menu=='connexion'}">
+                  <a href="javascript:void(0);" ng-click="menu='connexion'" class="dropdown-toggle" data-toggle="dropdown">Connexion</a>
+                  <ul class="dropdown-menu">
+                      <form method="post" ng-submit="loggedIn()" id="contactfrm" role="form" name="userForm" novalidate>
+
+
+
+                          <div class="form-group" ng-class="{ 'has-error': userForm.login.$touched && userForm.login.$invalid }">
+                              <label for="login">Login</label>
+                              <input ng-model="user.login"
+                                     type="text"
+                                     class="form-control"
+                                     name="login"
+                                     id="login"
+                                     placeholder="Entrez votre login ou adresse email "
+                                     title="Entrez votre login ou email pour vous connecter"
+
+                                     required>
+                              <div class="help-block" ng-show="userForm.login.$touched" ng-messages="userForm.login.$error">
+                                  <p ng-message="required">Le login est requit</p>
+                              </div>
+
+                          </div>
+                          <div class="form-group" ng-class="{ 'has-error': userForm.password.$touched && userForm.password.$invalid }">
+                              <label for="password">Mot de passe</label>
+                              <input ng-model="user.password"
+                                     type="password"
+                                     class="form-control"
+                                     name="password"
+                                     id="password"
+                                     placeholder="Entrez votre mot de passe "
+                                     title="Entrez votre mot de passe"
+                                     required>
+                              <div class="help-block" ng-show="userForm.password.$touched" ng-messages="userForm.password.$error">
+                                  <p ng-message="required">Le mot de passe est requit</p>
+                              </div>
+
+                          </div>
+                          <div class="form-group" id="idsubmit">
+                              <button name="submit"
+                                      class="btn btn-lg btn-primary "
+                                      type="submit" ng-disabled="userForm.$invalid",
+                                      >
+                                  Connexion
+                              </button>
+                          </div>
+
+                      </form>
+
+                  </ul>
+
+
+              </li>
+
           </ul>
 
         </div>
@@ -174,7 +229,7 @@
   </header>
   <div id="#top"></div>
 
-  <section ng-view autoscroll="true"></section>
+  <section ui-view autoscroll="true"></section>
 
   <footer>
     <div class="container">
@@ -220,36 +275,37 @@
 
 
   <script src="../bower_components/angular/angular.js"></script>
-  <script src="../bower_components/angular-route/angular-route.js"></script>
+  <!--<script src="../bower_components/angular-route/angular-route.js"></script>-->
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="../bower_components/angularjs-datepicker/src/js/angular-datepicker.js"></script>
   <script src="../bower_components/angularUtils-pagination/dirPagination.js"></script>
   <script src="../bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
   <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
-
- <!--&lt;!&ndash; ENSP Angular&ndash;&gt;
+  <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
+ <!-- ENSP Angular-->
   <script src="app.js"></script>
-  &lt;!&ndash;Module Accueil&ndash;&gt;
+  <!--Module Accueil-->
   <script src="ensp-angular/accueil/config.js"></script>
   <script src="ensp-angular/accueil/services.js"></script>
   <script src="ensp-angular/accueil/controllers.js"></script>
 
-&lt;!&ndash;Module Publication&ndash;&gt;
+<!--Module Publication-->
   <script src="ensp-angular/publication/config.js"></script>
   <script src="ensp-angular/publication/services.js"></script>
   <script src="ensp-angular/publication/controllers.js"></script>
 
-&lt;!&ndash;Module Actualite&ndash;&gt;
+<!--Module Actualite-->
   <script src="ensp-angular/actualite/config.js"></script>
   <script src="ensp-angular/actualite/services.js"></script>
   <script src="ensp-angular/actualite/controllers.js"></script>
   <script src="ensp-angular/actualite/directives.js"></script>
 
-  &lt;!&ndash;Module Departement&ndash;&gt;
+  <!--Module Departement-->
   <script src="ensp-angular/departement/config.js"></script>
   <script src="ensp-angular/departement/services.js"></script>
   <script src="ensp-angular/departement/controllers.js"></script>
 
-&lt;!&ndash;Module Concours&ndash;&gt;
+<!--Module Concours-->
   <script src="ensp-angular/concours/config.js"></script>
   <script src="ensp-angular/concours/services.js"></script>
   <script src="ensp-angular/concours/controllers.js"></script>
@@ -258,8 +314,7 @@
   <script src="ensp-angular/personnel/config.js"></script>
   <script src="ensp-angular/personnel/services.js"></script>
   <script src="ensp-angular/personnel/controllers.js"></script>
-  <!--<script src="ensp-angular/ensp.built.min.js"></script>-->
-  <script src="ensp-angular/concours/controllers.js"></script>
+
   <!--<script src="ensp-angular/ensp.built.min.js"></script>-->
 
   <script src="js/modernizr-latest.js"></script>
@@ -279,6 +334,9 @@
   <script src='../bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
   <script src='../bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
   <script src='../bower_components/textAngular/dist/textAngular.min.js'></script>
+  <script src="../bower_components/api-check/dist/api-check.min.js"></script>
+  <script src="../bower_components/angular-formly/dist/formly.min.js"></script>
+  <script src="../bower_components/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.min.js"></script>
 
   <script src="js/editor.js"></script>
   <script src="js/highcharts.src.js"></script>

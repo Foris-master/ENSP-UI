@@ -8,9 +8,10 @@
  *****************************************************************************************************************/
 app_departement
 
-    .controller('FormulairePublicationCtrl', function($scope,$routeParams,$location,PublicationFactory,$filter) {
+    .controller('FormulairePublicationCtrl',['$scope','$stateParams','$location','PublicationFactory','$filter',
+    function($scope,$stateParams,$location,PublicationFactory,$filter) {
         $scope.new_publication = false;
-        var id=$routeParams.id || null;
+        var id=$stateParams.id || null;
         if(id!=null)// Edition d'une publication
         {
             $scope.type="Edition de Publication";
@@ -29,10 +30,11 @@ app_departement
 
             console.log($scope.new_publication);
         }
-    })
+    }])
 
-    .controller('ListePublicationCtrl', function($scope,$routeParams,PublicationFactory,$filter) {
-        $scope.auteur =$routeParams.auteur || null;
+    .controller('ListePublicationCtrl', ['$scope','$stateParams','PublicationFactory','$filter',
+    function($scope,$stateParams,PublicationFactory,$filter) {
+        $scope.auteur =$stateParams.auteur || null;
         $scope.par_page = 15;
 
 
@@ -66,10 +68,11 @@ app_departement
         }
 
         $scope.loadPublication();
-    })
-    .controller('PublicationCtrl', function($scope,$routeParams,PublicationFactory) {
+    }])
+    .controller('PublicationCtrl', ['$scope','$stateParams','PublicationFactory',
+    function($scope,$stateParams,PublicationFactory) {
         //recuperation de la publication
-        PublicationFactory.getPublication($routeParams.id).then(
+        PublicationFactory.getPublication($stateParams.id).then(
             function(data){
 
                 $scope.publication=data;
@@ -79,7 +82,7 @@ app_departement
             }
         );
 
-    });
+    }]);
 
 
 

@@ -9,11 +9,14 @@ var template_url='templates/'; // chemin vers le dossier des templates
  *****************************************************************************************************************/
 app_accueil
 
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/accueil', {
-            templateUrl: template_url+'accueil/accueil.html',
-            controller: 'AccueilCtrl'
-        });
+    .config(['$stateProvider', function($stateProvider) {
+
+        $stateProvider
+            .state('accueil', {
+                url: "/accueil",
+                templateUrl: template_url+'accueil/accueil.html',
+                controller: 'AccueilCtrl'
+            })
     }]);
 
 

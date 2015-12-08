@@ -6,7 +6,8 @@
  services pour le module Actualité
  *****************************************************************************************************************/
 app_actualite
-    .factory('ActualiteFactory', function ($http,$filter,$q) {
+    .factory('ActualiteFactory', ['$http','$filter','$q',
+    function ($http,$filter,$q) {
 
 
         var factory = {
@@ -48,7 +49,7 @@ app_actualite
             addActualite: function (actualite) {
                 var defferd = $q.defer();
                 factory.getActualites().then(function(res){
-                    console.log(factory.actualites);
+                  //  console.log(factory.actualites);
                     factory.actualites.push(actualite);
                 })
 
@@ -59,5 +60,5 @@ app_actualite
 
         return factory
 
-    });
+    }]);
 

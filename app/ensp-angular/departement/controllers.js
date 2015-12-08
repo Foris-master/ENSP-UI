@@ -7,7 +7,8 @@
  controlleur pour le module Departement
  *****************************************************************************************************************/
 app_departement
-    .controller('ListeDepartementCtrl', function($scope,DepartementFactory) {
+    .controller('ListeDepartementCtrl', ['$scope','DepartementFactory',
+    function($scope,DepartementFactory) {
 
 
         $scope.loadDepartement=function(){
@@ -31,10 +32,11 @@ app_departement
         }
 
         $scope.loadDepartement();
-    })
-    .controller('DepartementCtrl', function($scope,$routeParams,DepartementFactory) {
+    }])
+    .controller('DepartementCtrl', ['$scope','$stateParams','DepartementFactory',
+    function($scope,$stateParams,DepartementFactory) {
         //recuperation de la departement
-        DepartementFactory.getDepartementObjet({cygle:$routeParams.cygle}).then(
+        DepartementFactory.getDepartementObjet({cygle:$stateParams.cygle}).then(
             function(data){
                 $scope.departement=data;
                 //console.log(data);
@@ -49,7 +51,7 @@ app_departement
             }
         );
 
-    })
+    }]);
 
 
 

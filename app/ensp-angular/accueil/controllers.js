@@ -10,17 +10,24 @@
 app_header
 
 
-    .controller('headerCtrl', function($scope) {
+    .controller('headerCtrl',['$scope','$stateParams',
+    function($scope) {
         $scope.dateCourante=new Date();
         $scope.menu="ecole";
-    });
+        $scope.user={};
+        $scope.loggedIn = function(){
+            console.log($scope.user);
+        }
+    }]);
 
 /******************************************************************************************************************
  controlleur pour le module accueil
  *****************************************************************************************************************/
 app_accueil
-    .controller('AccueilCtrl', function() {
+    .controller('AccueilCtrl',['$scope','$stateParams',
+    function($scope,$stateParams) {
 
-    });
+
+    }]);
 
 

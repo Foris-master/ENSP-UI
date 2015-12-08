@@ -7,10 +7,11 @@
  controlleur pour le module Personnel
  *****************************************************************************************************************/
 app_personnel
-    .controller('ListePersonnelCtrl', function($scope,$location,PersonnelFactory,$routeParams,$filter,$compile) {
+    .controller('ListePersonnelCtrl', ['$scope','$location','PersonnelFactory','$stateParams',
+        function($scope,$location,PersonnelFactory,$stateParams) {
 
-        var categorie=$routeParams.categorie;
-        console.log(categorie)
+        var categorie=$stateParams.categorie;
+        console.log(categorie);
         $scope.titre="Personnel Enseignant";
         if(categorie=="administratif"){
             $scope.titre="Personnel Administratif";
@@ -30,24 +31,24 @@ app_personnel
 
                     $scope.personnels=data;
                     //console.log($scope.personnels);
-
                 },function(msg){
                     console.log(msg);
                 }
             );
 
-        }
+        };
 
         $scope.changementPage=function(){
             $scope.loadPersonnel();
-        }
+        };
 
         $scope.loadPersonnel();
-    })
-    .controller('PersonnelCtrl', function($scope,$routeParams,PersonnelFactory) {
+    }])
+    .controller('PersonnelCtrl',['$scope','PersonnelFactory','$stateParams',
+        function($scope,$stateParams,PersonnelFactory) {
         //recuperation de la personnel
 
-        PersonnelFactory.getPersonnel($routeParams.id).then(
+        PersonnelFactory.getPersonnel($stateParams.id).then(
             function(data){
                 $scope.personnel=data;
                 console.log(data.projets);
@@ -57,34 +58,9 @@ app_personnel
             }
         );
 
-    })
+    }])
 
 
-.controller('FormulaireArticleCtrl', function($scope,$routeParams,$location,PersonnelFactory,$filter) {
-    $scope.new_article = false;
 
-    $("#txtEditor").Editor();
-    var id=$routeParams.id || null;
-    if(id!=null)// Edition d'une publication
-    {
-        $scope.type="Edition de Concours";
-    }
-    else // creation d'une publication
-    {
-        $scope.type="Nouvel Article";
-    }
-    $scope.save_article = function(){
-
-        if($scope.new_article!=false){
-            $scope.new_article.contenue=$(".Editor-editor").html();
-            PersonnelFactory.addPersonnel($scope.new_article);
-            // $location.path('/liste-publication')
-            console.log($scope.new_article);
-        }else{
-            console.log('veullez remplir les champs');
-        }
-
-        console.log($scope.new_article);
-    }
-});
+;
 

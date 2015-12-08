@@ -3,20 +3,21 @@
 // Declare app level module which depends on views, and components
 var template_url='templates/'; // chemin vers le dossier des templates
 //definition de tout les modules
-var app_accueil =angular.module('myApp.accueil', ['ngRoute']);
-var app_header =angular.module('myApp.header', ['ngRoute']);
-var app_actualite =angular.module('myApp.actualite', ['ngRoute']);
-var app_concours =angular.module('myApp.concours', ['ngRoute','720kb.datepicker']);
-var app_departement =angular.module('myApp.departement', ['ngRoute']);
-var app_personnel =angular.module('myApp.personnel', ['ngRoute']);
-var app_publication=angular.module('myApp.publication', ['ngRoute','720kb.datepicker']);
+var app_accueil =angular.module('myApp.accueil', ['ui.router']);
+var app_header =angular.module('myApp.header', ['ui.router']);
+var app_actualite =angular.module('myApp.actualite', ['ui.router']);
+var app_concours =angular.module('myApp.concours', ['ui.router','720kb.datepicker']);
+var app_departement =angular.module('myApp.departement', ['ui.router']);
+var app_personnel =angular.module('myApp.personnel', ['ui.router']);
+var app_publication=angular.module('myApp.publication', ['ui.router','720kb.datepicker']);
 
 
 angular.module('myApp', [
-  'ngRoute',
+    'ui.router',
   'ngSanitize',
   'ngWYSIWYG',
     'ngAnimate',
+    'ngMessages',
   'myApp.accueil',
   'myApp.actualite',
   'myApp.header',
@@ -26,12 +27,14 @@ angular.module('myApp', [
   'myApp.concours',
   'angularUtils.directives.dirPagination',
     'angular-loading-bar',
-  'textAngular'
-]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/accueil'});
-      $routeProvider.when('/us', {
-        templateUrl: template_url+'us.html',
+  'textAngular',
+    'formly',
+    'formlyBootstrap'
+]).config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider) {
+      $urlRouterProvider.otherwise( '/accueil');
+      $stateProvider.state('us', {
+        url: "/us",
+        templateUrl:  template_url+'us.html',
         title:"Equipe de Réalisation"
       })
 }])
@@ -46,3 +49,7 @@ config(['$routeProvider', function($routeProvider) {
         $rootScope.title = current.$$route.title;
       });
     }]);
+/*
+$rootScope.$on('$stateChangeSuccess', function() {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+});*/

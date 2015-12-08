@@ -27,7 +27,8 @@ app_actualite
         }
     };
 }])
-    .directive('content', function ($compile) {
+    .directive('content',[
+        function ($compile) {
         return {
             restrict: 'A',
             scope: {
@@ -46,8 +47,9 @@ app_actualite
                 };
             }
         }
-    })
-    .directive('duplicate', function ($compile) {
+    }])
+    .directive('duplicate',[
+        function ($compile) {
         return {
             restrict: 'E',
             scope: {
@@ -65,8 +67,9 @@ app_actualite
                 };
             }
         }
-    })
-    .directive('remove', function ($compile) {
+    }])
+    .directive('remove',[
+    function ($compile) {
         return {
             restrict: 'E',
             scope: {
@@ -79,7 +82,7 @@ app_actualite
                 };
             }
         }
-    })
+    }])
     .directive("fileread", [function () {
         return {
             scope: {

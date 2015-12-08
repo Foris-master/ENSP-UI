@@ -4,3 +4,19 @@
 - Concours
 - Diplomé
 - Nos etudiants
+
+-partenaire tout le menu
+    -formulaire creation ( l'instution )
+    - afficher details
+    - lister partenaire
+
+- voir parametre
+
+institution a logo
+un candidat doit pouvoir  modifier
+definir partenaire
+
+- Mettre a jour tout les liens pour ui router
+- Mettre la validation dans les formulaire en se basant sur le modele de la creation d article
+- code l interface de connexion
+- code la page d utilisateur ( personnel , etudiant , clubs , labo )

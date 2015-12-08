@@ -6,7 +6,8 @@
  services pour le module Personnel
  *****************************************************************************************************************/
 app_personnel
-    .factory('PersonnelFactory', function ($http,$filter,$q) {
+    .factory('PersonnelFactory', ['$http','$filter','$q',
+    function ($http,$filter,$q) {
 
 
         var factory = {
@@ -50,14 +51,14 @@ app_personnel
                 factory.getPersonnels().then(function(res){
                     console.log(factory.personnels);
                     factory.personnels.push(personnel);
-                })
+                });
 
 
                 return defferd.promise;
             }
-        }
+        };
 
         return factory
 
-    });
+    }]);
 

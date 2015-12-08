@@ -1,4 +1,4 @@
-<section id="team" class="section page-section color">
+<section id="team" class="main-section section ">
     <div class="container">
         <div class="heading text-center">
             <!-- Heading -->
@@ -6,13 +6,13 @@
             <p></p>
         </div>
 
-        <!-- Team Member's Details -->
+        <!--  -->
         <div class="team-content">
             <div class="row actu-container">
                 <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="a in actualites |filter:searchKey | orderBy : '-datePublication' : true | itemsPerPage: par_page">
                     <div class="actu row">
                         <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
-                            <img src="images/work/7.jpg" alt=""/>
+                            <img src="images/{{a.image}}" alt=""/>
                         </div>
                         <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
                             <h3>{{a.titre}}</h3>

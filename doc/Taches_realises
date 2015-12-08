@@ -1,9 +1,44 @@
 Ce fichier contient l'ensemble des taches réalisées
 
-Samedi 8 Decembre
+Samedi 28 Novembre 2015
 ------------------------
--utilisateur  login , login
+
+- organisation-utilisateur  login , login
 - integration des validation de formulaire
 - integration ui-router
 - integration du formulaire de creation d'article
 - gestion de la minification par redefinition des controlleurs
+
+Samedi 05 Decembre 2015
+-----------------------
+- presentation de l'ecole
+- presentation des departements
+- presentation d'un personnel
+
+
+Dimanche 06 Decembre 2015
+-------------------------
+
+- Concours
+    -- inscription
+    -- liste des candidats
+- Presentation des diplomés
+
+Lundi 07 Decembre 2015
+----------------------
+
+- mettre le lien dans les actualités de l'acceuil
+- le heading de actualité, consulter actualité et l'image en arrière
+
+Mardi 08 Decembre 2015
+----------------------
+
+- organisation
+
+Mecredie 16 Decembre 2015
+-------------------------
+
+- authorization
+- controlle des droit d acces a une route
+        - par login
+        - par roles

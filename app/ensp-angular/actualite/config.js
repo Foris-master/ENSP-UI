@@ -11,10 +11,16 @@ app_actualite
 
     .config(['$stateProvider', function($stateProvider)  {
         $stateProvider
-            .state('actualite', {
+            .state('liste-actualite', {
                 url: "/liste-actualite",
                 templateUrl:  template_url+'actualite/liste-actualite.html',
-                controller:'ListeActualiteCtrl'
+                controller:'ListeActualiteCtrl',
+                title:"Liste Actualites",
+                access: {
+                    loginRequired: true,
+                    requiredPermissions: ['Admin', 'UserManager'],
+                    permissionType: 'AtLeastOne'
+                }
             })
             .state('actualite.detail', {
                 url: "/actualite/:id",

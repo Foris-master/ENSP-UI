@@ -13,25 +13,33 @@ app_concours
         $stateProvider
             .state('concours', {
                 url: "/concours",
-                templateUrl:   template_url+'concours/concours.html',
-                controller:'ConcoursCtrl',
-                title:"Nos Concours"
+                templateUrl: template_url + 'concours/concours.html',
+                controller: 'ConcoursCtrl',
+                title: "Nos Concours"
             })
-            .state('concours.formulaire', {
-                url: "/formulaire-concours/:niveau/:action/:id?",
-                templateUrl:  template_url+'concours/formulaire-concours.html',
-                controller:'FormulaireConcoursCtrl',
-                title:"Inscription concours",
+            .state('concours-formulaire', {
+                url: "/formulaire-concours-niveau-1/:action/:id?",
+                templateUrl: template_url + 'concours/formulaire-concours.html',
+                controller: 'FormulaireConcoursNiveau1Ctrl',
+                title: "Inscription concours niveau 1",
                 params: {
-                    id: { squash: true, value: null }
+                    id: {squash: true, value: null}
                 }
             })
-            .state('concours.candidats', {
+            .state('concours-formulaire3', {
+                url: "/formulaire-concours-niveau-3/:action/:id?",
+                templateUrl: template_url + 'concours/formulaire-concours-niveau-3.html',
+                controller: 'FormulaireConcoursNiveau3Ctrl',
+                title: "Inscription concours niveau 3",
+                params: {
+                    id: {squash: true, value: null}
+                }
+            })
+            .state('concours-candidats', {
                 url: "/liste-candidat/:niveau",
-                templateUrl:  template_url+'concours/liste-candidat.html',
-                controller:'ListeCandidatCtrl',
-                title:"Liste des Candidats"
+                templateUrl: template_url + 'concours/liste-candidat.html',
+                controller: 'ListeCandidatCtrl',
+                title: "Liste des Candidats"
             })
 
-
-}]);
+    }])

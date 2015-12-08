@@ -15,7 +15,13 @@ app_accueil
             .state('accueil', {
                 url: "/accueil",
                 templateUrl: template_url+'accueil/accueil.html',
-                controller: 'AccueilCtrl'
+                controller: 'AccueilCtrl',
+                title : 'Accueil',
+                access: {
+                    loginRequired: false,
+                    requiredPermissions: ['Admin', 'UserManager'],
+                    permissionType: 'All'
+                }
             })
     }]);
 

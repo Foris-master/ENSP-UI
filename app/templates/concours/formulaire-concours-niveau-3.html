@@ -9,18 +9,16 @@
         <div class="s feature design">
 
             <p class="ancre">
-                <a href="#/concours">Concours niveau 1 </a>> Inscription
+                <a href="#/concours">Concours niveau {{niveau}} </a>> Inscription
             </p>
             <div class="col-lg-9 col-sm-9 col-xs-9">
 
 
-                <form action="" ng-submit="EnregistrerCandidat(candidat)" novalidate="">
+                <form action="" ng-submit="EnregistrerCandidat3(candidat)">
                     <h5>Informations personnelles</h5>
                     <div class="form-group">
                         <label for="nom">Nom(s)</label>
-                        <input class="form-control"
-                               ng-model="candidat.nom"
-                               id="nom"
+                        <input class="form-control" ng-model="candidat.nom" id="nom"
                                placeholder="Entrer votre nom tel que sur l'acte de naissance"
                                title="Entrer votre nom tel que sur l'acte de naissance"
                                type="text">
@@ -74,7 +72,7 @@
                     </div>
                     <div class="form-group">
                         <label for="sexe">Sexe</label>
-                        <select class="form-control" ng-model="candidat.sexe" id="sexe">
+                        <select class="form-control"ng-model="candidat.sexe" id="sexe">
                             <option value="F">Féminin</option>
                             <option value="M">Masculin</option>
                         </select>
@@ -145,13 +143,6 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="nombre">Nombre d'examen tenté</label>
-                        <input class="form-control"ng-model="candidat.nombreExamen" id="nombre"
-                               placeholder="Entrer le nombre de fois que vous avez tenté cet examen"
-                               title="Entrer le nombre de fois que vous avez tenté cet examen"
-                               type="number">
-                    </div>
-                    <div class="form-group">
                         <label for="numeroTransaction">Numero de Transaction</label>
                         <input class="form-control"ng-model="candidat.numeroTransaction" id="numeroTransaction"
                                placeholder="Entrer votre numero de transaction"
@@ -165,49 +156,43 @@
                                title="Entrer vos références"
                                type="text">
                     </div>
-                    <h5>Information sur le Probatoire ou GCE O'level</h5>
                     <div class="form-group">
-                        <label for="sessionProba">Session</label>
-                        <select class="form-control"ng-model="candidat.sessionProbatoire" id="sessionProba">
+                        <label for="filiere1">Filière choisie 1</label>
+                        <select class="form-control"ng-model="candidat.filiere1" id="filiere1">
                             <option value="A">English</option>
                             <option value="F">Français</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="optionProba">Option</label>
-                        <select class="form-control"ng-model="candidat.optionProbatoire" id="optionProba">
+                        <label for="filiere2">Filière choisie 2</label>
+                        <select class="form-control"ng-model="candidat.filiere3" id="filiere2">
                             <option value="A">English</option>
                             <option value="F">Français</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="noteMathProba">Note en mathématique</label>
-                        <input class="form-control"ng-model="candidat.noteMathProbatoire" id="noteMathProba"
-                               placeholder="Entrer votre note en mathématique"
-                               title="Entrer votre note en mathématique"
-                               type="number">
+                        <label for="filiere3">Filière choisie 3</label>
+                        <select class="form-control"ng-model="candidat.filiere3" id="filiere3">
+                            <option value="A">English</option>
+                            <option value="F">Français</option>
+                        </select>
+                    </div>
+                    <h5>Information sur le diplôme universitaire</h5>
+                    <div class="form-group">
+                        <label for="diplome">Diplôme</label>
+                        <select class="form-control"ng-model="candidat.diplome" id="diplome">
+                            <option value="A">English</option>
+                            <option value="F">Français</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="coefMathProba">Coëfficient en mathématique</label>
-                        <input class="form-control"ng-model="candidat.noteMathProbatoire" id="coefMathProba"
-                               placeholder="Entrer le coëfficient en mathématique"
-                               title="Entrer le coëfficient en mathématique"
-                               type="number">
+                        <label for="session">Session</label>
+                        <select class="form-control"ng-model="candidat.sessionDiplome" id="session">
+                            <option value="A">English</option>
+                            <option value="F">Français</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <label for="notePhyProba">Note en Physique</label>
-                        <input class="form-control"ng-model="candidat.notePhyProbatoire" id="notePhyProba"
-                               placeholder="Entrer votre note en physique"
-                               title="Entrer votre note en physique"
-                               type="number">
-                    </div>
-                    <div class="form-group">
-                        <label for="coefPhyProba">Coëfficient en physique</label>
-                        <input class="form-control"ng-model="candidat.notePhyProbatoire" id="coefPhyProba"
-                               placeholder="Entrer le coëfficient en physique"
-                               title="Entrer le coëfficient en physique"
-                               type="number">
-                    </div>
+
                     <div class="form-group">
                         <label for="villeEtaProba">Ville et établissement</label>
                         <input class="form-control"ng-model="candidat.vielleEtablissementProbatoire" id="villeEtaProba"
@@ -215,63 +200,30 @@
                                title="Entrer La ville et l'etablissement ou vous avez composé"
                                type="number">
                     </div>
-                    <h5>Information sur le Baccalaureat ou GCE A'level</h5>
                     <div class="form-group">
-                        <label for="sessionBac">Session</label>
-                        <select class="form-control"ng-model="candidat.sessionBaccalaureat" id="sessionBac">
-                            <option value="A">English</option>
-                            <option value="F">Français</option>
-                        </select>
+                        <table class="table table-responsive table-bordered table-striped table-condensed">
+                            <thead>
+                            <tr>
+                                <th>Année</th>
+                                <th>Etablissement ou Emploi - Ville - Dépt.</th>
+                                <th>Classe ou Catégorie</th>
+                                <th>Diplômes - Examens ou Concours présentés</th>
+                                <th>Mention ou Rang</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="n in [1,2,3,4]" >
+                                <td>201{{n}}/201{{n+1}}</td>
+                                <td><input type="text" class="form-control"/></td>
+                                <td><input type="text" class="form-control"/></td>
+                                <td><input type="text" class="form-control"/></td>
+                                <td><input type="text" class="form-control"/></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="form-group">
-                        <label for="optionBac">Option</label>
-                        <select class="form-control"ng-model="candidat.optionBaccalaureat" id="optionBac">
-                            <option value="A">English</option>
-                            <option value="F">Français</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="noteMathBac">Note en mathématique</label>
-                        <input class="form-control"ng-model="candidat.noteMathBaccalaureat" id="noteMathBac"
-                               placeholder="Entrer votre note en mathématique"
-                               title="Entrer votre note en mathématique"
-                               type="number">
-                    </div>
-                    <div class="form-group">
-                        <label for="coefMathBac">Coëfficient en mathématique</label>
-                        <input class="form-control"ng-model="candidat.noteMathBaccalaureat" id="coefMathBac"
-                               placeholder="Entrer le coëfficient en mathématique"
-                               title="Entrer le coëfficient en mathématique"
-                               type="number">
-                    </div>
-                    <div class="form-group">
-                        <label for="notePhyBac">Note en Physique</label>
-                        <input class="form-control"ng-model="candidat.notePhyBaccalaureat" id="notePhyBac"
-                               placeholder="Entrer votre note en physique"
-                               title="Entrer votre note en physique"
-                               type="number">
-                    </div>
-                    <div class="form-group">
-                        <label for="coefPhyBac">Coëfficient en physique</label>
-                        <input class="form-control"ng-model="candidat.notePhyBaccalaureat" id="coefPhyBac"
-                               placeholder="Entrer le coëfficient en physique"
-                               title="Entrer le coëfficient en physique"
-                               type="number">
-                    </div>
-                    <div class="form-group">
-                        <label for="mentionBac">Mention</label>
-                        <select class="form-control"ng-model="candidat.mentionBaccalaureat" id="mentionBac">
-                            <option value="A">English</option>
-                            <option value="F">Français</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="villeEtaBac">Ville et établissement</label>
-                        <input class="form-control"ng-model="candidat.vielleEtablissementBaccalaureat" id="villeEtaBac"
-                               placeholder="Ex : Douala - Lycée Joss"
-                               title="Entrer La ville et l'etablissement ou vous avez composé"
-                               type="number">
-                    </div>
+
                     <h5>Confirmation</h5>
                     <div class="form-group">
                         <div class="col-lg-6">

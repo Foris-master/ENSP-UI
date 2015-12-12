@@ -1,0 +1,18 @@
+[
+  {
+    "niveau":1,
+    "arrete":"lien vers le pdf de l'arrete",
+    "pieces": [
+      "piece",
+      "Piece 2"
+    ]
+  },
+  {
+    "niveau":3,
+    "arrete":"lien vers le pdf de l'arrete",
+    "pieces": [
+      "piece",
+      "Piece 2"
+    ]
+  }
+]

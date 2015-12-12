@@ -10,12 +10,12 @@ var template_url='templates/'; // chemin vers le dossier des templates
 app_accueil
 
     .config(['$stateProvider', function($stateProvider) {
-
         $stateProvider
             .state('accueil', {
                 url: "/accueil",
-                templateUrl: template_url+'accueil/accueil.html',
-                controller: 'AccueilCtrl'
+                templateUrl: template_url + 'accueil/accueil.html',
+                controller: 'AccueilCtrl',
+                title: "Accueil"
             })
     }]);
 

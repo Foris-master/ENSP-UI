@@ -70,7 +70,7 @@ app_concours
 
                     }).error(function(data,status){
                         console.log(status);
-                        deferred.reject('Impossible de recuperer les concours');
+                        deferred.reject('Impossible de recuperer les candidats');
                     });
 
                 }

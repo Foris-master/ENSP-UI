@@ -54,7 +54,6 @@ app_departement
     }]);
 
 
-
 function paintGraph(statistique){
     angular.forEach(statistique, function(s, key) {
 

@@ -15,7 +15,7 @@ var app_publication=angular.module('myApp.publication', ['ui.router','720kb.date
 
 
 angular.module('myApp', [
-    'ui.router',
+  'ui.router',
   'ngSanitize',
   'ngWYSIWYG',
     'ngAnimate',
@@ -42,6 +42,7 @@ angular.module('myApp', [
         title:"Equipe de Réalisation"
       })
 }])
+
     .config(['cfpLoadingBarProvider',function(cfpLoadingBarProvider){
       cfpLoadingBarProvider.includeBar=true;
       //cfpLoadingBarProvider.spinnerTemplate = '<div><span class="fa fa-spinner">Loading ...</span>';

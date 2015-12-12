@@ -12,7 +12,7 @@ app_concours
         
         var action=$stateParams.action;
         var id=$stateParams.id || null;
-
+        
         $scope.niveau="1";
 
         if(action=="inscription")
@@ -36,11 +36,11 @@ app_concours
             console.log($scope.new_publication);
         }
     }])
-    .controller('FormulaireConcoursNiveau3Ctrl', [function($scope,$routeParams,$location,ConcoursFactory,$filter) {
+    .controller('FormulaireConcoursNiveau3Ctrl', ['$scope','$stateParams','$location','ConcoursFactory','$filter',function($scope,$stateParams,$location,ConcoursFactory,$filter) {
         $scope.new_concours = false;
 
-        var action=$routeParams.action;
-        var id=$routeParams.id || null;
+        var action=$stateParams.action;
+        var id=$stateParams.id || null;
 
         $scope.niveau="3";
 
@@ -67,10 +67,18 @@ app_concours
     }])
     .controller('ConcoursCtrl',['$scope','$stateParams','$location','ConcoursFactory','$filter',
     function($scope,$stateParams,$location,ConcoursFactory,$filter) {
+        ConcoursFactory.getConcours().then(function(data){
+            $scope.concours=data;
+            console.log(data);
+        })
 
+        $scope.listePiece=function(concour){
+            $scope.pieces= concour.pieces;
+            $scope.niveau=concour.niveau;
+            $('#detail').trigger('click');
+        }
     }])
-    .controller('ListeCandidatCtrl', ['$scope','$stateParams','ConcoursFactory','$filter',
-    function($scope,$stateParams,ConcoursFactory,$filter) {
+    .controller('ListeCandidatCtrl',['$scope','$stateParams','ConcoursFactory','$filter', function($scope,$stateParams,ConcoursFactory,$filter) {
 
         $scope.par_page = 15;
         var nv=$stateParams.niveau;

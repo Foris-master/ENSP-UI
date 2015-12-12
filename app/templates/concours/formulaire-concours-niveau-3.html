@@ -9,7 +9,7 @@
         <div class="s feature design">
 
             <p class="ancre">
-                <a href="#/concours">Concours niveau {{niveau}} </a>> Inscription
+                <a ui-sref="concours">Concours niveau {{niveau}} </a>> Inscription
             </p>
             <div class="col-lg-9 col-sm-9 col-xs-9">
 
@@ -252,7 +252,7 @@
 
                                 <!-- pass a session id to the query string of the script to prevent ie caching -->
                                 <!-- -->
-                                <a tabindex="-1" style="border-style: none; float : left; margin-top: 100px;margin-right:-110px" href="#" title="Refresh Image" onclick="document.getElementById('siimage').src = 'securimage/securimage_show.php?sid=' + Math.random(); return false"><img src="securimage/refresh.gif" alt="Recharger l'image" border="0" onclick="this.blur()" align="bottom" /></a>
+                                <a tabindex="-1" style="border-style: none; float : left; margin-top: 100px;margin-right:-110px" ui-sref="#" title="Refresh Image" onclick="document.getElementById('siimage').src = 'securimage/securimage_show.php?sid=' + Math.random(); return false"><img src="securimage/refresh.gif" alt="Recharger l'image" border="0" onclick="this.blur()" align="bottom" /></a>
 
                             </p>
                             <button type="reset" class="btn">Recommencer</button>
@@ -265,7 +265,7 @@
 
             <div class="col-lg-3 col-sm-3 col-xs-3">
                 <h5>Notice</h5>
-                <p>En cas de problème dans le remplissage du formulaire, bien vouloir se référer à <a href="#/notice/niveau-{{niveau}}">la notice</a></p>
+                <p>En cas de problème dans le remplissage du formulaire, bien vouloir vous référer à <a ui-sref="notice({niveau:niveau})">la notice</a></p>
             </div>
         </div>
 
@@ -275,36 +275,4 @@
 
     </div>
 </section>
-<div class="modal hide fade" id="identificationModal">
-    <form ng-submit="Identification(candidat)">
-        <div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
-            <h3>Identification du candidat</h3>
-        </div>
-        <div class="modal-body">
 
-            <div class="row">
-                <div class="col-lg-3"><span class="bold">Numéro CNI :</span></div>
-                <div class="col-lg-9">
-                    <input type="number" ng-model="candidat.cni" class="form-control" placeholder="Entrer votre numero de carte d'identité"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3"><span class="bold">Email :</span></div>
-                <div class="col-lg-9">
-                    <input type="email" ng-model="candidat.email" class="form-control" placeholder="Entrer votre email"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3"><span class="bold">Numéro de dossier :</span></div>
-                <div class="col-lg-9">
-                    <input type="password" ng-model="candidat.numeroDossier" class="form-control" placeholder="Entrer votre numéro de dossier"/>
-                </div>
-            </div>
-
-        </div>
-        <div class="modal-footer">
-            <a class="btn btn-link" data-dismiss="modal">Fermer</a>
-            <button type="submit" class="btn btn-info">Connexion</button>
-        </div>
-    </form>
-</div>

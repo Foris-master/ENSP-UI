@@ -8,11 +8,12 @@
  routes pour le module Organisation
  *****************************************************************************************************************/
 app_organisation
-
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/organisation', {
-            templateUrl: template_url+'organisation/organisation.html',
-            controller: 'OrganisationCtrl'
-        })
-        $routeProvider.otherwise({redirectTo: '/organisation'});
+    .config(['$stateProvider', function($stateProvider) {
+        $stateProvider
+            .state('organisation', {
+                url: "/organisation",
+                templateUrl: template_url+'organisation/organisation.html',
+                controller: 'OrganisationCtrl',
+                title:"Organisation"
+            })
     }]);

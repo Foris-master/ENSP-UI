@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/timeline.css"/>
+<link rel="stylesheet" ui-sref="css/timeline.css"/>
 
 <section class="" id="home">
     <div class="banner-container">
@@ -32,8 +32,8 @@
                 <div class="item"><img src="images/banner-bg3.jpg" alt="banner" /></div>
             </div>
             <!-- Carousel nav -->
-            <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
-            <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+            <a class="carousel-control left" ui-sref="#carousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" ui-sref="#carousel" data-slide="next">&rsaquo;</a>
         </div>
 
     </div>
@@ -86,7 +86,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <a href="#/liste-actualite" class="actu-plus">Plus d'actualités</a>
+                <a ui-sref="liste-actualite" class="actu-plus">Plus d'actualités</a>
             </div>
         </div>
         <!-- Team Member's Details -->
@@ -100,7 +100,7 @@
                         <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
                             <h3>{{a.titre}}</h3>
                             <p>{{a.description | limitTo : 75}}.</p>
-                            <a href="#/actualite/{{a.idActualite}}">Lire la suite</a>
+                            <a ui-sref="actualite({id:a.idActualite})">Lire la suite</a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                             <i class="fa fa-envelope bg-orange"></i>
                             <div class="timeline-item">
                                 <span class="time"><i class="fa fa-clock-o"></i>&nbsp; 28 Novembre 2015</span>
-                                <h3 class="timeline-header"><a href="#">Lancement de la plateforme</a></h3>
+                                <h3 class="timeline-header"><a ui-sref="#">Lancement de la plateforme</a></h3>
                                 <div class="timeline-body">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius excepturi iusto minus ratione, repellat? Adipisci aliquam dolorem doloremque, ducimus eaque fuga illo iure iusto quae tempore? Et, pariatur, reiciendis!
                                 </div>
@@ -152,7 +152,7 @@
                             <i class="fa fa-heart bg-gray"></i>
                             <div class="timeline-item">
                                 <span class="time"><i class="fa fa-clock-o"></i>&nbsp; 19 Decembre 2015</span>
-                                <h3 class="timeline-header"><a href="#">Depart en Congés de Noël.</a> Fin des cours</h3>
+                                <h3 class="timeline-header"><a ui-sref="#">Depart en Congés de Noël.</a> Fin des cours</h3>
                                 <div class="timeline-body">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium eius excepturi iusto minus ratione, repellat? Adipisci aliquam dolorem doloremque, ducimus eaque fuga illo iure iusto quae tempore? Et, pariatur, reiciendis!
                                 </div>

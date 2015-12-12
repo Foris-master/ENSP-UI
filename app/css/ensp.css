@@ -11,6 +11,14 @@ footer{
     padding: 20px 0px;
 }
 
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none !important;
+}
+
 /**** Couleur ****/
 .orange-bg{
     background: #F97D2F;
@@ -70,24 +78,16 @@ footer{
 
 
 /******Fin Menu****/
-.publication .area1{
-    width: 70%;
-}
-
-.publication .area2{
-    width: 30%;
-    margin-top: 20px;
-    padding: 20px 10px !important;
-}
-
-.publication .area2, .publication .liste-auteur{
-    background: #F5F5F5;
-    box-shadow: 0px 1px 5px #E9E9E9;
-    color:black;
+.publication a.titre{
+    padding: 0px !important;
 }
 
 .publication .area2 span{
     font-weight: bold;
+}
+
+.publication hr{
+    margin-bottom: 0px;
 }
 
 .titre{
@@ -103,7 +103,6 @@ footer{
 
 .pub{
     padding: 10px;
-    margin-bottom: 5px;
 }
 
 .pub span{

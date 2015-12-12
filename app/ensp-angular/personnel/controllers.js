@@ -21,8 +21,6 @@ app_personnel
             $location.path("/liste-personnel/enseignant");
         }
 
-        $scope.t="<h2>qsdqs</h2>";
-
         $scope.par_page =15;
 
         $scope.loadPersonnel=function(){
@@ -45,22 +43,17 @@ app_personnel
         $scope.loadPersonnel();
     }])
     .controller('PersonnelCtrl',['$scope','PersonnelFactory','$stateParams',
-        function($scope,$stateParams,PersonnelFactory) {
+        function($scope,PersonnelFactory,$stateParams) {
         //recuperation de la personnel
 
-        PersonnelFactory.getPersonnel($stateParams.id).then(
+        PersonnelFactory.getPersonnel({nom:$stateParams.nom,prenom:$stateParams.prenom}).then(
             function(data){
                 $scope.personnel=data;
-                console.log(data.projets);
 
             },function(msg){
                 console.log(msg);
             }
         );
 
-    }])
-
-
-
-;
+    }]);
 

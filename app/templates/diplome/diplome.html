@@ -71,8 +71,8 @@
     </div>
     <div class="modal-footer">
         <a class="btn btn-link" data-dismiss="modal">Fermer</a>
-        <a href="#/personne/etudiant/{{detail.nom}}" class="btn btn-info">Consulter son espace</a>
+        <a ui-sref="etudiant({prenom:detail.prenom,nom:detail.nom})" class="btn btn-info">Consulter son espace</a>
     </div>
 </div>
 
-<a href="#personneModal" data-toggle="modal" id="detail"></a>
+<a href="#personneModal" class="hide" data-toggle="modal" id="detail"></a>

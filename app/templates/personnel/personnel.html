@@ -8,6 +8,9 @@
 
     <!-- Article 1 -->
     <div class="row feature design">
+      <p class="ancre">
+        <a ui-sref="liste-personnel">Nos ensignants </a>> {{personnel.prenom}} {{personnel.nom}}
+      </p>
       <div class="col-lg-12">
         <div class="tabbable tabs-left onglet row">
           <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
@@ -44,7 +47,7 @@
 
                     <p ng-bind-html="a.contenu"></p>
                     <div>Ressources :
-                      <a ng-repeat="r in a.ressource" href="#/{{r.source}}">{{r.nom}}</a>
+                      <a ng-repeat="r in a.ressource" href="{{r.source}}">{{r.nom}}</a>
                     </div>
                     </div>
                 </div>
@@ -55,7 +58,7 @@
             <!--cours et professeur-->
             <div class="tab-pane" id="ens">
               <h4>Enseignements</h4>
-              <p ng-bind-html="personnel.enseignements"></p>
+              <p ng-bind-html="personnel.enseignement"></p>
 
             </div>
             <!--laboratoire-->
@@ -68,7 +71,7 @@
                     <div ng-repeat="pu in p.publication">
                       <p>
                         <i class="fa fa-angle-double-right"></i> <span ng-bind-html="pu.contenu"></span><br/>
-                        <a ng-repeat="r in pu.ressource" href="#/{{r.source}}">{{r.nom}},</a>&nbsp;
+                        <a ng-repeat="r in pu.ressource" ui-sref="{{r.source}}">{{r.nom}},</a>&nbsp;
                       </p>
 
                     </div>
@@ -103,7 +106,7 @@
 
                     <p>Suivez le lien ci-dessous pour consulter le cv</p>
                     <div>Ressources :
-                      <a href="#/{{personnel.cv}}">Mon CV ({{personnel.nom}})</a>
+                      <a href="{{personnel.cv}}">Mon CV ({{personnel.nom}})</a>
                     </div>
                   </div>
                 </div>
@@ -117,19 +120,19 @@
                 <div class="col-lg-12">
                   <div class="col-lg-3">
                     <h5>Facebook</h5>
-                    <a href=""><i class="fa fa-facebook"></i> {{personnel.social.facebook}}</a>
+                    <a ui-sref="social"><i class="fa fa-facebook"></i> {{personnel.social.facebook}}</a>
                   </div>
                   <div class="col-lg-3">
                     <h5>Twitter</h5>
-                    <a href=""><i class="fa fa-twitter"></i> {{personnel.social.twitter}}</a>
+                    <a ui-sref="social"><i class="fa fa-twitter"></i> {{personnel.social.twitter}}</a>
                   </div>
                   <div class="col-lg-3">
                     <h5>Skype</h5>
-                    <a href=""><i class="fa fa-skype"></i> {{personnel.social.skype}}</a>
+                    <a ui-sref="social"><i class="fa fa-skype"></i> {{personnel.social.skype}}</a>
                   </div>
                   <div class="col-lg-3">
                     <h5>LinkedIn</h5>
-                    <a href=""><i class="fa fa-linkedin"></i> {{personnel.social.linkedin}}</a>
+                    <a ui-sref="social"><i class="fa fa-linkedin"></i> {{personnel.social.linkedin}}</a>
                   </div>
                 </div>
 
@@ -142,11 +145,11 @@
                 <div class="col-lg-12">
                   <div class="col-lg-6">
                     <h5>Téléphone</h5>
-                    <a href=""><i class="fa fa-phone"></i> {{personnel.contact.telephone}}</a>
+                    <a ui-sref="social"><i class="fa fa-phone"></i> {{personnel.contact.telephone}}</a>
                   </div>
                   <div class="col-lg-6">
                     <h5>Email</h5>
-                    <a href=""><i class="fa fa-envelope"></i> {{personnel.contact.email}}</a>
+                    <a ui-sref="social"><i class="fa fa-envelope"></i> {{personnel.contact.email}}</a>
                   </div>
                 </div>
 

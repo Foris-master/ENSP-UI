@@ -17,7 +17,7 @@
                         <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
                             <h3>{{a.titre}}</h3>
                             <p>{{a.description | limitTo : 75}}.</p>
-                            <a href="#/actualite/{{a.idActualite}}">Lire la suite</a>
+                            <a ui-sref="actualite({id:a.idActualite})">Lire la suite</a>
                         </div>
                     </div>
                 </div>

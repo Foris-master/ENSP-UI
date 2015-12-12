@@ -8,11 +8,13 @@
  routes pour le module Diplôme
  *****************************************************************************************************************/
 app_diplome
-
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/diplome', {
-            templateUrl: template_url+'diplome/diplome.html',
-            controller: 'DiplomeCtrl'
-        })
-        $routeProvider.otherwise({redirectTo: '/diplome'});
+    .config(['$stateProvider', function($stateProvider) {
+        $stateProvider
+            .state('diplome', {
+                url: "/diplome",
+                templateUrl: template_url+'diplome/diplome.html',
+                controller: 'DiplomeCtrl',
+                title:"Nos diplômés"
+            })
     }]);
+

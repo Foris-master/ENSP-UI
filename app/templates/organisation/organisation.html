@@ -12,7 +12,8 @@
             <div ng-repeat="o in organisations | orderBy :-rang" class="col-lg-{{o.rang}} col-sm-{{o.rang}} col-xs-{{o.rang}}">
                 <h5>{{o.categorie}}</h5>
                 <div class="col-lg-12" ng-repeat="p in o.membre">
-                    <p><span class="bold">{{p.poste}}</span> <a href="#/personnel/{{p.prenom}}_{{p.nom}}">{{p.prenom}} {{p.nom}}</a></p>
+                    <p><span class="bold">{{p.poste}}</span>
+                        <a ui-sref="personnel({prenom:p.prenom,nom:p.nom})">{{p.prenom}} {{p.nom}}</a></p>
                 </div>
 
             </div>

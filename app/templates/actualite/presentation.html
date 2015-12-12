@@ -96,8 +96,8 @@
                         <img src="images/{{d.image[0]}}" alt="departement"/>
                     </div>
                     <div class="col-lg-10">
-                        <h3><a href="#/departement/{{d.idDepartement}}">{{d.nom}}</a></h3>
-                        <span class="bold">Chef de departement</span> : <a href="#/enseignant/{{d.chefDepartement.cygle}}"><span class="italic">{{d.chefDepartement.grade}}.</span> <span class="bold">{{d.chefDepartement.prenom}} {{d.chefDepartement.nom}}</span></a>
+                        <h3><a ui-sref="departement({cygle:d.cygle})">{{d.nom}}</a></h3>
+                        <span class="bold">Chef de departement</span> : <a ui-sref="personnel({prenom:d.chefDepartement.prenom,nom:d.chefDepartement.nom})"><span class="italic">{{d.chefDepartement.grade}}.</span> <span class="bold">{{d.chefDepartement.prenom}} {{d.chefDepartement.nom}}</span></a>
                         <p>{{d.presentation | limitTo : 200}} ...</p>
                     </div>
                 </div>

@@ -34,10 +34,10 @@ app_personnel
                 return deferred.promise;
 
             },
-            getPersonnel: function (id) {
+            getPersonnel: function (obj) {
                 var deffered = $q.defer();
                 var personnels = factory.getPersonnels().then(function(services){
-                    deffered.resolve($filter('filter')(factory.personnels,{idPersonnel:parseInt(id)},true)[0]);
+                    deffered.resolve($filter('filter')(factory.personnels,obj,true)[0]);
                 },function(msg){
                     deffered.reject(msg);
                 });

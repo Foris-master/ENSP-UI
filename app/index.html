@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="../bower_components/ngWYSIWYG/css/editor.css" />
   <link rel='stylesheet' href='../bower_components/textAngular/dist/textAngular.css'>
   <link rel="stylesheet" href="css/editor.css"/>
+    <link rel="stylesheet" href="css/timeline.css"/>
 </head>
 <body ng-app="myApp" ng-controller="headerCtrl">
 
@@ -74,8 +75,8 @@
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-personnel({categorie:enseignant})">Nos enseignants</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="etudiant">Nos étudiants</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Nos indicateurs</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-etudiant">Nos étudiants</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="indicateur">Nos indicateurs</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -159,60 +160,8 @@
             </li>
 
             <li ng-class="{active : menu=='contact'}"><a ui-sref="menu" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
+            <li ng-class="{active : menu=='contact'}"><a data-toggle="modal" href="#authentificationModal" class="scroll-link"><i class="fa fa-user"></i></a></li>
 
-              <li class="hide dropdown" ng-class="{active : menu=='connexion'}">
-                  <a href="javascript:void(0);" ng-click="menu='connexion'" class="dropdown-toggle" data-toggle="dropdown">Connexion</a>
-                  <ul class="dropdown-menu">
-                      <form method="post" ng-submit="loggedIn()" id="contactfrm" role="form" name="userForm" novalidate>
-
-
-
-                          <div class="form-group" ng-class="{ 'has-error': userForm.login.$touched && userForm.login.$invalid }">
-                              <label for="login">Login</label>
-                              <input ng-model="user.login"
-                                     type="text"
-                                     class="form-control"
-                                     name="login"
-                                     id="login"
-                                     placeholder="Entrez votre login ou adresse email "
-                                     title="Entrez votre login ou email pour vous connecter"
-
-                                     required>
-                              <div class="help-block" ng-show="userForm.login.$touched" ng-messages="userForm.login.$error">
-                                  <p ng-message="required">Le login est requit</p>
-                              </div>
-
-                          </div>
-                          <div class="form-group" ng-class="{ 'has-error': userForm.password.$touched && userForm.password.$invalid }">
-                              <label for="password">Mot de passe</label>
-                              <input ng-model="user.password"
-                                     type="password"
-                                     class="form-control"
-                                     name="password"
-                                     id="password"
-                                     placeholder="Entrez votre mot de passe "
-                                     title="Entrez votre mot de passe"
-                                     required>
-                              <div class="help-block" ng-show="userForm.password.$touched" ng-messages="userForm.password.$error">
-                                  <p ng-message="required">Le mot de passe est requit</p>
-                              </div>
-
-                          </div>
-                          <div class="form-group" id="idsubmit">
-                              <button name="submit"
-                                      class="btn btn-lg btn-primary "
-                                      type="submit" ng-disabled="userForm.$invalid",
-                                      >
-                                  Connexion
-                              </button>
-                          </div>
-
-                      </form>
-
-                  </ul>
-
-
-              </li>
 
           </ul>
 
@@ -270,6 +219,65 @@
   <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
 
 
+  <div class="modal hide fade" id="authentificationModal">
+      <form method="post" ng-submit="loggedIn()" id="contactfrm" role="form" name="userForm" novalidate>
+          <div class="modal-header"> <a class="close" data-dismiss="modal">×</a>
+              <h3>Authentification</h3>
+          </div>
+          <div class="modal-body">
+              <div class="row" ng-class="{ 'has-error': userForm.login.$touched && userForm.login.$invalid }">
+
+                  <div class="col-lg-3"><span class="bold">Login :</span></div>
+                  <div class="col-lg-9">
+                      <input ng-model="user.login"
+                             type="text"
+                             class="form-control"
+                             name="login"
+                             id="login"
+                             placeholder="Entrez votre login ou adresse email "
+                             title="Entrez votre login ou email pour vous connecter"
+
+                             required>
+                  </div>
+
+                  <div class="help-block" ng-show="userForm.login.$touched" ng-messages="userForm.login.$error">
+                      <p ng-message="required">Le login est requit</p>
+                  </div>
+
+              </div>
+              <div class="row" ng-class="{ 'has-error': userForm.password.$touched && userForm.password.$invalid }">
+                  <div class="col-lg-3"><span class="bold">Mot de passe :</span></div>
+                  <div class="col-lg-9">
+                      <input ng-model="user.password"
+                             type="password"
+                             class="form-control"
+                             name="password"
+                             id="password"
+                             placeholder="Entrez votre mot de passe "
+                             title="Entrez votre mot de passe"
+                             required>
+                  </div>
+
+                  <div class="help-block" ng-show="userForm.password.$touched" ng-messages="userForm.password.$error">
+                      <p ng-message="required">Le mot de passe est requit</p>
+                  </div>
+
+              </div>
+          </div>
+          <div class="modal-footer">
+              <!--<div class="form-group" id="idsubmit">-->
+                  <!--<button name="submit"-->
+                          <!--class="btn btn-lg button "-->
+                          <!--type="submit" ng-disabled="userForm.$invalid">-->
+                      <!--Connexion-->
+                  <!--</button>-->
+              <!--</div>-->
+              <a class="btn btn-link" data-dismiss="modal">Fermer</a>
+              <button type="submit" class="btn btn-info">Connexion</button>
+          </div>
+      </form>
+  </div>
+
 
   <script src="../bower_components/angular/angular.js"></script>
   <!--<script src="../bower_components/angular-route/angular-route.js"></script>-->
@@ -279,7 +287,9 @@
   <script src="../bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
   <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
- <!-- ENSP Angular-->
+  <script src="../bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js"></script>
+
+  <!-- ENSP Angular-->
   <script src="app.js"></script>
   <!--Module Accueil-->
   <script src="ensp-angular/accueil/config.js"></script>
@@ -291,6 +301,11 @@
   <script src="ensp-angular/publication/services.js"></script>
   <script src="ensp-angular/publication/controllers.js"></script>
 
+  <!--Module Etudiant-->
+  <script src="ensp-angular/etudiant/config.js"></script>
+  <script src="ensp-angular/etudiant/services.js"></script>
+  <script src="ensp-angular/etudiant/controllers.js"></script>
+
 <!--Module Actualite-->
   <script src="ensp-angular/actualite/config.js"></script>
   <script src="ensp-angular/actualite/services.js"></script>
@@ -301,6 +316,11 @@
   <script src="ensp-angular/departement/config.js"></script>
   <script src="ensp-angular/departement/services.js"></script>
   <script src="ensp-angular/departement/controllers.js"></script>
+
+  <!--Module Indicateurs-->
+  <script src="ensp-angular/indicateurs/config.js"></script>
+  <script src="ensp-angular/indicateurs/services.js"></script>
+  <script src="ensp-angular/indicateurs/controllers.js"></script>
 
 <!--Module Concours-->
   <script src="ensp-angular/concours/config.js"></script>

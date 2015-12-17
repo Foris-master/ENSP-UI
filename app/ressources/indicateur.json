@@ -1,0 +1,23 @@
+[
+  {
+    "titre": "Statistique du personnel Administratif ",
+    "tag":"stat-personnel",
+    "description": "Est sit ut esse in ul.",
+    "image":"work/1.jpg",
+    "statistiques":
+      {
+        "titre":"Titre du graphe",
+        "annee":[2011,2012,2013,2014,2015,2016,2017,2018],
+        "donnees":[
+          {
+            "name":"Homme",
+            "data":[1,2,6,7,8,6,7,1]
+          },
+          {
+            "name":"Femme",
+            "data":[5,2,1,8,10,6,7,1]
+          }
+        ]
+      }
+  }
+]

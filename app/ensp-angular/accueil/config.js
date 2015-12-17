@@ -15,7 +15,11 @@ app_accueil
                 url: "/accueil",
                 templateUrl: template_url + 'accueil/accueil.html',
                 controller: 'AccueilCtrl',
-                title: "Accueil"
+                title: "Accueil",
+                ncyBreadcrumb: {
+                    label: '',
+                    parent:"etudiant"
+                }
             })
     }]);
 

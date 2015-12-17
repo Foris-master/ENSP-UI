@@ -1,0 +1,26 @@
+[
+  {
+    "idPersonne": 1,
+    "nom": "Obstacle",
+    "prenom": "Musique",
+    "departement": "20-01-1889",
+    "niveau": "Yaounde",
+    "image": "20-11-1996"
+  },
+  {
+    "idPersonne": 1,
+    "nom": "Obstacle",
+    "prenom": "Musique",
+    "departement": "20-01-1889",
+    "niveau": "Yaounde",
+    "image": "20-11-1996"
+  },
+  {
+    "idPersonne": 1,
+    "nom": "Obstacle",
+    "prenom": "Musique",
+    "departement": "20-01-1889",
+    "niveau": "Yaounde",
+    "image": "20-11-1996"
+  }
+]

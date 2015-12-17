@@ -1,0 +1,131 @@
+
+<section class="main-section section etudiant" autoscroll="true">
+    <div class="container">
+        <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
+            <!-- Heading -->
+            <h2 class="titre">Etudiants</h2>
+        </div>
+
+        <!-- Article 1 -->
+        <div class="row feature design">
+            <div class="col-lg-12">
+                <div class="tabbable tabs-left onglet row">
+                    <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
+                        <img src="images/work/1.jpg" style="padding: 10px;" width="100%" alt=""/>
+                        <li class="active dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown"> Etudiants <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/#etudiant" ng-click="EtudiantParNiveau(1)" data-toggle="tab">Niveau 1</a></li>
+                                <li><a href="/#etudiant" ng-click="EtudiantParNiveau(2)" data-toggle="tab">Niveau 2</a></li>
+                                <li><a href="/#etudiant" ng-click="EtudiantParNiveau(3)" data-toggle="tab">Niveau 3</a></li>
+                                <li><a href="/#etudiant" ng-click="EtudiantParNiveau(4)" data-toggle="tab">Niveau 4</a></li>
+                                <li><a href="/#etudiant" ng-click="EtudiantParNiveau(5)" data-toggle="tab">Niveau 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/#association" ng-click="afficherAssociation()" data-toggle="tab">Associations</a></li>
+                        <li><a href="/#activite" ng-click="afficherActivites()" data-toggle="tab">Activités</a></li>
+                    </ul>
+
+                    <div class="tab-content col-lg-10 col-sm-10 col-xs-10">
+                        <!--Présentation-->
+                        <div class="tab-pane active" id="etudiant">
+                            <h4 class="">{{sousTitre}}</h4>
+                            <div class="">
+                                <input  class="form-control" style="width: 75%; float:left" type="text" ng-model="searchKey" class="form-control" placeholder="Entrer un mot-clé"/>
+                                <input class="form-control" style="width: 20%; float: right" type="number" placeholder="Nombre à afficher"  ng-model="par_page"/>
+                            </div>
+                            
+                            <div class="row actu-container">
+                                <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="e in etudiants | filter: searchKey | orderBy : '-nom' : true | itemsPerPage: par_page">
+                                    <div class="actu row">
+                                        <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
+                                            <img src="images/{{e.image}}" alt=""/>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
+                                            <h3>{{e.prenom}} {{e.nom}}</h3>
+                                            <p>{{e.niveau}} {{e.departement}}.</p>
+                                            <p>{{e.contact.email}}.</p>
+                                            <a ui-sref="etudiant({prenom:e.prenom,nom:e.nom})">Visiter son espace</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row actu-container">
+                                <div class="text-center" >
+                                    <dir-pagination-controls></dir-pagination-controls>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--mot du chef de personnel-->
+                        <div class="tab-pane" id="association">
+                            <h4 class="">Associations des étudiants</h4>
+                            
+                            <div class="">
+                                <input  class="form-control" style="width: 75%; float:left" type="text" ng-model="searchKey" class="form-control" placeholder="Entrer un mot-clé"/>
+                                <input class="form-control" style="width: 20%; float: right" type="number" placeholder="Nombre à afficher"  ng-model="par_page"/>
+                            </div>
+                            <div class="row actu-container">
+                                <div class="col-lg-6 col-sm-6 col-xs-6" dir-paginate="a in associations |filter: searchKey | orderBy : '-nom' : true | itemsPerPage: par_page">
+                                    <div class="actu row">
+                                        <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
+                                            <img src="images/{{a.image}}" alt=""/>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
+                                            <h3>{{a.cygle}}:{{a.nom}}</h3>
+                                            <p ng-bind-html="a.description | limitTo:150">.</p>
+                                            <p>{{a.contact.email}}.</p>
+                                            <a ui-sref="association({cygle:a.cygle})">Visiter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row actu-container">
+                                <div class="text-center" >
+                                    <dir-pagination-controls></dir-pagination-controls>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--cours et professeur-->
+                        <div class="tab-pane" id="activite">
+                            <h4>Activités</h4>
+                            <div class="">
+                                <input  class="form-control" style="width: 75%; float:left" type="text" ng-model="searchKey" class="form-control" placeholder="Entrer un mot-clé"/>
+                                <input class="form-control" style="width: 20%; float: right" type="number" placeholder="Nombre à afficher"  ng-model="par_page"/>
+                            </div>
+                            <div class="row actu-container">
+                                <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="a in activites |filter: searchKey | orderBy : '-datePublication' : true | itemsPerPage: par_page">
+                                    <div class="actu row">
+                                        <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
+                                            <img src="images/{{a.image}}" alt=""/>
+                                        </div>
+                                        <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
+                                            <h3>{{a.titre}}</h3>
+                                            <p>{{a.datePublication}}.</p>
+                                            <p>{{a.description | limitTo:20}}.</p>
+                                            <a ui-sref="activites({titre:a.titre})">Plus de détails</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row actu-container">
+                                <div class="text-center" >
+                                    <dir-pagination-controls></dir-pagination-controls>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+</section>

@@ -37,7 +37,7 @@ app_actualite
     .controller('ActualiteCtrl', ['$scope','$stateParams','ActualiteFactory',
     function($scope,$stateParams,ActualiteFactory) {
         //recuperation de la actualite
-        ActualiteFactory.getActualite($stateParams.id).then(
+        ActualiteFactory.getActualite({id:$stateParams.id}).then(
             function(data){
 
                 $scope.actualite=data;
@@ -53,7 +53,7 @@ app_actualite
 .controller('View2Ctrl', [function() {
 
     }])
-.controller('FormulaireArticleCtrl', ['$scope','$stateParams','$location','ActualiteFactory','$filter',
+.controller('FormulaireActualiteCtrl', ['$scope','$stateParams','$location','ActualiteFactory','$filter',
     function($scope,$stateParams,$location,ActualiteFactory,$filter) {
     $scope.categories = [{name:'ecole',id:2},{name:'actuatilite',id:3},{name:'labo',id:4}];
     $scope.new_article={};

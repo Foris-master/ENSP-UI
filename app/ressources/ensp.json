@@ -3,8 +3,8 @@
     "nom":"Ecole Nationale Supérieure Polytechnique",
     "cygle":"ENSPY",
     "BP": 8390,
-    "telephone":00000,
-    "fax":00000,
+    "telephone":100000,
+    "fax":500000,
     "localisation":{
       "longitude":112,
       "latitude":122,

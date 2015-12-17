@@ -1,0 +1,153 @@
+
+<section class="main-section section " autoscroll="true">
+  <div class="container">
+    <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
+      <!-- Heading -->
+      <h2 class="titre">Espace de {{etudiant.prenom}} {{etudiant.nom}}</h2>
+    </div>
+
+    <!-- Article 1 -->
+    <div class="row feature design">
+      <p class="ancre">
+        <a ui-sref="liste-etudiant">Espace étudiant </a>> {{etudiant.prenom}} {{etudiant.nom}}
+      </p>
+      <div class="col-lg-12">
+        <div class="tabbable tabs-left onglet row">
+          <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
+            <img src="images/{{etudiant.image}}" style="padding: 10px;" width="100%" alt=""/>
+            <li class="active"><a href="/#presentation" data-toggle="tab">Présentation</a></li>
+            <li><a href="/#association" ng-click="afficherAssociationEtudiant(etudiant.idPersonnel)" data-toggle="tab">Associations</a></li>
+            <li><a href="/#publication" ng-click="afficherPublicationEtudiant(etudiant.idPersonnel)" data-toggle="tab">Publications</a></li>
+            <li><a href="/#projet" ng-click="afficherProjetEtudiant(etudiant.idPersonnel)" data-toggle="tab">Projets</a></li>
+            <li><a href="/#conres" data-toggle="tab">Contact & Réseaux Sociaux</a></li>
+          </ul>
+
+          <div class="tab-content col-lg-10 col-sm-10 col-xs-10">
+            <!--Présentation-->
+            <div class="tab-pane active" id="presentation">
+              <!--<h4 class="">Présentation</h4>-->
+              <div class="row">
+                <div class="col-lg-9">
+                  <h5>Biographie</h5>
+                  <p ng-bind-html="etudiant.biographie"></p>
+
+                </div>
+                <div class="col-lg-3">
+                  <h5>Informations</h5>
+
+                  <div><span class="bold">Matricule : </span>{{etudiant.matricule}}</div>
+                  <div><span class="bold">Département : </span>{{etudiant.departement}}</div>
+                  <div><span class="bold">Niveau : </span>{{etudiant.niveau}}</div>
+                  <div><span class="bold">Sexe : </span>{{etudiant.sexe}}</div>
+                  <div><span class="bold">CV : </span><a href="{{etudiant.cv}}">Télécharger</a></div>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!--mot du chef de etudiant-->
+            <div class="tab-pane" id="association">
+              <h5 class="">Associations</h5>
+              <div class="row actu-container">
+                <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="a in associations | orderBy : '-nom' : true | itemsPerPage: par_page">
+                  <div class="actu row">
+                    <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
+                      <img src="images/{{a.image}}" alt=""/>
+                    </div>
+                    <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
+                      <h3>{{a.cygle}}:{{a.nom}}</h3>
+                      <p ng-bind-html="a.description | limitTo:150">.</p>
+                      <p>{{a.contact.email}}.</p>
+                      <a ui-sref="association({cygle:a.cygle})">Visiter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row actu-container">
+                  <div class="text-center" >
+                    <dir-pagination-controls></dir-pagination-controls>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--cours et professeur-->
+            <div class="tab-pane" id="publication">
+              <h5>Activités</h5>
+              <div class="">
+                <input  class="form-control" style="width: 75%; float:left" type="text" ng-model="searchKey" class="form-control" placeholder="Entrer un mot-clé"/>
+                <input class="form-control" style="width: 20%; float: right" type="number" placeholder="Nombre à afficher"  ng-model="par_page"/>
+              </div>
+              <div class="row actu-container">
+                <div class="col-lg-6 col-sm-6 col-xs-6" dir-paginate="a in publications |filter: searchKey | orderBy : '-datePublication' : true | itemsPerPage: par_page">
+                  <div class="actu row">
+                    <div class="actu-detail">
+                      <h3>{{a.titre}}</h3>
+                      <p>{{a.datePublication}}.</p>
+                      <p>{{a.resume | limitTo:200}}.</p>
+                      <a ui-sref="publication({titre:a.titre})">Plus de détails</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row actu-container">
+                <div class="text-center" >
+                  <dir-pagination-controls></dir-pagination-controls>
+                </div>
+              </div>
+
+            </div>
+
+            <!--Projet-->
+            <div class="tab-pane" id="projet">
+              <h4>Projets</h4>
+              <div class="col-lg-12" ng-repeat="p in etudiant.projets">
+                <h5>{{p.categorie}}</h5>
+
+                <div ng-repeat="pr in p.projet" style="padding-left: 10px;margin-bottom: 10px;">
+                  <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.titre}}</div>
+                  <p style="padding-bottom: 0">{{pr.description}}</p>
+                  <div><span class="detail">Entreprise : </span>{{pr.entreprise}}</div>
+                  <div><span class="detail">Année : </span>{{pr.annee}}</div>
+                  <div><span class="detail">Lien : </span><span ng-bind-html="pr.lien"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="conres">
+              <h4 class="">Contact</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="col-lg-6" ng-repeat="c in etudiant.contact">
+                    <h5>{{c.label}}</h5>
+                    {{c.valeur}}
+                  </div>
+                </div>
+
+              </div>
+
+              <h4 class="">Réseaux Sociaux</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="col-lg-3" ng-repeat="s in etudiant.social">
+                    <h5>{{s.reseau}}</h5>
+                    <a href="{{s.lien}}"><i class="fa fa-{{s.reseau}}"></i> {{s.nom}}</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+</section>

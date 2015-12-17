@@ -1,16 +1,22 @@
 [
   {
     "titre":"Ecole Nationale Supérieure Polytechnique",
-    "cateoorie":"",
+    "categorie":"",
     "partie":[
       {
         "titre":"",
         "contenu":"",
         "image":"",
-        "ressource":[{
+        "ressource":[
+          {
           "titre":"",
           "lien":""
-        }]
+          },
+          {
+            "titre":"",
+            "lien":""
+          }
+        ]
       },
       {
         "titre":"",

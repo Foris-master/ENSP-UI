@@ -34,10 +34,10 @@ app_actualite
                 return deferred.promise;
 
             },
-            getActualite: function (id) {
+            getActualite: function (obj) {
                 var deffered = $q.defer();
                 var actualites = factory.getActualites().then(function(services){
-                    deffered.resolve($filter('filter')(factory.actualites,{idActualite:parseInt(id)},true)[0]);
+                    deffered.resolve($filter('filter')(factory.actualites,obj,true)[0]);
                 },function(msg){
                     deffered.reject(msg);
                 });

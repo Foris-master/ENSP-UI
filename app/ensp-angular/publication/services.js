@@ -35,6 +35,16 @@ app_publication
             return deferred.promise;
 
         },
+        getPublicationsEtudiant: function (obj) {
+            console.log(obj)
+            var deffered = $q.defer();
+            var publications = factory.getPublications().then(function(services){
+                deffered.resolve($filter('filter')(factory.publications,obj,true));
+            },function(msg){
+                deffered.reject(msg);
+            });
+            return deffered.promise;
+        },
         getPublication: function (id) {
             var deffered = $q.defer();
             var publications = factory.getPublications().then(function(services){

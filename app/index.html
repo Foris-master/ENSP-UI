@@ -74,9 +74,9 @@
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="concours">Concours</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-personnel/enseignant">Nos enseignants</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-professeur">Nos étudiants</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a href="#">Nos indicateurs</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-personnel({categorie:enseignant})">Nos enseignants</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="etudiant">Nos étudiants</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Nos indicateurs</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -94,10 +94,10 @@
               <ul class="dropdown-menu">
                 <div class="">
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GC">Génie Civil</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GE">Génie Electrique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GIND">Génie Industriel</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GIND">Mathémaitques et Sciences Physiques</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GC'})">Génie Civil</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GE'})">Génie Electrique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GIND'})">Génie Industriel</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'MSP'})">Mathémaitques et Sciences Physiques</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GM">Génie Mécanique</a></li>
@@ -121,12 +121,12 @@
               <ul class="dropdown-menu">
                 <div class="">
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Nos partenaires</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Devenir partenaire</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Nos partenaires</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Devenir partenaire</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Demande d'une formation</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Offre de stage et d'emploi</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Demande d'une formation</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Offre de stage et d'emploi</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -140,13 +140,13 @@
               <ul class="dropdown-menu">
                 <div class="">
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Nos laboratoires</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Transfert et valoraisation</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Publications</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Nos laboratoires</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Transfert et valoraisation</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-publication">Publications</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Palmarès</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="parternaire">Activités de recherche</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Palmarès</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Activités de recherche</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -159,7 +159,7 @@
 
             </li>
 
-            <li ng-class="{active : menu=='contact'}"><a href="#" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
+            <li ng-class="{active : menu=='contact'}"><a ui-sref="menu" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
 
               <li class="dropdown" ng-class="{active : menu=='connexion'}">
                   <a href="javascript:void(0);" ng-click="menu='connexion'" class="dropdown-toggle" data-toggle="dropdown">Connexion</a>
@@ -246,10 +246,10 @@
         <div class="col-md-3">
           <div class="col col-social-icons">
             <h4>Suivez nous</h4>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-google-plus"></i></a>
-            <a href="#"><i class="fa fa-youtube-play"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a ui-sref="menu"><i class="fa fa-facebook"></i></a>
+            <a ui-sref="menu"><i class="fa fa-google-plus"></i></a>
+            <a ui-sref="menu"><i class="fa fa-youtube-play"></i></a>
+            <a ui-sref="menu"><i class="fa fa-twitter"></i></a>
           </div>
         </div>
 
@@ -262,7 +262,8 @@
   <section class="copyright">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-center"> Copyright  {{dateCourante | date: 'yyyy'}} | Tous Droits Réservés -- Design -  <a ui-sref="us"> Us</a> </div>
+        <div class="col-sm-12 text-center"> Copyright  {{dateCourante | date: 'yyyy'}} | Tous Droits Réservés -- Design -
+            <a ui-sref="us"> Us</a> </div>
       </div>
       <!-- / .row -->
     </div>
@@ -342,6 +343,7 @@
   <script src="js/owl-carousel/owl.carousel.js"></script>
  <!-- editeur riche-->
 
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="../bower_components/angular-sanitize/angular-sanitize.min.js"></script>
   <script src="../bower_components/ngWYSIWYG/js/wysiwyg.js"></script>
   <script src='../bower_components/textAngular/dist/textAngular-rangy.min.js'></script>

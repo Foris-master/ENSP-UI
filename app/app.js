@@ -21,6 +21,7 @@ var message_erreur="Aucun contenu";
 angular.module('myApp', [
   'ui.router',
   'ngSanitize',
+    'ngCookies',
   'ngWYSIWYG',
     'ngAnimate',
     'ngMessages',
@@ -42,7 +43,7 @@ angular.module('myApp', [
   'textAngular',
     'formly',
     'formlyBootstrap'
-]).run(['$rootScope','$state','$location','AuthFactory',function($rootScope,$state,$location,AuthFactory){
+]).run(['$rootScope','$state','$location','AuthorizationFactory',function($rootScope,$state,$location,AuthorizationFactory){
     /* ceci est le main de l'application */
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState){
         // mise a jour du title de la page de maniere automatique
@@ -50,7 +51,7 @@ angular.module('myApp', [
          $rootScope.currentUser={};
          $rootScope.currentUser.roles = [{name:'Admin'},{name:'UserManager '}];
 
-        AuthFactory.hasAuthorization(toState.access).then(
+        AuthorizationFactory.hasAuthorization(toState.access).then(
             function(data){
                 console.info('authorize');
             },function(msg){

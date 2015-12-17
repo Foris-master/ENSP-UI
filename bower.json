@@ -28,6 +28,8 @@
     "angular-formly-templates-bootstrap": "~6.1.7",
     "angular-messages": "~1.4.8",
     "angular-ui-router": "~0.2.15",
-    "angular-breadcrumb": "~0.4.1"
+    "angular-breadcrumb": "~0.4.1",
+    "angular-cookies": "~1.4.8",
+    "angular-file-upload": "~2.2.0"
   }
 }

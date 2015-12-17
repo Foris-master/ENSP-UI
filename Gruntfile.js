@@ -46,7 +46,6 @@ module.exports = function(grunt){
                 }
             }
         },
-
         watch: {
             js: {
                 files: [app_src+'**/*.js','!'+app_src+'**/*.buils.*'],
@@ -93,16 +92,28 @@ module.exports = function(grunt){
         },
         imagemin: {                          // Task
 
-            dynamic: {// Another target
+           // dynamic: {// Another target
                 dist: {
-                    cache: false,
+                    options: {
+                        optimizationLevel: 7
+                    },
                     files: [{
                         expand: true,                  // Enable dynamic expansion
-                        cwd: 'app/images/',                   // Src matches are relative to this path
+                        cwd: 'app/images',                   // Src matches are relative to this path
                         src: ['**/*.{png,jpg,gif}','!min/**'],   // Actual patterns to match
-                        dest: 'min/'                  // Destination path prefix
+                        dest: 'app/images/min/'                  // Destination path prefix
                     }]
                 }
+         //   }
+        },
+        replace: {
+            another_example: {
+                src: ['app/templates/**/*.html','app/css/**/*.css'],
+                overwrite: true,                 // overwrite matched source files
+                replacements: [{
+                    from: "images/",
+                    to: "images/min/"
+                }]
             }
         }
     });
@@ -111,5 +122,6 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');*/
 
     //grunt.registerTask('default',['jshint','concat','uglify','cssmin']);
-    grunt.registerTask('default',['concat','uglify','cssmin','imagemin']);
+    grunt.registerTask('default',['concat','uglify','cssmin','imagemin','replace']);
+    //grunt.registerTask('default',['imagemin']);
 };

@@ -14,10 +14,7 @@ app_header
     function($scope) {
         $scope.dateCourante=new Date();
         $scope.menu="ecole";
-        $scope.user={};
-        $scope.loggedIn = function(){
-            console.log($scope.user);
-        }
+
     }]);
 
 /******************************************************************************************************************

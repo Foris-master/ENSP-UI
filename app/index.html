@@ -103,7 +103,7 @@
                     <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GTEL">Génie Télécommunication</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GI">Génie Informatique</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/CVR">Cordination et Valorisation de la Recherche</a></li>
->>>>>>> Temporary merge branch 2
+<!--&gt;>>>>>> Temporary merge branch 2-->
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -164,7 +164,7 @@
               <li class="hide dropdown" ng-class="{active : menu=='connexion'}">
                   <a href="javascript:void(0);" ng-click="menu='connexion'" class="dropdown-toggle" data-toggle="dropdown">Connexion</a>
                   <ul class="dropdown-menu">
-                      <form method="post" ng-submit="loggedIn()" id="contactfrm" role="form" name="userForm" novalidate>
+                      <form ng-controller="LoginCtrl" method="post" ng-submit="loggedIn()" id="contactfrm" role="form" name="userForm" novalidate>
 
 
 
@@ -184,7 +184,7 @@
                               </div>
 
                           </div>
-                          <div class="form-group" ng-class="{ 'has-error': userForm.password.$touched && userForm.password.$invalid }">
+                          <div  class="form-group" ng-class="{ 'has-error': userForm.password.$touched && userForm.password.$invalid }">
                               <label for="password">Mot de passe</label>
                               <input ng-model="user.password"
                                      type="password"
@@ -273,13 +273,13 @@
 
 
   <script src="../bower_components/angular/angular.js"></script>
-  <!--<script src="../bower_components/angular-route/angular-route.js"></script>-->
   <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="../bower_components/angularjs-datepicker/src/js/angular-datepicker.js"></script>
   <script src="../bower_components/angularUtils-pagination/dirPagination.js"></script>
   <script src="../bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
   <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
   <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
+  <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
 
 
  <!-- ENSP Angular-->

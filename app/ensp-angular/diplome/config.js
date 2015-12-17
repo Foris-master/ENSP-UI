@@ -18,3 +18,10 @@ app_diplome
             })
     }]);
 
+    .config(['$routeProvider', function($routeProvider) {
+        $routeProvider.when('/diplome', {
+            templateUrl: template_url+'diplome/diplome.html',
+            controller: 'DiplomeCtrl'
+        })
+        $routeProvider.otherwise({redirectTo: '/diplome'});
+    }]);

@@ -34,3 +34,11 @@ Mardi 08 Decembre 2015
 ----------------------
 
 - organisation
+
+Mecredie 16 Decembre 2015
+-------------------------
+
+- authorization
+- controlle des droit d acces a une route
+        - par login
+        - par roles

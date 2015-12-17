@@ -13,9 +13,14 @@ app_accueil
         $stateProvider
             .state('accueil', {
                 url: "/accueil",
-                templateUrl: template_url + 'accueil/accueil.html',
+                templateUrl: template_url+'accueil/accueil.html',
                 controller: 'AccueilCtrl',
-                title: "Accueil"
+                title : 'Accueil',
+                access: {
+                    loginRequired: false,
+                    requiredPermissions: ['Admin', 'UserManager'],
+                    permissionType: 'All'
+                }
             })
     }]);
 

@@ -1,0 +1,56 @@
+<section class="main-section section association">
+    <div class="container">
+        <div class="heading text-center">
+            <!-- Heading -->
+            <h2 class="titre">{{association.nom}}</h2>
+            <p></p>
+        </div>
+
+        <!-- Article 1 -->
+        <div class="row feature design">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-md-12">
+                    <p class="ancre">
+                        <a ui-sref="liste-etudiant">Espace étudiants </a>> {{association.nom}}
+                    </p>
+                </div>
+                <hr/>
+                <div class="col-lg-9 col-sm-9 col-xs-9 columns left">
+                    <p style="margin-bottom: 20px;" ng-bind-html="association.description"></p>
+                </div>
+                <div class="col-lg-3 col-sm-3 col-xs-3 columns feature-media right">
+                    <img src="images/work/7.jpg" class="col-lg-12 col-sm-12 col-xs-12" alt=""/>
+                    <p>
+                        <h5>Infos</h5>
+                        <span>Crée le : </span>{{association.dateCreation}}
+                    <h6>Réseaux sociaux</h6>
+                        <a ng-repeat="s in association.social" href="{{s.lien}}">{{s.nom}}<br/></a>
+                    <h6>Contacts</h6>
+
+                    <div ng-repeat="c in association.contact"><span class="bold">{{c.label}} : </span>{{c.valeur}}</div>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-xs-6">
+                    <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
+                        style="position: relative; height: auto;">
+                        <h5>Bureau de {{association.cygle}}</h5>
+                        <li class="item web" ng-repeat="b in association.membres.bureau">
+                            <span class="bold">{{b.poste}} :</span> {{b.prenom}} {{b.nom}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-xs-6">
+                    <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
+                        style="position: relative; height: auto;">
+                        <h5>Membres</h5>
+                        <li class="item web" ng-repeat="a in association.membres.adherents">
+                            {{a.prenom}} {{a.nom}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

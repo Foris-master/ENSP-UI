@@ -1,0 +1,95 @@
+[
+  {
+    "idPersonnel": 2,
+    "nom": "Tantanpion",
+    "prenom": "Nyanyanya",
+    "matricule": "10P559",
+    "sexe":"F",
+    "dateNaissance":"25 Decembre 2015",
+    "lieuNaissance":"Yaoundé",
+    "login":"login",
+    "numeroCNI":555,
+    "dateCNI":5452,
+    "lieuCNI":"Yaoundé",
+    "niveau": 3,
+    "departement": "Génie Mécanique",
+    "image":null,
+    "biographie":"Officier des Palmes Académiques de la République Française, Membre de l'Académie des Sciences du Cameroun, le&nbsp;<strong>Professeur Emmanuel TONYE </strong>est&nbsp;Vice-recteur en charge de la Recherche, de la Coopération et des Relations avec le Monde des Entreprises à l’Université de Yaoundé I.&nbsp;Coordonnateur de l’équipe focale de l’Université Virtuelle hébergée par l’Université de Yaoundé I. Il est&nbsp;Professeur des Universités à <a href='http://www.polytechnique.cm' target='_blank'>l'Ecole Nationale supérieure Polytechnique</a>, BP 8390, Yaoundé, Cameroun. Principal coordonnateur des Masters en télécommunications et en sécurité des systèmes d’information et de communications en formation à distance <a href='http://mastel.auf-foad.org/' target='_blank'>MASTEL </a>&nbsp;et <a href='http://m2massico.auf-foad.org/' target='_blank'>MASSICO</a>.&nbsp; </br></br>   Directeur du laboratoire de recherche Electronique et Traitement du Signal dont les travaux portent sur : (i) la caractérisation des types d'occupation des sols par traitement d'images satellitaires radars à synthèse d'ouverture; (ii) l'optimisation de déploiement de réseau de capteurs pour le suivi temps réel et sur base cartographique de la pollution atmosphérique; (iii) Modélisation et caractérisation des antennes intelligentes à réseaux d'éléments.<h5>Thèses encadrées (13)</h5><p>1) <strong>Aur&eacute;lien YEREMOU TAMTSIA (11 octobre 2013)</strong>, Nouvelles contributions &agrave; l&#39;application des moments en asservissement visuel, Doctorat de l&rsquo;Universit&eacute; de Blaise Pascal de Clermont-Ferrand (Sp&eacute;cialit&eacute; Robotique) et Doctorat/PhD de l&#39;Universit&eacute; de Yaound&eacute; I (Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications)mars 2013.</p>    <p> 2) <strong>Elie Fute Tagne (05 mars 2013)</strong>, Une approche de patrouille multi-agents pour la d&eacute;tection d&#39;&eacute;v&eacute;nements, Doctorat de l&rs",
+    "association":[
+      {
+        "nom":"Association de etudiants",
+        "poste":"adhérant",
+        "anneeAdhesion":2014
+      },
+      {
+        "nom":"Association de nordiste",
+        "poste":"Président",
+        "anneeAdhesion":2011
+      }
+    ],
+    "cv":"lien vers son cv",
+    "projets":[
+      {
+        "categorie":"Projets de recherche",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      },
+      {
+        "categorie":"Projets de developpement",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      }
+    ],
+    "social":[
+      {
+        "reseau":"facebook",
+        "nom":"Nom de la page facebook",
+        "lien":"lien vers facebook"
+      },
+      {
+        "reseau":"twitter",
+        "nom":"Nom de la page twitter",
+        "lien":"lien vers twitter"
+      }
+    ],
+    "contact":[
+      {
+        "label":"Téléphone",
+        "valeur":"696969696"
+      },
+      {
+        "label":"Email",
+        "valeur":"enanda@gmail.com"
+      }
+    ]
+
+  }
+]

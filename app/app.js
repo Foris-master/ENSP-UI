@@ -9,12 +9,14 @@ var app_header =angular.module('myApp.header', ['ui.router']);
 var app_actualite =angular.module('myApp.actualite', ['ui.router']);
 var app_concours =angular.module('myApp.concours', ['ui.router','720kb.datepicker']);
 var app_departement =angular.module('myApp.departement', ['ui.router']);
+var app_indicateur =angular.module('myApp.indicateur', ['ui.router']);
 var app_personnel =angular.module('myApp.personnel', ['ui.router']);
+var app_etudiant =angular.module('myApp.etudiant', ['ui.router']);
 var app_diplome =angular.module('myApp.diplome', ['ui.router']);
 var app_organisation =angular.module('myApp.organisation', ['ui.router']);
 var app_publication=angular.module('myApp.publication', ['ui.router','720kb.datepicker']);
 
-
+var message_erreur="Aucun contenu";
 
 angular.module('myApp', [
   'ui.router',
@@ -28,12 +30,15 @@ angular.module('myApp', [
   'myApp.header',
   'myApp.publication',
   'myApp.departement',
+  'myApp.indicateur',
   'myApp.personnel',
+  'myApp.etudiant',
   'myApp.concours',
   'myApp.diplome',
   'myApp.organisation',
   'angularUtils.directives.dirPagination',
     'angular-loading-bar',
+    'ncy-angular-breadcrumb',
   'textAngular',
     'formly',
     'formlyBootstrap'

@@ -23,7 +23,7 @@
     "enseignement":"<strong>Activit&eacute;s d&#39;enseignement</strong><table class='table table-bordered table-striped table-condensed'><tbody><tr><td ><p><strong>Intitul&eacute; </strong></p></td><td ><p><strong>Niveau de formation</strong></p></td></tr><tr><td ><p>M&eacute;thodes d&rsquo;analyse des performances de r&eacute;seaux</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Optimisation multicrit&egrave;res des</p><p>r&eacute;seaux</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Antennes Intelligentes</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Traitement du signal et de l&rsquo;image</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>S&eacute;minaires sur la Planification et l&#39;optimisation des r&eacute;seaux de t&eacute;l&eacute;communications</p></td><td ><p>5&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>R&eacute;seaux intelligents: mise en &oelig;uvre d&#39;un serveur de rebond</p></td><td ><p>5&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Transmission de donn&eacute;es et r&eacute;seaux de communications num&eacute;riques</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>M&eacute;thodes num&eacute;riques appliqu&eacute;es &agrave; l&#39;&eacute;lectromagn&eacute;tiques (Diff&eacute;rences finies, &eacute;l&eacute;ments finis et m&eacute;thodes des moments)</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Concepts des t&eacute;l&eacute;communications</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>T&eacute;l&eacute;communications optiques</p></td><td ><p>4&egrave;me Ann&eacute;e d&rsquo;Ing&eacute;nieur de l&rsquo;ENSPT de Yaound&eacute;</p><p>4&egrave;me ann&eacute;e d&rsquo;Ing&eacute;nieur de l&rsquo;UNIQUA de Port-au Prince (Ha&iuml;ti)</p></td></tr><tr><td ><p>Techniques de transmission</p></td><td ><p>Master M1 d&rsquo;informatique ESIREM de l&#39;Universit&eacute; de Bourgogne (France)</p></td></tr><tr><td ><p>Electromagn&eacute;tisme</p></td><td ><p>3&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Fondamentaux des t&eacute;l&eacute;communications</p></td><td ><p>3&egrave;me Ann&eacute;e G&eacute;nie &eacute;lectrique de l&rsquo;ENSP de Yaound&eacute;</p></td></tr></tbody></table>",
     "publications":[
       {
-        "titre":"Article dans les",
+        "titre":"Article dans les journaux",
         "publication":[
           {
             "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores at, dignissimos ducimus explicabo fugiat fugit, omnis optio possimus qui reprehenderit saepe? Cumque labore molestias mollitia, quo reprehenderit sapiente voluptates?",
@@ -114,16 +114,28 @@
       }
     ],
     "cv":"lien",
-    "social":{
-      "facebook":"facebook",
-      "twitter":"twitter",
-      "skype":"skype",
-      "linkedin":"linkedin"
-    },
-    "contact":{
-      "email":"email",
-      "telephone":"telephone"
-    }
+    "social":[
+      {
+        "reseau":"facebook",
+        "nom":"Nom de la page facebook",
+        "lien":"lien vers facebook"
+      },
+      {
+        "reseau":"twitter",
+        "nom":"Nom de la page twitter",
+        "lien":"lien vers twitter"
+      }
+    ],
+    "contact":[
+      {
+        "label":"Téléphone",
+        "valeur":"696969696"
+      },
+      {
+        "label":"Email",
+        "valeur":"enanda@gmail.com"
+      }
+    ]
 
   }
 ]

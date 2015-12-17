@@ -49,6 +49,7 @@ app_personnel
         PersonnelFactory.getPersonnel({nom:$stateParams.nom,prenom:$stateParams.prenom}).then(
             function(data){
                 $scope.personnel=data;
+                $scope.personnel.image=$scope.personnel.image==null?"profil.png":$scope.personnel.image;
 
             },function(msg){
                 console.log(msg);

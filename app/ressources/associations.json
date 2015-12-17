@@ -1,0 +1,56 @@
+[
+  {
+    "idAssociation": 1,
+    "nom": "Assoc",
+    "cygle": "Edward",
+    "dateCreation": "11P169",
+    "effectif":5,
+    "image":"work/7.jpg",
+    "description":"Officier des Palmes Académiques de",
+    "idPersonnel":1,
+    "membres":
+    {
+      "bureau":[
+        {
+          "nom":"Nom",
+          "prenom":"prenom",
+          "poste":"président"
+        },
+        {
+          "nom":"Nom",
+          "prenom":"prenom",
+          "poste":"Vice-président"
+        }
+      ],
+      "adherents":[
+        {
+          "nom":"Nom",
+          "prenom":"prenom",
+          "poste":"adhérant"
+        }
+      ]
+    },
+    "social":[
+      {
+        "reseau":"facebook",
+        "nom":"Nom de la page facebook",
+        "lien":"lien vers facebook"
+      },
+      {
+        "reseau":"twitter",
+        "nom":"Nom de la page twitter",
+        "lien":"lien vers twitter"
+      }
+    ],
+    "contact":[
+      {
+        "label":"Téléphone",
+        "valeur":"696969696"
+      },
+      {
+        "label":"Email",
+        "valeur":"enanda@gmail.com"
+      }
+    ]
+  }
+]

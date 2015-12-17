@@ -329,6 +329,7 @@ header a:hover{
     margin-left: -25px;
     margin-right: -25px;
     background-size: cover;
+    margin-bottom: 0px;
 }
 
 .main-section h5{
@@ -373,7 +374,8 @@ a.accordion{
     background-size: cover;
 }
 
-#personnel .heading, .personnel .heading{
+#personnel .heading,
+.personnel .heading{
     background: url('../images/ensp/banniere-ensp.png') no-repeat;
     background-size: cover;
 }
@@ -392,7 +394,8 @@ a.accordion{
     color: rgba(0, 0, 0, 0.58);
 }
 
-.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+.table-striped > tbody > tr:nth-child(2n+1) > td,
+.table-striped > tbody > tr:nth-child(2n+1) > th {
     background-color: rgba(249, 125, 47, 0.15) !important;
 }
 
@@ -418,6 +421,41 @@ caption .form-control{
     border-left: 5px solid rgb(249, 125, 47);
     padding-left: 5px;
 }
-.table tr, .table td{
+.table tr,
+.table td{
     cursor: pointer;
+}
+
+.main-section .dropdown-menu{
+    width:auto !important;
+    background: white;
+    color: rgb(249, 125, 47);
+    position: relative;
+    margin-top: 0 !important;
+    border-top: 1px solid transparent;
+}
+
+.main-section .dropdown-menu .active,{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #F97D2F transparent;
+}
+
+.main-section .dropdown-menu>li>a:hover{
+    background: transparent;
+}
+
+.caret{
+    border-top-color: #F97D2F !important;
+    border-bottom-color:#F97D2F !important;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus{
+    background: #F97D2F;
+    border-color: #F97D2F;
+}
+
+input:focus{
+    box-shadow: red;
 }

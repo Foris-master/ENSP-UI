@@ -25,7 +25,7 @@
               <h4 class="">Présentation du {{departement.nom}}</h4>
               <div class="row">
                 <div class="col-lg-9">
-                  <p>{{departement.presentation}}</p>
+                  <p ng-bind-html="departement.presentation"></p>
                 </div>
                 <div class="col-lg-3">
                   <img src="images/{{departement.image[0]}}" alt=""/>

@@ -34,7 +34,6 @@
     <!-- editeur  riche-->
     <link rel="stylesheet" href="../bower_components/ngWYSIWYG/css/editor.css" />
   <link rel='stylesheet' href='../bower_components/textAngular/dist/textAngular.css'>
-
   <link rel="stylesheet" href="css/editor.css"/>
 </head>
 <body ng-app="myApp" ng-controller="headerCtrl">
@@ -100,10 +99,11 @@
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'MSP'})">Mathémaitques et Sciences Physiques</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GM">Génie Mécanique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GTEL">Génie Télécommunication</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/GI">Génie Informatique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement/CVR">Cordination et Valorisation de la Recherche</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GM">Génie Mécanique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GTEL">Génie Télécommunication</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/GI">Génie Informatique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a href="#/departement/CVR">Cordination et Valorisation de la Recherche</a></li>
+>>>>>>> Temporary merge branch 2
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -161,7 +161,7 @@
 
             <li ng-class="{active : menu=='contact'}"><a ui-sref="menu" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
 
-              <li class="dropdown" ng-class="{active : menu=='connexion'}">
+              <li class="hide dropdown" ng-class="{active : menu=='connexion'}">
                   <a href="javascript:void(0);" ng-click="menu='connexion'" class="dropdown-toggle" data-toggle="dropdown">Connexion</a>
                   <ul class="dropdown-menu">
                       <form method="post" ng-submit="loggedIn()" id="contactfrm" role="form" name="userForm" novalidate>

@@ -37,6 +37,9 @@ app_departement
         $scope.auteur =$stateParams.auteur || null;
         $scope.par_page = 15;
 
+        $scope.filtrePublication=function(valeur){
+            $scope.publications=$filter('filter')($scope.publications,{auteur:auteur},true);
+        }
 
         $scope.loadPublication=function(){
             PublicationFactory.getPublications().then(

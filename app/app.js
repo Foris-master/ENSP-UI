@@ -15,8 +15,9 @@ var app_organisation =angular.module('myApp.organisation', ['ui.router']);
 var app_publication=angular.module('myApp.publication', ['ui.router','720kb.datepicker']);
 
 
+
 angular.module('myApp', [
-    'ui.router',
+  'ui.router',
   'ngSanitize',
   'ngWYSIWYG',
     'ngAnimate',
@@ -82,6 +83,7 @@ angular.module('myApp', [
         url: "/us",
         templateUrl:  template_url+'us.html',
         title:"Equipe de Réalisation"
+        
       }).state('login', {
         url: "/unauthorize",
         templateUrl:  template_url+'403.html',
@@ -89,6 +91,7 @@ angular.module('myApp', [
         access:{requiresLogin:false}
       })
 }])
+
     .config(['cfpLoadingBarProvider',function(cfpLoadingBarProvider){
       cfpLoadingBarProvider.includeBar=true;
       //cfpLoadingBarProvider.spinnerTemplate = '<div><span class="fa fa-spinner">Loading ...</span>';

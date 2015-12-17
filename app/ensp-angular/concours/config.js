@@ -17,7 +17,7 @@ app_concours
                 controller: 'ConcoursCtrl',
                 title: "Nos Concours"
             })
-            .state('concours-formulaire', {
+            .state('formulaire-concours-niveau-1', {
                 url: "/formulaire-concours-niveau-1/:action/:id?",
                 templateUrl: template_url + 'concours/formulaire-concours.html',
                 controller: 'FormulaireConcoursNiveau1Ctrl',
@@ -26,7 +26,7 @@ app_concours
                     id: {squash: true, value: null}
                 }
             })
-            .state('concours-formulaire3', {
+            .state('formulaire-concours-niveau-3', {
                 url: "/formulaire-concours-niveau-3/:action/:id?",
                 templateUrl: template_url + 'concours/formulaire-concours-niveau-3.html',
                 controller: 'FormulaireConcoursNiveau3Ctrl',
@@ -35,11 +35,11 @@ app_concours
                     id: {squash: true, value: null}
                 }
             })
-            .state('concours-candidats', {
+            .state('liste-candidat', {
                 url: "/liste-candidat/:niveau",
                 templateUrl: template_url + 'concours/liste-candidat.html',
                 controller: 'ListeCandidatCtrl',
                 title: "Liste des Candidats"
             })
 
-    }])
+}]);

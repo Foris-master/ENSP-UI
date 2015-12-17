@@ -18,7 +18,7 @@
                             <h3>{{p.prenom}} {{p.nom}}</h3>
                             <p>{{p.fonction}}.</p>
                             <p>{{p.poste}}.</p>
-                            <a href="#/personnel/{{p.idPersonnel}}">Visiter son espace</a>
+                            <a ui-sref="personnel({prenom:p.prenom,nom:p.nom})">Visiter son espace</a>
                         </div>
                     </div>
                 </div>

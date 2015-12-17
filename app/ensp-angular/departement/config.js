@@ -11,23 +11,26 @@ app_departement
 
     .config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider) {
         $stateProvider
-            .state('departement', {
+            .state('liste-departement', {
                 url: "/liste-departement",
                 templateUrl: template_url+'departement/liste-departement.html',
-                controller:'ListeDepartementCtrl'
+                controller:'ListeDepartementCtrl',
+				title:"Nos Départements"
             })
-            .state('departement.detail', {
+            .state('departement', {
                 url: "/departement/:cygle",
                 templateUrl:  template_url+'departement/departement.html',
-                controller: 'DepartementCtrl'
+                controller: 'DepartementCtrl',
+				title:"Espace Département"
             })
-            .state('departement.formulaire', {
+            .state('formulaire-departement', {
                 url: "/formulaire-departement/:id?",
                 templateUrl:  template_url+'departement/formulaire-departement.html',
                 controller: 'FormulaireDepartementCtrl',
                 params: {
                     id: { squash: true, value: null }
-                }
+                },
+				title:"Formulaire Déparement"
             });
 
         $urlRouterProvider.otherwise( '/liste-departement');

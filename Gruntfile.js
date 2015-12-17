@@ -111,5 +111,5 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');*/
 
     //grunt.registerTask('default',['jshint','concat','uglify','cssmin']);
-    grunt.registerTask('default',['concat','uglify','cssmin']);
+    grunt.registerTask('default',['concat','uglify','cssmin','imagemin']);
 };

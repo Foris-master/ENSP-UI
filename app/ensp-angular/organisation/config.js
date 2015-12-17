@@ -8,13 +8,12 @@
  routes pour le module Organisation
  *****************************************************************************************************************/
 app_organisation
-
-.config(['$stateProvider', function($stateProvider) {
-
-    $stateProvider
-        .state('organisation', {
-            url: "/organisation",
-            templateUrl:  template_url+'organisation/organisation.html',
-            controller: 'OrganisationCtrl'
-        })
-}]);
+    .config(['$stateProvider', function($stateProvider) {
+        $stateProvider
+            .state('organisation', {
+                url: "/organisation",
+                templateUrl: template_url+'organisation/organisation.html',
+                controller: 'OrganisationCtrl',
+                title:"Organisation"
+            })
+    }]);

@@ -15,7 +15,7 @@ app_departement
             DepartementFactory.getDepartements().then(
                 function(data){
 
-                    $scope.totalPages=data.length;
+                    $scope.par_page=7;
                     $scope.departements=data;
 
                     console.log($scope.departements);

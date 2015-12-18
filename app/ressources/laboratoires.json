@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "nom": "Laboratoire 3 GI",
+    "responsable": {
+      "nom":"Nom",
+      "prenom":"prenom",
+      "grade":"grande",
+      "telephone":5454545,
+      "email":"email@email.com"
+    },
+    "presentation": "Lorem ipsum dolor sit amet, c.",
+    "dateCreation":"25 Decembre 2011",
+    "image": ["banner-bg.jpg","banner-bg2.jpg","banner-bg3.jpg"],
+    "projets":[
+      {
+        "categorie":"Projets de recherche",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      },
+      {
+        "categorie":"Projets de developpement",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nom": "Laboratoire 3 GI",
+    "responsable": {
+      "nom":"Nom",
+      "prenom":"prenom",
+      "grade":"grande",
+      "telephone":5454545,
+      "email":"email@email.com"
+    },
+    "presentation": "Lorem ipsum dolor sit amet, c.",
+    "dateCreation":"25 Decembre 2011",
+    "image": ["banner-bg.jpg","banner-bg2.jpg","banner-bg3.jpg"],
+    "projets":[
+      {
+        "categorie":"Projets de recherche",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      },
+      {
+        "categorie":"Projets de developpement",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nom": "Laboratoire 3 GI",
+    "responsable": {
+      "nom":"Nom",
+      "prenom":"prenom",
+      "grade":"grande",
+      "telephone":5454545,
+      "email":"email@email.com"
+    },
+    "presentation": "Lorem ipsum dolor sit amet, c.",
+    "dateCreation":"25 Decembre 2011",
+    "image": ["banner-bg.jpg","banner-bg2.jpg","banner-bg3.jpg"],
+    "projets":[
+      {
+        "categorie":"Projets de recherche",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      },
+      {
+        "categorie":"Projets de developpement",
+        "projet":[
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          },
+          {
+            "titre":"intitulé du projet",
+            "description":"titre",
+            "entreprise":"entreprise",
+            "annee":"annee",
+            "lien":"lien"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -15,13 +15,31 @@ app_departement
                 url: "/liste-departement",
                 templateUrl: template_url+'departement/liste-departement.html',
                 controller:'ListeDepartementCtrl',
-				title:"Nos D�partements"
+				title:"Nos Départements",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Liste des départements',
+                    parent:"accueil"
+                }
             })
             .state('departement', {
                 url: "/departement/:cygle",
                 templateUrl:  template_url+'departement/departement.html',
                 controller: 'DepartementCtrl',
-				title:"Espace D�partement"
+				title:"Espace Département",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'département',
+                    parent:"liste-departement"
+                }
             })
             .state('formulaire-departement', {
                 url: "/formulaire-departement/:id?",
@@ -30,7 +48,16 @@ app_departement
                 params: {
                     id: { squash: true, value: null }
                 },
-				title:"Formulaire D�parement"
+				title:"Formulaire Déparement",
+                access: {
+                    loginRequired: true,
+                    requiredPermissions: ['Admin'],
+                    permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'enregistrement d\'un département',
+                    parent:"liste-departement"
+                }
             });
 
         $urlRouterProvider.otherwise( '/liste-departement');

@@ -15,7 +15,16 @@ app_indicateur
                 url: "/indicateur",
                 templateUrl:  template_url+'indicateurs/indicateurs.html',
                 controller: 'IndicateurCtrl',
-				title:"Nos Indicateurs"
+				title:"Nos Indicateurs",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Nos indicateurs',
+                    parent:"accueil"
+                }
             });
 
         $urlRouterProvider.otherwise( '/indicateur');

@@ -6,12 +6,13 @@ var template_url='templates/'; // chemin vers le dossier des templates
 var app_auth =angular.module('myApp.auth', ['ui.router']);
 var app_accueil =angular.module('myApp.accueil', ['ui.router']);
 var app_header =angular.module('myApp.header', ['ui.router']);
-var app_actualite =angular.module('myApp.actualite', ['ui.router']);
+var app_article =angular.module('myApp.article', ['ui.router']);
 var app_concours =angular.module('myApp.concours', ['ui.router','720kb.datepicker']);
 var app_departement =angular.module('myApp.departement', ['ui.router']);
 var app_indicateur =angular.module('myApp.indicateur', ['ui.router']);
 var app_personnel =angular.module('myApp.personnel', ['ui.router']);
 var app_etudiant =angular.module('myApp.etudiant', ['ui.router']);
+var app_laboratoire =angular.module('myApp.laboratoire', ['ui.router']);
 var app_diplome =angular.module('myApp.diplome', ['ui.router']);
 var app_organisation =angular.module('myApp.organisation', ['ui.router']);
 var app_publication=angular.module('myApp.publication', ['ui.router','720kb.datepicker']);
@@ -26,8 +27,9 @@ angular.module('myApp', [
     'ngMessages',
     'myApp.auth',
   'myApp.accueil',
-  'myApp.actualite',
+  'myApp.article',
   'myApp.header',
+  'myApp.laboratoire',
   'myApp.publication',
   'myApp.departement',
   'myApp.indicateur',
@@ -48,7 +50,7 @@ angular.module('myApp', [
         // mise a jour du title de la page de maniere automatique
         $rootScope.title=toState.title;
          $rootScope.currentUser={};
-         $rootScope.currentUser.roles = [{name:'Admin'},{name:'UserManager '}];
+         $rootScope.currentUser.roles = [{name:'Admin'},{name:'UserManager '},{name:"User"}];
 
         AuthFactory.hasAuthorization(toState.access).then(
             function(data){

@@ -1,0 +1,173 @@
+
+<section class="main-section section informatique" autoscroll="true">
+  <div class="container">
+    <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
+      <!-- Heading -->
+      <h2 class="titre">{{laboratoire.nom}}</h2>
+    </div>
+
+    <!-- Article 1 -->
+    <div class="row feature design">
+      <p class="ancre">
+        <a ui-sref="liste-laboratoire">Laboratoire de recherche </a>> {{laboratoire.nom}}
+      </p>
+      <div class="col-lg-12">
+        <div class="tabbable tabs-left onglet row">
+          <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
+            <li class="active"><a href="/#presentation" data-toggle="tab">Présentation</a></li>
+            <li><a href="/#projet" data-toggle="tab">Projets réalisés</a></li>
+
+          </ul>
+
+          <div class="tab-content col-lg-10 col-sm-10 col-xs-10">
+            <!--Présentation-->
+            <div class="tab-pane active" id="presentation">
+              <h4 class="">Présentation du {{laboratoire.nom}}</h4>
+              <div class="row">
+                <div class="col-lg-12">
+                  <p ng-bind-html="laboratoire.presentation"></p>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div id="myCarousel" class="carousel slide" style="border-bottom-color: transparent">
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[1]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[2]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[3]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[4]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[5]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[6]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[7]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                        <div class="col-md-3">
+                          <a href="javascript:void(0);" class="thumbnail">
+                            <img class="img-responsive" src="images/{{laboratoire.image[8]}}" alt="Thumb11">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <a class="left carousel-control" href="/#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
+                  <a class="right carousel-control" href="/#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
+
+                  <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                  </ol>
+                </div><!-- End Carousel -->
+              </div>
+              <style>
+
+
+
+                .carousel-control {
+                  color:#fff;
+                  top:40%;
+                  color:#F97D2F;;
+                  bottom:auto;
+                  padding-top:4px;
+                  width:30px;
+                  height:30px;
+                  text-shadow:none;
+                  opacity:1;
+                  display: block;
+                }
+                .carousel-control:hover {
+                  color: #eee;
+                }
+                .carousel-control.left, .carousel-control.right {
+                  background-image:none !important;
+                }
+                .carousel-control.right {
+                  left:auto;
+                  right:-32px;
+                }
+                .carousel-control.left {
+                  right:auto;
+                  left:-32px;
+                }
+
+                .carousel-indicators {
+                  bottom:-40px;
+                }
+                .carousel-indicators li {
+                  border-radius:0;
+                  width:10px;
+                  height:10px;
+                  background:#ccc;
+                  border:1px solid #ccc;
+                }
+                .carousel-indicators .active {
+                  width:12px;
+                  height:12px;
+                  background:#F97D2F;
+                  border-color:#F97D2F;
+                }
+
+              </style>
+            </div>
+
+            <!--Projets-->
+            <div class="tab-pane" id="projet">
+              <h4>Projets</h4>
+              <div class="col-lg-6" ng-repeat="l in laboratoire.projets">
+                <h5>{{l.categorie}}</h5>
+
+                <div ng-repeat="pr in l.projet" style="padding-left: 10px;margin-bottom: 10px;">
+                  <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.titre}}</div>
+                  <p style="padding-bottom: 0">{{pr.description}}</p>
+                  <div><span class="detail">Entreprise : </span>{{pr.entreprise}}</div>
+                  <div><span class="detail">Année : </span>{{pr.annee}}</div>
+                  <div><span class="detail">Lien : </span><span ng-bind-html="pr.lien"></span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+</section>

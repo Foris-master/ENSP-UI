@@ -93,17 +93,17 @@ module.exports = function(grunt){
         },
         imagemin: {                          // Task
 
-            dynamic: {// Another target
+            //dynamic: {// Another target
                 dist: {
                     cache: false,
                     files: [{
                         expand: true,                  // Enable dynamic expansion
                         cwd: 'app/images/',                   // Src matches are relative to this path
                         src: ['**/*.{png,jpg,gif}','!min/**'],   // Actual patterns to match
-                        dest: 'min/'                  // Destination path prefix
+                        dest: 'app/images/min/'                  // Destination path prefix
                     }]
                 }
-            }
+            //}
         }
     });
    /* grunt.loadNpmTasks('grunt-contrib-concat');

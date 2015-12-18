@@ -103,7 +103,7 @@
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GM'})">Génie Mécanique</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GTEL'})">Génie Télécommunication</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GI'})">Génie Informatique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'CVR'})">Cordination et Valorisation de la Recherche</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-departement">Tous les département</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -140,13 +140,12 @@
               <ul class="dropdown-menu">
                 <div class="">
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Nos laboratoires</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Transfert et valoraisation</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-publication">Publications</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-laboratoire">Nos laboratoires</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-publication({categorie:'publication'})">Publications</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Palmarès</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="menu">Activités de recherche</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-article({categorie:'palmares'})">Palmarès</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-article({categorie:'activites'})">Activités de recherche</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
                     <img src="images/work/1.jpg" alt=""/>
@@ -311,10 +310,10 @@
   <script src="ensp-angular/etudiant/controllers.js"></script>
 
 <!--Module Actualite-->
-  <script src="ensp-angular/actualite/config.js"></script>
-  <script src="ensp-angular/actualite/services.js"></script>
-  <script src="ensp-angular/actualite/controllers.js"></script>
-  <script src="ensp-angular/actualite/directives.js"></script>
+  <script src="ensp-angular/article/config.js"></script>
+  <script src="ensp-angular/article/services.js"></script>
+  <script src="ensp-angular/article/controllers.js"></script>
+  <script src="ensp-angular/article/directives.js"></script>
 
   <!--Module Departement-->
   <script src="ensp-angular/departement/config.js"></script>
@@ -326,10 +325,15 @@
   <script src="ensp-angular/indicateurs/services.js"></script>
   <script src="ensp-angular/indicateurs/controllers.js"></script>
 
-<!--Module Concours-->
+  <!--Module Concours-->
   <script src="ensp-angular/concours/config.js"></script>
   <script src="ensp-angular/concours/services.js"></script>
   <script src="ensp-angular/concours/controllers.js"></script>
+
+  <!--Module Laboratoire-->
+  <script src="ensp-angular/laboratoire/config.js"></script>
+  <script src="ensp-angular/laboratoire/services.js"></script>
+  <script src="ensp-angular/laboratoire/controllers.js"></script>
 
   <!--&lt;!&ndash;Module Diplome&ndash;&gt;-->
   <script src="ensp-angular/diplome/config.js"></script>

@@ -11,7 +11,7 @@ app_departement
     .controller('FormulairePublicationCtrl',['$scope','$stateParams','$location','PublicationFactory','$filter',
     function($scope,$stateParams,$location,PublicationFactory,$filter) {
         $scope.new_publication = false;
-        var id=$stateParams.id || null;
+        var id=$stateParams.titre || null;
         if(id!=null)// Edition d'une publication
         {
             $scope.type="Edition de Publication";
@@ -75,7 +75,7 @@ app_departement
     .controller('PublicationCtrl', ['$scope','$stateParams','PublicationFactory',
     function($scope,$stateParams,PublicationFactory) {
         //recuperation de la publication
-        PublicationFactory.getPublication($stateParams.id).then(
+        PublicationFactory.getPublication({titre:$stateParams.titre}).then(
             function(data){
 
                 $scope.publication=data;

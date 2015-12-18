@@ -370,20 +370,10 @@ a.accordion{
 }
 
 #aboutUs .heading, .main-section .heading{
-    background: url('../images/ensp/banniere-ensp.png') no-repeat;
-    background-size: cover;
+    background: url('../images/ensp/baniere.jpg') no-repeat !important;
+    background-size: cover !important;
 }
 
-#personnel .heading,
-.personnel .heading{
-    background: url('../images/ensp/banniere-ensp.png') no-repeat;
-    background-size: cover;
-}
-
-#concours .heading{
-    background: url('../images/ensp/banniere-ensp.png') no-repeat;
-    background-size: cover;
-}
 
 #personnel .actu{
     border-bottom: 1px solid #eee;
@@ -458,4 +448,20 @@ caption .form-control{
 
 input:focus{
     box-shadow: red;
+}
+
+.item-departement{
+    border-bottom: 2px solid #EEE;
+    padding: 16px 0px;
+    margin-bottom: 5px;
+}
+
+.item-departement img{
+    min-height: 100px;
+    max-height: 200px;
+}
+
+#cp ul li a.no-link{
+    padding: 0px 5px !important;
+    font-size: 13px;
 }

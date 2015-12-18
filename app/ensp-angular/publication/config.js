@@ -17,7 +17,16 @@ app_publication
                 url: "/publication/:titre",
                 templateUrl: template_url+'publication/publication.html',
                 controller:'PublicationCtrl',
-				title:"Publication"
+				title:"Publication",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Publication',
+                    parent:"liste-publication"
+                }
             })
            .state('formulaire-publication', {
                 url: "/formulaire-publication/:id?",
@@ -26,21 +35,35 @@ app_publication
                 params: {
                     id: { squash: true, value: null }
                 },
-                title:"Formulaire de publication"
+                title:"Formulaire de publication",
+                access: {
+                    loginRequired: true,
+                    requiredPermissions: ['User'],
+                    permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Edition d\'une publication',
+                    parent:"liste-publication"
+                }
             })
             .state('liste-publication', {
-                    url: "/liste-publication/:auteur?'",
-                    templateUrl:  template_url+'publication/liste-publication.html',
-                    controller:'ListePublicationCtrl',
-                    params: {
-                        auteur: { squash: true, value: null }
-                    },
-					title:"Liste des publications",
-                    ncyBreadcrumb: {
-                        label: 'qsdq',
-                        parent:"accueil"
-                    }
-                });
+                url: "/liste-publication/:auteur?'",
+                templateUrl:  template_url+'publication/liste-publication.html',
+                controller:'ListePublicationCtrl',
+                params: {
+                    auteur: { squash: true, value: null }
+                },
+                title:"Liste des publications",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Liste des publications',
+                    parent:"accueil"
+                }
+            });
 
 
 

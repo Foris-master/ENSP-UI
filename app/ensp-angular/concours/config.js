@@ -15,7 +15,16 @@ app_concours
                 url: "/concours",
                 templateUrl: template_url + 'concours/concours.html',
                 controller: 'ConcoursCtrl',
-                title: "Nos Concours"
+                title: "Nos Concours",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Nos Concours',
+                    parent:"accueil"
+                }
             })
             .state('formulaire-concours-niveau-1', {
                 url: "/formulaire-concours-niveau-1/:action/:id?",
@@ -24,6 +33,15 @@ app_concours
                 title: "Inscription concours niveau 1",
                 params: {
                     id: {squash: true, value: null}
+                },
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Inscription au concours niveau 1',
+                    parent:"concours"
                 }
             })
             .state('formulaire-concours-niveau-3', {
@@ -33,13 +51,31 @@ app_concours
                 title: "Inscription concours niveau 3",
                 params: {
                     id: {squash: true, value: null}
+                },
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Inscription au concours niveau 3',
+                    parent:"concours"
                 }
             })
             .state('liste-candidat', {
                 url: "/liste-candidat/:niveau",
                 templateUrl: template_url + 'concours/liste-candidat.html',
                 controller: 'ListeCandidatCtrl',
-                title: "Liste des Candidats"
+                title: "Liste des Candidats",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Liste des candidats',
+                    parent:"concours"
+                }
             })
 
 }]);

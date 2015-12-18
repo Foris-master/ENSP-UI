@@ -45,10 +45,10 @@ app_publication
             });
             return deffered.promise;
         },
-        getPublication: function (id) {
+        getPublication: function (obj) {
             var deffered = $q.defer();
             var publications = factory.getPublications().then(function(services){
-                deffered.resolve($filter('filter')(factory.publications,{idPublication:parseInt(id)},true)[0]);
+                deffered.resolve($filter('filter')(factory.publications,obj,true)[0]);
             },function(msg){
                 deffered.reject(msg);
             });

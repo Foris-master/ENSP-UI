@@ -18,12 +18,11 @@ app_accueil
                 title : 'Accueil',
                 access: {
                     loginRequired: false,
-                    requiredPermissions: ['Admin', 'UserManager'],
-                    permissionType: 'All'
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
                 },
                 ncyBreadcrumb: {
-                    label: '',
-                    parent:"etudiant"
+                    label: 'Acceuil'
                 }
             })
     }]);

@@ -14,6 +14,15 @@ app_organisation
                 url: "/organisation",
                 templateUrl: template_url+'organisation/organisation.html',
                 controller: 'OrganisationCtrl',
-                title:"Organisation"
+                title:"Organisation",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Organisation',
+                    parent:"accueil"
+                }
             })
     }]);

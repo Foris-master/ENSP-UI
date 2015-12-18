@@ -7,8 +7,8 @@
  controlleur pour le module Etudiant
  *****************************************************************************************************************/
 app_etudiant
-    .controller('ListeEtudiantCtrl', ['$scope','$location','EtudiantFactory','ActualiteFactory','$filter',
-        function($scope,$location,EtudiantFactory,ActualiteFactory,$filter) {
+    .controller('ListeEtudiantCtrl', ['$scope','$location','EtudiantFactory','ArticleFactory','$filter',
+        function($scope,$location,EtudiantFactory,ArticleFactory,$filter) {
 
         $scope.titre="Nos étudiants";
         $scope.sousTitre="Tous les étudiants";
@@ -50,10 +50,10 @@ app_etudiant
 
         $scope.afficherActivites=function(){
             $scope.par_page=15;
-            ActualiteFactory.getActualites().then(
+            ArticleFactory.getSpecifiqueArticles().then(
                 function(data){
                     console.log(data);
-                    $scope.activites=$filter('filter')(data,{tag:"etudiant"});
+                    $scope.activites=$filter('filter')(data,{groupe:"etudiant"});
 
                 },function(msg){
                     console.log(msg);
@@ -107,11 +107,11 @@ app_etudiant
             );
         }
     }])
-    .controller('ActivitesCtrl',['$scope','ActualiteFactory','$stateParams','$filter',
-        function($scope,ActualiteFactory,$stateParams,$filter) {
+    .controller('ActivitesCtrl',['$scope','ArticleFactory','$stateParams','$filter',
+        function($scope,ArticleFactory,$stateParams,$filter) {
             //recuperation de la etudiant
 
-            ActualiteFactory.getActualite({titre:$stateParams.titre}).then(
+            ArticleFactory.getArticle({titre:$stateParams.titre}).then(
                 function(data){
                     $scope.activite=data;
 

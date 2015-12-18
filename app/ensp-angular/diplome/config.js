@@ -14,14 +14,15 @@ app_diplome
                 url: "/diplome",
                 templateUrl: template_url+'diplome/diplome.html',
                 controller: 'DiplomeCtrl',
-                title:"Nos diplômés"
+                title:"Nos diplômés",
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Nos diplômés',
+                    parent:"accueil"
+                }
             })
-    }]);
-
-    .config(['$routeProvider', function($routeProvider) {
-        $routeProvider.when('/diplome', {
-            templateUrl: template_url+'diplome/diplome.html',
-            controller: 'DiplomeCtrl'
-        })
-        $routeProvider.otherwise({redirectTo: '/diplome'});
     }]);

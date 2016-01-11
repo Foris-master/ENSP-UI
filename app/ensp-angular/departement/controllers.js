@@ -36,7 +36,7 @@ app_departement
     .controller('DepartementCtrl', ['$scope','$stateParams','DepartementFactory',
     function($scope,$stateParams,DepartementFactory) {
         //recuperation de la departement
-        DepartementFactory.getDepartementObjet({cygle:$stateParams.cygle}).then(
+        DepartementFactory.getDepartementObjet({sigle:$stateParams.sigle}).then(
             function(data){
                 $scope.departement=data;
                 //console.log(data);

@@ -33,6 +33,62 @@ app_partenaire
 
         $scope.loadPartenaire();
     }])
+    .controller('FormulairePartenaireCtrl', ['$scope','EcoleFactory',
+        function($scope,EcoleFactory) {
+
+
+            $scope.loadEcole=function(){
+                EcoleFactory.getEcoles().then(
+                    function(data){
+
+                        $scope.ecoles=data
+                        //console.log(data);
+
+                    },function(msg){
+                        console.log(msg);
+                    }
+                );
+
+            }
+
+
+            $scope.loadEcole();
+        }])
+    .controller('FormulaireFormationCtrl', ['$scope','PartenaireFactory',
+        function($scope,PartenaireFactory) {
+
+            $scope.loadPartenaire=function(){
+                PartenaireFactory.getPartenaires().then(
+                    function(data){
+                        $scope.institutions=data;
+                    },function(msg){
+                        console.log(msg);
+                    }
+                );
+
+            }
+            $scope.loadPartenaire();
+        }])
+    .controller('FormulaireOffreCtrl', ['$scope','PartenaireFactory',
+        function($scope,PartenaireFactory) {
+            var stage=$(".stage");
+            var emploi=$(".emploi");
+            $("#type").change(function(e){
+                var v=$(this).val();
+                if(v=='emploi'){
+                    $("#cStage").empty();
+                    $("#cEmploi").append(emploi);
+                }
+                else if(v=='stage'){
+                    $("#cEmploi").empty();
+                    $("#cStage").append(stage);
+                }
+                else{
+                    $("#cEmploi").empty();
+                    $("#cStage").empty();
+                }
+            })
+        }])
     .controller('PartenaireCtrl', ['$scope','$stateParams','PartenaireFactory',
     function($scope,$stateParams,PartenaireFactory) {
         //recuperation de la partenaire

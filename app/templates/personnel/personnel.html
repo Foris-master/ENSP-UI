@@ -29,7 +29,7 @@
           <div class="tab-content col-lg-10 col-sm-10 col-xs-10">
             <!--Présentation-->
             <div class="tab-pane active" id="presentation">
-              <h4 class="">Présentation</h4>
+              <h4 class="">Présentation <a href=""><i class="fa fa-edit pull-right"></i></a></h4>
               <div class="row">
                 <div class="col-lg-12">
                   <p ng-bind-html="personnel.presentation"></p>
@@ -40,7 +40,7 @@
 
             <!--mot du chef de personnel-->
             <div class="tab-pane" id="act">
-              <h4 class="">Actualité</h4>
+              <h4 class="">Actualité <a href=""><i class="fa fa-edit pull-right"></i></a></h4>
               <div class="row">
                 <div class="col-lg-12">
                   <div ng-repeat="a in personnel.actualites">
@@ -57,13 +57,13 @@
 
             <!--cours et professeur-->
             <div class="tab-pane" id="ens">
-              <h4>Enseignements</h4>
+              <h4>Enseignements <a href=""><i class="fa fa-edit pull-right"></i></a></h4>
               <p ng-bind-html="personnel.enseignement"></p>
 
             </div>
             <!--laboratoire-->
             <div class="tab-pane" id="pub">
-              <h4>Publications</h4>
+              <h4>Publications <a href=""><i class="fa fa-edit pull-right"></i></a></h4>
               <div class="row">
                 <div class="col-lg-12">
                   <div ng-repeat="p in personnel.publications">
@@ -84,7 +84,7 @@
 
             <!--Projet-->
             <div class="tab-pane" id="pro">
-              <h4>Projets</h4>
+              <h4>Projets <a href=""><a href=""><i class="fa fa-edit pull-right"></i></a></a> <a href=""><i class="fa fa-plus  pull-right"></i></a></h4>
               <div class="col-lg-12" ng-repeat="p in personnel.projets">
                 <h5>{{p.categorie}}</h5>
 
@@ -99,7 +99,7 @@
             </div>
 
             <div class="tab-pane" id="cv">
-              <h4 class="">Curriculum Vitae</h4>
+              <h4 class="">Curriculum Vitae <a href=""><a href=""><i class="fa fa-edit pull-right"></i></a></a></h4>
               <div class="row">
                 <div class="col-lg-12">
                   <div>
@@ -115,11 +115,11 @@
             </div>
 
             <div class="tab-pane" id="rs">
-              <h4 class="">Réseaux Sociaux</h4>
+              <h4 class="">Réseaux Sociaux </h4>
               <div class="row">
                 <div class="col-lg-12">
                   <div class="col-lg-3" ng-repeat="s in personnel.social">
-                    <h5>{{s.reseau}}</h5>
+                    <h5>{{s.reseau}} <a href=""><a href=""><i class="fa fa-edit pull-right"></i></a></a></h5>
                     <a href="{{s.lien}}"><i class="fa fa-{{s.reseau}}"></i> {{s.nom}}</a>
                   </div>
                 </div>
@@ -132,7 +132,7 @@
               <div class="row">
                 <div class="col-lg-12">
                   <div class="col-lg-6" ng-repeat="c in personnel.contact">
-                    <h5>{{c.label}}</h5>
+                    <h5>{{c.label}} <a href=""><a href=""><i class="fa fa-edit pull-right"></i></a></a></h5>
                     {{c.valeur}}
                   </div>
                 </div>

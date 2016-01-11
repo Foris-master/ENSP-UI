@@ -44,7 +44,7 @@
       <nav class="navbar navbar-inverse" role="navigation">
         <div class="navbar-header">
           <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a ui-sref="accueil" class="navbar-brand scroll-top logo ensp  animated bounceInLeft">
+          <a ui-sref="accueil" ng-click="menu='logo'" class="navbar-brand scroll-top logo ensp  animated bounceInLeft">
             <b><i><img src="images/logo-ensp.png" class="logo-ensp" /></i></b>
             <span style="font-size: 16px; color: #fff;" >Ecole Nationale Supérieure Polytechnique</span>
           </a>
@@ -94,15 +94,15 @@
               <ul class="dropdown-menu">
                 <div class="">
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GC'})">Génie Civil</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GE'})">Génie Electrique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GIND'})">Génie Industriel</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'MSP'})">Mathémaitques et Sciences Physiques</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({sigle:'GC'})">Génie Civil</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({sigle:'GE'})">Génie Electrique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({sigle:'GIND'})">Génie Industriel</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({sigle:'MSP'})">Mathémaitques et Sciences Physiques</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GM'})">Génie Mécanique</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GTEL'})">Génie Télécommunication</a></li>
-                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({cygle:'GI'})">Génie Informatique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({sigle:'GM'})">Génie Mécanique</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({sigle:'GTEL'})">Génie Télécommunication</a></li>
+                    <li><i class="fa fa-angle-double-right"></i> <a ui-sref="departement({sigle:'GI'})">Génie Informatique</a></li>
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-departement">Tous les département</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
@@ -135,6 +135,7 @@
               </ul>
             </li>
 
+              <!--Recherche-->
             <li class="dropdown" ng-class="{active : menu=='recherche'}">
               <a href="javascript:void(0);" ng-click="menu='recherche'" class="dropdown-toggle" data-toggle="dropdown">Recherche</a>
               <ul class="dropdown-menu">
@@ -159,7 +160,7 @@
             </li>
 
             <li ng-class="{active : menu=='contact'}"><a ui-sref="menu" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
-            <li ><a data-toggle="modal" href="#authentificationModal" class="scroll-link"><i class="fa fa-user"></i></a></li>
+            <li ><a data-toggle="modal" href="/#authentificationModal" class="scroll-link"><i class="fa fa-user"></i></a></li>
 
 
           </ul>
@@ -330,6 +331,11 @@
   <script src="ensp-angular/concours/services.js"></script>
   <script src="ensp-angular/concours/controllers.js"></script>
 
+  <!--Module Partenaires-->
+  <script src="ensp-angular/partenaires/config.js"></script>
+  <script src="ensp-angular/partenaires/services.js"></script>
+  <script src="ensp-angular/partenaires/controllers.js"></script>
+  
   <!--Module Laboratoire-->
   <script src="ensp-angular/laboratoire/config.js"></script>
   <script src="ensp-angular/laboratoire/services.js"></script>

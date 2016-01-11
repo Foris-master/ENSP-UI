@@ -28,12 +28,12 @@
               <!--<h4 class="">Présentation</h4>-->
               <div class="row">
                 <div class="col-lg-9">
-                  <h5>Biographie</h5>
+                  <h5>Biographie <i class="fa fa-edit fa-lg pull-right"></i></h5>
                   <p ng-bind-html="etudiant.biographie"></p>
 
                 </div>
                 <div class="col-lg-3">
-                  <h5>Informations</h5>
+                  <h5>Informations <i class="fa fa-edit fa-lg pull-right"></i></h5>
 
                   <div><span class="bold">Matricule : </span>{{etudiant.matricule}}</div>
                   <div><span class="bold">Département : </span>{{etudiant.departement}}</div>
@@ -48,7 +48,7 @@
 
             <!--mot du chef de etudiant-->
             <div class="tab-pane" id="association">
-              <h5 class="">Associations</h5>
+              <h5 class="">Associations <i class="fa fa-edit fa-lg pull-right"></i></h5>
               <div class="row actu-container">
                 <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="a in associations | orderBy : '-nom' : true | itemsPerPage: par_page">
                   <div class="actu row">
@@ -73,7 +73,7 @@
 
             <!--cours et professeur-->
             <div class="tab-pane" id="publication">
-              <h5>Activités</h5>
+              <h5>Publications</h5>
               <div class="">
                 <input  class="form-control" style="width: 75%; float:left" type="text" ng-model="searchKey" class="form-control" placeholder="Entrer un mot-clé"/>
                 <input class="form-control" style="width: 20%; float: right" type="number" placeholder="Nombre à afficher"  ng-model="par_page"/>
@@ -101,7 +101,7 @@
             <!--Projet-->
             <div class="tab-pane" id="projet">
               <div class="col-lg-6" ng-repeat="p in etudiant.projets">
-                <h5>{{p.categorie}}</h5>
+                <h5>{{p.categorie}} <i class="fa fa-edit fa-lg pull-right"></i></h5>
 
                 <div ng-repeat="pr in p.projet" style="padding-left: 10px;margin-bottom: 10px;">
                   <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.titre}}</div>
@@ -114,22 +114,22 @@
             </div>
 
             <div class="tab-pane" id="conres">
-              <h4 class="">Contact</h4>
+              <h4 class="">Contact </h4>
               <div class="row">
                 <div class="col-lg-12">
                   <div class="col-lg-6" ng-repeat="c in etudiant.contact">
-                    <h5>{{c.label}}</h5>
+                    <h5>{{c.label}} <i class="fa fa-edit fa-lg pull-right"></i></h5>
                     {{c.valeur}}
                   </div>
                 </div>
 
               </div>
 
-              <h4 class="">Réseaux Sociaux</h4>
+              <h4 class="">Réseaux Sociaux </h4>
               <div class="row">
                 <div class="col-lg-12">
                   <div class="col-lg-3" ng-repeat="s in etudiant.social">
-                    <h5>{{s.reseau}}</h5>
+                    <h5>{{s.reseau}} <i class="fa fa-edit fa-lg pull-right"></i></h5>
                     <a href="{{s.lien}}"><i class="fa fa-{{s.reseau}}"></i> {{s.nom}}</a>
                   </div>
                 </div>

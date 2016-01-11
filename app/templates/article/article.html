@@ -1,12 +1,10 @@
-<section class="main-section section article">
+<section id="aboutUs" class="main-section section article">
     <div class="container">
         <div class="heading text-center">
             <!-- Heading -->
             <h2 class="titre">{{article.titre}}</h2>
             <p></p>
         </div>
-
-        <!-- Article 1 -->
         <div class="row feature design">
             <div class="col-lg-12 col-xs-12 col-md-12">
                 <p class="ancre">
@@ -14,32 +12,58 @@
                 </p>
             </div>
             <hr/>
-            <div class="col-lg-9 col-sm-9 col-xs-9 columns left">
-                <p style="margin-bottom: 20px;">{{article.description}}</p>
-
-            </div>
-            <div class="col-lg-3 col-sm-3 col-xs-3 columns feature-media right">
-                <img src="images/min/work/7.jpg" class="col-lg-12 col-sm-12 col-xs-12" alt=""/>
-
-            </div>
-            <div class="col-lg-12 col-sm-12 col-xs-12">
-                <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
-                    style="position: relative; height: auto;">
-                    <h4>Info sur l'article</h4>
-                    <li class="item web">
-                        <span>Nombre de vue :</span> {{article.nbredevue}}
-                    </li>
-                    <li class="item web">
-                        <span>Publié le :</span> {{article.datePublication}}
-                    </li>
-
-                    <hr/>
-                    <li class="item web">
-                        <a ui-sref="liste-actualite">Plus d'actualités</a>
-                    </li>
-                </ul>
-            </div>
         </div>
 
+        <div class="row feature design">
+            <div class="area1 columns right pos0">
+                <h3>{{article.titre}}</h3>
+                <p ng-bind-html="article.description"></p>
+            </div>
+            <div class="area2 columns feature-media left pos1">
+                <div class="col-lg-12">
+                    <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
+                        style="position: relative; height: auto;">
+                        <li class="item web">
+                            <figure class="effect-bubba">
+                                <img src="images/min/{{article.image}}" alt="img02"/>
+                                <figcaption>
+                                    <h2>{{article.titre}}</h2>
+                                    <a href="images/{{article.image}}" class="fancybox">Afficher</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row feature design" ng-repeat="p in article.parties">
+            <div class="area1 columns right pos0">
+                <h3>{{p.titre}}</h3>
+                <p ng-bind-html="p.contenu"></p>
+            </div>
+            <div class="area2 columns feature-media left pos1">
+                <div class="col-lg-12">
+                    <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
+                        style="position: relative; height: auto;">
+                        <li class="item web">
+                            <figure class="effect-bubba">
+                                <img src="images/min/{{p.image}}" alt="img02"/>
+                                <figcaption>
+                                    <h2>{{p.titre}}</h2>
+                                    <a href="images/{{p.image}}" class="fancybox">Afficher</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row feature design">
+            <hr/>
+            <div class="col-lg-6"><span class="bold">Nombre de vue : </span>  <span class="italic" ng-bind-html="article.nbredevue"></span></div>
+            <div class="col-lg-6"><span class="bold">Date de publication : </span>  <span class="italic" ng-bind-html="article.datePublication"></span></div>
+        </div>
+        
     </div>
 </section>

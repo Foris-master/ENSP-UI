@@ -1,0 +1,167 @@
+<section class="main-section section contact-parlex">
+    <div class="container">
+        <div class="heading text-center">
+            <!-- Heading -->
+            <h2 class="h1 titre">Demande de formation</h2>
+        </div>
+        <div class="row mrgn30">
+            <form method="post" ng-submit="save_formation()" id="contactfrm" role="form" name="formationForm" novalidate>
+
+                <div class="col-sm-9">
+
+                    <h5>Information sur la formation</h5>
+
+                    <div class="form-group" ng-class="{ 'has-error': formationForm.name.$touched && formationForm.name.$invalid }">
+                        <label for="">Intitulé</label>
+                        <input ng-model="new_formation.intitule"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Intitulé de la formation "
+                               title="Veuillez renseigner l'intitulé de la formation"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="formationForm.name.$touched" ng-messages="formationForm.name.$error">
+                            <p ng-message="minlength">Intitulé specifié trop court</p>
+                            <p ng-message="maxlength">Intitulé specifié trop long</p>
+                            <p ng-message="required">Intitulé de la formation requise</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': formationForm.name.$touched && formationForm.name.$invalid }">
+                        <label for="">Type de formation</label>
+                        <input ng-model="new_formation.besoin_formation"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Type de formation "
+                               title="Veuillez renseigner le type de formation"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="formationForm.name.$touched" ng-messages="formationForm.name.$error">
+                            <p ng-message="minlength">Type de formation specifié trop court</p>
+                            <p ng-message="maxlength">Type de formation specifié trop long</p>
+                            <p ng-message="required">Type de formation de la formation requit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label >Date de debut de la formation</label>
+                        <datepicker>
+                            <input type="text" ng-model="new_formation.date_debut" class="form-control"  placeholder="Entrer la date de debut de la formation">
+                        </datepicker>
+                    </div>
+                    
+                    <div class="form-group">
+
+                        <label >Date de fin de la formation</label>
+                        <datepicker>
+                            <input type="text" ng-model="new_formation.date_fin" class="form-control"  placeholder="Entrer la date de fin de la formation">
+                        </datepicker>
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': formationForm.name.$touched && formationForm.name.$invalid }">
+                        <label for="">Nombre de personne</label>
+                        <input ng-model="new_formation.nombre_personne"
+                               type="number"
+                               class="form-control"
+                               name=""
+                               placeholder="Nombre de personne "
+                               title="Veuillez renseigner le nombre de personne"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="formationForm.name.$touched" ng-messages="formationForm.name.$error">
+                            <p ng-message="minlength">Nombre de personne specifié trop court</p>
+                            <p ng-message="maxlength">Nombre de personne specifié trop long</p>
+                            <p ng-message="required">Nombre de personne de la formation requit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group"
+                         ng-class="{ 'has-error': institutForm.institution.$touched && institutForm.institution.$invalid }"
+                            >
+                        <label for="">Institution</label>
+                        <select class="form-control"
+                                name="institution"
+                                ng-model="new_formation.institution"
+                                ng-options=" institution.idPartenaire as institution.denomination  for institution in institutions"
+                                required>
+                            <option value="">-- Choisir une institution --</option>
+                        </select>
+                        <div class="help-block" ng-show="institutForm.institution.$touched" ng-messages="institutForm.institution.$error">
+                            <p ng-message="required">L'institution est requise</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': formationForm.name.$touched && formationForm.name.$invalid }">
+                        <label for="">Objectif de la formation</label>
+                        <input ng-model="new_formation.objectif_formation"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Objectif de la formation "
+                               title="Veuillez renseigner l'objectif de la formation"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="formationForm.name.$touched" ng-messages="formationForm.name.$error">
+                            <p ng-message="minlength">Objectif de la formation specifié trop court</p>
+                            <p ng-message="maxlength">Objectif de la formation specifié trop long</p>
+                            <p ng-message="required">Objectif de la formation de la formation requit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': formationForm.name.$touched && formationForm.name.$invalid }">
+                        <label for="">Description</label>
+                        <textarea name=""  class="form-control"
+                                  ng-model="new_formation.description"
+                                  placeholder="Description"
+                                  title="Veuillez renseigner la description de votre formationion"
+                                  ng-minlength="1"
+                                  ng-maxlength="255"
+                                  required></textarea>
+                        <div class="help-block" ng-show="formationForm.name.$touched" ng-messages="formationForm.name.$error">
+                            <p ng-message="minlength">Description specifiée trop courte</p>
+                            <p ng-message="maxlength">Description specifiée trop longue</p>
+                            <p ng-message="required">Description de la formation requise</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group" id="idsubmit">
+                        <button name="submit"  class="btn btn-lg btn-primary" type="submit"> Creer</button>
+                    </div>
+
+
+                    <div class="result"></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                    <h5>Partenariat</h5>
+
+                    <p>En cas d'opportunité de stage dans votre formationionn vous pouvez <a ui-sref="offre">Offrir des stages et emplois</a></p>
+                    <p>Devenir partenaire ? <a ui-sref="devenir-partenaire">Cliquer ici.</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <!--/.container-->
+
+
+
+
+</section>
+
+

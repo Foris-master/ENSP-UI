@@ -3,24 +3,21 @@
     -- communiqué
     -- notice
     -- piece jointe
-- Nos etudiants
 - fixer le loading
-- Nos indicateurs
 
-## Recherche
 
-## Partenaire
--partenaire tout le menu
-    -formulaire creation ( l'instution )
-    - afficher details
-    - lister partenaire
 
 - voir parametre
 
 institution a logo
 un candidat doit pouvoir  modifier
-definir partenaire
+
 
 - Mettre la validation dans les formulaire en se basant sur le modele de la creation d article
 - code l interface de connexion
 - code la page d utilisateur ( personnel , etudiant , clubs , labo )
+
+Lundi 11 Janvier 2016
+---------------------
+
+- fixer le fichier partenaires.json

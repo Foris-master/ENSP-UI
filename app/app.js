@@ -14,6 +14,7 @@ var app_personnel =angular.module('myApp.personnel', ['ui.router']);
 var app_etudiant =angular.module('myApp.etudiant', ['ui.router']);
 var app_laboratoire =angular.module('myApp.laboratoire', ['ui.router']);
 var app_diplome =angular.module('myApp.diplome', ['ui.router']);
+var app_partenaire =angular.module('myApp.partenaire', ['ui.router']);
 var app_organisation =angular.module('myApp.organisation', ['ui.router']);
 var app_publication=angular.module('myApp.publication', ['ui.router','720kb.datepicker']);
 
@@ -29,6 +30,7 @@ angular.module('myApp', [
     'myApp.auth',
   'myApp.accueil',
   'myApp.article',
+    'myApp.partenaire',
   'myApp.header',
   'myApp.laboratoire',
   'myApp.publication',

@@ -1,0 +1,20 @@
+
+
+InstitutionDto
+Integer id, String denomination, String description, String lienverssite, String raisonsocial,
+String sigle, String slogan, Integer statut
+
+partenariatDto
+String description, Integer etat, String intitule, String nature, EcoleDto ecole, InstitutionDto partenaire
+
+Recrutement 
+Integer iD, Date datecreation, Date datelimite, String description, String inititule,
+Integer nbrecandidatrecrute, Integer niveau, Integer priorite, Integer statut, InstitutionDto ins
+
+StageDto
+Integer iD, String description, String duree, String intitule, Integer nbrestagiaire,
+Integer niveau, Integer remuneration, Integer statut, InstitutionDto ins
+
+FormationDto
+Integer iD, String besoinformation, Date dateDebut, Date dateFin, String description,
+Integer duree, Integer etat, String inititule, Integer nbrepersonne, String objectifformation, Integer statut, InstitutionDto ins

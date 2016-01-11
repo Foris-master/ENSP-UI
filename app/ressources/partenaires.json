@@ -1,141 +1,1737 @@
 [
   {
-    "idPersonnel": 1,
-    "nom": "TONYE",
-    "prenom": "Emmanuel",
-    "poste": "Poste",
-    "fonction": "Fonction",
-    "lieuAffectation": "Lieu d'affectation",
-    "matricule": "Matricule",
-    "image":"work/1.jpg",
-    "presentation":"Officier des Palmes AcadÃ©miques de la RÃ©publique FranÃ§aise, Membre de l'AcadÃ©mie des Sciences du Cameroun, le&nbsp;<strong>Professeur Emmanuel TONYE </strong>est&nbsp;Vice-recteur en charge de la Recherche, de la CoopÃ©ration et des Relations avec le Monde des Entreprises Ã  lâ€™UniversitÃ© de YaoundÃ© I.&nbsp;Coordonnateur de lâ€™Ã©quipe focale de lâ€™UniversitÃ© Virtuelle hÃ©bergÃ©e par lâ€™UniversitÃ© de YaoundÃ© I. Il est&nbsp;Professeur des UniversitÃ©s Ã  <a href='http://www.polytechnique.cm' target='_blank'>l'Ecole Nationale supÃ©rieure Polytechnique</a>, BP 8390, YaoundÃ©, Cameroun. Principal coordonnateur des Masters en tÃ©lÃ©communications et en sÃ©curitÃ© des systÃ¨mes dâ€™information et de communications en formation Ã  distance <a href='http://mastel.auf-foad.org/' target='_blank'>MASTEL </a>&nbsp;et <a href='http://m2massico.auf-foad.org/' target='_blank'>MASSICO</a>.&nbsp; </br></br>   Directeur du laboratoire de recherche Electronique et Traitement du Signal dont les travaux portent sur : (i) la caractÃ©risation des types d'occupation des sols par traitement d'images satellitaires radars Ã  synthÃ¨se d'ouverture; (ii) l'optimisation de dÃ©ploiement de rÃ©seau de capteurs pour le suivi temps rÃ©el et sur base cartographique de la pollution atmosphÃ©rique; (iii) ModÃ©lisation et caractÃ©risation des antennes intelligentes Ã  rÃ©seaux d'Ã©lÃ©ments.<h5>ThÃ¨ses encadrÃ©es (13)</h5><p>1) <strong>Aur&eacute;lien YEREMOU TAMTSIA (11 octobre 2013)</strong>, Nouvelles contributions &agrave; l&#39;application des moments en asservissement visuel, Doctorat de l&rsquo;Universit&eacute; de Blaise Pascal de Clermont-Ferrand (Sp&eacute;cialit&eacute; Robotique) et Doctorat/PhD de l&#39;Universit&eacute; de Yaound&eacute; I (Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications)mars 2013.</p>    <p> 2) <strong>Elie Fute Tagne (05 mars 2013)</strong>, Une approche de patrouille multi-agents pour la d&eacute;tection d&#39;&eacute;v&eacute;nements, Doctorat de l&rsquo;Universit&eacute; de Montb&eacute;liard (Sp&eacute;cialit&eacute; Informatique) et Doctorat/PhD de l&#39;Universit&eacute; de Yaound&eacute; I (Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications), mars 2013.</p><p>    3)<strong> Janvier FOTSING</strong> <strong>(29 juillet 2011)</strong>, Apports du Variogramme dans la Mod&eacute;lisation et la Classification Texturale des Images Radar&nbsp;SAR: Application &agrave; la Cartographie du Littoral Camerounais<strong>, </strong>Doctorat/PhD de l&rsquo;Universit&eacute; de Yaound&eacute; I, Sp&eacute;cialit&eacute; Physique, option Electronique, Facult&eacute; des Sciences, Universit&eacute; de Yaound&eacute; I, octobre 2011.</p>    <p>    4)<strong> Catherine NSIAMI (19 mars f&eacute;vrier 2010)</strong>, Analyse texturale de l&rsquo;image panchromatique Quickbird &agrave; tr&egrave;s haute r&eacute;solution spatiale, dans ses applications sur la diff&eacute;renciation des types d&rsquo;occupation du sol urbain de Lubumbashi, PhD de l&rsquo;Universit&eacute; de Lumumbashi, Sp&eacute;cialit&eacute; G&eacute;ographie et T&eacute;l&eacute;d&eacute;tection, Facult&eacute; des Sciences, Universit&eacute; de Lumumbashi.</p>    <p>    5)<strong> TALLA TANKAM Narcisse (1<sup>er</sup> octobre 2008)</strong>, Une nouvelle approche d&rsquo;analyse automatique de texture d&rsquo;images : Application &agrave; l&rsquo;&eacute;tude de la dynamique d&rsquo;occupation spatiale sur le Mont Cameroun, Doctorat/PhD de l&rsquo;Universit&eacute; de Yaound&eacute; I, Sp&eacute;cialit&eacute; Informatique, application &agrave; la t&eacute;l&eacute;d&eacute;tection, Facult&eacute; des sciences, Universit&eacute; de Yaound&eacute; I, octobre 2008.</p>    <p>    6)<strong> VIDEME BOSSOU Olivier (30 mai 2007)</strong>, Antennes pour syst&egrave;me de communication&nbsp;: mod&eacute;lisation, r&eacute;alisation et kit didactique, PhD de l&rsquo;EPFL, Sp&eacute;cialit&eacute; g&eacute;nies des t&eacute;l&eacute;communications, option Antennes.</p>    <p>    7)<strong> NTSAMA ELOUNDOU Pascal (26 janvier 2007)</strong>, Compression des signaux &eacute;lectromyographiques par la transform&eacute;e en ondelettes, Th&egrave;se de Doctorat/PhD, Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Janvier 2007.</p>    <p>    8)<strong> KANAA Thomas Florent No&euml;l (06 d&eacute;cembre 2006)</strong>, D&eacute;tection des nappes d&rsquo;hydrocarbures dans les images radar &agrave; synth&egrave;se d&rsquo;ouverture de la surface de la mer, Th&egrave;se de Doctorat/PhD, Sp&eacute;cialit&eacute; g&eacute;nies &eacute;lectrique et des t&eacute;l&eacute;communications, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, D&eacute;cembre 2006.</p>    <p>    9)<strong> Mboliguipa Jean</strong> (<strong>05 septembre 2003</strong>), Contribution &agrave; l&rsquo;am&eacute;lioration d&rsquo;images photographiques couleur, Th&egrave;se de Doctorat/PhD, Sp&eacute;cialit&eacute; g&eacute;nie &eacute;lectrique, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Septembre 2003.</p>    <p>    10)<strong> MVOGO NGONO Joseph (26 novembre 2001)</strong>, Contribution &agrave; la compression des images radar &agrave; synth&egrave;se d&rsquo;ouverture dans le cadre de leur utilisation dans les syst&egrave;mes d&rsquo;information g&eacute;ographique, Th&egrave;se de Doctorat ou PhD, Sp&eacute;cialit&eacute; g&eacute;nie &eacute;lectrique, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Novembre 2001.</p>    <p>    11)<strong> ONANA Vincent de Paul (26 novembre 2001)</strong>, Outils d&rsquo;aide &agrave; l&rsquo;extraction d&rsquo;informations g&eacute;ographiques dans les images radar &agrave; synth&egrave;se d&rsquo;ouverture, Th&egrave;se de Doctorat ou PhD , Sp&eacute;cialit&eacute; g&eacute;nie &eacute;lectrique, option traitement du signal et t&eacute;l&eacute;communication, ENSP, Universit&eacute; de Yaound&eacute; I, Novembre 2001.</p>    <p>    12)<strong> NDI NYOUNGUI Andr&eacute; (20 avril 1999)</strong>, Analyse de texture et classification neuronale des images RSO&nbsp;: Application &agrave; la cartographie foresti&egrave;re en milieu tropical humide. Th&egrave;se de doctorat 3e cycle en Informatique, Facult&eacute; des Sciences, Universit&eacute; de Yaound&eacute; I, 325p, Avril 1999.</p>    <p>    13) <strong>AKONO Alain (1994),</strong> Traitement du signal et de l&rsquo;image appliqu&eacute;s &agrave; la t&eacute;l&eacute;d&eacute;tection. Th&egrave;se de doctorat en sciences de l&rsquo;ing&eacute;nieur, &Eacute;cole Nationale Sup&eacute;rieure Polytechnique de l&rsquo;Universit&eacute; de Yaound&eacute;, Yaound&eacute;, 180 p</p>    </p>",
-    "actualites":[
-      {
-        "contenu":"<strong>Nommination Universitaire</strong> <p>    Monsieur Emmanuel TONYE, de nationalitÃ©  Camerounaise, est nomme  en qualitÃ©  d'enseignant invite Ã   Lâ€™UniversitÃ©  de Bourgogne pour  une durÃ©e de 1 mois au cours de l'annÃ©e universitaire 2013-2014 sur l'emploi  nÂ° 00 PR 1531.</p>",
-        "ressource":[
-          {
-            "nom":"ArrÃªtÃ© ",
-            "source":"/ressource"
-          }
-        ]
-      }
+    "idPartenaire":5,
+    "denomination":"Orange",
+    "sigle": "ABC",
+    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam asperiores consectetur ea esse id incidunt, iste magnam minima nesciunt officiis optio quas quisquam rem repellendus, temporibus vel, voluptatem voluptates.",
+    "site":"lien vers le site",
+    "slogan":"slogan",
+    "raisonSociale":"raison",
+    "image":"partenaire.jpg"
+  },
+  {
+    "idDepartement": 4,
+    "nom": "CETIC CAD SKILLS Center ",
+    "presentation": "Skills Center is a training initiative of CAD Skills Center, India\nin collaboration with ENSP, Cameroon. CAD Skills Center is poised to create a roadmap for the future of prospective\nengineers by the fostering growth of engineer related skill sets and creating\nsignificant employment opportunities by enhancing present-ability, language and\ncommunication skills.\n\n\n \n\n\n\nFocusing on the need of the hour, Trainability\n– Employability and Present-ability, our roadmap for future, we introduce “Cameroon\nCampaign” to foster the growth of engineering sector & thereby, leading\nto massive employment opportunities for prospective Cameroonian Engineers.\n\n\n\n \n\n\n\n CAD Skills Center offers a\nwide range of programs in CAD/CAM/CAE which allows students and professionals\nto choose options that interest those most.\nThe objective is to impart quality training to Camroonian students in Computer\nAided Designing so that they exploit CAD/CAM/CAE technology in the best\npossible manner and at the same time are able to keep pace with the fast\nevolving engineering industry. CAD Skills Center is committed to provide CAD\neducation and training to its students in order to create a generation of best\nengineering professionals. Vigorous practical training and continuous practice\nof professional skills help the students to improve their software learning and\nunderstanding the overall process of learning.\n\n\n\n \n\n\n\nCETIC CAD SKILLS\nCenter, Yaoundé is recognized as a Centre of excellence in Computer Aided\nDesigning, Computer Aided Manufacturing and Computer Aided Engineering with the\nhighly qualified and eminent Indian trainers, latest software and\nstate-of-the-art facilities. Established in 2014, CETIC CAD SKILLS Center in\ncollaboration with Ecole National Superior Polytechnic (ENSP) ,has already done\nmore than 380 registrations in its\nsecond year of operations.\n\nLien : http://cadskillscenterdouala.com/ ",
+    "idDepartementEcole": 10,
+    "sigle": "CADD",
+    "image": [
+      "cadd/1.jpg",
+      "cadd/2.jpg",
+      "cadd/3.jpg",
+      "cadd/2.jpg",
+      "cadd/3.jpg",
+      "cadd/1.jpg",
+      "cadd/1.jpg",
+      "cadd/2.jpg",
+      "cadd/3.jpg"
     ],
-    "enseignement":"<strong>Activit&eacute;s d&#39;enseignement</strong><table class='table table-bordered table-striped table-condensed'><tbody><tr><td ><p><strong>Intitul&eacute; </strong></p></td><td ><p><strong>Niveau de formation</strong></p></td></tr><tr><td ><p>M&eacute;thodes d&rsquo;analyse des performances de r&eacute;seaux</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Optimisation multicrit&egrave;res des</p><p>r&eacute;seaux</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Antennes Intelligentes</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>Traitement du signal et de l&rsquo;image</p></td><td ><p>Master recherche de l&rsquo;Ecole Nationale Sup&eacute;rieure Polytechnique (ENSP) de Yaound&eacute;</p></td></tr><tr><td ><p>S&eacute;minaires sur la Planification et l&#39;optimisation des r&eacute;seaux de t&eacute;l&eacute;communications</p></td><td ><p>5&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>R&eacute;seaux intelligents: mise en &oelig;uvre d&#39;un serveur de rebond</p></td><td ><p>5&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Transmission de donn&eacute;es et r&eacute;seaux de communications num&eacute;riques</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>M&eacute;thodes num&eacute;riques appliqu&eacute;es &agrave; l&#39;&eacute;lectromagn&eacute;tiques (Diff&eacute;rences finies, &eacute;l&eacute;ments finis et m&eacute;thodes des moments)</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Concepts des t&eacute;l&eacute;communications</p></td><td ><p>4&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>T&eacute;l&eacute;communications optiques</p></td><td ><p>4&egrave;me Ann&eacute;e d&rsquo;Ing&eacute;nieur de l&rsquo;ENSPT de Yaound&eacute;</p><p>4&egrave;me ann&eacute;e d&rsquo;Ing&eacute;nieur de l&rsquo;UNIQUA de Port-au Prince (Ha&iuml;ti)</p></td></tr><tr><td ><p>Techniques de transmission</p></td><td ><p>Master M1 d&rsquo;informatique ESIREM de l&#39;Universit&eacute; de Bourgogne (France)</p></td></tr><tr><td ><p>Electromagn&eacute;tisme</p></td><td ><p>3&egrave;me Ann&eacute;e G&eacute;nie des t&eacute;l&eacute;communications de l&rsquo;ENSP de Yaound&eacute;</p></td></tr><tr><td ><p>Fondamentaux des t&eacute;l&eacute;communications</p></td><td ><p>3&egrave;me Ann&eacute;e G&eacute;nie &eacute;lectrique de l&rsquo;ENSP de Yaound&eacute;</p></td></tr></tbody></table>",
-    "publications":[
+    "chefDepartement": {
+      "id": 1,
+      "nom": "Shrivastav",
+      "prenom": "Anjali ",
+      "grade": "Mme",
+      "mot": "Welcome\nto CETIC CAD SKILLS Center!\n\n\n\nCAD\nSKILLS Center is established with a vision to evolve a unique education system\nin Africa that increases the relevance of professional education. An initiative\nof ENSP, Yaoundé Cameroon and CAD SKILLS Center India offers industry focused\nprograms designed to reflect Cameroonian and global market trend.\n\n\n\n \n\n\n\nOur\naim is to provide education within the framecadd of Centre of Excellence in\nICT(CETIC), a world class professional skills in various fields. We want to create\na fully developed autonomous personality capable of functioning effectively in\nany part of the world and be a responsive to civil society.\n\n\n\nThe\ninstitute offers international  \ncertification from eminent and qualified Indian trainers with\ninternationally acclaimed course ware at Polytechnic. There is a need to\ndevelop readily “Employable” trained\nand qualified manpower for Cameroon in various sectors of Technology. As a\nresult, the institute has designed various employment-oriented programs with\nspecialization in diversified areas of engineering and technology. \n\n\n\nOur\ncourses aim to develop readily employable manpower with emphasis of Knowledge,\nInnovation, Motivation, Technical Skills, Communication, and Hands on Practice\naspects of employability. \n\n\n\nWe\ninvite you to CAD SKILLS Center whether you are a prospective student, a\ncollaborator, a community partner or one of Polytechnic Alumni, CAD SKILLS\nCenter belongs to you forever.",
+      "image": "cadd/4.jpg"
+    },
+    "cours": [
       {
-        "titre":"Article dans les journaux",
-        "publication":[
+        "niveau": 3,
+        "semestres": [
           {
-            "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores at, dignissimos ducimus explicabo fugiat fugit, omnis optio possimus qui reprehenderit saepe? Cumque labore molestias mollitia, quo reprehenderit sapiente voluptates?",
-            "ressource":[
+            "numero": 1,
+            "UEs": [
               {
-                "nom":"ArrÃªtÃ© ",
-                "source":"/ressource"
+                "id": 1,
+                "intitule": "Base de données",
+                "credit": 2
               },
               {
-                "nom":"Nomination ",
-                "source":"/ressource"
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 1",
+                "credit": 4
               }
             ]
           },
           {
-            "contenu":"Contenu pub 2",
-            "ressource":[
+            "numero": 2,
+            "UEs": [
               {
-                "nom":"ArrÃªtÃ© ",
-                "source":"/ressource"
+                "id": 1,
+                "intitule": "Réseau",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 2",
+                "credit": 4
               }
             ]
           }
         ]
       },
       {
-        "titre":"Communication dans les conferences",
-        "publication":[
+        "niveau": 4,
+        "semestres": [
           {
-            "contenu":"comm pub 1",
-            "ressource":[
+            "numero": 1,
+            "UEs": [
               {
-                "nom":"ArrÃªtÃ©",
-                "source":"/ressource"
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
               }
             ]
           },
           {
-            "contenu":"comm pub 2",
-            "ressource":[
+            "numero": 2,
+            "UEs": [
               {
-                "nom":"ArrÃªtÃ©",
-                "source":"/ressource"
+                "id": 1,
+                "intitule": "Système Multi-Agent",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "informatique Decisionnelle",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Genie Logiciel 2",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Traitement d'image",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Ingenieur",
+                "credit": 22
               }
             ]
           }
         ]
       }
     ],
-    "projets":[
+    "professeurs": [
       {
-        "categorie":"Projets de recherche",
-        "projet":[
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "cadd/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "cadd/2.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "cadd/1.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "cadd/4.jpg"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "cadd/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cadd/3.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cadd/3.jpg"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
           {
-            "titre":"intitulÃ© du projet",
-            "description":"titre",
-            "entreprise":"entreprise",
-            "annee":"annee",
-            "lien":"lien"
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
           },
           {
-            "titre":"intitulÃ© du projet",
-            "description":"titre",
-            "entreprise":"entreprise",
-            "annee":"annee",
-            "lien":"lien"
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
           }
         ]
       },
       {
-        "categorie":"Projets de developpement",
-        "projet":[
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
           {
-            "titre":"intitulÃ© du projet",
-            "description":"titre",
-            "entreprise":"entreprise",
-            "annee":"annee",
-            "lien":"lien"
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
           },
           {
-            "titre":"intitulÃ© du projet",
-            "description":"titre",
-            "entreprise":"entreprise",
-            "annee":"annee",
-            "lien":"lien"
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
           }
         ]
-      }
-    ],
-    "cv":"lien",
-    "social":[
-      {
-        "reseau":"facebook",
-        "nom":"Nom de la page facebook",
-        "lien":"lien vers facebook"
       },
       {
-        "reseau":"twitter",
-        "nom":"Nom de la page twitter",
-        "lien":"lien vers twitter"
-      }
-    ],
-    "contact":[
-      {
-        "label":"TÃ©lÃ©phone",
-        "valeur":"696969696"
-      },
-      {
-        "label":"Email",
-        "valeur":"enanda@gmail.com"
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
       }
     ]
-
+  },
+  {
+    "idDepartement": 5,
+    "nom": "Centre D'Excellence pour les Technologies de l'Information et de la Communication",
+    "presentation": "Le Centre d’Excellence Africain en Technologies de l’Information et de la Communication (CETIC) est un centre de formation et de recherche créé par le Gouvernement Camerounais avec le soutien de la Banque Mondiale, au sein de l’Ecole Nationale Supérieure Polytechnique de l’Université de Yaoundé I. Il implique un réseau d’institutions partenaires et associées en Afrique et hors du continent, et mobilise un corps enseignant exerçant dans les milieux académiques et professionnels au Cameroun, dans la sous-région ainsi que dans des institutions prestigieuses de par le monde. Les candidatures féminines et d’étudiants internationaux (non Camerounais) sont fortement encouragées.\nVision Une Afrique où la promotion des Technologies de l’Information et de la Communication est étroitement liée aux défis du développement durable au bénéfice de tous.\nMissionDévelopper des programmes innovants de formation et de recherche, pour satisfaire la demande du marché en expertise dans le domaine des TIC, et soutenir la production de services électroniques à haute valeur ajoutée et présentant un fort avantage compétititf, qui contribuent à l’émergence de l’Afrique.\nObjectif Général Construire un réseau d’institutions qui mobilisent des enseignants-chercheurs et des professionnels de très haut niveau pour mettre en œuvre des programmes de formation et de recherche en TIC, afin de préparer de jeunes et talentueux étudiants à devenir les leaders du changement.\nProgrammes de Master et Doctorat/PhD offers en 2014/2015 Informatique et Télécommunications avec 3 parcours: Génie Logiciel, Management des Systèmes d’Information, Réseaux et Télécommunications. Modélisation Mathématique et Calcul Scientifique avec quatre parcours : Mathématiques Industrielles, Modélisation Mathématique du Transport de l’Information, Modélisation Mathématique du Vivant, Modélisation Mathématique de l’Economie et de la Finance. Mécatronique avec un seul parcours : Systèmes Electroniques Embarqués. D’autres programmes seront créés dans les institutions partenaires en 2015/2016.\nDans chaque filière de Master, le semestre 1 est un tronc commun, le semestre 2 se termine par un stage obligatoire de 2 mois et le semestre 4 est consacré a un stage de 6 mois avec rédaction d’un mémoire. La première année de doctorat comporte deux semestres de cours et séminaires de spécialité et de méthodologie de recherche avec évaluation à la fin du second semestre. L’excellence pédagogique se traduit par des procédures d’évaluation et d’amélioration constante de la qualité, avec en perspective la certification internationale des programmes de formation.\nLe CETIC développe une politique d’accueil et de formation à la pédagogie pour les jeunes enseignants. En plus des enseignants séniors, les étudiants bénéficient d’un encadrement de proximité par des Post-Doctorants et des Tuteurs (Doctorants finissants).\nPolitique de RechercheLes activités de recherche visent trois grands champs applicatifs avec une priorité pour la santé : e-services pour Santé/Agriculture/Biologie/Environnement ; e-services pour Infrastructures/Mines/Eau/Energie ; e-services pour Gouvernance/Education/Business/Information/Communication. Un programme de recherche comporte des projets dont l’identification se fait à travers un appel d’offres, et qui sont conduits par des équipes d’une dizaine de chercheurs, doctorants et post-doctorants, avec à leur tête des chercheurs juniors.\nInstitutions Partenaires et Associées\n Universités: EPFL, Buea, Nsukka, Cheikh Anta Diop, Abomey Calavi, Parakou, Burundi, Kinshasa, N’Djamena, Yaoundé II, UPAC, UCAC, Kara, Douala, Maroua. Institutions de recherche : Inria, IRD, Lirima, Ummisco.Grandes Ecoles : Ens-Bretagne, ENSIMAG, ISMANS, ENSPTT, ENSTP. Partenaires Sectoriels : CAMTEL, ANTIC, CCIM, GICAM, ITG-Store, CAD Skills Center.\nGouvernance La mise en œuvre du CETIC se fait sous la supervision et le contrôle de: comités de suivi (Services du Premier Ministre et Ministère de l’Enseignement Supérieur), comité de pilotage présidé par le Recteur de l’Université de Yaoundé I et conseil scientifique international. L’exécutif est constitué du coordonnateur, du chercheur principal assisté d’un adjoint ainsi que des coordonnateurs de filières et de parcours.\nDates Importantes Etudiants : clôture des candidatures :05 Septembre 2014. Interviews : 15 au 16 Septembre 2014. Rentrée : 27 Octobre 2014. Projets de Recherche: clôture des soumissions : 30 Septembre 2014\n Contact : Mme Marie-Noëlle Anaba       Tel : (237) 99 65 12 80 /22 69 88 85     E-mail : secretariat@cetic.cm\n\nLien : www.cetic.cm",
+    "idDepartementEcole": 10,
+    "sigle": "CETIC",
+    "image": [
+      "cetic/1.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "cetic/1.jpg",
+      "cetic/1.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg"
+    ],
+    "chefDepartement": {
+      "id": 1,
+      "nom": "AWONO ONANA",
+      "prenom": "Charles",
+      "grade": "Pr",
+      "mot": "Le Centre d’Excellence Africain en Technologies de l’Information et de la Communication (CETIC) est un centre de formation et de recherche créé par le Gouvernement Camerounais avec le soutien de la Banque Mondiale, au sein de l’Ecole Nationale Supérieure Polytechnique de l’Université de Yaoundé I. Il implique un réseau d’institutions partenaires et associées en Afrique et hors du continent, et mobilise un corps enseignant exerçant dans les milieux académiques et professionnels au Cameroun, dans la sous-région ainsi que dans des institutions prestigieuses de par le monde. Les candidatures féminines et d’étudiants internationaux (non Camerounais) sont fortement encouragées.\nVision Une Afrique où la promotion des Technologies de l’Information et de la Communication est étroitement liée aux défis du développement durable au bénéfice de tous.\nMissionDévelopper des programmes innovants de formation et de recherche, pour satisfaire la demande du marché en expertise dans le domaine des TIC, et soutenir la production de services électroniques à haute valeur ajoutée et présentant un fort avantage compétititf, qui contribuent à l’émergence de l’Afrique.\nObjectif Général Construire un réseau d’institutions qui mobilisent des enseignants-chercheurs et des professionnels de très haut niveau pour mettre en œuvre des programmes de formation et de recherche en TIC, afin de préparer de jeunes et talentueux étudiants à devenir les leaders du changement.\nProgrammes de Master et Doctorat/PhD offers en 2014/2015 Informatique et Télécommunications avec 3 parcours: Génie Logiciel, Management des Systèmes d’Information, Réseaux et Télécommunications. Modélisation Mathématique et Calcul Scientifique avec quatre parcours : Mathématiques Industrielles, Modélisation Mathématique du Transport de l’Information, Modélisation Mathématique du Vivant, Modélisation Mathématique de l’Economie et de la Finance. Mécatronique avec un seul parcours : Systèmes Electroniques Embarqués. D’autres programmes seront créés dans les institutions partenaires en 2015/2016.\nDans chaque filière de Master, le semestre 1 est un tronc commun, le semestre 2 se termine par un stage obligatoire de 2 mois et le semestre 4 est consacré a un stage de 6 mois avec rédaction d’un mémoire. La première année de doctorat comporte deux semestres de cours et séminaires de spécialité et de méthodologie de recherche avec évaluation à la fin du second semestre. L’excellence pédagogique se traduit par des procédures d’évaluation et d’amélioration constante de la qualité, avec en perspective la certification internationale des programmes de formation.\nLe CETIC développe une politique d’accueil et de formation à la pédagogie pour les jeunes enseignants. En plus des enseignants séniors, les étudiants bénéficient d’un encadrement de proximité par des Post-Doctorants et des Tuteurs (Doctorants finissants).\nPolitique de RechercheLes activités de recherche visent trois grands champs applicatifs avec une priorité pour la santé : e-services pour Santé/Agriculture/Biologie/Environnement ; e-services pour Infrastructures/Mines/Eau/Energie ; e-services pour Gouvernance/Education/Business/Information/Communication. Un programme de recherche comporte des projets dont l’identification se fait à travers un appel d’offres, et qui sont conduits par des équipes d’une dizaine de chercheurs, doctorants et post-doctorants, avec à leur tête des chercheurs juniors.\nInstitutions Partenaires et Associées\n Universités: EPFL, Buea, Nsukka, Cheikh Anta Diop, Abomey Calavi, Parakou, Burundi, Kinshasa, N’Djamena, Yaoundé II, UPAC, UCAC, Kara, Douala, Maroua. Institutions de recherche : Inria, IRD, Lirima, Ummisco.Grandes Ecoles : Ens-Bretagne, ENSIMAG, ISMANS, ENSPTT, ENSTP. Partenaires Sectoriels : CAMTEL, ANTIC, CCIM, GICAM, ITG-Store, CAD Skills Center.\nGouvernance La mise en œuvre du CETIC se fait sous la supervision et le contrôle de: comités de suivi (Services du Premier Ministre et Ministère de l’Enseignement Supérieur), comité de pilotage présidé par le Recteur de l’Université de Yaoundé I et conseil scientifique international. L’exécutif est constitué du coordonnateur, du chercheur principal assisté d’un adjoint ainsi que des coordonnateurs de filières et de parcours.\nDates Importantes Etudiants : clôture des candidatures :05 Septembre 2014. Interviews : 15 au 16 Septembre 2014. Rentrée : 27 Octobre 2014. Projets de Recherche: clôture des soumissions : 30 Septembre 2014\n Contact : Mme Marie-Noëlle Anaba       Tel : (237) 99 65 12 80 /22 69 88 85     E-mail : secretariat@cetic.cm",
+      "image": "cetic/4.jpg"
+    },
+    "cours": [
+      {
+        "niveau": 3,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Base de données",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 1",
+                "credit": 4
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Réseau",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 2",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Système Multi-Agent",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "informatique Decisionnelle",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Genie Logiciel 2",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Traitement d'image",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Ingenieur",
+                "credit": 22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs": [
+      {
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "cetic/2.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "cetic/1.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "cetic/4.jpg"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idDepartement": 6,
+    "nom": "Centre Universitaire de Recherche sur l'Energie pour la Santé",
+    "presentation": "MISSION CURES est un centre unique en son genre focalisé sur le renforcement des systèmes de santé primaire des pays du Sud par un approvisionnement électrique fiable et durable, ainsi que par des équipements adaptés au contexte.ENJEUX\nLe système de santé du Cameroun – représentatif d’une grande partie des pays du Sud – souffre lourdement du manque de fiabilité du réseau et des infrastructures électriques. En particulier, les problèmes liés à l’alimentation électrique ont un impact très important sur la capacité des hôpitaux et des centres de santé à fournir une médecine moderne de qualité :\nLes nombreuses coupures de courant causent une forte réduction de la disponibilité d’équipements médicaux aussi essentiels que les appareils de radiologie et d’échographie, l’éclairage en salle opératoire, les équipements d’analyse ou les systèmes de réfrigération pour la conservation de médicaments et de vaccins ainsi que dans les morgues.De nombreux appareils sont endommagés ou même détruits par les instabilités et perturbations électriques. Selon une étude de l’OMS, un tiers des pannes des appareils médicaux sont causées par les défaillances du réseau électrique.\nMalgré les importants investissements dans les équipements médicaux, les problèmes électriques causent une forte diminution de l’efficacité du système de santé.\nOBJECTIFSDevenir un centre de compétence internationalement reconnu dans le domaine de l'énergie pour les systèmes de santé. Gérer des programmes de recherche interdisciplinaires et internationaux impliquant des échanges et collaborations ainsi que l'infrastructure d'un laboratoire de pointe.Former des chercheurs et ingénieurs sur les technologies de l'énergie ainsi que de la conception, mise en oeuvre et maintenance de systèmes et d'équipements électriques. Conduire des recherches de pointe sur les problématiques de production, distribution, stockage, gestion, protection et utilisation efficace de l'énergie électrique dans les hôpitaux, ainsi que sur les problématique d'équipements médicaux adaptés au contexte.Développer des solutions technologiques performantes, économiques et durables, adaptées au contexte des pays en développement.Garantir le déploiement des solutions en étudiant leur profitabilité, financement et durabilité, ainsi qu'en assurant le transfert technologique aux sociétés locales et en soutenant l’entreprenariat par le biais d'un incubateur.Développer des partenariats avec les institutions publiques (Ministère de la santé et hôpitaux), ainsi que des entreprises et ONG œuvrant dans les domaines de l'énergie et de la santé.Mesurer l'impact des technologies sur le terrain tout en disséminant les résultats et les savoir-faire.\n\nLien : http://energie-cures.org/fr/",
+    "idDepartementEcole": 10,
+    "sigle": "CURES",
+    "image": [
+      "cures/1.jpg",
+      "cures/2.jpg",
+      "cures/3.jpg",
+      "cures/2.jpg",
+      "cures/3.jpg",
+      "cures/1.jpg",
+      "cures/1.jpg",
+      "cures/2.jpg",
+      "cures/3.jpg"
+    ],
+    "chefDepartement": {
+      "id": 1,
+      "nom": "ELE",
+      "prenom": "Pierre",
+      "grade": "Pr",
+      "mot": "MISSION CURES est un centre unique en son genre focalisé sur le renforcement des systèmes de santé primaire des pays du Sud par un approvisionnement électrique fiable et durable, ainsi que par des équipements adaptés au contexte.ENJEUX\nLe système de santé du Cameroun – représentatif d’une grande partie des pays du Sud – souffre lourdement du manque de fiabilité du réseau et des infrastructures électriques. En particulier, les problèmes liés à l’alimentation électrique ont un impact très important sur la capacité des hôpitaux et des centres de santé à fournir une médecine moderne de qualité :\nLes nombreuses coupures de courant causent une forte réduction de la disponibilité d’équipements médicaux aussi essentiels que les appareils de radiologie et d’échographie, l’éclairage en salle opératoire, les équipements d’analyse ou les systèmes de réfrigération pour la conservation de médicaments et de vaccins ainsi que dans les morgues.De nombreux appareils sont endommagés ou même détruits par les instabilités et perturbations électriques. Selon une étude de l’OMS, un tiers des pannes des appareils médicaux sont causées par les défaillances du réseau électrique.\nMalgré les importants investissements dans les équipements médicaux, les problèmes électriques causent une forte diminution de l’efficacité du système de santé.\nOBJECTIFSDevenir un centre de compétence internationalement reconnu dans le domaine de l'énergie pour les systèmes de santé. Gérer des programmes de recherche interdisciplinaires et internationaux impliquant des échanges et collaborations ainsi que l'infrastructure d'un laboratoire de pointe.Former des chercheurs et ingénieurs sur les technologies de l'énergie ainsi que de la conception, mise en oeuvre et maintenance de systèmes et d'équipements électriques. Conduire des recherches de pointe sur les problématiques de production, distribution, stockage, gestion, protection et utilisation efficace de l'énergie électrique dans les hôpitaux, ainsi que sur les problématique d'équipements médicaux adaptés au contexte.Développer des solutions technologiques performantes, économiques et durables, adaptées au contexte des pays en développement.Garantir le déploiement des solutions en étudiant leur profitabilité, financement et durabilité, ainsi qu'en assurant le transfert technologique aux sociétés locales et en soutenant l’entreprenariat par le biais d'un incubateur.Développer des partenariats avec les institutions publiques (Ministère de la santé et hôpitaux), ainsi que des entreprises et ONG œuvrant dans les domaines de l'énergie et de la santé.Mesurer l'impact des technologies sur le terrain tout en disséminant les résultats et les savoir-faire.",
+      "image": "cures/4.jpg"
+    },
+    "cours": [
+      {
+        "niveau": 3,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Base de données",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 1",
+                "credit": 4
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Réseau",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 2",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Système Multi-Agent",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "informatique Decisionnelle",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Genie Logiciel 2",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Traitement d'image",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Ingenieur",
+                "credit": 22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs": [
+      {
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "cures/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "cures/2.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "cures/1.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "cures/4.jpg"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "cures/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cures/3.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cures/3.jpg"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idDepartement": 7,
+    "nom": "Polytech Valor",
+    "presentation": "POLYTECH VALOR est un groupement d’intérêt économique Camerounais lié à l’école\nnationale supérieure polytechnique et formé en l’an 2007, spécialisé dans les domaines de la\nformation, de la création des logiciels et la sécurité des applications, la conception et la mise\nen place des bases de données virtuelles et de la gestion. Notre engagement permanent pour la\nqualité et l’innovation nous a conduits au développement de plusieurs solutions logicielles\nnovatrices et à la mise en place de plusieurs outils de formation.\nLa qualité de nos prestations, internationalement reconnue, nous a valu de nombreux\npartenariat dans plusieurs pays, notamment aux USA, en Allemagne, en France, au Gabon,\nau Sénégal, au Cameroun; et la confiance de grandes structures Nationales comme la\nDirection Générale des Douanes et plusieurs ministères.",
+    "idDepartementEcole": 10,
+    "sigle": "PV",
+    "image": [
+      "profil.png",
+      "profil.png",
+      "profil.png",
+      "profil.png",
+      "profil.png",
+      "profil.png",
+      "profil.png",
+      "profil.png",
+      "profil.png"
+    ],
+    "chefDepartement": {
+      "id": 1,
+      "nom": "MOUKOUOP NGUENA",
+      "prenom": "Ibrahim",
+      "grade": "Dr",
+      "mot": "Travailler plus efficacement\nNotre proposition\nFaire avancer votre business le plus rapidement possible, tout en réduisant de manière significative vos coûts et en accroissant votre productivité.\nImaginez...\nSi vous pouviez réduire vos coûts jusqu'à 90% dans certains domaines\nSi vous pouviez avancer jusqu'à deux fois plus vite dans certaines actions\nSi vous pouviez vous former plus vite et mieux dans des domaines pouvant apporter un changement profond dans votre vie.\nIl y a quelques temps, un cadre d'entreprise affirmait :\n« Les logiciels de gestion, soit ils sont limités en fonctionnalités, difficilement adaptables et peu chers, soit ils sont très puissants, très flexibles et ils vous coûteront très cher en termes de licences, de paramétrage et de formation. »\nCela était vrai, mais nous avons changé cette réalité. Quatre technologies révolutionnaires, de nombreux produits dérivés, afin que vous puissiez accomplir le plus rapidement votre vision, en faisant une coupe significative dans vos budgets et coûts.",
+      "image": "profil.png"
+    },
+    "cours": [
+      {
+        "niveau": 3,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Base de données",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 1",
+                "credit": 4
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Réseau",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 2",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Système Multi-Agent",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "informatique Decisionnelle",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Genie Logiciel 2",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Traitement d'image",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Ingenieur",
+                "credit": 22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs": [
+      {
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "profil.png"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "profil.png"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "profil.png"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "profil.png"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "profil.png"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "profil.png"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "profil.png"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idDepartement": 8,
+    "nom": "Polytech & UASG Entrepreneurship academy",
+    "presentation": "Le centre incubateur «Polytech Entrepreneurship Academy» est une structure dédiée au développement économique et à l’aide à la création des entreprises, viables et pérennes.\nNotre mission est de cultiver la croissance et le développement de petites entreprises grâce à un soutien personnalisé, un mentorat qui répond aux attentes de jeunes entrepreneurs, des séminaires et supvalorshops de qualité internationale. Le but final est de favoriser la création de PME, faciliter l’accès à de partenaires tant locaux qu’internationaux et apporter un accompagnement adéquat dans l’accès au capital, outil nécessaire pour le lancement de leurs activités et pour assurer leur croissance une fois incubés.\n\nVu la place stratégique qu’occupe l’École Nationale Supérieure Polytechnique en Afrique Centrale, notre vision est d'être reconnu, non seulement pour être l'un des centresd'incubation d'entreprises les plus performants dans le pays, mais comme le centre incubateur de référence dans la zone CEMAC.\nPour atteindre ses buts, le centre s'est dotés de professionnels dans le domaine de l'entrepreneuriat et travaille en étroite collaboration avec des partenaires stratégiques tel que:\nLe Ministère des PMELa Banque des PMELa Chambre de Commerce Américano Camerounaise pour assure l’accès aux partenaires et financiers AméricainsUASG Advisors, Cabinet Américain avec des experts excellant dans les domaines de l’incubation, l’entreprenariat, le management et la croissance d’entreprises.\n\nInauguré en 2009, Technipole est un centre d’encadrement et conseils dans les domaines de création et croissance stratégique d'entreprises au service de promoteurs de projets et des PMEs. Le centre admet 15-20 sociétés chaque année pour le cycle d’incubation. Les sociétés admises résident au centre pendant 18 mois et bénéficient d’une assistance technique, de plusieurs formations, un mentorat et la logistique nécessaires pour assurer leur succès. Le but du centre est de permettre à chaque PME en fin de cycle au centre de créer en moyenne 5-10 emplois directs.\nLes PMES ayant achevées leur cycle d’incubation peuvent demeurer au centre pour un maximum de 18 mois. Ce sejour leur facilite l’insertion dans le tissu économique national, régional et international.\nL’accès au centre est ouvert à tout porteur de projet et est sujet à une sélection rigoureuse. La soumission de projets se fait soit en ligne au alors sous forme écrite par le biais de formulaires disponibles au Technipole situe a:\nPolytech Entrepreneurship Academy, technipole\nÉcole Nationale Supérieure Polytechnique\nMelen, Yaoundé\n\nLien : www.supvalor.com",
+    "idDepartementEcole": 10,
+    "sigle": "TSV",
+    "image": [
+      "supvalor/1.jpg",
+      "supvalor/2.jpg",
+      "supvalor/3.jpg",
+      "supvalor/2.jpg",
+      "supvalor/3.jpg",
+      "supvalor/1.jpg",
+      "supvalor/1.jpg",
+      "supvalor/2.jpg",
+      "supvalor/3.jpg"
+    ],
+    "chefDepartement": {
+      "id": 1,
+      "nom": "BISSENE MOULONGO",
+      "prenom": "Mariette",
+      "grade": "Mme",
+      "mot": "Bienvenue au Technipole  \nBienvenu sur le site du Technipole, notre centre d’incubation et de promotion de l’entreprenariat. Ce centre est une réponse directe aux problèmes dont font face nos jeunes vu les limites en termes de capacités et ressources pour le développement des PME, un système bancaire caractérise par une adversité au risque et des raisons sociales qui a temps rendent la tache difficile aux jeunes qui veulent se mettre a leur propre compte en créant une PME.\nCependant l’histoire nous enseigne que c’est en période difficile que les initiatives de création sont les plus fortes et la peur du risque presque inexistante vu le manque d’alternatives. En d’autres termes, l’instinct de subsistance libère la pensée et stimule l’esprit créateur. Car précisément, c’est à travers la création que l’on peut construire une capacité de transformation positive et durable de la société.\nDans le cadre du projet Technipole par exemple,  l’idée pour nous est de chercher et cibler les meilleurs talents, une qualité élevée des projets, et ensuite réduire les risques à travers le cadre spécifique que nous mettrons en place. En somme, Il s’agit toujours de repasser par la case départ, qui consiste à faire sortir les promoteurs les plus talentueux de leurs garages.\nÉvidement la pièce clé de toute stratégie de promotion de l’entrepreneuriat est l’accompagnement des promoteurs de projets. L’Enseignement supérieur camerounais dispose de quelques grandes écoles et facultés à fort potentiel en recherche et développement (R&D) et high-tech, à l’instar de  l’École Nationale Supérieure Polytechnique. Dans ce contexte, notre mission est de promouvoir et d’accompagner la création d’entreprise de technologie innovante dans les secteurs clés comme l’agro-industrie, l’emballage, les nouvelles technologies avec des partenaires tant locaux qu’internationaux. Cette combinaison nous permet de faciliter la création de PME avec des produits attractifs tant pour le marché local que régional voire mondial.\nBien qu’il soit reconnu que les camerounais soient entreprenants, pour nous, il s’agit avant tout de transmettre une véritable culture d’entrepreneuriat et d’innovation à une masse critique de porteurs de projets. Concrètement, Il s’agit de savoir comment transformer une technologie en entreprise qui fonctionne, quel marché on vise, comment on y accède.\nLe Technipole est là pour aider à répondre à ces questions, et accompagner les porteurs de projets, de l’amont en les aidant à structurer leur démarche jusqu’aux premières démarches commerciales ou à la préparation à la levée de fonds.\nNotre rôle consiste à aider le porteur de projet à comprendre et s’approprier « la méthode qui fonctionne » dans le véritable business, ici comme ailleurs. Nous l’amenons à se poser les bonnes questions, à réussir à structurer son approche pour lui donner les meilleures chances de réussite. En fait, nous avons notre centre a des atouts supplémentaires pour compléter cette approche y inclus:\nUn  écosystème et des structures particulièrement adaptées ;l’apport d’outils spécifiques et innovants comme Technipedia, qui a pour but d'améliorer les relations entre les universités et les entreprises afin de faciliter le transfert de connaissances et de renforcer la dynamique entrepreneuriale en vue de la création d'un réseau de plus près dense de sociétés viables, favorisant la création d'emplois et de richesses et réduire le chômage parmi les jeunes diplômés de l'université.l’appui de partenaires de qualités issus du monde des affaires tels qu’USAG Advisors, une structure Américaine spécialisée dans l’Entreprenariat et le conseil aux gouvernements des pays émergeants.\nConscient des difficultés dont font face les jeunes PME au moment de lancement de leur activités, nous nous sommes aussi dote d'un centre technologique a deux vocations:\nLa première vocation est d’offrir un espace et des services professionnels aux jeunes entreprises pour une période de 12-18 mois. Le ut est de leur faciliter l’insertion dans le monde des affaires en et leur permettre de se concentrer sur le renforcement des capacités et de la croissance de leur jeunes structures.La seconde vocation est aussi d’un créer le premier centre de BPO professionnel au Cameroun qui pourra héberger les sociétés internationales et particulièrement Américaines a la recherche de talents au Cameroun pour servir les besoins de leur clientèle tant de langue française qu’anglaise dans les domaines tels que le call center, le développent de logiciels et la maintenance de system informatiques industriels.\nGrace à ces atouts, nous espérons bien d’ici quelques années écrire beaucoup de succès stories qui se feront remarquer par leur positionnement original, des levées de fonds significatives ou des projets industriels de portée internationale.\nBienvenue a Technipole",
+      "image": "supvalor/4.jpg"
+    },
+    "cours": [
+      {
+        "niveau": 3,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Base de données",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 1",
+                "credit": 4
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Réseau",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Programmation Orientée Objet 2",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Système Multi-Agent",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "informatique Decisionnelle",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Genie Logiciel 2",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Traitement d'image",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Ingenieur",
+                "credit": 22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs": [
+      {
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "supvalor/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "supvalor/2.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "supvalor/1.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "supvalor/4.jpg"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "supvalor/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "supvalor/3.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "supvalor/3.jpg"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]

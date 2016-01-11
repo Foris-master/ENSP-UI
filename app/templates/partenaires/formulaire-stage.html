@@ -1,0 +1,200 @@
+<section class="main-section section contact-parlex">
+    <div class="container">
+        <div class="heading text-center">
+            <!-- Heading -->
+            <h2 class="h1 titre">Offre de stage / d'emploi</h2>
+        </div>
+        <div class="row mrgn30">
+            <form method="post" ng-submit="save_offre()" id="contactfrm" role="form" name="offreForm" novalidate>
+
+                <div class="col-sm-9">
+
+                    <h5>Information sur la offre de stage ou d'emploi</h5>
+
+                    <div class="form-group" ng-class="{ 'has-error': offreForm.name.$touched && offreForm.name.$invalid }">
+                        <label >Intitulé</label>
+                        <input ng-model="new_offre.intitule"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Intitulé de la offre "
+                               title="Veuillez renseigner l'intitulé de la offre"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="offreForm.name.$touched" ng-messages="offreForm.name.$error">
+                            <p ng-message="minlength">Intitulé specifié trop court</p>
+                            <p ng-message="maxlength">Intitulé specifié trop long</p>
+                            <p ng-message="required">Intitulé de la offre requise</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group"
+                         ng-class="{ 'has-error': offreForm.institution.$touched && offreForm.institution.$invalid }"
+                            >
+                        <label >Type de l'offre</label>
+                        <select id="type" class="form-control"
+                                name="institution"
+                                ng-model="new_offre.type"
+                                required>
+                            <option value="">-- Choisir le type d'offre --</option>
+                            <option value="stage">Stage accadémique</option>
+                            <option value="emploi">Emploi</option>
+                        </select>
+                        <div class="help-block" ng-show="offreForm.institution.$touched" ng-messages="offreForm.institution.$error">
+                            <p ng-message="required">Le type d'offre est requit</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group"
+                         ng-class="{ 'has-error': offreForm.institution.$touched && offreForm.institution.$invalid }"
+                            >
+                        <label >Niveau</label>
+                        <select class="form-control"
+                                name="institution"
+                                ng-model="new_offre.type"
+                                required>
+                            <option value="">-- Choisir le niveau --</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <div class="help-block" ng-show="offreForm.institution.$touched" ng-messages="offreForm.institution.$error">
+                            <p ng-message="required">Le niveau est requit</p>
+                        </div>
+
+
+                    </div>
+                    
+                    <!-- Element du stage-->
+                    <div id="cStage">
+
+                    </div>
+
+                    <!-- Fin element du stage -->
+                    
+                    <!-- element de l'emploi -->
+
+                    <div id="cEmploi">
+
+                    </div>
+
+
+                    <!-- fin element emploi -->
+
+                    <div class="form-group" ng-class="{ 'has-error': offreForm.name.$touched && offreForm.name.$invalid }">
+                        <label >Nombre de place</label>
+                        <input ng-model="new_offre.nombre_place"
+                               type="number"
+                               class="form-control"
+                               name=""
+                               min="1"
+                               placeholder="Nombre de place "
+                               title="Veuillez renseigner le nombre de place"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="offreForm.name.$touched" ng-messages="offreForm.name.$error">
+                            <p ng-message="minlength">Nombre de place specifié trop court</p>
+                            <p ng-message="maxlength">Nombre de place specifié trop long</p>
+                            <p ng-message="required">Nombre de place de la offre requit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group"
+                         ng-class="{ 'has-error': offreForm.institution.$touched && offreForm.institution.$invalid }"
+                            >
+                        <label >Institution</label>
+                        <select class="form-control"
+                                name="institution"
+                                ng-model="new_offre.institution"
+                                ng-options=" institution.id as institution.nomEcole  for institution in institutions"
+                                required>
+                            <option value="">-- Choisir une institution --</option>
+                        </select>
+                        <div class="help-block" ng-show="offreForm.institution.$touched" ng-messages="offreForm.institution.$error">
+                            <p ng-message="required">L'institution est requise</p>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="form-group" ng-class="{ 'has-error': offreForm.name.$touched && offreForm.name.$invalid }">
+                        <label >Description</label>
+                        <textarea name=""  class="form-control"
+                                  ng-model="new_offre.description"
+                                  placeholder="Description"
+                                  title="Veuillez renseigner la description de votre offreion"
+                                  ng-minlength="1"
+                                  ng-maxlength="255"
+                                  required></textarea>
+                        <div class="help-block" ng-show="offreForm.name.$touched" ng-messages="offreForm.name.$error">
+                            <p ng-message="minlength">Description specifiée trop courte</p>
+                            <p ng-message="maxlength">Description specifiée trop longue</p>
+                            <p ng-message="required">Description de la offre requise</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group" id="idsubmit">
+                        <button name="submit"  class="btn btn-lg btn-primary" type="submit"> Creer</button>
+                    </div>
+
+
+                    <div class="result"></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                    <h5>Partenariat</h5>
+
+                    <p>Devenir partenaire ? <a ui-sref="devenir-partenaire">Cliquer ici.</a></p>
+                    <p>En cas de solicitation d'une formation particulière, vous pouvez <a ui-sref="demander-formation">demander un formation</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <!--/.container-->
+
+   <div class="hide">
+       <div class="form-group emploi">
+           <label >Date limite</label>
+           <datepicker>
+               <input type="text" ng-model="new_offre.date_limit" class="form-control"  placeholder="Entrer la date limite">
+           </datepicker>
+       </div>
+
+       <div class="form-group stage" ng-class="{ 'has-error': offreForm.name.$touched && offreForm.name.$invalid }">
+           <label >Remuneration</label>
+           <input ng-model="new_offre.remuneration"
+                  type="number"
+                  class="form-control"
+                  name=""
+                  min="10000"
+                  placeholder="Remuneration "
+                  title="Veuillez renseigner la remuneration"
+                  ng-minlength="1"
+                  ng-maxlength="255"
+                  required>
+           <div class="help-block" ng-show="offreForm.name.$touched" ng-messages="offreForm.name.$error">
+               <p ng-message="minlength">Remuneration specifiée trop courte</p>
+               <p ng-message="maxlength">Remuneration specifiée trop longue</p>
+               <p ng-message="required">Remuneration de la offre requise</p>
+           </div>
+
+       </div>
+   </div>
+
+
+</section>
+
+

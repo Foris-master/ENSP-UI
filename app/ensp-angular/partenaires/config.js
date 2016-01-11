@@ -13,7 +13,7 @@ app_partenaire
         $stateProvider
             .state('liste-partenaire', {
                 url: "/liste-partenaire",
-                templateUrl: template_url+'partenaire/liste-partenaire.html',
+                templateUrl: template_url+'partenaires/liste-partenaire.html',
                 controller:'ListePartenaireCtrl',
 				title:"Nos Partenaires",
                 access: {
@@ -27,8 +27,8 @@ app_partenaire
                 }
             })
             .state('partenaire', {
-                url: "/partenaire/:cygle",
-                templateUrl:  template_url+'partenaire/partenaire.html',
+                url: "/partenaire/:denomination",
+                templateUrl:  template_url+'partenaires/partenaire.html',
                 controller: 'PartenaireCtrl',
 				title:"Espace Partenaire",
                 access: {
@@ -43,7 +43,7 @@ app_partenaire
             })
             .state('devenir-partenaire', {
                 url: "/formulaire-partenaire/:id?",
-                templateUrl:  template_url+'partenaire/formulaire-partenaire.html',
+                templateUrl:  template_url+'partenaires/formulaire-partenaire.html',
                 controller: 'FormulairePartenaireCtrl',
                 params: {
                     id: { squash: true, value: null }
@@ -60,27 +60,27 @@ app_partenaire
                 }
             })
             .state('demander-formation', {
-                url: "/formulaire-partenaire/:id?",
-                templateUrl:  template_url+'partenaire/formulaire-partenaire.html',
-                controller: 'FormulairePartenaireCtrl',
+                url: "/formulaire-formation/:id?",
+                templateUrl:  template_url+'partenaires/formulaire-formation.html',
+                controller: 'FormulaireFormationCtrl',
                 params: {
                     id: { squash: true, value: null }
                 },
-                title:"Formulaire Déparement",
+                title:"Devenir partenaire",
                 access: {
                     loginRequired: true,
                     requiredPermissions: ['Admin'],
                     permissionType: 'All'
                 },
                 ncyBreadcrumb: {
-                    label: 'enregistrement d\'un département',
+                    label: 'Enregistrement d\'un partenaire',
                     parent:"liste-partenaire"
                 }
             })
             .state('offre', {
-                url: "/formulaire-partenaire/:id?",
-                templateUrl:  template_url+'partenaire/formulaire-partenaire.html',
-                controller: 'FormulairePartenaireCtrl',
+                url: "/formulaire-stage/:id?",
+                templateUrl:  template_url+'partenaires/formulaire-stage.html',
+                controller: 'FormulaireOffreCtrl',
                 params: {
                     id: { squash: true, value: null }
                 },

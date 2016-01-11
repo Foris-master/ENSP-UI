@@ -129,7 +129,7 @@ textarea{
     padding-left: 0px;
 }
 
-/**** Actualité ****/
+/**** Actualitï¿½ ****/
 .actu{
 
     margin: 15px 0px;
@@ -312,7 +312,7 @@ header a:hover{
 .main-section {
     background: url('../images/ensp/ensp-bg.png') no-repeat;
     background-size: cover;
-    padding-top: 20px;
+    padding-top: 18px;
 }
 
 .main-section .container{
@@ -459,6 +459,10 @@ input:focus{
 .item-departement img{
     min-height: 100px;
     max-height: 200px;
+}
+
+.item-departement h3{
+    margin-top: 5px;
 }
 
 #cp ul li a.no-link{

@@ -1,0 +1,227 @@
+<section class="main-section section contact-parlex">
+    <div class="container">
+        <div class="heading text-center">
+            <!-- Heading -->
+            <h2 class="h1 titre">Devenir partenaire</h2>
+        </div>
+        <div class="row mrgn30">
+            <form method="post" ng-submit="save_institut()" id="contactfrm" role="form" name="institutForm" novalidate>
+
+                <div class="col-sm-9">
+
+                    <h5>Information sur l'institution</h5>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Dénomination</label>
+                        <input ng-model="new_institut.denomination"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Dénomination de l'institution "
+                               title="Veuillez renseigner la dénomination de votre institution"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Dénomination specifiée trop courte</p>
+                            <p ng-message="maxlength">Dénomination specifiée trop longue</p>
+                            <p ng-message="required">Dénomination de l'institution requise</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Sigle</label>
+                        <input ng-model="new_institut.sigle"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Sigle de l'institution "
+                               title="Veuillez renseigner le sigle de votre institution"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Sigle specifié trop court</p>
+                            <p ng-message="maxlength">Sigle specifié trop long</p>
+                            <p ng-message="required">Sigle de l'institution requit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Description</label>
+                        <textarea name=""  class="form-control"
+                                  ng-model="new_institut.description"
+                                  placeholder="Description"
+                                  title="Veuillez renseigner la description de votre institution"
+                                  ng-minlength="1"
+                                  ng-maxlength="255"
+                                  required></textarea>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Description specifiée trop courte</p>
+                            <p ng-message="maxlength">Description specifiée trop longue</p>
+                            <p ng-message="required">Description de l'institution requise</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Lien</label>
+                        <input ng-model="new_institut.lien"
+                               type="url"
+                               class="form-control"
+                               name=""
+                               placeholder="Lien de l'institution "
+                               title="Veuillez renseigner le lien de votre institution"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Lien specifié trop court</p>
+                            <p ng-message="maxlength">Lien specifié trop long</p>
+                            <p ng-message="required">Lien de l'institution requit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Raison Sociale</label>
+                        <input ng-model="new_institut.raison"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Raison Sociale de l'institution "
+                               title="Veuillez renseigner la raison sociale de votre institution"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Raison Sociale specifiée trop courte</p>
+                            <p ng-message="maxlength">Raison Sociale specifiée trop longue</p>
+                            <p ng-message="required">Raison Sociale de l'institution requise</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Slogan</label>
+                        <input ng-model="new_institut.slogan"
+                               type="url"
+                               class="form-control"
+                               name=""
+                               placeholder="Slogan de l'institution "
+                               title="Veuillez renseigner le slogan de votre institution"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Slogan specifié trop court</p>
+                            <p ng-message="maxlength">Slogan specifié trop long</p>
+                            <p ng-message="required">Slogan de l'institution requit</p>
+                        </div>
+
+                    </div>
+
+
+                    <h5>Information sur le partenariat</h5>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Intitulé du partenariat</label>
+                        <input ng-model="new_institut.partenariat.intitule"
+                               type="url"
+                               class="form-control"
+                               name=""
+                               placeholder="Intitulé du partenariat "
+                               title="Veuillez renseigner l'intitulé du partenariat"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Intitulé specifié trop court</p>
+                            <p ng-message="maxlength">Intitulé specifié trop long</p>
+                            <p ng-message="required">Intitulé de l'institution requit</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Nature</label>
+                        <input ng-model="new_institut.partenariat.nature"
+                               type="text"
+                               class="form-control"
+                               name=""
+                               placeholder="Nature du partenariat "
+                               title="Veuillez renseigner la nature du partenariat"
+                               ng-minlength="1"
+                               ng-maxlength="255"
+                               required>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Nature specifiée trop courte</p>
+                            <p ng-message="maxlength">Nature specifiée trop longue</p>
+                            <p ng-message="required">Nature de l'institution requise</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group" ng-class="{ 'has-error': institutForm.name.$touched && institutForm.name.$invalid }">
+                        <label for="">Description du partenariat</label>
+                        <textarea name=""  class="form-control"
+                                  ng-model="new_institut.partenariat.description"
+                                  placeholder="Description"
+                                  title="Veuillez renseigner la description du partenariat"
+                                  ng-minlength="1"
+                                  ng-maxlength="255"
+                                  required></textarea>
+                        <div class="help-block" ng-show="institutForm.name.$touched" ng-messages="institutForm.name.$error">
+                            <p ng-message="minlength">Description specifiée trop courte</p>
+                            <p ng-message="maxlength">Description specifiée trop longue</p>
+                            <p ng-message="required">Description de l'institution requise</p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group"
+                         ng-class="{ 'has-error': institutForm.ecole.$touched && institutForm.ecole.$invalid }"
+                            >
+                        <label for="">Ecole</label>
+                        <select class="form-control"
+                                name="ecole"
+                                ng-model="new_institut.partenariat.ecole"
+                                ng-options=" ecole.id as ecole.nomEcole  for ecole in ecoles"
+                                required>
+                            <option value="">-- Choisir une ecole --</option>
+                        </select>
+                        <div class="help-block" ng-show="institutForm.ecole.$touched" ng-messages="institutForm.ecole.$error">
+                            <p ng-message="required">L'école est requise</p>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group" id="idsubmit">
+                        <button name="submit"  class="btn btn-lg btn-primary" type="submit"> Creer</button>
+                    </div>
+
+
+                    <div class="result"></div>
+                </div>
+
+                <div class="col-lg-3 col-sm-3 col-md-3 col-xs-3">
+                    <h5>Partenariat</h5>
+
+                    <p>En cas d'opportunité de stage dans votre institutionn vous pouvez <a ui-sref="offre">Offrir des stages et emplois</a></p>
+                    <p>En cas de solicitation d'une formation particulière, vous pouvez <a ui-sref="demander-formation">demander un formation</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <!--/.container-->
+
+
+
+
+</section>
+
+

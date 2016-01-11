@@ -27,7 +27,7 @@ app_departement
                 }
             })
             .state('departement', {
-                url: "/departement/:cygle",
+                url: "/departement/:sigle",
                 templateUrl:  template_url+'departement/departement.html',
                 controller: 'DepartementCtrl',
 				title:"Espace Département",

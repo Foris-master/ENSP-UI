@@ -6,6 +6,28 @@
     "dateCreation": "Fri Jul 22 1988 02:33:56 GMT+0000 (UTC)",
     "description": "Aliquit sunt non cillum ut adipisicing adipisicing. Veniam excepteur adipisicing est duis in veniam.",
     "nbredevue": 9,
+    "parties":[
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      },
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      },
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      },
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      }
+    ],
     "publie": 1,
     "status": 2,
     "titre": "Bliss Terrace",
@@ -21,6 +43,18 @@
     "dateCreation": "Fri Jul 22 1988 02:33:56 GMT+0000 (UTC)",
     "description": "Aliquit sunt non cillum ut adipisicing adipisicing. Veniam excepteur adipisicing est duis in veniam.",
     "nbredevue": 9,
+    "parties":[
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      },
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      }
+    ],
     "publie": 1,
     "status": 2,
     "titre": "Bliss Terrace",
@@ -36,6 +70,18 @@
     "dateCreation": "Fri Jul 22 1988 02:33:56 GMT+0000 (UTC)",
     "description": "Aliquit sunt non cillum ut adipisicing adipisicing. Veniam excepteur adipisicing est duis in veniam.",
     "nbredevue": 9,
+    "parties":[
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      },
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      }
+    ],
     "publie": 1,
     "status": 2,
     "titre": "Bliss Terrace",
@@ -51,9 +97,21 @@
     "dateCreation": "Fri Jul 22 1988 02:33:56 GMT+0000 (UTC)",
     "description": "Aliquit sunt non cillum ut adipisicing adipisicing. Veniam excepteur adipisicing est duis in veniam.",
     "nbredevue": 9,
+    "parties":[
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      },
+      {
+        "titre":"titre partie 1",
+        "contenu":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore unde, veniam. Accusamus atque autem consectetur consequatur corporis labore perferendis porro provident quis? Accusamus aspernatur dolor harum odio, rem saepe sit?",
+        "image":"cures/1.jpg"
+      }
+    ],
     "publie": 1,
     "status": 2,
-    "titre": "Bliss Terrace",
+    "titre": "Edward",
     "idCategorie": 7,
     "idUtilisateur": 10,
     "groupe":"enseignant",

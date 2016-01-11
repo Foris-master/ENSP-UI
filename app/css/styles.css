@@ -642,11 +642,28 @@ img, video, iframe, embed, object {
 	/*margin-top: 30px;
 	margin-bottom: 54px;*/
 }
-#aboutUs .right {
+#aboutUs .right, .pos1 {
 	padding-left: 32px;
 	float: right;
 }
-#aboutUs .left {
+
+#aboutUs .feature:nth-child(2n) .pos0{
+	float: left;
+}
+
+#aboutUs .feature:nth-child(2n) .pos1{
+	float: right;
+}
+
+#aboutUs .feature:nth-child(2n+1) .pos1{
+	float: left;
+}
+
+#aboutUs .feature:nth-child(2n+1) .pos0{
+	float: right;
+}
+
+#aboutUs .left .pos0 {
 	padding-right: 32px;
 	float: left;
 }

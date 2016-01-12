@@ -213,6 +213,7 @@ textarea{
     display: none;
 }
 .search-form .form-group:hover,
+.search-form .form-group:focus,
 .search-form .form-group.hover {
     width: 100%;
     border-bottom: 1px solid #F97D2F;

@@ -55,10 +55,10 @@
 
           <ul class="nav navbar-nav" id="mainNavs">
             <li class="row" style="margin: 0px 5px;">
-              <form action="" class="search-form" style="margin-top: 30px;">
+              <form action="" class="search-form" ng-submit="rechercher(mot)" style="margin-top: 30px;">
               <div class="form-group has-feedback">
                 <label for="search" class="sr-only">Search</label>
-                <input type="text" class="form-control" name="search" id="search" placeholder="Recherche">
+                <input type="text" class="form-control" ng-model="mot" name="search" id="search" placeholder="Recherche">
                 <span class="fa fa-search form-control-feedback"></span>
               </div>
             </form></li>

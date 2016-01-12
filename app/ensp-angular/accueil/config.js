@@ -25,6 +25,20 @@ app_accueil
                     label: 'Acceuil'
                 }
             })
+            .state('recherche', {
+                url: "/recherche",
+                templateUrl: template_url + 'accueil/accueil.html',
+                controller: 'AccueilCtrl',
+                title : 'Accueil',
+                access: {
+                    loginRequired: false,
+                    //requiredPermissions: ['Admin', 'UserManager'],
+                    //permissionType: 'All'
+                },
+                ncyBreadcrumb: {
+                    label: 'Acceuil'
+                }
+            })
     }]);
 
 

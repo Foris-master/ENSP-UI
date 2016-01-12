@@ -1,18 +1,20 @@
 
-<section id="aboutUs" class="section contact-parlex">
-    <div class="parlex-backs">
+<section class="main-section section contact-parlex">
+    <style type="text/css">
+        .ta-editor.ta-html, .ta-scroll-window.form-control,.ta-scroll-window > .ta-bind{
+            min-height: 175px !important;
+        }
+    </style>
         <div class="container">
-            <div class="row">
-                <div class="heading text-center">
-                    <!-- Heading -->
-                    <h2 class="h1 titre">{{type}}</h2>
-                </div>
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2 class="h1 titre">{{type}}</h2>
             </div>
             <div class="row mrgn30">
                 <form method="post" ng-submit="save_article()" id="contactfrm" role="form" name="articleForm" novalidate>
 
-                    <div class="col-sm-9">
-
+                    <div class="col-lg-9 col-md-9">
+                        <h5>Informations sur l'article</h5>
                         <div class="form-group" ng-class="{ 'has-error': articleForm.name.$touched && articleForm.name.$invalid }">
                             <label for="name">Titre</label>
                             <input ng-model="new_article.titre"
@@ -20,14 +22,14 @@
                                    class="form-control"
                                    name="name"
                                    id="name"
-                                   placeholder="Entrer le titre "
-                                   title="Please enter your name (at least 2 characters)"
-                                   ng-minlength="2"
+                                   placeholder="Titre de l'article"
+                                   title="Entrer le titre de l'article"
+                                   ng-minlength="1"
                                    ng-maxlength="255"
                                    required>
                             <div class="help-block" ng-show="articleForm.name.$touched" ng-messages="articleForm.name.$error">
-                                <p ng-message="minlength">Le titre specifie trop court</p>
-                                <p ng-message="maxlength">Le titre specifie trop long</p>
+                                <p ng-message="minlength">Le titre specifié trop court</p>
+                                <p ng-message="maxlength">Le titre specifié trop long</p>
                                 <p ng-message="required">Le titre de l'article est requit</p>
                             </div>
 
@@ -43,16 +45,13 @@
                                 <option value="">-- Choisir une categorie --</option>
                             </select>
                             <div class="help-block" ng-show="articleForm.categorie.$touched" ng-messages="articleForm.categorie.$error">
-                                <p ng-message="required">La categorie de l'article est requit</p>
+                                <p ng-message="required">La categorie de l'article est requise</p>
                             </div>
 
 
                         </div>
 
-                        <div class="form-group">
-                            <!--<duplicate text="Ajouter" "></duplicate>-->
-                            <h4 ng-click="addpart()">Ajouter</h4>
-                        </div>
+
                         <!--<div class="form-group">
                             <textarea content-con="new_article.dupli" id="txtEditor"></textarea>
                         </div>-->
@@ -63,10 +62,11 @@
                              ng-class="{ 'has-error': partFieldForm.pa.$touched && partFieldForm.pa.$invalid }"
                                 >
                             <ng-form name="partFieldForm">
-                                <h4 ng-show="$index!=0" ng-click="removepart(pa)">Retirer</h4>
-                                <label for="stitre">Partie {{ $index +1}}</label><br>
-                                <label for="stitre">Titre partie</label>
+                                <div class="btn" ng-show="$index!=0" ng-click="removepart(pa)">Retirer la partie {{ $index }}</div>
+                                <h5 >Partie {{ $index +1}}</h5>
+                                <label for="stitre">Titre de la partie</label>
                                 <input type="text"
+                                       placeholder="Entre le titre de cette partie"
                                        id="stitre" name="pa" required=""
                                        ng-model="pa.soustitre"
                                        class="form-control"/>
@@ -76,24 +76,44 @@
                                 </div>
 
                                 <label for="catimage">Associer une imgage</label>
-                                <input type="file" id="catimage" class="form-control" fileread="pa.image"/>
-                                <hr>
+                                <input type="file" id="catimage" style="padding: 0px 0px 10px;" class="form-control" fileread="pa.image"/>
                             </ng-form>
                         </div>
                         <!-- /editor -->
+                        <div class="form-group">
+                            <!--<duplicate text="Ajouter" "></duplicate>-->
+                            <div class="btn" ng-click="addpart()">Ajouter une partie à l'article</div>
+                        </div>
+                        <hr/>
                         <div class="form-group" id="idsubmit">
-                            <button name="submit"  class="btn btn-lg btn-primary" type="submit" ng-disabled="articleForm.$invalid"> Creer</button>
+                            <button name="submit"  class="btn btn-lg btn-primary" type="submit"> Creer l'article</button>
                         </div>
 
 
                         <div class="result"></div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3">
+                        <h5>Articles recents</h5>
+                        <div class="" dir-paginate="a in actualites |filter:searchKey | orderBy : '-datePublication' : true | itemsPerPage: par_page">
+                            <div class="actu row">
+                                <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
+                                    <img src="images/{{a.image}}" alt=""/>
+                                </div>
+                                <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
+                                    <h3>{{a.titre}}</h3>
+                                    <p>{{a.description | limitTo : 75}}.</p>
+                                    <a ui-sref="article({titre:a.titre})">Lire la suite</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
 
         <!--/.container-->
-    </div>
+
 
 
 

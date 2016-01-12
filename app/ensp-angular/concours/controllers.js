@@ -14,6 +14,10 @@ app_concours
         var id=$stateParams.id || null;
         
         $scope.niveau="1";
+        $scope.minDate=new Date();
+        $scope.maxCni= new Date();
+        console.log(new Date())
+
 
         if(action=="inscription")
         {
@@ -41,6 +45,7 @@ app_concours
 
         var action=$stateParams.action;
         var id=$stateParams.id || null;
+
 
         $scope.niveau="3";
 

@@ -90,6 +90,21 @@ app_article
         $scope.new_article.parties.splice($scope.new_article.parties.indexOf(pa), 1);
     };
 
+    $scope.loadArticle=function(){
+        ArticleFactory.getSpecifiqueArticles({categorie:'actualite'}).then(
+            function(data){
+                $scope.per_page=10;
+                console.log(data);
+                $scope.actualites=data;
+            },function(msg){
+                console.log(msg);
+            }
+        );
+
+    }
+
+    $scope.loadArticle();
+
     //$("#txtEditor").Editor();
 
     var id=$stateParams.id || null;

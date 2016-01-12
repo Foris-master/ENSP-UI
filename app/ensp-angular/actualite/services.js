@@ -14,12 +14,42 @@ app_actualite
             actualites: false,
             actualite: false,
             getActualites: function () {
-                var deferred = $q.defer();
-                if (factory.actualites !== false) {
+                var deferred = $q.defer();//factory.actualites !==
+                if ( factory.actualites !==false) {
                     deferred.resolve(factory.actualites);
                 } else {
 
                     $http.get("ressources/actualite.json").success(function(data,status){
+                        var stitre_key="foumfoumspij";
+                        var contenue_key="famfamspij";
+                        var ats= [];
+                        angular.forEach(data, function(p){
+                            p.parties=[];
+                           res= p.description.split(contenue_key);
+
+                            for(r in res){
+                                st="";
+                                sc="";
+                                rs=res[r].split(stitre_key);
+                                if(rs.length==1){
+                                    sc= rs[0];
+                                }else{
+                                    st=rs[0];
+                                    sc=rs[1];
+                                }
+                                p.parties.push({
+                                    "titre":st,
+                                    "contenue":sc,
+                                    "image":$filter('filter')(p.images,{tag:r})[0].image
+                                });
+                            }
+
+                            console.log(p);
+                            //images.push({image:p.image});
+
+                        });
+
+
                         factory.actualites = data;
 
                         deferred.resolve(factory.actualites);

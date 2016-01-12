@@ -25,7 +25,10 @@ app_actualite
                 url: "/actualite/:id",
                 templateUrl: template_url + 'actualite/actualite.html',
                 controller: 'ActualiteCtrl',
-                title: "Actualités"
+                title: "Actualités",
+                access: {
+                    loginRequired: false
+                }
             })
             .state('presentation', {
                 url: "/presentation",

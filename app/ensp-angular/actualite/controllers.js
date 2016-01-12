@@ -79,7 +79,7 @@ app_actualite
     $scope.save_article = function(){
         var stitre_key="foumfoumspij";
         var contenue_key="famfamspij";
-        var images =[]
+        var images =[];
         if($scope.new_article!=false){
             var contenue="";
             var stitre="";

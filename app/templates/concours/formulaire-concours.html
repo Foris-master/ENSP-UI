@@ -14,16 +14,21 @@
             <div class="col-lg-9 col-sm-9 col-xs-9">
 
 
-                <form action="" ng-submit="EnregistrerCandidat(candidat)" novalidate="">
+                <form action="" ng-submit="EnregistrerCandidat(candidat)" name="concoursForm" novalidate>
                     <h5>Informations personnelles</h5>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.name.$touched && concoursForm.name.$invalid }">
                         <label for="nom">Nom(s)</label>
                         <input class="form-control"
                                ng-model="candidat.nom"
                                id="nom"
+                               name="nom"
                                placeholder="Entrer votre nom tel que sur l'acte de naissance"
                                title="Entrer votre nom tel que sur l'acte de naissance"
-                               type="text">
+                               type="text"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.nom.$touched" ng-messages="concoursForm.nom.$error">
+                            <p ng-message="required">Le nom du candidat est requit</p>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="prenom">Prénom(s)</label>
@@ -32,131 +37,276 @@
                                title="Entrer votre prénom tel que sur l'acte de naissance"
                                type="text">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.dateNaissance.$touched && concoursForm.dateNaissance.$invalid }">
                         <label for="dateNaissance">Date de naissance</label>
-                        <input class="form-control" ng-model="candidat.dateNaissance" id="dateNaissance"
+                        <input class="form-control"
+                               ng-model="candidat.dateNaissance"
+                               id="dateNaissance"
+                               name="dateNaissance"
                                placeholder="Entrer votre date de naissance telle que sur l'acte de naissance"
                                title="Entrer votre date de naissance telle que sur l'acte de naissance"
-                               type="text">
+                               type="date"
+                               max="{{minDate | date:'yyyy-MM-dd'}}"
+                               min="1980-12-31"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.dateNaissance.$touched" ng-messages="concoursForm.dateNaissance.$error">
+                            <p ng-message="min">Vous êtes trop jeune</p>
+                            <p ng-message="max">Vous êtes trop vieux</p>
+                            <p ng-message="required">La date de naissance du candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.lieuNaissance.$touched && concoursForm.lieuNaissance.$invalid }">
                         <label for="lieuNaissance">Lieu de naissance</label>
-                        <input class="form-control"ng-model="candidat.lieuNaissance" id="lieuNaissance"
+                        <input class="form-control"
+                               name="lieuNaissance"
+                               ng-model="candidat.lieuNaissance"
+                               id="lieuNaissance"
                                placeholder="Entrer votre lieu de naissance telle que sur l'acte de naissance"
                                title="Entrer votre lieu de naissance telle que sur l'acte de naissance"
-                               type="text">
+                               type="text"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.lieuNaissance.$touched" ng-messages="concoursForm.lieuNaissance.$error">
+                            <p ng-message="required">Le lieu de naissance du candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.nationalite.$touched && concoursForm.nationalite.$invalid }">
                         <label for="nationalite">Nationalité</label>
-                        <select class="form-control"ng-model="candidat.nationalite" id="nationalite">
+                        <select class="form-control"
+                                name="nationalite"
+                                ng-model="candidat.nationalite"
+                                id="nationalite"
+                                required>
                             <option value="CM">Cameroun</option>
                             <option value="CO">Congo</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.nationalite.$touched" ng-messages="concoursForm.nationalite.$error">
+                            <p ng-message="required">Le nationalité du candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"  ng-class="{ 'has-error': concoursForm.region.$touched && concoursForm.region.$invalid }"ng-show="concoursForm.region.$touched">
                         <label for="region">Region d'origine</label>
-                        <select class="form-control"ng-model="candidat.region" id="region">
+                        <select class="form-control"
+                                name="region"
+                                ng-model="candidat.region"
+                                id="region"
+                                required>
                             <option value="CM">Ouest</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.nationalite.$touched" ng-messages="concoursForm.nationalite.$error">
+                            <p ng-message="required">La region du candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.departement.$touched && concoursForm.departement.$invalid }">
                         <label for="departement">Département d'origine</label>
-                        <select class="form-control"ng-model="candidat.departement" id="departement">
+                        <select class="form-control"
+                                name="departement"
+                                ng-model="candidat.departement"
+                                id="departement"
+                                required>
                             <option value="CM">Mifi</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.departement.$touched" ng-messages="concoursForm.departement.$error">
+                            <p ng-message="required">La departement du candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.departementPere.$touched && concoursForm.departementPere.$invalid }">
                         <label for="departementPere">Departement du père</label>
-                        <select class="form-control"ng-model="candidat.departementPere" id="departementPere">
+                        <select class="form-control"
+                                name="departementPere"
+                                ng-model="candidat.departementPere"
+                                id="departementPere"
+                                required>
                             <option value="CM">Cameroun</option>
                             <option value="CO">Congo</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.departementPere.$touched" ng-messages="concoursForm.departementPere.$error">
+                            <p ng-message="required">La departement du pere du  candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group"  ng-class="{ 'has-error': concoursForm.sexe.$touched && concoursForm.sexe.$invalid }">
                         <label for="sexe">Sexe</label>
-                        <select class="form-control" ng-model="candidat.sexe" id="sexe">
+                        <select class="form-control"
+                                name="sexe"
+                                ng-model="candidat.sexe"
+                                id="sexe"
+                                required>
                             <option value="F">Féminin</option>
                             <option value="M">Masculin</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.sexe.$touched" ng-messages="concoursForm.sexe.$error">
+                            <p ng-message="required">Le sexe du  candidat est requit</p>
+                        </div>
                     </div>
                     <h5>Adresse</h5>
-                    <div class="form-group">
+                    <div class="form-group"  ng-class="{ 'has-error': concoursForm.email.$touched && concoursForm.email.$invalid }">
                         <label for="email">Email</label>
-                        <input class="form-control"ng-model="candidat.email" id="email"
+                        <input class="form-control"
+                               ng-model="candidat.email"
+                               name="email"
+                               id="email"
                                placeholder="Entrer votre boîte mail"
                                title="Entrer votre boîte mail"
-                               type="email">
+                               type="email"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.email.$touched" ng-messages="concoursForm.email.$error">
+                            <p ng-message="required">L email du  candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.telephone.$touched && concoursForm.telephone.$invalid }">
                         <label for="telephone">Téléphone</label>
-                        <input class="form-control"ng-model="candidat.telephone" id="telephone"
+                        <input class="form-control"
+                               ng-model="candidat.telephone"
+                               id="telephone"
+                               name="telephone"
                                placeholder="Entrer votre numéro de téléphone"
                                title="Entrer votre numéro de téléphone"
-                               type="number">
+                               type="number"
+                                required
+                               ng-minlength="9"
+                               ng-maxlength="20">
+                        <div class="help-block" ng-show="concoursForm.telephone.$touched" ng-messages="concoursForm.telephone.$error">
+                            <p ng-message="required">Le telephone du  candidat est requit</p>
+                            <p ng-message="minlength">Le numero specifie est trop court</p>
+                            <p ng-message="maxlength">Le numero  specifie est trop long</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.adresse.$touched && concoursForm.adresse.$invalid }">
                         <label for="adresse">Adresse</label>
-                        <input class="form-control"ng-model="candidat.adresse" id="adresse"
+                        <input class="form-control"
+                               name="adresse"
+                               ng-model="candidat.adresse"
+                               id="adresse"
                                placeholder="Entrer votre adresse"
                                title="Entrer votre adresse"
-                               type="text">
+                               type="text"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.adresse.$touched" ng-messages="concoursForm.adresse.$error">
+                            <p ng-message="required">L adresse du  candidat est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.ville.$touched && concoursForm.ville.$invalid }">
                         <label for="ville">Ville</label>
-                        <input class="form-control"ng-model="candidat.ville" id="ville"
+                        <input class="form-control"
+                               ng-model="candidat.ville"
+                               id="ville"
+                               name="ville"
                                placeholder="Entrer votre ville de residence"
                                title="Entrer votre ville de residence"
-                               type="textr">
+                               type="text"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.ville.$touched" ng-messages="concoursForm.ville.$error">
+                            <p ng-message="required">La ville du  candidat est requit</p>
+                        </div>
                     </div>
                     <h5>Carte nationale d'identité (CNI)</h5>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.numCNI.$touched && concoursForm.numCNI.$invalid }">
                         <label for="numCNI">Numéro de le CNI</label>
-                        <input class="form-control"ng-model="candidat.numeroCNI" id="numCNI"
+                        <input class="form-control"
+                               ng-model="candidat.numeroCNI"
+                               id="numCNI"
+                               name="numCNI"
                                placeholder="Entrer votre numéro de CNI"
                                title="Entrer votre numéro de CNI"
-                               type="number">
+                               type="number"
+                               ng-minlength="9"
+                               ng-maxlength="20"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.numCNI.$touched" ng-messages="concoursForm.numCNI.$error">
+                            <p ng-message="required">Le numero de la CNI du  candidat est requit</p>
+                            <p ng-message="minlength">La longeur de la CNI est trop courte</p>
+                            <p ng-message="maxlength">La longeur de la CNI de specifie est trop long</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.dateCNI.$touched && concoursForm.dateCNI.$invalid }">
                         <label for="dateCNI">Date de délivrance de la CNI</label>
-                        <input class="form-control"ng-model="candidat.dateCNI" id="dateCNI"
+                        <input class="form-control"
+                               ng-model="candidat.dateCNI"
+                               id="dateCNI"
+                               name="dateCNI"
                                placeholder="Entrer la date délivrance de votre CNI"
                                title="Entrer la date délivrance de votre CNI"
-                               type="date">
+                               type="date"
+                               min="2005-12-31"
+                               required>
+                        <div class="help-block" ng-show="concoursForm.dateCNI.$touched" ng-messages="concoursForm.dateCNI.$error">
+                            <p ng-message="min">Votre carte est perime</p>
+                            <p ng-message="required">La date de peremption de votre carte est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.lieuCNI.$touched && concoursForm.lieuCNI.$invalid }">
                         <label for="dateCNI">Lieu de délivrance de la CNI</label>
-                        <input class="form-control"ng-model="candidat.dateCNI" id="dateCNI"
+                        <input class="form-control"
+                               ng-model="candidat.lieuCNI"
+                               id="lieuCNI"
+                               name="lieuCNI"
                                placeholder="Entrer le lieu de délivrance de votre CNI"
                                title="Entrer le lieu de  délivrance de votre CNI"
                                type="date">
+                        <div class="help-block" ng-show="concoursForm.lieuCNI.$touched" ng-messages="concoursForm.ville.$error">
+                            <p ng-message="required">Le lieu de delivrance est requit</p>
+                        </div>
                     </div>
                     <h5>Concours</h5>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.centre.$touched && concoursForm.centre.$invalid }">
                         <label for="centre">Centre d'examen</label>
-                        <select class="form-control"ng-model="candidat.centre" id="centre"
+                        <select class="form-control"
+                                ng-model="candidat.centre"
+                                id="centre"
+                                name="centre"
+                                required>
                             <option value="F">Français</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.centre.$touched" ng-messages="concoursForm.centre.$error">
+                            <p ng-message="required">Le centre d'examen est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.langue.$touched && concoursForm.langue.$invalid }">
                         <label for="langue">Langue de composition</label>
-                        <select class="form-control"ng-model="candidat.langue" id="langue">
+                        <select class="form-control"
+                                ng-model="candidat.langue"
+                                id="langue"
+                                name="langue">
                             <option value="A">English</option>
                             <option value="F">Français</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.langue.$touched" ng-messages="concoursForm.langue.$error">
+                            <p ng-message="required">La langue de composition de l'examen est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.nombre.$touched && concoursForm.nombre.$invalid }">
                         <label for="nombre">Nombre d'examen tenté</label>
-                        <input class="form-control"ng-model="candidat.nombreExamen" id="nombre"
+                        <input class="form-control"
+                               ng-model="candidat.nombreExamen"
+                               id="nombre"
+                               name="nombre"
                                placeholder="Entrer le nombre de fois que vous avez tenté cet examen"
                                title="Entrer le nombre de fois que vous avez tenté cet examen"
-                               type="number">
+                               type="number"
+                                min="0"
+                                max="5"
+                                required>
+                        <div class="help-block" ng-show="concoursForm.nombre.$touched" ng-messages="concoursForm.nombre.$error">
+                            <p ng-message="min">Veuillez entrer une valeur possible</p>
+                            <p ng-message="max">Valeur trop grande</p>
+                            <p ng-message="required">Le nombre de fois  de la composition de l'examen est requit</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.numeroTransaction.$touched && concoursForm.numeroTransaction.$invalid }">
                         <label for="numeroTransaction">Numero de Transaction</label>
-                        <input class="form-control"ng-model="candidat.numeroTransaction" id="numeroTransaction"
+                        <input class="form-control"
+                               ng-model="candidat.numeroTransaction"
+                               id="numeroTransaction"
+                               name="numeroTransaction"
                                placeholder="Entrer votre numero de transaction"
                                title="Entrer votre numero de transaction"
-                               type="number">
+                               type="number"
+                               ng-minlength="10"
+                               ng-maxlength="30">
+                        <div class="help-block" ng-show="concoursForm.numeroTransaction.$touched" ng-messages="concoursForm.numeroTransaction.$error">
+                            <p ng-message="required">Le numero de transaction du  candidat est requit</p>
+                            <p ng-message="minlength">La longeur du numero de transaction est trop courte</p>
+                            <p ng-message="maxlength">La longeur du numero de transaction de specifie est trop long</p>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="reference">Référence</label>
@@ -164,21 +314,38 @@
                                placeholder="Entrer vos références"
                                title="Entrer vos références"
                                type="text">
+                        <div class="help-block" ng-show="concoursForm.langue.$touched" ng-messages="concoursForm.langue.$error">
+                            <p ng-message="required">La langue de composition de l'examen est requit</p>
+                        </div>
                     </div>
                     <h5>Information sur le Probatoire ou GCE O'level</h5>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.sessionProba.$touched && concoursForm.sessionProba.$invalid }">
                         <label for="sessionProba">Session</label>
-                        <select class="form-control"ng-model="candidat.sessionProbatoire" id="sessionProba">
+                        <select class="form-control"
+                                ng-model="candidat.sessionProbatoire"
+                                id="sessionProba"
+                                name="sessionProba"
+                                required>
                             <option value="A">English</option>
                             <option value="F">Français</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.sessionProba.$touched" ng-messages="concoursForm.sessionProba.$error">
+                            <p ng-message="required">La session est requise</p>
+                        </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" ng-class="{ 'has-error': concoursForm.sessionProba.$touched && concoursForm.optionProba.$invalid }">
                         <label for="optionProba">Option</label>
-                        <select class="form-control"ng-model="candidat.optionProbatoire" id="optionProba">
+                        <select class="form-control"
+                                ng-model="candidat.optionProbatoire"
+                                id="optionProba"
+                                name="optionProba"
+                                required>
                             <option value="A">English</option>
                             <option value="F">Français</option>
                         </select>
+                        <div class="help-block" ng-show="concoursForm.optionProba.$touched" ng-messages="concoursForm.optionProba.$error">
+                            <p ng-message="required">L'option est requit</p>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="noteMathProba">Note en mathématique</label>

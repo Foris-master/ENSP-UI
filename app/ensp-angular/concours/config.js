@@ -24,6 +24,9 @@ app_concours
                 title: "Inscription concours niveau 1",
                 params: {
                     id: {squash: true, value: null}
+                },
+                access: {
+                    loginRequired: false
                 }
             })
             .state('formulaire-concours-niveau-3', {

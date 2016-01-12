@@ -11,7 +11,8 @@
     "idCategorie": 7,
     "idUtilisateur": 10,
     "tag":"etudiant",
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 1,
@@ -24,7 +25,8 @@
     "titre": "Ditmars Street",
     "idCategorie": 6,
     "idUtilisateur": 1,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 2,
@@ -38,7 +40,8 @@
     "idCategorie": 9,
     "tag":"etudiant",
     "idUtilisateur": 8,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 0,
@@ -51,7 +54,8 @@
     "titre": "Bliss Terrace",
     "idCategorie": 7,
     "idUtilisateur": 10,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 1,
@@ -64,7 +68,8 @@
     "titre": "Ditmars Street",
     "idCategorie": 6,
     "idUtilisateur": 1,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 2,
@@ -78,7 +83,8 @@
     "titre": "Schenck Street",
     "idCategorie": 9,
     "idUtilisateur": 8,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 0,
@@ -91,7 +97,8 @@
     "titre": "Bliss Terrace",
     "idCategorie": 7,
     "idUtilisateur": 10,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 1,
@@ -105,7 +112,8 @@
     "titre": "Ditmars Street",
     "idCategorie": 6,
     "idUtilisateur": 1,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   },
   {
     "idActualite": 2,
@@ -119,6 +127,7 @@
     "titre": "Schenck Street",
     "idCategorie": 9,
     "idUtilisateur": 8,
-    "image":"work/7.jpg"
+    "image":"work/7.jpg",
+    "images":[{"tag":0,"image":"work/7.jpg"}]
   }
 ]

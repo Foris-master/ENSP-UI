@@ -8,8 +8,13 @@ var mois=["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Sept
  controlleur pour le module header
  *****************************************************************************************************************/
 app_header
-    .controller('headerCtrl',['$scope','$stateParams',
-    function($scope) {
+    .controller('headerCtrl',['$scope','$location',
+    function($scope,$location) {
+        $scope.recherche=function(mot){
+            console.log(mot);
+            $location("recherche");
+        }
+
         $scope.dateCourante=new Date();
         //$scope.menu="ecole";
 

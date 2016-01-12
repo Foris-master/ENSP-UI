@@ -99,7 +99,7 @@ h6{
 	line-height:30px;
 }
 .listArrow li{
-	background: url('../images/min/links-arrow.png') 0px 12px no-repeat;
+	background: url('../images/min/min/links-arrow.png') 0px 12px no-repeat;
 	padding-left:15px;
 }
 .progress {
@@ -494,7 +494,7 @@ a:hover {
 .banner-container {
 	width: 100%;
 	padding: 0px;
-	/*background: url("../images/min/banner-bg.jpg") no-repeat;*/
+	/*background: url("../images/min/min/banner-bg.jpg") no-repeat;*/
 	background-size: cover;
 	position: relative;
 	border-bottom: 2px #F97D2F solid;

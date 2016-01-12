@@ -13,12 +13,12 @@
     </div>
     <div class="item-departement row feature design" dir-paginate="p in partenaires |filter:searchKey | orderBy : '-auteur' : true| itemsPerPage: par_page ">
         <div class="col-lg-2">
-          <img src="images/{{p.image}}" alt="partenaire"/>
+          <img src="{{host_url}}{{p.ins.image}}" alt="partenaire"/>
         </div>
         <div class="col-lg-10">
-          <h3><a ui-sref="partenaire({denomination:p.denomination})">{{p.denomination}}</a></h3>
-          <span class="bold">Sigle</span> : {{p.sigle}} | <span class="bold">Raison Sociale</span> : {{p.raisonSociale}}
-          <p ng-bind-html="p.description | limitTo : 200"> ...</p>
+          <h3><a ui-sref="partenaire({denomination:p.ins.denomination})">{{p.ins.denomination}}</a></h3>
+          <span class="bold">Sigle</span> : {{p.ins.sigle}} | <span class="bold">Raison Sociale</span> : {{p.ins.raisonsocial}}
+          <p ng-bind-html="p.ins.description | limitTo : 200"> ...</p>
         </div>
 
     </div>

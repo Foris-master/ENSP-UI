@@ -19,9 +19,9 @@ app_partenaire
                 //    deferred.resolve(factory.partenaires);
                 //} else {
 
-                    $http.get("ressources/partenaires.json").success(function(data,status){
+                    $http.get(host_url+"partenariat/").success(function(data,status){
                         factory.partenaires = data;
-
+                        console.log(data);
                         deferred.resolve(factory.partenaires);
 
                     }).error(function(data,status){

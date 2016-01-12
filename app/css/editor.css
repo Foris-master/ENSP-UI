@@ -12,7 +12,7 @@ You should have received a copy of the GNU General Public License along with thi
 /* base styles */
 .jumbotron {
    background-color: #67A754;
-  background-image: url(images/min/radial_bg.png);
+  background-image: url(images/min/min/radial_bg.png);
   background-position: center center;
   background-repeat: no-repeat; 
   background: -webkit-gradient(radial, center center, 0, center center, 460, from(#B3ECFF), to(#7EDEFF)); /* Safari 4-5, Chrome 1-9 */ /* Can't specify a percentage size? Laaaaaame. */
@@ -40,7 +40,7 @@ You should have received a copy of the GNU General Public License along with thi
     z-index: 2;
 }
 .jumbotron:after {
-    background: url("../images/min/pattern.png") repeat scroll center center transparent;
+    background: url("../images/min/min/pattern.png") repeat scroll center center transparent;
     bottom: 0;
     content: "";
     display: block;

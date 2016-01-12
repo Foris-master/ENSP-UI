@@ -19,9 +19,9 @@ app_personnel
                 //    deferred.resolve(factory.personnels);
                 //} else {
 
-                    $http.get("ressources/personnel.json").success(function(data,status){
+                    $http.get(host_url+"personnel?typepersonnel=1").success(function(data,status){
                         factory.personnels = data;
-
+                        console.log(data);
                         deferred.resolve(factory.personnels);
 
                     }).error(function(data,status){

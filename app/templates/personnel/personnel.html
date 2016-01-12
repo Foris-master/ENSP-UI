@@ -3,18 +3,18 @@
   <div class="container">
     <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
       <!-- Heading -->
-      <h2 class="titre">Espace de {{personnel.prenom}} {{personnel.nom}}</h2>
+      <h2 class="titre">Espace de {{personnel.personne.prenomPersonne}} {{personnel.personne.nomPersonne}}</h2>
     </div>
 
     <!-- Article 1 -->
     <div class="row feature design">
       <p class="ancre">
-        <a ui-sref="liste-personnel">Nos ensignants </a>> {{personnel.prenom}} {{personnel.nom}}
+        <a ui-sref="liste-personnel">Nos enseignants </a>> {{personnel.personne.prenomPersonne}} {{personnel.personne.nomPersonne}}
       </p>
       <div class="col-lg-12">
         <div class="tabbable tabs-left onglet row">
           <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
-            <img src="images/min/work/1.jpg" style="padding: 10px;" width="100%" alt=""/>
+            <img src="{{personnel.image}}" style="padding: 10px;" width="100%" alt=""/>
             <li class="active"><a href="/#presentation" data-toggle="tab">Présentation</a></li>
             <li><a href="/#act" data-toggle="tab">Actualités</a></li>
             <li><a href="/#ens" data-toggle="tab">Enseignements</a></li>
@@ -49,7 +49,7 @@
                     <div>Ressources :
                       <a ng-repeat="r in a.ressource" href="{{r.source}}">{{r.nom}}</a>
                     </div>
-                    </div>
+                  </div>
                 </div>
 
               </div>
@@ -58,23 +58,23 @@
             <!--cours et professeur-->
             <div class="tab-pane" id="ens">
               <h4>Enseignements <a href=""><i class="fa fa-edit pull-right"></i></a></h4>
-              <p ng-bind-html="personnel.enseignement"></p>
+              <p ng-bind-html="personnel.enseignements"></p>
 
             </div>
             <!--laboratoire-->
             <div class="tab-pane" id="pub">
-              <h4>Publications <a href=""><i class="fa fa-edit pull-right"></i></a></h4>
+              <h4>Publications ({{personnel.publications.length}})<a href=""><i class="fa fa-edit pull-right"></i></a></h4>
               <div class="row">
                 <div class="col-lg-12">
                   <div ng-repeat="p in personnel.publications">
-                    <h5>{{p.titre}} ({{p.publication.length}})</h5>
-                    <div ng-repeat="pu in p.publication">
+                    <h5>{{p.titre}} </h5>
                       <p>
-                        <i class="fa fa-angle-double-right"></i> <span ng-bind-html="pu.contenu"></span><br/>
+                        <i class="fa fa-angle-double-right"></i> <span ng-bind-html="p.description"></span><br/>
+                        <span >Publie le : {{p.datePublication}}</span><br/>
+                        <a href="{{p.lienPublication}}">lien vers la publication</a>&nbsp;
                         <a ng-repeat="r in pu.ressource" ui-sref="{{r.source}}">{{r.nom}},</a>&nbsp;
                       </p>
 
-                    </div>
 
                   </div>
                 </div>
@@ -85,17 +85,15 @@
             <!--Projet-->
             <div class="tab-pane" id="pro">
               <h4>Projets <a href=""><a href=""><i class="fa fa-edit pull-right"></i></a></a> <a href=""><i class="fa fa-plus  pull-right"></i></a></h4>
-              <div class="col-lg-12" ng-repeat="p in personnel.projets">
-                <h5>{{p.categorie}}</h5>
+              <div class="col-lg-12" ng-repeat="pr in personnel.projets">
+                <h5>{{pr.categorie}}</h5>
 
-                <div ng-repeat="pr in p.projet" style="padding-left: 10px;margin-bottom: 10px;">
-                  <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.titre}}</div>
-                  <p style="padding-bottom: 0">{{pr.description}}</p>
+                  <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.nom}}</div>
+                  <p style="padding-bottom: 0">{{pr.resume}}</p>
                   <div><span class="detail">Entreprise : </span>{{pr.entreprise}}</div>
-                  <div><span class="detail">Année : </span>{{pr.annee}}</div>
-                  <div><span class="detail">Lien : </span><span ng-bind-html="pr.lien"></span></div>
+                  <div><span class="detail">Année : </span>{{pr.datedebut}}</div>
+                  <!--div><span class="detail">Lien : </span><span ng-bind-html="pr.lien"></span></div-->
                 </div>
-              </div>
             </div>
 
             <div class="tab-pane" id="cv">
@@ -106,7 +104,7 @@
 
                     <p>Suivez le lien ci-dessous pour consulter le cv</p>
                     <div>Ressources :
-                      <a href="{{personnel.cv}}">Mon CV ({{personnel.nom}})</a>
+                      <a href="{{personnel.cv}}">Mon CV ({{personnel.personne.nomPersonne}})</a>
                     </div>
                   </div>
                 </div>

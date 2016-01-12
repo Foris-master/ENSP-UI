@@ -310,7 +310,7 @@ header a:hover{
 }
 
 .main-section {
-    background: url('../images/ensp/ensp-bg.png') no-repeat;
+    background: url('../images/min/ensp/ensp-bg.png') no-repeat;
     background-size: cover;
     padding-top: 18px;
 }
@@ -341,7 +341,7 @@ header a:hover{
 }
 
 .informatique .heading{
-    background: url("../images/banniere_accueil.jpg") no-repeat;
+    background: url("../images/min/banniere_accueil.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -370,7 +370,7 @@ a.accordion{
 }
 
 #aboutUs .heading, .main-section .heading{
-    background: url('../images/ensp/baniere.jpg') no-repeat !important;
+    background: url('../images/min/ensp/baniere.jpg') no-repeat !important;
     background-size: cover !important;
 }
 

@@ -21,9 +21,9 @@ app_etudiant
                 //    deferred.resolve(factory.etudiant);
                 //} else {
 
-                    $http.get("ressources/etudiant.json").success(function(data,status){
+                    $http.get(host_url+"etudiant").success(function(data,status){
                         factory.etudiants = data;
-
+                        console.log(data);
                         deferred.resolve(factory.etudiants);
 
                     }).error(function(data,status){
@@ -37,9 +37,13 @@ app_etudiant
 
             },
             getEtudiant: function (obj) {
+                console.log(obj);
                 var deffered = $q.defer();
                 var etudiants = factory.getEtudiants().then(function(services){
                     deffered.resolve($filter('filter')(factory.etudiants,obj,true)[0]);
+                    console.log($filter('filter')(factory.etudiants,obj))
+                    console.log(factory.etudiants);
+                    
                 },function(msg){
                     deffered.reject(msg);
                 });
@@ -54,14 +58,14 @@ app_etudiant
                 //    deferred.resolve(factory.etudiant);
                 //} else {
 
-                $http.get("ressources/associations.json").success(function(data,status){
+                $http.get(host_url+"association/").success(function(data,status){
                     factory.associations = data;
-
+                    console.log(data);
                     deferred.resolve(factory.associations);
 
                 }).error(function(data,status){
                     console.log(status);
-                    deferred.reject('Impossible de recuperer les etudiant');
+                    deferred.reject('Impossible de recuperer les associations');
                 });
 
                 //}

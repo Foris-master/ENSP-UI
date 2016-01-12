@@ -19,7 +19,7 @@ app_etudiant
             EtudiantFactory.getEtudiants().then(
                 function(data){
                     angular.forEach(data,function(d,key){
-                        d.image=d.image==null?"profil.png":d.image;
+                d.image=d.personne.utilisateur.photo==null?"images/min/profil.png":host_url+d.personne.utilisateur.photo;
                     })
                     $scope.etudiants=data;
                     $scope.allEtudiant=data;
@@ -71,11 +71,12 @@ app_etudiant
         function($scope,EtudiantFactory,$stateParams,PublicationFactory) {
         //recuperation de la etudiant
 
-        EtudiantFactory.getEtudiant({nom:$stateParams.nom,prenom:$stateParams.prenom}).then(
+        EtudiantFactory.getEtudiant({personne:{nomPersonne:$stateParams.nom,prenomPersonne:$stateParams.prenom}}).then(
             function(data){
+                console.log(data);
                 $scope.etudiant=data;
-                $scope.etudiant.image=$scope.etudiant.image==null?"profil.png":$scope.etudiant.image;
-                $scope.etudiant.sexe=$scope.etudiant.sexe=="M"?"Masculin":"Féminin";
+                $scope.etudiant.image=data.personne.utilisateur.photo==null?"images/min/profil.png":host_url+data.personne.utilisateur.photo;
+                $scope.etudiant.sexe=$scope.etudiant.sexe=="0"?"Masculin":"Féminin";
 
             },function(msg){
                 console.log(msg);

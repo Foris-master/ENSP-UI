@@ -19,7 +19,7 @@ app_laboratoire
                 //    deferred.resolve(factory.laboratoires);
                 //} else {
 
-                    $http.get("ressources/laboratoires.json").success(function(data,status){
+                    $http.get(host_url+"laboratoire").success(function(data,status){
                         factory.laboratoires = data;
 
                         deferred.resolve(factory.laboratoires);

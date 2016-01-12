@@ -7,14 +7,15 @@
  controlleur pour le module Departement
  *****************************************************************************************************************/
 app_departement
-    .controller('ListeDepartementCtrl', ['$scope','DepartementFactory',
-    function($scope,DepartementFactory) {
+    .controller('ListeDepartementCtrl', ['$scope','DepartementFactory','$rootScope',
+    function($scope,DepartementFactory,$rootScope) {
 
-
+        console.log($rootScope);
+        $scope.host_url=$rootScope.host_url;
         $scope.loadDepartement=function(){
             DepartementFactory.getDepartements().then(
                 function(data){
-
+                    
                     $scope.par_page=7;
                     $scope.departements=data;
 
@@ -36,10 +37,12 @@ app_departement
     .controller('DepartementCtrl', ['$scope','$stateParams','DepartementFactory',
     function($scope,$stateParams,DepartementFactory) {
         //recuperation de la departement
+        console.log($stateParams);
         DepartementFactory.getDepartementObjet({sigle:$stateParams.sigle}).then(
-            function(data){
+                
+                function(data){
                 $scope.departement=data;
-                //console.log(data);
+                console.log(data);
                 $('#myCarousel').carousel({
                     interval:   7000
                 });

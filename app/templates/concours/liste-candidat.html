@@ -28,19 +28,24 @@
                         <th>Date et Lieu de naissance</th>
                         <th>Sexe</th>
                         <th>Pays</th>
+                        <th>Region</th>
                         <th>Téléphone</th>
                         <th>Langue</th>
+                        <th>Centre Examen</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr data-toggle="modal" href="/#identificationModal" dir-paginate="c in candidats |filter:searchKey |orderBy : '-nom' : true |itemsPerPage: par_page ">
-                        <td>{{c.nom}}</td>
-                        <td>{{c.prenom}}</td>
-                        <td>{{c.dateNaissance}} à {{c.lieuNaissance}}</td>
-                        <td>{{c.sexe}}</td>
-                        <td>{{c.pays}}</td>
-                        <td>{{c.telephone}}</td>
-                        <td>{{c.langueExamen}}</td>
+                        <td>{{c.personne.nomPersonne}}</td>
+                        <td>{{c.personne.prenomPersonne}}</td>
+                        <td>{{c.personne.dateNaissance}} à {{c.personne.lieuNaissance}}</td>
+                        <td ng-if="c.personne.sexe == 0">M</td>
+                        <td ng-if="c.personne.sexe == 1">F</td>
+                        <td>{{c.personne.region.pays.nomPays}}</td>
+                        <td>{{c.personne.region.nomRegion}}</td>
+                        <td>{{c.personne.telephonePersonne}}</td>
+                        <td>{{c.langueExamenCandidat}}</td>
+                        <td>{{c.centreExamenCandidat}}</td>
                     </tr>
 
                     </tbody>
@@ -48,7 +53,7 @@
                 <div class="text-center" >
                     <dir-pagination-controls></dir-pagination-controls>
                 </div>
-                <spinner name="candidatSpinner" img-src="images/min/1.png"></spinner>
+                <spinner name="candidatSpinner" img-src="images/min/min/1.png"></spinner>
             </div>
         </div>
 

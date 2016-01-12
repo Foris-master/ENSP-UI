@@ -93,11 +93,11 @@ body {font-family: inherit, sans-serif;}
 	color:black;
 }
 .timeline ol li {
-	background:url('images/min/org-tree-mid.gif') no-repeat left top;
+	background:url('images/min/min/org-tree-mid.gif') no-repeat left top;
 }
 
 .timeline ol li.last {
-	background:url('images/min/org-tree-last.gif') no-repeat left top;
+	background:url('images/min/min/org-tree-last.gif') no-repeat left top;
 }
 /*----------- Main Content Elements ---------------- */
 .date {font-style:italic;}

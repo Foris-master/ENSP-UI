@@ -3,22 +3,22 @@
   <div class="container">
     <div class="heading text-center" style="margin-left: -25px;margin-right: -25px;">
       <!-- Heading -->
-      <h2 class="titre">Espace de {{etudiant.prenom}} {{etudiant.nom}}</h2>
+      <h2 class="titre">Espace de {{etudiant.personne.prenomPersonne}} {{etudiant.nom}}</h2>
     </div>
 
     <!-- Article 1 -->
     <div class="row feature design">
       <p class="ancre">
-        <a ui-sref="liste-etudiant">Espace étudiant </a>> {{etudiant.prenom}} {{etudiant.nom}}
+        <a ui-sref="liste-etudiant">Espace étudiant </a>> {{etudiant.personne.prenomPersonne}} {{etudiant.personne.nomPersonne}}
       </p>
       <div class="col-lg-12">
         <div class="tabbable tabs-left onglet row">
           <ul class="nav nav-tabs col-lg-2 col-sm-2 col-xs-2">
-            <img src="images/{{etudiant.image}}" style="padding: 10px;" width="100%" alt=""/>
+            <img src="{{etudiant.image}}" style="padding: 10px;" width="100%" alt=""/>
             <li class="active"><a href="/#presentation" data-toggle="tab">Présentation</a></li>
             <li><a href="/#association" ng-click="afficherAssociationEtudiant(etudiant.idPersonnel)" data-toggle="tab">Associations</a></li>
-            <li><a href="/#publication" ng-click="afficherPublicationEtudiant(etudiant.idPersonnel)" data-toggle="tab">Publications</a></li>
-            <li><a href="/#projet" ng-click="afficherProjetEtudiant(etudiant.idPersonnel)" data-toggle="tab">Projets</a></li>
+            <li><a href="/#publication" ng-click="afficherPublicationEtudiant(etudiant.personne.idPersonne)" data-toggle="tab">Publications</a></li>
+            <!--li><a href="/#projet" ng-click="afficherProjetEtudiant(etudiant.idPersonnel)" data-toggle="tab">Projets</a></li-->
             <li><a href="/#conres" data-toggle="tab">Contact & Réseaux Sociaux</a></li>
           </ul>
 
@@ -33,6 +33,7 @@
 
                 </div>
                 <div class="col-lg-3">
+                    <a href="etudiant.html"></a>
                   <h5>Informations <i class="fa fa-edit fa-lg pull-right"></i></h5>
 
                   <div><span class="bold">Matricule : </span>{{etudiant.matricule}}</div>
@@ -53,10 +54,10 @@
                 <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="a in associations | orderBy : '-nom' : true | itemsPerPage: par_page">
                   <div class="actu row">
                     <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
-                      <img src="images/{{a.image}}" alt=""/>
+                      <img src="images/min/{{a.image}}" alt=""/>
                     </div>
                     <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
-                      <h3>{{a.cygle}}:{{a.nom}}</h3>
+                      <h3>{{a.sigle}}:{{a.nom}}</h3>
                       <p ng-bind-html="a.description | limitTo:150">.</p>
                       <p>{{a.contact.email}}.</p>
                       <a ui-sref="association({cygle:a.cygle})">Visiter</a>

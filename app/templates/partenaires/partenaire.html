@@ -2,7 +2,7 @@
     <div class="container">
         <div class="heading text-center">
             <!-- Heading -->
-            <h2 class="titre">{{partenaire.denomination}}</h2>
+            <h2 class="titre">{{partenaire.ins.denomination}}</h2>
             <p></p>
         </div>
 
@@ -10,19 +10,19 @@
         <div class="row feature design">
             <div class="col-lg-12 col-xs-12 col-md-12">
                 <p class="ancre">
-                    <a ui-sref="liste-partenaire">Nos partenaires </a>> {{partenaire.denomination}}
+                    <a ui-sref="liste-partenaire">Nos partenaires </a>> {{partenaire.ins.denomination}}
                 </p>
             </div>
             <hr/>
             <div class="col-lg-9 col-sm-9 col-xs-9 columns left">
                 <div class="row">
-                    <div class="col-lg-6"><span class="bold">Slogan : </span>  <span class="italic" ng-bind-html="partenaire.slogan"></span></div>
-                    <div class="col-lg-6"><span class="bold">Sigle : </span>  <span class="italic" ng-bind-html="partenaire.sigle"></span></div>
-                    <div class="col-lg-6"><span class="bold">Raison sociale : </span>  <span class="italic" ng-bind-html="partenaire.raisonSociale"></span></div>
-                    <div class="col-lg-6"><span class="bold">Site web : </span>  <a href="{{partenaire.site}}">{{partenaire.denomination}}</a></div>
+                    <div class="col-lg-6"><span class="bold">Slogan : </span>  <span class="italic" ng-bind-html="partenaire.ins.slogan"></span></div>
+                    <div class="col-lg-6"><span class="bold">Sigle : </span>  <span class="italic" ng-bind-html="partenaire.ins.sigle"></span></div>
+                    <div class="col-lg-6"><span class="bold">Raison sociale : </span>  <span class="italic" ng-bind-html="partenaire.ins.raisonsocial"></span></div>
+                    <div class="col-lg-6"><span class="bold">Site web : </span>  <a href="{{partenaire.ins.lienverssite}}">{{partenaire.ins.lienverssite}}</a></div>
                 </div>
                 <h5>Présentation</h5>
-                <p style="margin-bottom: 20px;" ng-bind-html="partenaire.description"></p>
+                <p style="margin-bottom: 20px;" ng-bind-html="partenaire.ins.description"></p>
 
             </div>
             <div class="col-lg-3 col-sm-3 col-xs-3 columns feature-media right">
@@ -31,10 +31,10 @@
                         style="position: relative; height: auto;">
                         <li class="item web">
                             <figure class="effect-bubba">
-                                <img src="images/{{partenaire.image}}" alt="img02"/>
+                                <img src="{{host_url}}{{partenaire.ins.image}}" alt="img02"/>
                                 <figcaption>
-                                    <h2>{{partenaire.titre}}</h2>
-                                    <a href="images/{{partenaire.image}}" class="fancybox">Afficher</a>
+                                    <h2>{{partenaire.ins.titre}}</h2>
+                                    <a href="{{host_url}}{{partenaire.ins.image}}" class="fancybox">Afficher</a>
                                 </figcaption>
                             </figure>
                         </li>

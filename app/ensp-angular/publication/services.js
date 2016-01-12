@@ -20,7 +20,7 @@ app_publication
                 deferred.resolve(factory.publications);
             } else {
 
-                $http.get("ressources/publication.json").success(function(data,status){
+                $http.get(host_url+"publication/").success(function(data,status){
                     factory.publications = data;
 
                     deferred.resolve(factory.publications);
@@ -36,6 +36,16 @@ app_publication
 
         },
         getPublicationsEtudiant: function (obj) {
+            console.log(obj)
+            var deffered = $q.defer();
+            var publications = factory.getPublications().then(function(services){
+                deffered.resolve($filter('filter')(factory.publications,obj,true));
+            },function(msg){
+                deffered.reject(msg);
+            });
+            return deffered.promise;
+        },
+        getPublicationsPersonnel: function (obj) {
             console.log(obj)
             var deffered = $q.defer();
             var publications = factory.getPublications().then(function(services){

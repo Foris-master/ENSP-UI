@@ -23,9 +23,9 @@ app_concours
                     deferred.resolve(factory.concours);
                 } else {
 
-                    $http.get("ressources/concours.json").success(function(data,status){
+                    $http.get(host_url+"concours?idecole=1").success(function(data,status){
                         factory.concours = data;
-
+                        console.log(data);
                         deferred.resolve(factory.concours);
 
                     }).error(function(data,status){
@@ -41,7 +41,8 @@ app_concours
             getConcour: function (id) {
                 var deffered = $q.defer();
                 var concours = factory.getConcours().then(function(services){
-                    deffered.resolve($filter('filter')(factory.concours,{idConcour:parseInt(id)},true)[0]);
+                    console.log(id);
+                    deffered.resolve($filter('filter')(factory.concours,{iD:parseInt(id)},true)[0]);
                 },function(msg){
                     deffered.reject(msg);
                 });

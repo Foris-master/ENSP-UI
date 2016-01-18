@@ -1,19 +1,19 @@
 [
   {
     "idDepartement": 1,
-    "nom": "Génie Informatique",
-    "presentation": "breve presentation du GI",
+    "nom": "Mathématiques et Sciences Physiques",
+    "presentation": "breve presentation du MSP",
     "idDepartementEcole": 10,
-    "sigle":"GI",
-    "image":["work/1.jpg","work/2.jpg","work/3.jpg","work/2.jpg","work/3.jpg","work/1.jpg","work/1.jpg","work/2.jpg","work/3.jpg"],
+    "sigle":"MSP",
+    "image":["ensp/ensp-bg.png","cetic/2.jpg","cetic/3.jpg","cetic/2.jpg","cetic/3.jpg","ensp/ensp-bg.png","ensp/ensp-bg.png","cetic/2.jpg","cetic/3.jpg"],
     "chefDepartement":
     {
       "id": 1,
-      "nom":"Bouetou Bouetou",
-      "prenom":"Thomas",
+      "nom":"GWET",
+      "prenom":"Henri",
       "grade":"Pr",
       "mot":"Lorem ipsum dolor sit amet, consectetur adipisic",
-      "image":"work/4.jpg"
+      "image":"ensp/polytech image.jpg"
     },
     "cours":[
       {
@@ -123,7 +123,7 @@
         "nom":"TAPAMO",
         "prenom":"",
         "grade":"Dr",
-        "image":"work/3.jpg"
+        "image":"cetic/3.jpg"
 
       },
       {
@@ -131,21 +131,21 @@
         "nom":"KOUAMOU",
         "prenom":"Georges",
         "grade":"Dr",
-        "image":"work/2.jpg"
+        "image":"cetic/2.jpg"
       },
       {
         "id":3,
         "nom":"BATCHAKUI",
         "prenom":"Bernabé",
         "grade":"Dr",
-        "image":"work/1.jpg"
+        "image":"ensp/ensp-bg.png"
       },
       {
         "id":3,
         "nom":"KENFACK",
         "prenom":"Hubert",
         "grade":"Mr",
-        "image":"work/4.jpg"
+        "image":"ensp/polytech image.jpg"
       }
     ],
     "laboratoires":[
@@ -154,7 +154,7 @@
         "nom":"Laboratoire 3 GI",
         "responsable":"Nadia",
         "description":"Lorem ipsum dolor sit amet, c.",
-        "image":"work/3.jpg"
+        "image":"cetic/3.jpg"
 
       },
       {
@@ -162,7 +162,7 @@
         "nom":"Laboratoire 4 GI",
         "responsable":"Reine",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
-        "image":"work/3.jpg"
+        "image":"cetic/3.jpg"
 
       },
       {
@@ -170,7 +170,239 @@
         "nom":"Laboratoire 5 GI",
         "responsable":"Laryce",
         "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
-        "image":"work/3.jpg"
+        "image":"cetic/3.jpg"
+
+      }
+    ],
+    "statistiques":[
+      {
+        "niveau":3,
+        "annee":[2011,2012,2013,2014,2015,2016,2017,2018],
+        "donnees":[
+          {
+            "name":"Echec",
+            "data":[1,2,6,7,8,6,7,1]
+          },
+          {
+            "name":"Renvoie",
+            "data":[5,2,1,8,10,6,7,1]
+          },
+          {
+            "name":"Reussite",
+            "data":[1,2,6,7,8,6,7,1]
+          }
+        ]
+      },
+      {
+        "niveau":4,
+        "annee":[2011,2012,2013,2014,2015,2016,2017,2018],
+        "donnees":[
+          {
+            "name":"Echec",
+            "data":[1,2,6,7,8,6,7,1]
+          },
+          {
+            "name":"Renvoie",
+            "data":[5,2,1,8,10,6,7,1]
+          },
+          {
+            "name":"Reussite",
+            "data":[1,2,6,7,8,6,7,1]
+          }
+        ]
+      },
+      {
+        "niveau":5,
+        "annee":[2011,2012,2013,2014,2015,2016,2017,2018],
+        "donnees":[
+          {
+            "name":"Echec",
+            "data":[1,2,6,7,8,6,7,1]
+          },
+          {
+            "name":"Renvoie",
+            "data":[5,2,1,8,10,6,7,1]
+          },
+          {
+            "name":"Reussite",
+            "data":[1,2,6,7,8,6,7,1]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idDepartement": 1,
+    "nom": "Génie Civil",
+    "presentation": "breve presentation du GC",
+    "idDepartementEcole": 10,
+    "sigle":"MSP",
+    "image":["ensp/ensp-bg.png","cetic/2.jpg","cetic/3.jpg","cetic/2.jpg","cetic/3.jpg","ensp/ensp-bg.png","ensp/ensp-bg.png","cetic/2.jpg","cetic/3.jpg"],
+    "chefDepartement":
+    {
+      "id": 1,
+      "nom":"PETANG",
+      "prenom":"Samuel",
+      "grade":"Pr",
+      "mot":"Lorem ipsum dolor sit amet, consectetur adipisic",
+      "image":"ensp/polytech image.jpg"
+    },
+    "cours":[
+      {
+        "niveau":3,
+        "semestres":[
+          {
+            "numero":1,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Base de données",
+                "credit":2
+              },
+              {
+                "id":1,
+                "intitule":"Programmation Orientée Objet 1",
+                "credit":4
+              }
+            ]
+          },
+          {
+            "numero":2,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Réseau",
+                "credit":2
+              },
+              {
+                "id":1,
+                "intitule":"Programmation Orientée Objet 2",
+                "credit":4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau":4,
+        "semestres":[
+          {
+            "numero":1,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Intelligence Artificiel",
+                "credit":3
+              },
+              {
+                "id":2,
+                "intitule":"Communication",
+                "credit":2
+              }
+            ]
+          },
+          {
+            "numero":2,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Système Multi-Agent",
+                "credit":4
+              },
+              {
+                "id":1,
+                "intitule":"informatique Decisionnelle",
+                "credit":4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau":5,
+        "semestres":[
+          {
+            "numero":1,
+            "UEs":[
+              {
+                "id":1,
+                "intitule":"Genie Logiciel 2",
+                "credit":3
+              },
+              {
+                "id":2,
+                "intitule":"Traitement d'image",
+                "credit":2
+              }
+            ]
+          },
+          {
+            "numero":2,
+            "UEs":[
+              {
+                "id":2,
+                "intitule":"Stage Ingenieur",
+                "credit":22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs":[
+      {
+        "id":1,
+        "nom":"TAPAMO",
+        "prenom":"",
+        "grade":"Dr",
+        "image":"cetic/3.jpg"
+
+      },
+      {
+        "id":2,
+        "nom":"KOUAMOU",
+        "prenom":"Georges",
+        "grade":"Dr",
+        "image":"cetic/2.jpg"
+      },
+      {
+        "id":3,
+        "nom":"BATCHAKUI",
+        "prenom":"Bernabé",
+        "grade":"Dr",
+        "image":"ensp/ensp-bg.png"
+      },
+      {
+        "id":3,
+        "nom":"KENFACK",
+        "prenom":"Hubert",
+        "grade":"Mr",
+        "image":"ensp/polytech image.jpg"
+      }
+    ],
+    "laboratoires":[
+      {
+        "id":1,
+        "nom":"Laboratoire 3 GI",
+        "responsable":"Nadia",
+        "description":"Lorem ipsum dolor sit amet, c.",
+        "image":"cetic/3.jpg"
+
+      },
+      {
+        "id":2,
+        "nom":"Laboratoire 4 GI",
+        "responsable":"Reine",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image":"cetic/3.jpg"
+
+      },
+      {
+        "id":3,
+        "nom":"Laboratoire 5 GI",
+        "responsable":"Laryce",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image":"cetic/3.jpg"
 
       }
     ],
@@ -233,20 +465,565 @@
   },
   {
     "idDepartement": 2,
-    "nom": "Génie Industriel",
+    "nom": "Génie Informatique",
+    "presentation": "Une brève présentation du génie informatique.",
+    "idDepartementEcole": 10,
+    "sigle": "GI",
+    "image": [
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "ensp/ensp-bg.png",
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg"
+    ],
+    "chefDepartement": {
+      "id": 1,
+      "nom": "BOUETOU BOUETOU",
+      "prenom": "Thomas",
+      "grade": "Pr",
+      "mot": "Un mot du chef de département. ",
+      "image": "img/user.jpg"
+    },
+    "cours": [
+      {
+        "niveau": 3,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Construction Mécanique",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Algorithme et Programmation",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Asservissement",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Science des Materiaux",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Anglais /Francais",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Electronique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Resistance des materiaux / Elasticité",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Mecaniques des fluides",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Transferts thermiques",
+                "credit": 4
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Recherche Opérationnelle",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Informatique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Processus de fabrication et methode",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Electrotechnique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Automatisme",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Construction mecanique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Thermique industrielle",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Elasticite",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Thermodynamique Appliqué",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "DAO",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Systemes d'information",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Montage et gestion des projets",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Economie, Compatibilité et gestion financière de l'entreprise",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Satisfaction du client",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Production industrielle",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "TP Mecanique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Projet Informatique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Mecanique des solides",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Creation d'entreprise",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Informatique industrielle",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Optimisation energetique des systemes industrielle",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Qualite",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Communication en entreprise",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Droit de travail et des affaires",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Maintenance et fiabilite des systemes industriels",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Rentabilite des projets",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "TP Fabrication mecanique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Mecanique applique et tribologie",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "CAO",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Travaux pratiques",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "CFAO-Commande numerique",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Projet productique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Management de l'environnement",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "METHODES DE CONCEPTION, SECURITE ET FIABILITE EN MILIEU INDUSTRIEL",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Projet Energetique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "MANAGEMENT DE L'ENTREPRISE ET DEVELOPPEMENT SOCIAL",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Modelisation mecanique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "CMAO, SIMULATION",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Pre-Ingenieur",
+                "credit": 22
+              },
+              {
+                "id": 2,
+                "intitule": "Memoire de Fin d'etudes",
+                "credit": 22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs": [
+      {
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "cetic/2.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "ensp/ensp-bg.png"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "ensp/polytech image.jpg"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idDepartement": 2,
+    "nom": "Génie Electrique",
     "presentation": "Une brève présentation du génie industriel.",
     "idDepartementEcole": 10,
-    "sigle": "GIND",
+    "sigle": "GELE",
     "image": [
-      "work/1.jpg",
-      "work/2.jpg",
-      "work/3.jpg",
-      "work/2.jpg",
-      "work/3.jpg",
-      "work/1.jpg",
-      "work/1.jpg",
-      "work/2.jpg",
-      "work/3.jpg"
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "ensp/ensp-bg.png",
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg"
     ],
     "chefDepartement": {
       "id": 1,
@@ -564,28 +1341,28 @@
         "nom": "TAPAMO",
         "prenom": "",
         "grade": "Dr",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
       },
       {
         "id": 2,
         "nom": "KOUAMOU",
         "prenom": "Georges",
         "grade": "Dr",
-        "image": "work/2.jpg"
+        "image": "cetic/2.jpg"
       },
       {
         "id": 3,
         "nom": "BATCHAKUI",
         "prenom": "Bernabé",
         "grade": "Dr",
-        "image": "work/1.jpg"
+        "image": "ensp/ensp-bg.png"
       },
       {
         "id": 3,
         "nom": "KENFACK",
         "prenom": "Hubert",
         "grade": "Mr",
-        "image": "work/4.jpg"
+        "image": "ensp/polytech image.jpg"
       }
     ],
     "laboratoires": [
@@ -594,21 +1371,1111 @@
         "nom": "Laboratoire 3 GI",
         "responsable": "Nadia",
         "description": "Lorem ipsum dolor sit amet, c.",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
       },
       {
         "id": 2,
         "nom": "Laboratoire 4 GI",
         "responsable": "Reine",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
       },
       {
         "id": 3,
         "nom": "Laboratoire 5 GI",
         "responsable": "Laryce",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idDepartement": 2,
+    "nom": "Génie Telecommunication",
+    "presentation": "Une brève présentation du GC.",
+    "idDepartementEcole": 10,
+    "sigle": "GC",
+    "image": [
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "ensp/ensp-bg.png",
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg"
+    ],
+    "chefDepartement": {
+      "id": 1,
+      "nom": "MEVA'A",
+      "prenom": "LUCIEN",
+      "grade": "Pr",
+      "mot": "Un mot du chef de département. ",
+      "image": "img/user.jpg"
+    },
+    "cours": [
+      {
+        "niveau": 3,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Construction Mécanique",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Algorithme et Programmation",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Asservissement",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Science des Materiaux",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Anglais /Francais",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Electronique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Resistance des materiaux / Elasticité",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Mecaniques des fluides",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Transferts thermiques",
+                "credit": 4
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Recherche Opérationnelle",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Informatique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Processus de fabrication et methode",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Electrotechnique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Automatisme",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Construction mecanique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Thermique industrielle",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Elasticite",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Thermodynamique Appliqué",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "DAO",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Systemes d'information",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Montage et gestion des projets",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Economie, Compatibilité et gestion financière de l'entreprise",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Satisfaction du client",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Production industrielle",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "TP Mecanique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Projet Informatique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Mecanique des solides",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Creation d'entreprise",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Informatique industrielle",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Optimisation energetique des systemes industrielle",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Qualite",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Communication en entreprise",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Droit de travail et des affaires",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Maintenance et fiabilite des systemes industriels",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Rentabilite des projets",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "TP Fabrication mecanique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Mecanique applique et tribologie",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "CAO",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Travaux pratiques",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "CFAO-Commande numerique",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Projet productique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Management de l'environnement",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "METHODES DE CONCEPTION, SECURITE ET FIABILITE EN MILIEU INDUSTRIEL",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Projet Energetique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "MANAGEMENT DE L'ENTREPRISE ET DEVELOPPEMENT SOCIAL",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Modelisation mecanique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "CMAO, SIMULATION",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Pre-Ingenieur",
+                "credit": 22
+              },
+              {
+                "id": 2,
+                "intitule": "Memoire de Fin d'etudes",
+                "credit": 22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs": [
+      {
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "cetic/2.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "ensp/ensp-bg.png"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "ensp/polytech image.jpg"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
+      }
+    ],
+    "statistiques": [
+      {
+        "niveau": 3,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "annee": [
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "donnees": [
+          {
+            "name": "Echec",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Renvoie",
+            "data": [
+              5,
+              2,
+              1,
+              8,
+              10,
+              6,
+              7,
+              1
+            ]
+          },
+          {
+            "name": "Reussite",
+            "data": [
+              1,
+              2,
+              6,
+              7,
+              8,
+              6,
+              7,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "idDepartement": 2,
+    "nom": "Génie Industriel",
+    "presentation": "Une brève présentation du génie industriel.",
+    "idDepartementEcole": 10,
+    "sigle": "GIND",
+    "image": [
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "ensp/ensp-bg.png",
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg"
+    ],
+    "chefDepartement": {
+      "id": 1,
+      "nom": "MEVA'A",
+      "prenom": "LUCIEN",
+      "grade": "Pr",
+      "mot": "Un mot du chef de département. ",
+      "image": "img/user.jpg"
+    },
+    "cours": [
+      {
+        "niveau": 3,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Construction Mécanique",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Algorithme et Programmation",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Asservissement",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Science des Materiaux",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Anglais /Francais",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Electronique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Resistance des materiaux / Elasticité",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Mecaniques des fluides",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Transferts thermiques",
+                "credit": 4
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Recherche Opérationnelle",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Informatique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Processus de fabrication et methode",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Electrotechnique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Automatisme",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Construction mecanique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Thermique industrielle",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Elasticite",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Thermodynamique Appliqué",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "DAO",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 4,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Intelligence Artificiel",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Communication",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Systemes d'information",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Montage et gestion des projets",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Economie, Compatibilité et gestion financière de l'entreprise",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Satisfaction du client",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Production industrielle",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "TP Mecanique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Projet Informatique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Mecanique des solides",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Creation d'entreprise",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "Informatique industrielle",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Optimisation energetique des systemes industrielle",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Qualite",
+                "credit": 2
+              },
+              {
+                "id": 1,
+                "intitule": "Communication en entreprise",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Droit de travail et des affaires",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Maintenance et fiabilite des systemes industriels",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Rentabilite des projets",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "TP Fabrication mecanique",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Mecanique applique et tribologie",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "CAO",
+                "credit": 4
+              },
+              {
+                "id": 1,
+                "intitule": "Travaux pratiques",
+                "credit": 4
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "niveau": 5,
+        "semestres": [
+          {
+            "numero": 1,
+            "UEs": [
+              {
+                "id": 1,
+                "intitule": "CFAO-Commande numerique",
+                "credit": 3
+              },
+              {
+                "id": 2,
+                "intitule": "Projet productique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Management de l'environnement",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "METHODES DE CONCEPTION, SECURITE ET FIABILITE EN MILIEU INDUSTRIEL",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Projet Energetique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "MANAGEMENT DE L'ENTREPRISE ET DEVELOPPEMENT SOCIAL",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "Modelisation mecanique",
+                "credit": 2
+              },
+              {
+                "id": 2,
+                "intitule": "CMAO, SIMULATION",
+                "credit": 2
+              }
+            ]
+          },
+          {
+            "numero": 2,
+            "UEs": [
+              {
+                "id": 2,
+                "intitule": "Stage Pre-Ingenieur",
+                "credit": 22
+              },
+              {
+                "id": 2,
+                "intitule": "Memoire de Fin d'etudes",
+                "credit": 22
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "professeurs": [
+      {
+        "id": 1,
+        "nom": "TAPAMO",
+        "prenom": "",
+        "grade": "Dr",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "KOUAMOU",
+        "prenom": "Georges",
+        "grade": "Dr",
+        "image": "cetic/2.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "BATCHAKUI",
+        "prenom": "Bernabé",
+        "grade": "Dr",
+        "image": "ensp/ensp-bg.png"
+      },
+      {
+        "id": 3,
+        "nom": "KENFACK",
+        "prenom": "Hubert",
+        "grade": "Mr",
+        "image": "ensp/polytech image.jpg"
+      }
+    ],
+    "laboratoires": [
+      {
+        "id": 1,
+        "nom": "Laboratoire 3 GI",
+        "responsable": "Nadia",
+        "description": "Lorem ipsum dolor sit amet, c.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 2,
+        "nom": "Laboratoire 4 GI",
+        "responsable": "Reine",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
+      },
+      {
+        "id": 3,
+        "nom": "Laboratoire 5 GI",
+        "responsable": "Laryce",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
+        "image": "cetic/3.jpg"
       }
     ],
     "statistiques": [
@@ -783,15 +2650,15 @@
     "idDepartementEcole": 10,
     "sigle": "GM",
     "image": [
-      "work/1.jpg",
-      "work/2.jpg",
-      "work/3.jpg",
-      "work/2.jpg",
-      "work/3.jpg",
-      "work/1.jpg",
-      "work/1.jpg",
-      "work/2.jpg",
-      "work/3.jpg"
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "cetic/2.jpg",
+      "cetic/3.jpg",
+      "ensp/ensp-bg.png",
+      "ensp/ensp-bg.png",
+      "cetic/2.jpg",
+      "cetic/3.jpg"
     ],
     "chefDepartement": {
       "id": 1,
@@ -799,7 +2666,7 @@
       "prenom": "Lucien",
       "grade": "Pr",
       "mot": "Lorem ipsum dolor sit amet, consectetur adipisic",
-      "image": "work/4.jpg"
+      "image": "ensp/polytech image.jpg"
     },
     "cours": [
       {
@@ -1114,28 +2981,28 @@
         "nom": "TAPAMO",
         "prenom": "",
         "grade": "Dr",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
       },
       {
         "id": 2,
         "nom": "KOUAMOU",
         "prenom": "Georges",
         "grade": "Dr",
-        "image": "work/2.jpg"
+        "image": "cetic/2.jpg"
       },
       {
         "id": 3,
         "nom": "BATCHAKUI",
         "prenom": "Bernabé",
         "grade": "Dr",
-        "image": "work/1.jpg"
+        "image": "ensp/ensp-bg.png"
       },
       {
         "id": 3,
         "nom": "KENFACK",
         "prenom": "Hubert",
         "grade": "Mr",
-        "image": "work/4.jpg"
+        "image": "ensp/polytech image.jpg"
       }
     ],
     "laboratoires": [
@@ -1144,21 +3011,21 @@
         "nom": "Laboratoire 3 GI",
         "responsable": "Nadia",
         "description": "Lorem ipsum dolor sit amet, c.",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
       },
       {
         "id": 2,
         "nom": "Laboratoire 4 GI",
         "responsable": "Reine",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
       },
       {
         "id": 3,
         "nom": "Laboratoire 5 GI",
         "responsable": "Laryce",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus pariatur quos vitae. Aperiam asperiores consequatur excepturi ipsum minima mollitia nisi, nobis, nulla placeat possimus quasi, quis repellat ut velit voluptatibus.",
-        "image": "work/3.jpg"
+        "image": "cetic/3.jpg"
       }
     ],
     "statistiques": [

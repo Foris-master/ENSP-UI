@@ -92,7 +92,7 @@ app_partenaire
     .controller('PartenaireCtrl', ['$scope','$stateParams','PartenaireFactory',
     function($scope,$stateParams,PartenaireFactory) {
         //recuperation de la partenaire
-        PartenaireFactory.getPartenaireObjet({cygle:$stateParams.cygle}).then(
+        PartenaireFactory.getPartenaireObjet({sigle:$stateParams.sigle}).then(
             function(data){
                 $scope.partenaire=data;
                 //console.log(data);

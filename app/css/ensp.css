@@ -188,11 +188,15 @@ textarea{
     border-radius: 5px;
     border: 1px solid #ccc;
     border-color: transparent;
+    width: 100%;
+    border-bottom: 1px solid #F97D2F;
+    background: rgba(0,0,0,0.2);
 
 }
 .search-form .form-group input.form-control {
     padding-left: 30px !important;
     border: 0 none;
+    width: 100%;
     background: transparent;
     box-shadow: none;
     display:block;
@@ -311,7 +315,7 @@ header a:hover{
 }
 
 .main-section {
-    background: url('../images/ensp/ensp-bg.png') no-repeat;
+    background: url('../images/min/ensp/ensp-bg.png') no-repeat;
     background-size: cover;
     padding-top: 18px;
 }
@@ -342,7 +346,7 @@ header a:hover{
 }
 
 .informatique .heading{
-    background: url("../images/banniere_accueil.jpg") no-repeat;
+    background: url("../images/min/banniere_accueil.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -371,7 +375,7 @@ a.accordion{
 }
 
 #aboutUs .heading, .main-section .heading{
-    background: url('../images/ensp/baniere.jpg') no-repeat !important;
+    background: url('../images/min/ensp/baniere.jpg') no-repeat !important;
     background-size: cover !important;
 }
 
@@ -475,3 +479,20 @@ input:focus{
     max-height: 655px !important;
     width: 100%;
 }
+
+header span strong{
+    font-size: 18px;
+    color: #F97D2F;
+}
+
+/*.main-section .container{*/
+    /*min-height: 500px;*/
+/*}*/
+
+/*.copyright{*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*padding: 2px 0px;*/
+/*}*/

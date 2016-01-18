@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "nom": "Laboratoire 3 GI",
+    "nom": "Laboratoire ",
     "responsable": {
       "nom":"Nom",
       "prenom":"prenom",
@@ -11,7 +11,7 @@
     },
     "presentation": "Lorem ipsum dolor sit amet, c.",
     "dateCreation":"25 Decembre 2011",
-    "image": ["banner-bg.jpg","banner-bg2.jpg","banner-bg3.jpg"],
+    "image": ["work/1.jpg","work/7.jpg","work/8.jpg","work/1.jpg","work/7.jpg","work/8.jpg"],
     "projets":[
       {
         "categorie":"Projets de recherche",
@@ -55,7 +55,7 @@
   },
   {
     "id": 2,
-    "nom": "Laboratoire 3 GI",
+    "nom": "Laboratoire ",
     "responsable": {
       "nom":"Nom",
       "prenom":"prenom",
@@ -65,7 +65,7 @@
     },
     "presentation": "Lorem ipsum dolor sit amet, c.",
     "dateCreation":"25 Decembre 2011",
-    "image": ["banner-bg.jpg","banner-bg2.jpg","banner-bg3.jpg"],
+    "image": ["work/1.jpg","work/7.jpg","work/8.jpg","work/1.jpg","work/7.jpg","work/8.jpg"],
     "projets":[
       {
         "categorie":"Projets de recherche",
@@ -109,7 +109,7 @@
   },
   {
     "id": 3,
-    "nom": "Laboratoire 3 GI",
+    "nom": "Laboratoire ",
     "responsable": {
       "nom":"Nom",
       "prenom":"prenom",
@@ -119,7 +119,7 @@
     },
     "presentation": "Lorem ipsum dolor sit amet, c.",
     "dateCreation":"25 Decembre 2011",
-    "image": ["banner-bg.jpg","banner-bg2.jpg","banner-bg3.jpg"],
+    "image": ["work/1.jpg","work/7.jpg","work/8.jpg","work/1.jpg","work/7.jpg","work/8.jpg"],
     "projets":[
       {
         "categorie":"Projets de recherche",

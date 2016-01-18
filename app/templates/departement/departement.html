@@ -36,7 +36,7 @@
                         style="position: relative; height: auto;">
                       <li class="item web">
                         <figure class="effect-bubba">
-                          <img src="images/min/{{departement.image[0]}}" alt="img02"/>
+                          <img src="images/{{departement.image[0]}}" alt="img02"/>
                           <figcaption>
                             <h2>{{departement.titre}}</h2>
                             <a href="images/{{departement.image[0]}}" class="fancybox">Afficher</a>
@@ -55,22 +55,22 @@
                       <div class="row">
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[1]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[1]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[2]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[2]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[3]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[3]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[4]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[4]}}" alt="Thumb11">
                           </a>
                         </div>
                       </div>
@@ -80,22 +80,22 @@
                       <div class="row">
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[5]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[5]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[6]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[6]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[7]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[7]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/min/{{departement.image[8]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/{{departement.image[8]}}" alt="Thumb11">
                           </a>
                         </div>
                       </div>
@@ -181,7 +181,7 @@
                         style="position: relative; height: auto;">
                       <li class="item web">
                         <figure class="effect-bubba">
-                          <img src="images/min/{{departement.chefDepartement.image}}" alt="img02"/>
+                          <img src="images/{{departement.chefDepartement.image}}" alt="img02"/>
                           <figcaption>
                             <h2>{{departement.chefDepartement.nom}}</h2>
                             <a href="images/{{departement.chefDepartement.image}}" class="fancybox">Afficher</a>
@@ -229,7 +229,7 @@
                 <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="p in departement.professeurs |filter:searchKey | orderBy : '-nom' : true | itemsPerPage: par_page">
                   <div class="actu row">
                     <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
-                      <img src="images/min/{{p.image}}" alt=""/>
+                      <img src="images/{{p.image}}" alt=""/>
                     </div>
                     <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
                       <h3><span class="italic">{{p.grade}}. </span> {{p.prenom}} {{p.nom}}</h3>
@@ -247,7 +247,7 @@
             <!--laboratoire-->
             <div class="tab-pane" id="lab">
               <h4 class="">Laboratoires d'étude du {{departement.nom}}</h4>
-              <div class="rows" ng-repeat="l in departement.laboratoires">
+              <div class="row" ng-repeat="l in departement.laboratoires">
                 <h5>{{l.nom}}</h5>
                 <div class="col-lg-9">
                   <p>Responsable :<span class="bold"> {{l.responsable}}</span></p>
@@ -261,7 +261,7 @@
                         style="position: relative; height: auto;">
                       <li class="item web">
                         <figure class="effect-bubba">
-                          <img src="images/min/{{l.image}}" alt="img02"/>
+                          <img src="images/{{l.image}}" alt="img02"/>
                           <figcaption>
                             <h2>{{l.nom}}</h2>
                             <a href="images/{{l.image}}" class="fancybox">Afficher</a>

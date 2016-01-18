@@ -9,7 +9,7 @@
 
         <!-- Article 1 -->
         <div class="row feature design">
-            <div class="col-lg-3 columns feature-media liste-auteur">
+            <div class="col-lg-3 hide columns feature-media liste-auteur">
                 <div class="col-lg-12">
                     <ul class="items list-unstyled clearfix animated fadeInRight showing" data-animation="fadeInRight"
                         style="position: relative; height: auto;">
@@ -23,11 +23,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-9 columns">
+            <div class="col-lg-12 columns">
                 <div class="">
                     <input  class="form-control" style="width: 75%; float:left" type="text" ng-model="searchKey" class="form-control" placeholder="Entrer un mot-clé"/>
                     <input class="form-control" style="width: 20%; float: right" type="number" placeholder="Nombre à afficher"  ng-model="par_page"/>
                 </div>
+                <div class="clearfix"></div>
                 <div class="row pub"  dir-paginate="p in publications |filter:searchKey | orderBy : '-auteur' : true| itemsPerPage: par_page "  >
                     <a class="titre" ui-sref="publication({titre:p.titre})">{{p.titre}}</a>
                     <p class="contenu">{{p.description}}.</p>

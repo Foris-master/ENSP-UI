@@ -99,7 +99,7 @@ h6{
 	line-height:30px;
 }
 .listArrow li{
-	background: url('../images/min/links-arrow.png') 0px 12px no-repeat;
+	background: url('../images/min/min/links-arrow.png') 0px 12px no-repeat;
 	padding-left:15px;
 }
 .progress {
@@ -415,14 +415,14 @@ a:hover {
 	margin: 0;
 	background: rgba(0, 0, 0, 0.75);
 	border: 0;
-	padding: 0px 15px;
+	/*padding: 0px 15px;*/
+	padding: 0px 0px;
 }
 .hero-text2{
 	padding:30px 0;
 }
 .hero-text2 h2{
 	font-size: 28px;
-	c
 	line-height: 36px;
 	text-align: left
 }
@@ -494,7 +494,7 @@ a:hover {
 .banner-container {
 	width: 100%;
 	padding: 0px;
-	/*background: url("../images/min/banner-bg.jpg") no-repeat;*/
+	/*background: url("../images/min/min/banner-bg.jpg") no-repeat;*/
 	background-size: cover;
 	position: relative;
 	border-bottom: 2px #F97D2F solid;

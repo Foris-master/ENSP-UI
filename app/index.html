@@ -46,7 +46,7 @@
           <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
           <a ui-sref="accueil" ng-click="menu='logo'" class="navbar-brand scroll-top logo ensp  animated bounceInLeft">
             <b><i><img src="images/logo-ensp.png" class="logo-ensp" /></i></b>
-            <span style="font-size: 16px; color: #fff;" >Ecole Nationale Supérieure Polytechnique</span>
+            <span style="font-size: 16px; color: #fff;" ><strong>E</strong>cole <strong>N</strong>ationale <strong>S</strong>upérieure <strong>P</strong>olytechnique</span>
           </a>
         </div>
 
@@ -55,7 +55,7 @@
 
           <ul class="nav navbar-nav" id="mainNavs">
             <li class="row" style="margin: 0px 5px;">
-              <form action="" class="search-form" ng-submit="rechercher(mot)" style="margin-top: 30px;">
+              <form  method="post" class="search-form" ng-submit="recherche(mot)" style="margin-top: 30px;">
               <div class="form-group has-feedback">
                 <label for="search" class="sr-only">Search</label>
                 <input type="text" class="form-control" ng-model="mot" name="search" id="search" placeholder="Recherche">
@@ -79,7 +79,7 @@
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="indicateur">Nos indicateurs</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4 col-sm-4 col-md-4 col-xs-4">
-                    <img src="images/work/1.jpg" alt=""/>
+                    <img src="images/gi.JPG" alt=""/>
                   </div>
                 </div>
 
@@ -106,7 +106,7 @@
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-departement">Tous les département</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <img src="images/work/1.jpg" alt=""/>
+                    <img src="images/gi.JPG" alt=""/>
                   </div>
                 </div>
 
@@ -129,7 +129,7 @@
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="offre">Offre de stage et d'emploi</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <img src="images/work/1.jpg" alt=""/>
+                    <img src="images/gi.JPG" alt=""/>
                   </div>
                 </div>
               </ul>
@@ -149,7 +149,7 @@
                     <li><i class="fa fa-angle-double-right"></i> <a ui-sref="liste-article({categorie:'activites'})">Activités de recherche</a></li>
                   </div>
                   <div class=" col-lg-4 col-sm-4 col-md-4 col-xs-4">
-                    <img src="images/work/1.jpg" alt=""/>
+                    <img src="images/gi.JPG" alt=""/>
                   </div>
                 </div>
 
@@ -159,8 +159,8 @@
 
             </li>
 
-            <li ng-class="{active : menu=='contact'}"><a ui-sref="menu" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
-            <li ><a data-toggle="modal" href="/#authentificationModal" class="scroll-link"><i class="fa fa-user"></i></a></li>
+            <li class="" ng-class="{active : menu=='contact'}"><a ui-sref="menu" ng-click="menu='contact'" class="scroll-link">Contact</a></li>
+            <li class=""><a data-toggle="modal" href="/#authentificationModal" class="scroll-link"><i class="fa fa-user"></i></a></li>
 
 
           </ul>
@@ -174,9 +174,9 @@
   </header>
   <div id="#top"></div>
 
-  <section ui-view autoscroll="true"></section>
+  <section id="main-container" ui-view autoscroll="true"></section>
 
-  <footer>
+  <footer class="hide">
     <div class="container">
       <div class="row">
         <div class="col-md-9">
@@ -210,8 +210,8 @@
   <section class="copyright">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-center"> Copyright  {{dateCourante | date: 'yyyy'}} | Tous Droits Réservés -- Design -
-            <a ui-sref="us"> Us</a> </div>
+        <div class="col-sm-12 text-center"> &copy; Copyright  {{dateCourante | date: 'yyyy'}} | Tous Droits Réservés |
+            <a ui-sref="us"> Equipe de réalisation</a> </div>
       </div>
       <!-- / .row -->
     </div>
@@ -279,6 +279,8 @@
   </div>
 
 
+  <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+  <script src="js/ensp.js"></script>
   <script src="../bower_components/angular/angular.js"></script>
   <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="../bower_components/angularjs-datepicker/src/js/angular-datepicker.js"></script>
@@ -382,6 +384,7 @@
 
   <script src="js/editor.js"></script>
   <script src="js/highcharts.src.js"></script>
+
 
 
 </body>

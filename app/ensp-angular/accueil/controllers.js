@@ -12,7 +12,7 @@ app_header
     function($scope,$location) {
         $scope.recherche=function(mot){
             console.log(mot);
-            $location("recherche");
+            $location.path("recherche");
         }
 
         $scope.dateCourante=new Date();

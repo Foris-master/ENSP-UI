@@ -4,66 +4,45 @@
     "rang":12,
     "membre":[
       {
-        "nom":"Nanda",
-        "prenom":"Edward",
-        "poste":"Poste",
+        "nom":"OWONO ONANA",
+        "prenom":"",
+        "poste":"Directeur",
         "rang":1,
         "grade":"Pr",
-        "lien_vers_page":"personnel/nom_prenom"
+        "lien_vers_page":"personnel/OWONA ONANA"
       },
       {
-        "nom":"Nom",
-        "prenom":"Prenom",
-        "poste":"Poste",
+        "nom":"NGABIRENG",
+        "prenom":"Claude",
+        "poste":"Directeur Adjoint",
         "rang":2,
         "grade":"Pr",
-        "lien_vers_page":"personnel/nom_prenom"
+        "lien_vers_page":"personnel/NGABIRENG"
       }
     ]
   },
-  {
-    "categorie":"Conseil D'administration",
-    "rang":6,
-    "membre":[
-      {
-        "nom":"Nom",
-        "prenom":"Prenom",
-        "poste":"Poste",
-        "rang":1,
-        "grade":"Pr",
-        "lien_vers_page":"personnel/nom_prenom"
-      },
-      {
-        "nom":"Nom",
-        "prenom":"Prenom",
-        "poste":"Poste",
-        "rang":2,
-        "grade":"Pr",
-        "lien_vers_page":"personnel/nom_prenom"
-      }
-    ]
-  },
+
   {
     "categorie":"Chefs de Départements",
     "rang":6,
     "membre":[
       {
-        "nom":"Nom",
-        "prenom":"Prenom",
-        "poste":"Poste",
+        "nom":"BOUETOU",
+        "prenom":"Thomas",
+        "poste":"Génie Informatique",
         "rang":1,
         "grade":"Pr",
         "lien_vers_page":"personnel/nom_prenom",
-        "departement":"Departement"
+        "departement":"Génie Informatique"
       },
       {
-        "nom":"Nom",
-        "prenom":"Prenom",
-        "poste":"Poste",
+        "nom":"MEVA'A",
+        "prenom":"",
+        "poste":"Génie Mécanique",
         "rang":2,
         "grade":"Pr",
         "lien_vers_page":"personnel/nom_prenom",
-        "departement":"Departement"
+        "departement":"Génie Mécanique"
       }
     ]
   }

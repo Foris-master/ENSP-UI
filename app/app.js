@@ -55,6 +55,12 @@ angular.module('myApp', [
          $rootScope.currentUser={};
          $rootScope.currentUser.roles = [{name:'Admin'},{name:'UserManager '},{name:"User"}];
 
+        // TODO: Evaris il faut que les deux lignes de code qui suivent s'effectuent a chaque fois qu'on change de page
+        //Taille du main-section > container
+        var h=getWindowHeight();
+        $(".main-section .container").css("min-height", (h*0.77));
+
+
         AuthorizationFactory.hasAuthorization(toState.access).then(
             function(data){
                 console.info('authorize');
@@ -92,7 +98,12 @@ angular.module('myApp', [
       $stateProvider.state('us', {
         url: "/us",
         templateUrl:  template_url+'us.html',
-        title:"Equipe de Réalisation"
+        title:"Equipe de Réalisation",
+          access: {
+              loginRequired: false,
+              //requiredPermissions: ['Admin', 'UserManager'],
+              //permissionType: 'All'
+          }
         
       }).state('login', {
         url: "/unauthorize",

@@ -27,9 +27,9 @@ app_accueil
             })
             .state('recherche', {
                 url: "/recherche",
-                templateUrl: template_url + 'accueil/accueil.html',
-                controller: 'AccueilCtrl',
-                title : 'Accueil',
+                templateUrl: template_url + 'accueil/recherche.html',
+                controller: 'ListeActualiteCtrl',
+                title : 'Recherche',
                 access: {
                     loginRequired: false,
                     //requiredPermissions: ['Admin', 'UserManager'],

@@ -16,7 +16,7 @@
           <img src="images/{{p.image}}" alt="partenaire"/>
         </div>
         <div class="col-lg-10">
-          <h3><a ui-sref="partenaire({denomination:p.denomination})">{{p.denomination}}</a></h3>
+          <h3><a ui-sref="partenaire({sigle:p.sigle})">{{p.denomination}}</a></h3>
           <span class="bold">Sigle</span> : {{p.sigle}} | <span class="bold">Raison Sociale</span> : {{p.raisonSociale}}
           <p ng-bind-html="p.description | limitTo : 200"> ...</p>
         </div>

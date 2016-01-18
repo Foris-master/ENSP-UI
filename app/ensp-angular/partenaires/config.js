@@ -27,7 +27,7 @@ app_partenaire
                 }
             })
             .state('partenaire', {
-                url: "/partenaire/:denomination",
+                url: "/partenaire/:sigle",
                 templateUrl:  template_url+'partenaires/partenaire.html',
                 controller: 'PartenaireCtrl',
 				title:"Espace Partenaire",

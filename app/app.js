@@ -1,6 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
+var host_url = 'http://localhost:8084/enspWebSite/';
 var template_url='templates/'; // chemin vers le dossier des templates
 //definition de tout les modules
 var app_auth =angular.module('myApp.auth', ['ui.router']);
@@ -49,9 +50,15 @@ angular.module('myApp', [
     'formlyBootstrap'
 ]).run(['$rootScope','$state','$location','AuthorizationFactory',function($rootScope,$state,$location,AuthorizationFactory){
     /* ceci est le main de l'application */
+    
+     $rootScope.host_url = host_url;
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState){
         // mise a jour du title de la page de maniere automatique
+        
+        
         $rootScope.title=toState.title;
+       
+
          $rootScope.currentUser={};
          $rootScope.currentUser.roles = [{name:'Admin'},{name:'UserManager '},{name:"User"}];
 

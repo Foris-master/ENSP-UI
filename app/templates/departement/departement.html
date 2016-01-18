@@ -36,10 +36,10 @@
                         style="position: relative; height: auto;">
                       <li class="item web">
                         <figure class="effect-bubba">
-                          <img src="images/{{departement.image[0]}}" alt="img02"/>
+                          <img src="{{host_url}}{{departement.article_presentation.images[0].url}}" alt="img02"/>
                           <figcaption>
                             <h2>{{departement.titre}}</h2>
-                            <a href="images/{{departement.image[0]}}" class="fancybox">Afficher</a>
+                            <a href="{{host_url}}{{departement.article_presentation.images[0].url}}" class="fancybox">Afficher</a>
                           </figcaption>
                         </figure>
                       </li>
@@ -55,22 +55,22 @@
                       <div class="row">
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[1]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{departement.article_presentation.images[0].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[2]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{departement.article_presentation.images[1].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[3]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{departement.article_presentation.images[2].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[4]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{departement.article_presentation.images[3].url}}" alt="Thumb11">
                           </a>
                         </div>
                       </div>
@@ -80,22 +80,22 @@
                       <div class="row">
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[5]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/min/{{departement.image[4]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[6]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/min/{{departement.image[5]}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[7]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/min/{{departement.image[6]}}" alt="">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{departement.image[8]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/min/{{departement.image[7]}}" alt="Thumb11">
                           </a>
                         </div>
                       </div>
@@ -167,11 +167,11 @@
               <h4 class="">Mot du Chef de Département</h4>
               <div class="row">
                 <div class="col-lg-9">
-                  <p><span class="italic">{{departement.chefDepartement.grade}}.</span>
-                    <a ui-sref="personnel({prenom:departement.chefDepartement.prenom,nom:departement.chefDepartement.nom})"><span class="bold"> {{departement.chefDepartement.prenom}} {{departement.chefDepartement.nom}}</span></a></p>
+                  <p><span class="italic">{{departement.chefDepartement.chef_departement.fonction}}.</span>
+                    <a ui-sref="personnel({prenom:departement.chefDepartement.chef_departement.personne.prenomPersonne,nom:departement.chefDepartement.chef_departement.personne.nomPersonne})"><span class="bold"> {{departement.chefDepartement.chef_departement.personne.prenomPersonne}} {{departement.chefDepartement.chef_departement.personne.nomPersonne}}</span></a></p>
                   <blockquote class="italic">
                     <span class="fa fa-quote-left"></span>
-                    {{departement.chefDepartement.mot}}
+                    {{departement.chefDepartement.motChefDepartement}}
                     <span class="fa fa-quote-right"></span>.
                   </blockquote>
                 </div>
@@ -181,10 +181,10 @@
                         style="position: relative; height: auto;">
                       <li class="item web">
                         <figure class="effect-bubba">
-                          <img src="images/{{departement.chefDepartement.image}}" alt="img02"/>
+                          <img src="{{host_url}}{{departement.chefDepartement.chef_departement.personne.utilisateur.photo}}" alt="img02"/>
                           <figcaption>
-                            <h2>{{departement.chefDepartement.nom}}</h2>
-                            <a href="images/{{departement.chefDepartement.image}}" class="fancybox">Afficher</a>
+                            <h2>{{departement.chefDepartement.chef_departement.personne.nomPersonne}}</h2>
+                            <a href="{{host_url}}{{departement.chefDepartement.chef_departement.personne.utilisateur.photo}}" class="fancybox">Afficher</a>
                           </figcaption>
                         </figure>
                       </li>
@@ -229,11 +229,11 @@
                 <div class="col-lg-4 col-sm-4 col-xs-4" dir-paginate="p in departement.professeurs |filter:searchKey | orderBy : '-nom' : true | itemsPerPage: par_page">
                   <div class="actu row">
                     <div class="col-lg-5 col-sm-5 col-xs-5 actu-image">
-                      <img src="images/{{p.image}}" alt=""/>
+                      <img src="{{host_url}}{{p.personne.utilisateur.photo}}" alt=""/>
                     </div>
                     <div class="col-lg-7 col-sm-7 col-xs-7  actu-detail">
-                      <h3><span class="italic">{{p.grade}}. </span> {{p.prenom}} {{p.nom}}</h3>
-                      <a ui-sref="personnel({prenom:p.prenom,nom:p.nom})">Voir le profil</a>
+                      <h3><span class="italic">{{p.fonction}}. </span> {{p.personne.prenomPersonne}} {{p.personne.nomPersonne}}</h3>
+                      <a ui-sref="personnel({prenom:p.personne.prenomPersonne,nom:p.personne.nomPersonne})">Voir le profil</a>
                     </div>
                   </div>
                 </div>
@@ -261,10 +261,10 @@
                         style="position: relative; height: auto;">
                       <li class="item web">
                         <figure class="effect-bubba">
-                          <img src="images/{{l.image}}" alt="img02"/>
+                          <img src="{{host_url}}{{l.image}}" alt="img02"/>
                           <figcaption>
                             <h2>{{l.nom}}</h2>
-                            <a href="images/{{l.image}}" class="fancybox">Afficher</a>
+                            <a href="{{host_url}}{{l.image}}" class="fancybox">Afficher</a>
                           </figcaption>
                         </figure>
                       </li>

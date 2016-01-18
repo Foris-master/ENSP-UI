@@ -25,7 +25,7 @@
               <h4 class="">Présentation du {{laboratoire.nom}}</h4>
               <div class="row">
                 <div class="col-lg-12">
-                  <p ng-bind-html="laboratoire.presentation"></p>
+                  <p ng-bind-html="laboratoire.description"></p>
                 </div>
               </div>
 
@@ -36,22 +36,22 @@
                       <div class="row">
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[1]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{laboratoire.article.images[0].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[2]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{laboratoire.article.images[1].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[3]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{laboratoire.article.images[2].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[4]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{laboratoire.article.images[3].url}}" alt="Thumb11">
                           </a>
                         </div>
                       </div>
@@ -61,22 +61,22 @@
                       <div class="row">
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[5]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{laboratoire.article.images[5].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[6]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{laboratoire.article.images[6].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[7]}}" alt="Thumb11">
+                            <img class="img-responsive" src="images/min/{{laboratoire.article.images[7].url}}" alt="Thumb11">
                           </a>
                         </div>
                         <div class="col-md-3">
                           <a href="javascript:void(0);" class="thumbnail">
-                            <img class="img-responsive" src="images/{{laboratoire.image[8]}}" alt="Thumb11">
+                            <img class="img-responsive" src="{{host_url}}{{laboratoire.article.images[8].url}}" alt="Thumb11">
                           </a>
                         </div>
                       </div>
@@ -145,18 +145,17 @@
 
             <!--Projets-->
             <div class="tab-pane" id="projet">
-              <h4>Projets</h4>
-              <div class="col-lg-6" ng-repeat="l in laboratoire.projets">
-                <h5>{{l.categorie}}</h5>
+              <h4>Laboratoire : {{laboratoire.nom}}</h4>
+              
+                <h5>Projets</h5>
 
-                <div ng-repeat="pr in l.projet" style="padding-left: 10px;margin-bottom: 10px;">
-                  <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.titre}}</div>
-                  <p style="padding-bottom: 0">{{pr.description}}</p>
+                <div ng-repeat="pr in laboratoire.projets" style="padding-left: 10px;margin-bottom: 10px;">
+                  <div class="bold"><i class="fa fa-angle-double-right"></i> {{pr.nom}}</div>
+                  <p style="padding-bottom: 0">{{pr.resume}}</p>
                   <div><span class="detail">Entreprise : </span>{{pr.entreprise}}</div>
-                  <div><span class="detail">Année : </span>{{pr.annee}}</div>
-                  <div><span class="detail">Lien : </span><span ng-bind-html="pr.lien"></span></div>
+                  <div><span class="detail">Année : </span>{{pr.datedebut}}</div>
                 </div>
-              </div>
+           
             </div>
 
           </div>

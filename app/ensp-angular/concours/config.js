@@ -63,7 +63,7 @@ app_concours
                 }
             })
             .state('liste-candidat', {
-                url: "/liste-candidat/:niveau",
+                url: "/liste-candidat/:concours",
                 templateUrl: template_url + 'concours/liste-candidat.html',
                 controller: 'ListeCandidatCtrl',
                 title: "Liste des Candidats",

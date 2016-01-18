@@ -58,7 +58,7 @@ app_article
             .state('presentation', {
                 url: "/presentation",
                 templateUrl: template_url + 'article/presentation.html',
-                //controller: 'PresentationCtrl',
+                controller: 'PresentationCtrl',
                 title: "Presentation ",
                 access: {
                     loginRequired: false,

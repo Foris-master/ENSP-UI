@@ -86,24 +86,25 @@ app_concours
     .controller('ListeCandidatCtrl',['$scope','$stateParams','ConcoursFactory','$filter', function($scope,$stateParams,ConcoursFactory,$filter) {
 
         $scope.par_page = 15;
-        var nv=$stateParams.niveau;
-        var indice=1;
-        if(nv!="niveau-3" && nv!="niveau-1"){
-            nv="niveau 1";
-        }
-        if(nv=="niveau-3"){
-            indice=3;
-        }
+        var c=$stateParams.concours;
+        console.log(c);
+//        var indice=1;
+//        if(nv!="niveau-3" && nv!="niveau-1"){
+//            nv="niveau 1";
+//        }
+//        if(nv=="niveau-3"){
+//            indice=3;
+//        }
 
-        $scope.niveau=indice;
+       // $scope.niveau=indice;
 
-        $scope.loadCandidat=function(indice){
+        $scope.loadCandidat=function(c){
 
-            ConcoursFactory.getCandidats({niveau:indice}).then(
+            ConcoursFactory. getConcour(c).then(
                 function(data){
                     //console.log(data);
-                    $scope.candidats=data;
-
+                    $scope.candidats=data.candidats;
+                    $scope.niveau=data.niveau;
 
                 },function(msg){
                     console.log(msg);
@@ -112,10 +113,10 @@ app_concours
         }
 
         $scope.changementPage=function(){
-            $scope.loadCandidat();
+            $scope.loadCandidat(c);
         }
 
-        $scope.loadCandidat();
+        $scope.loadCandidat(c);
 
         $scope.Identification=function(candidat){
             $("#identificationModal a.close").trigger('click');

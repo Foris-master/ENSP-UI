@@ -19,7 +19,8 @@ app_departement
                 //    deferred.resolve(factory.departements);
                 //} else {
 
-                    $http.get("ressources/departement.json").success(function(data,status){
+                    $http.get(host_url+"/departement").success(function(data,status){
+                        console.log(data);
                         factory.departements = data;
 
                         deferred.resolve(factory.departements);
@@ -37,7 +38,8 @@ app_departement
             getDepartement: function (id) {
                 var deffered = $q.defer();
                 var departements = factory.getDepartements().then(function(services){
-                    deffered.resolve($filter('filter')(factory.departements,{idDepartement:parseInt(id)},true)[0]);
+                    deffered.resolve($filter('filter')(factory.departements,{iD:parseInt(id)},true)[0]);
+                    console.log($filter('filter')(factory.departements,{iD:parseInt(id)},true)[0]);
                 },function(msg){
                     deffered.reject(msg);
                 });

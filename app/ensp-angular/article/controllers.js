@@ -45,9 +45,33 @@ app_article
             $scope.titre="Actualités";
 
             $scope.loadActualite=function(){
-                ArticleFactory.getSpecifiqueArticles({categorie:"actualite"}).then(
+                ArticleFactory.getSpecifiqueArticles({tag:"actu"}).then(
                     function(data){
+
                         $scope.actualites=data;
+
+                    },function(msg){
+                        console.log(msg);
+                    }
+                );
+
+            }
+
+            $scope.changementPage=function(){
+                $scope.loadActualite();
+            }
+
+            $scope.loadActualite();
+        }])
+    .controller('PresentationCtrl',['$scope','ArticleFactory','$filter',
+        function($scope,ArticleFactory,$filter) {
+            $scope.titre="Présentation de l'ENSP";
+
+            $scope.loadActualite=function(){
+                ArticleFactory.getSpecifiqueArticles({tag:"pres"}).then(
+                    function(data){
+                        console.log(data);
+                        $scope.presentation=data[0];
 
                     },function(msg){
                         console.log(msg);
@@ -80,8 +104,16 @@ app_article
 
 .controller('FormulaireArticleCtrl', ['$scope','$stateParams','$location','ArticleFactory','$filter',
     function($scope,$stateParams,$location,ArticleFactory,$filter) {
-    $scope.categories = [{name:'ecole',id:2},{name:'actuatilite',id:3},{name:'labo',id:4}];
+        
+    $scope.categories = ArticleFactory.getCategories().then(function(data){
+        
+        $scope.categories = data;
+        
+    },function(msg){
+                console.err(msg);
+            });
     $scope.new_article={};
+    
     $scope.new_article.parties=[{soustitre:"",contenue:"",image:""}];
     $scope.addpart = function(){
         $scope.new_article.parties.push({soustitre:"",contenue:"",image:""});
@@ -120,6 +152,7 @@ app_article
         var stitre_key="foumfoumspij";
         var contenue_key="famfamspij";
         var images =[];
+        var tags = [];
         if($scope.new_article!=false){
             var contenue="";
             var stitre="";
@@ -131,18 +164,21 @@ app_article
                     stitre+=stitre_key+p.soustitre;
                     contenue+=contenue_key+p.contenue;
                 }
-                images.push({image:p.image});
+                tags.push($scope.new_article.parties.indexOf(p));
+                images.push(p.image);
 
             });
             contenue=stitre+"__sepstitrecontenue__"+contenue;
             var article = {
                 titre: $scope.new_article.titre,
-                categorie: $scope.new_article.categorie,
-                contenue:contenue,
-                images:images
+                categorie: {iD:$scope.new_article.categorie},
+                description:contenue,
+                tag:tags,
+                
 
             }
-            ArticleFactory.addArticle(article);
+            console.log(article);
+            ArticleFactory.addArticle(article,images);
             // $location.path('/liste-publication')
             console.log($scope.new_article);
             console.log(article);

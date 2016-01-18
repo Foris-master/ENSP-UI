@@ -11,6 +11,7 @@ app_personnel
         function($scope,$location,PersonnelFactory,$stateParams) {
 
         var categorie=$stateParams.categorie;
+        
         console.log(categorie);
         $scope.titre="Personnel Enseignant";
         if(categorie=="administratif"){
@@ -28,7 +29,7 @@ app_personnel
                 function(data){
 
                     $scope.personnels=data;
-                    //console.log($scope.personnels);
+                    console.log($scope.personnels);
                 },function(msg){
                     console.log(msg);
                 }
@@ -42,14 +43,22 @@ app_personnel
 
         $scope.loadPersonnel();
     }])
-    .controller('PersonnelCtrl',['$scope','PersonnelFactory','$stateParams',
-        function($scope,PersonnelFactory,$stateParams) {
+    .controller('PersonnelCtrl',['$scope','PersonnelFactory','$stateParams','PublicationFactory',
+        function($scope,PersonnelFactory,$stateParams,PublicationFactory) {
         //recuperation de la personnel
 
-        PersonnelFactory.getPersonnel({nom:$stateParams.nom,prenom:$stateParams.prenom}).then(
+        PersonnelFactory.getPersonnel({personne:{nomPersonne:$stateParams.nom,prenomPersonne:$stateParams.prenom}}).then(
             function(data){
                 $scope.personnel=data;
-                $scope.personnel.image=$scope.personnel.image==null?"profil.png":$scope.personnel.image;
+                $scope.personnel.publications=PublicationFactory.
+                        getPublicationsPersonnel({personnel:{personne:{nomPersonne:$stateParams.nom,prenomPersonne:$stateParams.prenom}}}).then(
+                        function(d){
+                            $scope.personnel.publications=d;
+                        },function(msg){
+                console.log(msg);
+            });
+                //$scope.personnel.personne.utilisateur.photo=$scope.personnel.personne.utilisateur.photo==null?"profil.png":$scope.personnel.personne.utilisateur.photo;
+                $scope.personnel.image=data.personne.utilisateur.photo==null?"images/min/profil.png":host_url+data.personne.utilisateur.photo;
 
             },function(msg){
                 console.log(msg);

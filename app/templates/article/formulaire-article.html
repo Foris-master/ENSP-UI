@@ -28,8 +28,8 @@
                                    ng-maxlength="255"
                                    required>
                             <div class="help-block" ng-show="articleForm.name.$touched" ng-messages="articleForm.name.$error">
-                                <p ng-message="minlength">Le titre specifiÃ© trop court</p>
-                                <p ng-message="maxlength">Le titre specifiÃ© trop long</p>
+                                <p ng-message="minlength">Le titre specifié trop court</p>
+                                <p ng-message="maxlength">Le titre specifié trop long</p>
                                 <p ng-message="required">Le titre de l'article est requit</p>
                             </div>
 
@@ -40,7 +40,7 @@
                             <select class="form-control"
                                     name="categorie"
                                     ng-model="new_article.categorie"
-                                    ng-options=" categorie.id as categorie.name  for categorie in categories"
+                                    ng-options=" categorie.iD as categorie.intitule  for categorie in categories"
                                     required>
                                 <option value="">-- Choisir une categorie --</option>
                             </select>
@@ -76,13 +76,14 @@
                                 </div>
 
                                 <label for="catimage">Associer une imgage</label>
-                                <input type="file" id="catimage" style="padding: 0px 0px 10px;" class="form-control" fileread="pa.image"/>
+                                <input type="file" id="catimage" class="form-control" file-model="pa.image" style="padding: 0px 0px 10px;"/>
+                                <hr>
                             </ng-form>
                         </div>
                         <!-- /editor -->
                         <div class="form-group">
                             <!--<duplicate text="Ajouter" "></duplicate>-->
-                            <div class="btn" ng-click="addpart()">Ajouter une partie Ã  l'article</div>
+                            <div class="btn" ng-click="addpart()">Ajouter une partie à l'article</div>
                         </div>
                         <hr/>
                         <div class="form-group" id="idsubmit">
